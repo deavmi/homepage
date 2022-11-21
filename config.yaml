@@ -1,0 +1,35 @@
+baseURL: "/"
+languageCode: "en-us"
+title: "Tristan B. Kildaire"
+theme: "hugo-xmin"
+ 
+relativeURLs: true
+
+menu:
+  main:
+    - name: Home
+      url: "/"
+      weight: 1
+        
+    - name: Projects
+      url: "projects"
+      weight: 2
+
+    - name: Blog
+      url: "blog/"
+      weight: 3
+
+    - name: Hot takes
+      url: "hottakes/"
+      weight: 4
+      
+    - name: Work
+      url: "work/"
+      weight: 5
+
+    - name: About
+      url: "about/"
+      weight: 6
+
+params:
+  footer: "[![](/banners/crxn_insane.png)](https://redxen.eu) [![](/banners/crxn_gang.png)](/projects/crxn) [![](/banners/redxen_animated.gif)](https://redxen.eu)"
