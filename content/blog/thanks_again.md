@@ -360,11 +360,11 @@ You're an amazing computer programmer, your skills are really unmatched and when
 
 Such famous words uttered by a great orator, Barack Obama. Ben, my friend, I have a lot to say about you. You are indeed what I would refer to as _**an interesting fella**_. Although you hailed from Wits you seem to have fit just right in with the Stellenbosch crowd or, atleast, the comoyuter scientists (we're all a quirky weird bunch, as much as I'd like to deny being a "quirky male" ~~I prefer schizo male~~). I, for one, am very happy for this because I think that if I hadn't met you that I would have had a very different year. There are many reasons for this ranging from your sense of humor, your knowledge on topics that I mutually enjoyed and also your willingness to always help me out when in need. These are characteristics that are not necessarily that common or at least to the degree you portrayed them in is not common. Your endless support in that manner has been greatly appreciated.
 
-{{<bruh>}}
-<img src="/img/thanks_again/ben2.JPG" width=259 height=354 style="float:left;gap">
-{{</bruh>}}
-
 As for mutually shared topics of interests well, there's a lot we could go over. Firstly, your knowledge of memes is amazing, it's at the very least on par with my knowledge which is great but at the very most you posess Telegram Channel operator energy. Somehow you had the ability to recount every single utterance of every popular meme in what I found hilarious and sometimes quite amazing at the amount of intellectual "meme capacity" that you had.
+
+{{<bruh>}}
+<img src="/img/thanks_again/ben2.JPG" width=50% height=50% style="float:left;gap">
+{{</bruh>}}
 
 Secondly, and more importantly, you had a lot of knowledge on programming at a level that I could identify with. Design patterns and principles, networking, writing big systems and the list goes on. You and I both had passion projects that we worked tirelessly on for a long time and I was able to bond with you over that. We loved dicusssing programming languages and your favourite C#. There were, however, some stumblings blocks to this friendship as with any there is. Specifically, your use of the `var` keyword was rather worrying, I felt as if I had lost a part of my friend to the luciferian type-inference shills but as with people we all share slight differences in our closely knit friend groups - without these differences we would all be the same and would ould be left to make us any different from one another then.
 
