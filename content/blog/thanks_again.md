@@ -380,6 +380,12 @@ TODO: Sort out image URLs
 <img src="/img/thanks_again/troy.jpg" width=426.6666666666667 height=320 style="float:left;gap">
 {{</bruh>}}
 
+Now I could have easily copied and pasted the kind words I had written for you [last year](../thank_you_all/) but what would be the point in that - I have an endless amount that I could write about us two - because as each year progresses it only gets better. What is _it_? Its our friendship - one that is coming up on roughly 4 years now and one that I will never forget. In could very much have said within the early days of our friendship that it was like any other but as events had transpired down the line you were one of the very few friends who knew me well enough to help me through extremely pivotal moments in my life that, had you not been there, would have left me in a place of approach the _downwards spiral_. What I learnt from you was a good idea that had so easily left my headspace - the idea of moderacy - a time and a place but most importantly the size of a portion. Now, this may seem obvious to many but to me at a certain stage in life hearing these words was all I really needed. Needless to say, I hedge a lot if not most of the value I put on our friendship on those very few dark chapters in my life. I could go on to say a lot about who you are as a person - and oh boy I will - but I want you to know that was the truest form of friendship. No beach house, wine will buy me those moments again in life - but your solid heart of gold and principled take on life taught me how to be an actual man.
+
+You're a man of steal Troy - it took me time to understand it all but I am happy I had a mentor like you to come to terms with reality. For anyone else reading this, it may seem inoccuous but to summarize. This man stood by his words, instead of just saying one thing and doing another. He was a gentleman and best of all he could balance that with actually having a good sense of humor. It's as if he found the perfect ratio of them both - he then passed me this knowledge and I keep it in my head everyday.
+
+Now, sob story aside, let's talk about this `f e l l a`.
+
 TODO: Do this section
 
 dfs
