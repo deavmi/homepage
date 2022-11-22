@@ -388,46 +388,6 @@ Now, sob story aside, let's talk about this `f e l l a`.
 
 TODO: Do this section
 
-dfs
-
-f'
-
-'fd
-
-'f
-
-sad'f
-
-ds'
-
-'
-'
-dds
-f'd
-sa'fsd
-'fsd
-
-'f
-dsa'f
-
-ds'f
-
-ds'f
-
-ds'fd
-
-
-
-
-s'fsd
-'fd
-
-s'fd
-s'fds
-
-f'd
-sf'd
-f'
 
 
 ## The climbers
@@ -459,15 +419,11 @@ Both of our interests couldn't be further apart but we do both share a passion t
 
 ### Anke Vlok
 
-TODO: Image URL
-
 {{<bruh>}}
 <img src="/img/thanks_again/anke.jpeg" width=350 height=250 style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
 Anke, despite having noticed your red hair in first year where you stood out in the whole class of Maths 114 students, I never actually spoke to you. I just observed a first year girl go from having no long board to _having_ a long board. Many years went by and when I had my "re-union with Justin" and you came to hang in the lab with us, often enjoying a glass of wine with us two we started chatting and got very much along. This should have never come to a surprise to me seeing as we were both Worcesterites - i.e. being born in Worcester - something I hold very near and dear to my heart in a prideful sense. Many evenings in the lab with the rockies proved to be great fun, going to Holy Dough for a nice slice of Pizza, buying a great set of vinyl records from you and then climbing in the evening topped off with a bowl of rice from Pandas.
-
-TODO: Image URL
 
 {{<bruh>}}
 <img src="/img/thanks_again/berndahrt.jpeg" width=400 height=225 style="float:right;gap;margin-left:20px">
