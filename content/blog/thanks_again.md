@@ -22,7 +22,7 @@ As time progressed I realized it wasn't all too bad, the work was at least in th
 
 {{<bruh>}}
 <center>
-    <img src="/familia.jpeg" width=640 height=480>
+    <img src="/img/thanks_again/familia.jpeg" width=640 height=480>
     <p>(pictured left-to-right) Mom, Me, Brother, Father</p>
 </center>
 {{</bruh>}}
@@ -34,7 +34,7 @@ The singly most important people in my life, always there for me and me for them
 TODO: Sort out image (and URL)
 
 {{<bruh>}}
-<img src="/gisele.jpeg" width=320 height=426 style="float:right;gap">
+<img src="/img/thanks_again/gisele.jpeg" width=320 height=426 style="float:right;gap">
 {{</bruh>}}
 
 Mom, mommie, or _minnie 🐭️_ - whatever the various names I have given you over the past many years together from my childhood till now. One thing has remained persistent and that is your love - your _unconditional love_. From growing up, I remember everyday in preschool assembly when all the toddlers would get together and sit on their mom or dads lap at the beginning of shool with the morning assembly. After the fist 5 minutes the mother would then leave but I didn't want you to leave - I would get sad - I would cry a little and so you stayed for the whole full 30 minutes or so. I remember those events so vividly in my memory - such a strong memory of the bond and love we have for each other. Just thinking of that touches my heart so much - it's a memory I thought I had never could recall from so many years ago but I am happy I still can - because **love is forever ❤️**. Those beginning years at Lanner House really were such beautiful memories of mine, if it wasn't for your tireless work on things such as the Parents-Teacher association (PTA) at Lanner House, organizing lessons for me at occupational therapy (OT), getting me tested for ADHD, helping me through my high school career at Bridge House with extra maths lessons - the driving from Franschoek and back - just so much that was expressed in what many don't directly see as direct displays of affection but **ought to** be seen as such.
@@ -60,7 +60,7 @@ Ideas wine, vinyls, driving me to school, swimming me, jumping jack in the box w
 TODO: Sort out image (and URL)
 
 {{<bruh>}}
-<img src="/vaughan.jpeg" width=320 height=426 style="float:right;gap">
+<img src="/img/thanks_again/vaughan.jpeg" width=320 height=426 style="float:right;gap">
 {{</bruh>}}
 
 My brother Vaughan, you are the my other half - somebody I always looked up to when growing up. You were the big boy in my world and you could always defend me from any harm or bullies that came my way, I always knew my brother would be there to protect me and there have been times where I was comforted by you are you ability to do so - I never felt afraid or at least you made me know I was safe.
@@ -99,7 +99,7 @@ There's a whole lot of you and honestly it's about time we just go heads-first i
 
 {{<bruh>}}
 <center>
-    <img src="/systems_programmers.jpg" width=640 height=480>
+    <img src="/img/thanks_again/systems_programmers.jpg" width=640 height=480>
     <p>(pictured left-to-right) Tristan, Gustav, Stephen</p>
 </center>
 {{</bruh>}}
@@ -111,7 +111,7 @@ You guys were literally my first CS friends who _really_ and I mean _**really**_
 TODO: Sort out image URL
 
 {{<bruh>}}
-<img src="/gustav_1.jpg" width=342 height=228 style="float:right;gap">
+<img src="/img/thanks_again/gustav_1.jpg" width=342 height=228 style="float:right;gap">
 {{</bruh>}}
 
 You'll always appear on this list man - you're the most reliable of all my friends, always there and always willing to work together on something. Any day of the week I would be working either at the lab or (most of the time) at my apartment and I would receive a call from you as a surprise that you were in town that evening and wanted to drop by. I would never resist such an invitation as we always had so much to catch up on during those times you came to hang over. This, however, is a recent past - our friendship goes back many many years and I can only honor that by going all the way back to the origin story of our friendship.
@@ -119,7 +119,7 @@ You'll always appear on this list man - you're the most reliable of all my frien
 TODO: Sort out image URL
 
 {{<bruh>}}
-<img src="/gustav_2.jpeg" width=266 height=355 style="float:left;gap">
+<img src="/img/thanks_again/gustav_2.jpeg" width=266 height=355 style="float:left;gap">
 {{</bruh>}}
 
 
@@ -128,7 +128,7 @@ The first time we met must have been near the end of our second semester in firs
 TODO: Sort out image (and URL)
 
 {{<bruh>}}
-<img src="/gustav_fr.jpeg" width=426 height=320 style="float:right;gap">
+<img src="/img/thanks_again/gustav_fr.jpeg" width=426 height=320 style="float:right;gap">
 {{</bruh>}}
 
 It was from this day onwards that we became best buddies or _"chommies"_, we'd spend a lot of time discussing Linux, customizing our i3 setups along with Stephen and next thing you know - we had a trio consisting of you, Stephen and I - all messing around on our laptops, tweaking configurations and messing around with programming. You, specifically, had a very analytic mind in terms of solving problems. I recall you working tirelessly in your free time, whatever time you had seeing how much work we had in the first few years in our undergraduate Computer Science course, on Project Euler problems - and my word you had made it very far in solving many of those problems - something that had always amazed me. But it really came as no surprise, first the chess project written on paper, then this, it was just a clear sign of how the insides of your amazing brain worked. Real excellence 🧠️.
@@ -152,7 +152,7 @@ And:
 TODO: Sort out image URL
 
 {{<bruh>}}
-<img src="/skipppr.jpeg" width=322.5 height=480 style="float:right;gap">
+<img src="/img/thanks_again/skipppr.jpeg" width=322.5 height=480 style="float:right;gap">
 {{</bruh>}}
 
 You must have been one of the first people that I met during my first year of Computer Science in Stellenbosch who I really clicked with in the academic sense of the word. We all make friends with whom we have similar interests but some just have a more focused interest that aligns with one's self - that is who you were Skiqqy (previously known as _"Skippy"_). Our first conversation took place whilst sitting on the floor outside NARGA D waiting for our first tutorial session on a hot summers day. Somehow we got onto discussing what languages we did at school, Java was thrown around and Delphi as well (which was definitely your favorite ;)).
@@ -163,7 +163,7 @@ I really remember just how smart you were with mathematics. Sitting every day in
 
 {{<bruh>}}
 <center>\}
-    <img src="/stephen_2.png" width=477 height=240 style="gap">
+    <img src="/img/thanks_again/stephen_2.png" width=477 height=240 style="gap">
     <p>We were always on a call with each other given any time of the day</p>
 </center>
 {{</bruh>}}
@@ -184,7 +184,7 @@ TODO: Sort out image URLs
 
 {{<bruh>}}
 <center>
-    <img src="/gamers.jpg" width=636 height=424>
+    <img src="/img/thanks_again/gamers.jpg" width=636 height=424>
     <p>(pictured left-to-right) Sigma Woman, Sigma Man, Sigma Man, Sigma Woman</p>
 </center>
 {{</bruh>}}
@@ -208,7 +208,7 @@ If I may indulge you in the following quotes about our friend group (or _family_
 TODO: Sort out image URLs
 
 {{<bruh>}}
-<img src="/lauren_1.jpeg" width=258 height=330 style="float:left;gap">
+<img src="/img/thanks_again/lauren_1.jpeg" width=258 height=330 style="float:left;gap">
 {{</bruh>}}
 
 Our friendship is like the original `a.out` [Binary Executable Format](https://en.wikipedia.org/wiki/A.out) for Linux in the 21st century era - _"We somehow shouldn't be compatible but we are"_. On a serious note though having a friend with a witty sense of humor and ability to take and make some rather "based" jokes is something I did not think I would have originally found within you. Having crossed paths with each other during some rather momentous moments in my life (what we refer to as dealing with people from Gauteng) it really showed that you had a good heart and were there to help me through tough times. Your care and affection are greatly appreciated and hold a special place in my heart.
@@ -218,7 +218,7 @@ However, as they say _"tough times never last, only tough people last"_ because 
 TODO: Sort out image URLs
 
 {{<bruh>}}
-<img src="/lauren_2.jpeg" width=180 height=320 style="float:right;gap">
+<img src="/img/thanks_again/lauren_2.jpeg" width=180 height=320 style="float:right;gap">
 {{</bruh>}}
 
 The evenings we spent in the lab working tirelessly on some stupid algos assignment to which we'd easily find the answer too after pulling one of these bad boys off:
@@ -232,7 +232,7 @@ Was a great way to bond with each other - a friendship forged in fire - in this 
 TODO: Sort out image URLs
 
 {{<bruh>}}
-<img src="/lauren_3.jpg" width=310 height=232 style="float:left;gap">
+<img src="/img/thanks_again/lauren_3.jpg" width=310 height=232 style="float:left;gap">
 {{</bruh>}}
 
 I think that is what I got a lot out of this friendship, something different. A person who was very different to me and had a lot to open my mind to. The amount of utter shenanigans we were able to get up to at this university actually astounds me. If it wasn't [LARPing](https://en.wikipedia.org/wiki/Live_action_role-playing_game) as a married couple (failing to convince people that Ben was our son, however, to my disappointment) to skirt around some seating restrictions then it is playing 4D chess (instead of checkers) with people and damn it was a fun time.
@@ -246,7 +246,7 @@ On a more serious note though. We didn't always have to agree Lauren, we just ha
 TODO: Sort out image URLs
 
 {{<bruh>}}
-<img src="/line.jpeg" width=189 height=400 style="float:left;gap">
+<img src="/img/thanks_again/line.jpeg" width=189 height=400 style="float:left;gap">
 {{</bruh>}}
 
 I remember the first time meeting you Line, it was you I and Lauren all in the lab sitting at our desks and we were all so encumbered just by the difficulty of _Digital Image Processing_ (DIP) and its assignments. Now, I say that with a grain of salt knowing just how **much harder** Computer Vision would be and that DIP would be seen as a cakewalk effectively. Through this time period which was only within the first few weeks of university I recall sitting opposite you in the "hot seats" table in the lab and us having small talk now ands then about our work and assignments. Even through what I thought ws the really tough times - the beginning of Algos, you were always there to re-assure me and cheer me on as I made progress through the theoretical work that I so much struggled with. It was these early days which cemented in my head the good nature of who you were as a person - one of the most caring and in-touch souls I have ever come across. Never once did you do anyone wrong even when faced by those who did you wrong - you were a quiet hero but an extremely strong one at that - both mentally, emotionally and physically. Someone who is a dependable friend, always there and always complimentary. If someone accomplished something, got hired for a job, or just got a good mark even - you were someone that always complimented them and in my case - me - for such accomplishments. One would think that such a value is the baseline for being a good human being - and it is - but the amount of people I have come to know has shown that clearly these well-established set of principles, morals and virtues are apparently not so important. Thankfully, you **do** appreciate such ideals and it makes a great person out of you.
@@ -272,7 +272,7 @@ Your laughter, appreciation for humor and smile brings a lot of joy to those who
 TODO: Sort out image URLs
 
 {{<bruh>}}
-<img src="/alex_1.jpg" width=300 height=300 style="float:left;gap">
+<img src="/img/thanks_again/alex_1.jpg" width=300 height=300 style="float:left;gap">
 {{</bruh>}}
 
 This man is such a gentleman, a classy fellow. Nothing really can match the _panashe_, the so-called _je ne sais quoi_, of this individual - I mean just look at the photo. His hair, the way he grasps the glass and last but not least - his choice of beverage. This man makes his own gin - he is so cool, Aurum Madidus it is. The golden heart of this person is immeasurable, if it isn't helping me with Data Science (because God help me trying to do anything with KMeans and KNN clustering) then its giving me a taste of his amazing gin, playing the piano whilst I code away on my compiler in the most tranquil environment. Cultured aspects aside, this man has always been a supportive person with whom one could confide and seek advice - a person who understood exactly everything I could have possibly been going through - without even having to mention a single word.
@@ -285,14 +285,14 @@ I must say, you do really have one of the nicest and most "pimped out" computer 
 
 TODO: Sort out image URLs
 {{<bruh>}}
-<img src="/alex_2.jpeg" width=240 height=320 style="float:right;gap">
+<img src="/img/thanks_again/alex_2.jpeg" width=240 height=320 style="float:right;gap">
 {{</bruh>}}
 
 And with that very strong (and correct opinion - I am not even going to debate this with anyone - especially those who believe webapps are "moral") I knew that this guy is a _man amongst men_. This guy shares a view with me that we should strive to implement things efficiently and that just because you can do something because you have a lot of RAM (and Alex has 96 gigabytes of it) doesn't mean you should be wasteful. It very much could have been the way you were brought up - if your parents say never waste food or money and make the most of it - which I get the feeling your 'rents would have done. Then one can easily see why you have such a righetous and correct factual objective "opinion" (air quotes because it's a fact). You're going to be successful for that way of thinking man, not only in programming but in general. For the programming side of things you will end up writing code that you really can be proud of - where you know the inner workings or how optimizations can successfully be applied - and not just haphazardly applied as some people do who lack the understanding of how the nitty gritty of certain libraries and algorithmns work.
 
 TODO: Sort out image URLs
 {{<bruh>}}
-<img src="/alex_3.jpeg" width=240 height=320 style="float:left;gap">
+<img src="/img/thanks_again/alex_3.jpeg" width=240 height=320 style="float:left;gap">
 {{</bruh>}}
 
 Very few people are willing to let you come over at any time to their appartement to chill or relax - I have never had a friend more welcoming in that sense. I must commend you for that Mr Mouton - you were raised well. Your welcoming spirit is something I haven't come across in many of my friends in that sense - it is greatly appreciated ans meant more to me than it may have seemed. Not to mention all the banter that would follow as soon as Rhyn arrived late in the evening and then all of the funny stories started coming out - those were great and my word still make me chuckle to this day but are forever sealed from leaving my lips. Your love for cooking interesting vegetable-stews and sharing this with your friends is definately a highlight of coming over - I always leave feeling incredibly healthy.
@@ -305,7 +305,7 @@ Very few people are willing to let you come over at any time to their appartemen
 
 TODO: Sort out image URLs
 {{<bruh>}}
-<img src="/simeon_1.jpeg" width=426.6666666666667 height=320 style="float:right;gap">
+<img src="/img/thanks_again/simeon_1.jpeg" width=426.6666666666667 height=320 style="float:right;gap">
 {{</bruh>}}
 
 This man could honestly be the next president of South Africa if he really wanted to - but as he had made a better choice to study something in the sciences (something free of scandals) I will not be able to refer to him as President-elect Boschoff for the remainder of this peace.
@@ -314,7 +314,7 @@ Simeon, you are an upstanding individual - an image of what a good gentlemanly p
 
 TODO: Sort out image URLs
 {{<bruh>}}
-<img src="/simeon_2.jpeg" width=239 height=320.66667 style="float:left;gap">
+<img src="/img/thanks_again/simeon_2.jpeg" width=239 height=320.66667 style="float:left;gap">
 {{</bruh>}}
 
 Between this and what follows there was a great amount of influence you had over me, especially when it came to your wealth of knowledge on modern technology. For starters, my addiction to my mechanical keyboard would have never begun if it was not for you to convince me to purchase one of these bad boys. I had so much fun learning all about these things with you and you really opened my eyes to a world I knew nothing about - I have had so much joy just merely _discussing_ these things with you and it has a special place in my memory you and your taste in _"timeless pieces"_ such as your Pagani Design watch - you're a tasteful and cultured fellow - I can give you that.
@@ -325,7 +325,7 @@ TODO: Sort out image URLs
 
 {{<bruh>}}
 <center>
-    <img src="/simeon_3.jpeg" width=355 height=252>
+    <img src="/img/thanks_again/simeon_3.jpeg" width=355 height=252>
     <p>The <i>"Tres amigos"</i> in Huis Marais 🇿🇦️</p>
 </center>
 {{</bruh>}}
@@ -334,7 +334,7 @@ TODO: Sort out image URLs
 
 TODO: Sort out image URLs
 {{<bruh>}}
-<img src="/thee_boyd_mfkin_kane_1.jpg" width=239 height=320.66667 style="float:left;gap">
+<img src="/img/thanks_again/thee_boyd_mfkin_kane_1.jpg" width=239 height=320.66667 style="float:left;gap">
 {{</bruh>}}
 
 ~~Boyd Kane~~ _**Thee** Boyd Kane_ (I am so sorry for ever having mispronounced your name - it should be a crime to not prefix it with **Thee**) you my friend are an amazing individual. You were one of my first friends at the beginning of the year, I infact remember meeting you for one of the very first times after I broke off things with that lady from Gauteng (~~a story for another day~~ you'll never hear it - it's too cringe) and the support you offered me is a memory that has stuck in my head as one of _"the bros"_ who was there for me in a one of my _"tough times"_ - things like this stay with me because I know now who was there for me in those times and it's an underappreciated act of goodwill I think - so I just want you to know how much I appreciated that. In any case, let's not spend much time thinking about anything Gauteng-related because I might just declare the Cape independent if I continue on this tangent.
@@ -342,7 +342,7 @@ TODO: Sort out image URLs
 TODO: Sort out image URLs
 
 {{<bruh>}}
-<img src="/boyd_2.jpg" width=270 height=460 style="float:right;gap">
+<img src="/img/thanks_again/boyd_2.jpg" width=270 height=460 style="float:right;gap">
 {{</bruh>}}
 
 The thing I found with you that I never found with anyone else, was your love for programming and the intricacies of it. You loved low-level programming, if anything you went lower than I did with your amazing honors project which incorporated electronic egineering, microcontrollers and interfacing with them. Your love for Rust - an inherently systems-based programming language. You were in the same league as I and it resulted in endless discussions between you and I about the things we were working on at any given time. Your ability to keep a keen ear on the topic at hand that I was discussing and your interest in the topic was something I never really experienced in any of my friends before - and not to blame them - not everyone loves compilers, but finding this quality within you was something I enjoyed so much about coming into the lab everyday and seeing you walk through that door. You were always keen to ask me how things were going with my compiler or in general, always listened and a lot of the time gave great advice and thought deeply alongside me on certain problems. That sort of in depth interest on the same subject matter as mine was something I hadn't found in a person before - and there's so much of it we still need to share toghether.
@@ -355,7 +355,7 @@ You're an amazing computer programmer, your skills are really unmatched and when
 
 TODO: Sort out image URLs
 {{<bruh>}}
-<img src="/ben.jpg" width=259 height=354 style="float:right;gap">
+<img src="/img/thanks_again/ben.jpg" width=259 height=354 style="float:right;gap">
 {{</bruh>}}
 
 > _"Halo Sir I am under water, please help me"_
@@ -375,7 +375,7 @@ You're a smart fella, and a good lad. Thanks boet.
 TODO: Sort out image URLs
 
 {{<bruh>}}
-<img src="/troy.jpg" width=426.6666666666667 height=320 style="float:left;gap">
+<img src="/img/thanks_again/troy.jpg" width=426.6666666666667 height=320 style="float:left;gap">
 {{</bruh>}}
 
 TODO: Do this section
@@ -437,7 +437,7 @@ What do you get when you have three people that can be classified into these thr
 TODO: Image URL
 
 {{<bruh>}}
-<img src="/justin.jpeg" width=350 height=250 style="float:right;gap">
+<img src="/img/thanks_again/justin.jpeg" width=350 height=250 style="float:right;gap">
 {{</bruh>}}
 
 Firstly, Justin De Witt, you my friend are an amazing person. I hadn't done any sort of exercise since leaving school, just some walking here and there on Coetzenberg and then you came along and suggested I join the rock climbing club - or as I have come to affectionately refer to it as _"The Rockies 🪨️"_. I didn't know how well I would do the first time I went bouldering but with your presence and complimentary ways you made it such that every time I climbed I kept pushing myself, trying to do better - finding new routes and then accomplishing them. This trait of yours to give people such confidence boosts - even in the worst of times - is something I very much appreciate about you. You helped me grow as a person and showed me what kindness, compassion and growth looks like.
@@ -447,7 +447,7 @@ Firstly, Justin De Witt, you my friend are an amazing person. I hadn't done any 
 TODO: Image URL
 
 {{<bruh>}}
-<img src="/anke.jpeg" width=350 height=250 style="float:left;gap">
+<img src="/img/thanks_again/anke.jpeg" width=350 height=250 style="float:left;gap">
 {{</bruh>}}
 
 Anke, despite having noticed your red hair in first year where you stood out in the whole class of Maths 114 students, I never actually spoke to you. I just observed a first year girl go from having no long board to _having_ a long board. Many years went by and when I had my "re-union with Justin" and you came to hang in the lab with us, often enjoying a glass of wine with us two we started chatting and got very much along. This should have never come to a surprise to me seeing as we were both Worcesterites - i.e. being born in Worcester - something I hold very near and dear to my heart in a prideful sense. Many evenings in the lab with the rockies proved to be great fun, going to Holy Dough for a nice slice of Pizza, buying a great set of vinyl records from you and then climbing in the evening topped off with a bowl of rice from Pandas.
@@ -455,7 +455,7 @@ Anke, despite having noticed your red hair in first year where you stood out in 
 TODO: Image URL
 
 {{<bruh>}}
-<img src="/berndahrt.jpeg" width=400 height=225 style="float:right;gap">
+<img src="/img/thanks_again/berndahrt.jpeg" width=400 height=225 style="float:right;gap">
 {{</bruh>}}
 
 ### Bernartd Steyn
