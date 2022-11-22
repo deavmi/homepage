@@ -352,7 +352,6 @@ You're an amazing computer programmer, your skills are really unmatched and when
 
 ## Ben Valkin
 
-TODO: Sort out image URLs
 {{<bruh>}}
 <img src="/img/thanks_again/ben.jpg" width=259 height=354 style="float:right;gap">
 {{</bruh>}}
@@ -360,6 +359,10 @@ TODO: Sort out image URLs
 > _"Halo Sir I am under water, please help me"_
 
 Such famous words uttered by a great orator, Barack Obama. Ben, my friend, I have a lot to say about you. You are indeed what I would refer to as _**an interesting fella**_. Although you hailed from Wits you seem to have fit just right in with the Stellenbosch crowd or, atleast, the comoyuter scientists (we're all a quirky weird bunch, as much as I'd like to deny being a "quirky male" ~~I prefer schizo male~~). I, for one, am very happy for this because I think that if I hadn't met you that I would have had a very different year. There are many reasons for this ranging from your sense of humor, your knowledge on topics that I mutually enjoyed and also your willingness to always help me out when in need. These are characteristics that are not necessarily that common or at least to the degree you portrayed them in is not common. Your endless support in that manner has been greatly appreciated.
+
+{{<bruh>}}
+<img src="/img/thanks_again/ben2.JPG" width=259 height=354 style="float:left;gap">
+{{</bruh>}}
 
 As for mutually shared topics of interests well, there's a lot we could go over. Firstly, your knowledge of memes is amazing, it's at the very least on par with my knowledge which is great but at the very most you posess Telegram Channel operator energy. Somehow you had the ability to recount every single utterance of every popular meme in what I found hilarious and sometimes quite amazing at the amount of intellectual "meme capacity" that you had.
 
