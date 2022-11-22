@@ -353,7 +353,7 @@ You're an amazing computer programmer, your skills are really unmatched and when
 ## Ben Valkin
 
 {{<bruh>}}
-<img src="/img/thanks_again/ben.jpg" width=259 height=354 style="float:right;gap">
+<img src="/img/thanks_again/ben.jpg" width=259 height=354 style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 > _"Halo Sir I am under water, please help me"_
@@ -363,7 +363,7 @@ Such famous words uttered by a great orator, Barack Obama. Ben, my friend, I hav
 As for mutually shared topics of interests well, there's a lot we could go over. Firstly, your knowledge of memes is amazing, it's at the very least on par with my knowledge which is great but at the very most you posess Telegram Channel operator energy. Somehow you had the ability to recount every single utterance of every popular meme in what I found hilarious and sometimes quite amazing at the amount of intellectual "meme capacity" that you had.
 
 {{<bruh>}}
-<img src="/img/thanks_again/ben2.JPG" width=50% height=50% style="float:left;gap">
+<img src="/img/thanks_again/ben2.JPG" width=50% height=50% style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
 Secondly, and more importantly, you had a lot of knowledge on programming at a level that I could identify with. Design patterns and principles, networking, writing big systems and the list goes on. You and I both had passion projects that we worked tirelessly on for a long time and I was able to bond with you over that. We loved dicusssing programming languages and your favourite C#. There were, however, some stumblings blocks to this friendship as with any there is. Specifically, your use of the `var` keyword was rather worrying, I felt as if I had lost a part of my friend to the luciferian type-inference shills but as with people we all share slight differences in our closely knit friend groups - without these differences we would all be the same and would ould be left to make us any different from one another then.
