@@ -443,13 +443,13 @@ What do you get when you have three people that can be classified into these thr
 ### Justin Dewitt
 
 {{<bruh>}}
-<img src="/img/thanks_again/justin.jpeg" width=350 height=250 style="float:right;gap">
+<img src="/img/thanks_again/justin.jpeg" width=350 height=250 style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 Firstly, Justin De Witt, you my friend are an amazing person. I hadn't done any sort of exercise since leaving school, just some walking here and there on Coetzenberg and then you came along and suggested I join the rock climbing club - or as I have come to affectionately refer to it as _"The Rockies 🪨️"_. I didn't know how well I would do the first time I went bouldering but with your presence and complimentary ways you made it such that every time I climbed I kept pushing myself, trying to do better - finding new routes and then accomplishing them. This trait of yours to give people such confidence boosts - even in the worst of times - is something I very much appreciate about you. You helped me grow as a person and showed me what kindness, compassion and growth looks like.
 
 {{<bruh>}}
-<img src="/img/thanks_again/justin_2.jpg" width=30% height=30% style="float:left;gap">
+<img src="/img/thanks_again/justin_2.jpg" width=30% height=30% style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
 Second to all of these good characteristics you're a solid person, and that isn't just what my dad thought of you when you came over for dinner. No, it's something I have given thought to for quite some time. You put your head down, you get through the work ahead of you and you hardly complain - unless it's about getting good marks for Data Science `;)`. Being keen to socialise with me in the middle of no-where (Worcester) when many others would either not be able to make it was something that I could really identify with, Worcester is a quiet place but you make it a little less so and the next few weeks I hope to make the most of it in that regard with you.
@@ -462,7 +462,7 @@ Both of our interests couldn't be further apart but we do both share a passion t
 TODO: Image URL
 
 {{<bruh>}}
-<img src="/img/thanks_again/anke.jpeg" width=350 height=250 style="float:left;gap">
+<img src="/img/thanks_again/anke.jpeg" width=350 height=250 style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
 Anke, despite having noticed your red hair in first year where you stood out in the whole class of Maths 114 students, I never actually spoke to you. I just observed a first year girl go from having no long board to _having_ a long board. Many years went by and when I had my "re-union with Justin" and you came to hang in the lab with us, often enjoying a glass of wine with us two we started chatting and got very much along. This should have never come to a surprise to me seeing as we were both Worcesterites - i.e. being born in Worcester - something I hold very near and dear to my heart in a prideful sense. Many evenings in the lab with the rockies proved to be great fun, going to Holy Dough for a nice slice of Pizza, buying a great set of vinyl records from you and then climbing in the evening topped off with a bowl of rice from Pandas.
@@ -470,7 +470,7 @@ Anke, despite having noticed your red hair in first year where you stood out in 
 TODO: Image URL
 
 {{<bruh>}}
-<img src="/img/thanks_again/berndahrt.jpeg" width=400 height=225 style="float:right;gap">
+<img src="/img/thanks_again/berndahrt.jpeg" width=400 height=225 style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 ### Bernartd Steyn
