@@ -332,9 +332,8 @@ TODO: Sort out image URLs
 
 ## Boyd Kane
 
-TODO: Sort out image URLs
 {{<bruh>}}
-<img src="/img/thanks_again/thee_boyd_mfkin_kane_1.jpg" width=239 height=320.66667 style="float:left;gap">
+<img src="/img/thanks_again/boyd.JPG" width=50% height=50% style="float:left;gap">
 {{</bruh>}}
 
 ~~Boyd Kane~~ _**Thee** Boyd Kane_ (I am so sorry for ever having mispronounced your name - it should be a crime to not prefix it with **Thee**) you my friend are an amazing individual. You were one of my first friends at the beginning of the year, I infact remember meeting you for one of the very first times after I broke off things with that lady from Gauteng (~~a story for another day~~ you'll never hear it - it's too cringe) and the support you offered me is a memory that has stuck in my head as one of _"the bros"_ who was there for me in a one of my _"tough times"_ - things like this stay with me because I know now who was there for me in those times and it's an underappreciated act of goodwill I think - so I just want you to know how much I appreciated that. In any case, let's not spend much time thinking about anything Gauteng-related because I might just declare the Cape independent if I continue on this tangent.
