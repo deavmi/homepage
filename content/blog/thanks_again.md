@@ -34,7 +34,7 @@ The singly most important people in my life, always there for me and me for them
 TODO: Sort out image (and URL)
 
 {{<bruh>}}
-<img src="/img/thanks_again/gisele.jpeg" width=320 height=426 style="float:right;gap">
+<img src="/img/thanks_again/gisele.jpeg" width=320 height=426 style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 Mom, mommie, or _minnie 🐭️_ - whatever the various names I have given you over the past many years together from my childhood till now. One thing has remained persistent and that is your love - your _unconditional love_. From growing up, I remember everyday in preschool assembly when all the toddlers would get together and sit on their mom or dads lap at the beginning of shool with the morning assembly. After the fist 5 minutes the mother would then leave but I didn't want you to leave - I would get sad - I would cry a little and so you stayed for the whole full 30 minutes or so. I remember those events so vividly in my memory - such a strong memory of the bond and love we have for each other. Just thinking of that touches my heart so much - it's a memory I thought I had never could recall from so many years ago but I am happy I still can - because **love is forever ❤️**. Those beginning years at Lanner House really were such beautiful memories of mine, if it wasn't for your tireless work on things such as the Parents-Teacher association (PTA) at Lanner House, organizing lessons for me at occupational therapy (OT), getting me tested for ADHD, helping me through my high school career at Bridge House with extra maths lessons - the driving from Franschoek and back - just so much that was expressed in what many don't directly see as direct displays of affection but **ought to** be seen as such.
@@ -60,7 +60,7 @@ Ideas wine, vinyls, driving me to school, swimming me, jumping jack in the box w
 TODO: Sort out image (and URL)
 
 {{<bruh>}}
-<img src="/img/thanks_again/vaughan.jpeg" width=320 height=426 style="float:right;gap">
+<img src="/img/thanks_again/vaughan.jpeg" width=320 height=426 style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 My brother Vaughan, you are the my other half - somebody I always looked up to when growing up. You were the big boy in my world and you could always defend me from any harm or bullies that came my way, I always knew my brother would be there to protect me and there have been times where I was comforted by you are you ability to do so - I never felt afraid or at least you made me know I was safe.
@@ -111,7 +111,7 @@ You guys were literally my first CS friends who _really_ and I mean _**really**_
 TODO: Sort out image URL
 
 {{<bruh>}}
-<img src="/img/thanks_again/gustav_1.jpg" width=342 height=228 style="float:right;gap">
+<img src="/img/thanks_again/gustav_1.jpg" width=342 height=228 style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 You'll always appear on this list man - you're the most reliable of all my friends, always there and always willing to work together on something. Any day of the week I would be working either at the lab or (most of the time) at my apartment and I would receive a call from you as a surprise that you were in town that evening and wanted to drop by. I would never resist such an invitation as we always had so much to catch up on during those times you came to hang over. This, however, is a recent past - our friendship goes back many many years and I can only honor that by going all the way back to the origin story of our friendship.
@@ -119,7 +119,7 @@ You'll always appear on this list man - you're the most reliable of all my frien
 TODO: Sort out image URL
 
 {{<bruh>}}
-<img src="/img/thanks_again/gustav_2.jpeg" width=266 height=355 style="float:left;gap">
+<img src="/img/thanks_again/gustav_2.jpeg" width=266 height=355 style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
 
@@ -128,7 +128,7 @@ The first time we met must have been near the end of our second semester in firs
 TODO: Sort out image (and URL)
 
 {{<bruh>}}
-<img src="/img/thanks_again/gustav_fr.jpeg" width=426 height=320 style="float:right;gap">
+<img src="/img/thanks_again/gustav_fr.jpeg" width=426 height=320 style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 It was from this day onwards that we became best buddies or _"chommies"_, we'd spend a lot of time discussing Linux, customizing our i3 setups along with Stephen and next thing you know - we had a trio consisting of you, Stephen and I - all messing around on our laptops, tweaking configurations and messing around with programming. You, specifically, had a very analytic mind in terms of solving problems. I recall you working tirelessly in your free time, whatever time you had seeing how much work we had in the first few years in our undergraduate Computer Science course, on Project Euler problems - and my word you had made it very far in solving many of those problems - something that had always amazed me. But it really came as no surprise, first the chess project written on paper, then this, it was just a clear sign of how the insides of your amazing brain worked. Real excellence 🧠️.
@@ -152,7 +152,7 @@ And:
 TODO: Sort out image URL
 
 {{<bruh>}}
-<img src="/img/thanks_again/skipppr.jpeg" width=322.5 height=480 style="float:right;gap">
+<img src="/img/thanks_again/skipppr.jpeg" width=322.5 height=480 style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 You must have been one of the first people that I met during my first year of Computer Science in Stellenbosch who I really clicked with in the academic sense of the word. We all make friends with whom we have similar interests but some just have a more focused interest that aligns with one's self - that is who you were Skiqqy (previously known as _"Skippy"_). Our first conversation took place whilst sitting on the floor outside NARGA D waiting for our first tutorial session on a hot summers day. Somehow we got onto discussing what languages we did at school, Java was thrown around and Delphi as well (which was definitely your favorite ;)).
@@ -208,7 +208,7 @@ If I may indulge you in the following quotes about our friend group (or _family_
 TODO: Sort out image URLs
 
 {{<bruh>}}
-<img src="/img/thanks_again/lauren_1.jpeg" width=258 height=330 style="float:left;gap">
+<img src="/img/thanks_again/lauren_1.jpeg" width=258 height=330 style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
 Our friendship is like the original `a.out` [Binary Executable Format](https://en.wikipedia.org/wiki/A.out) for Linux in the 21st century era - _"We somehow shouldn't be compatible but we are"_. On a serious note though having a friend with a witty sense of humor and ability to take and make some rather "based" jokes is something I did not think I would have originally found within you. Having crossed paths with each other during some rather momentous moments in my life (what we refer to as dealing with people from Gauteng) it really showed that you had a good heart and were there to help me through tough times. Your care and affection are greatly appreciated and hold a special place in my heart.
@@ -218,7 +218,7 @@ However, as they say _"tough times never last, only tough people last"_ because 
 TODO: Sort out image URLs
 
 {{<bruh>}}
-<img src="/img/thanks_again/lauren_2.jpeg" width=180 height=320 style="float:right;gap">
+<img src="/img/thanks_again/lauren_2.jpeg" width=180 height=320 style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 The evenings we spent in the lab working tirelessly on some stupid algos assignment to which we'd easily find the answer too after pulling one of these bad boys off:
@@ -232,7 +232,7 @@ Was a great way to bond with each other - a friendship forged in fire - in this 
 TODO: Sort out image URLs
 
 {{<bruh>}}
-<img src="/img/thanks_again/lauren_3.jpg" width=310 height=232 style="float:left;gap">
+<img src="/img/thanks_again/lauren_3.jpg" width=310 height=232 style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
 I think that is what I got a lot out of this friendship, something different. A person who was very different to me and had a lot to open my mind to. The amount of utter shenanigans we were able to get up to at this university actually astounds me. If it wasn't [LARPing](https://en.wikipedia.org/wiki/Live_action_role-playing_game) as a married couple (failing to convince people that Ben was our son, however, to my disappointment) to skirt around some seating restrictions then it is playing 4D chess (instead of checkers) with people and damn it was a fun time.
