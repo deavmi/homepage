@@ -269,10 +269,8 @@ Your laughter, appreciation for humor and smile brings a lot of joy to those who
 
 ### Alexander Mouton
 
-TODO: Sort out image URLs
-
 {{<bruh>}}
-<img src="/img/thanks_again/alex_1.jpg" width=300 height=300 style="float:left;gap">
+<img src="/img/thanks_again/alex_1.jpg" width=300 height=300 style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
 This man is such a gentleman, a classy fellow. Nothing really can match the _panashe_, the so-called _je ne sais quoi_, of this individual - I mean just look at the photo. His hair, the way he grasps the glass and last but not least - his choice of beverage. This man makes his own gin - he is so cool, Aurum Madidus it is. The golden heart of this person is immeasurable, if it isn't helping me with Data Science (because God help me trying to do anything with KMeans and KNN clustering) then its giving me a taste of his amazing gin, playing the piano whilst I code away on my compiler in the most tranquil environment. Cultured aspects aside, this man has always been a supportive person with whom one could confide and seek advice - a person who understood exactly everything I could have possibly been going through - without even having to mention a single word.
@@ -283,16 +281,15 @@ I must say, you do really have one of the nicest and most "pimped out" computer 
 
 > Alex: "Yes. Yes I do"
 
-TODO: Sort out image URLs
 {{<bruh>}}
-<img src="/img/thanks_again/alex_2.jpeg" width=240 height=320 style="float:right;gap">
+<img src="/img/thanks_again/alex_2.jpeg" width=240 height=320 style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 And with that very strong (and correct opinion - I am not even going to debate this with anyone - especially those who believe webapps are "moral") I knew that this guy is a _man amongst men_. This guy shares a view with me that we should strive to implement things efficiently and that just because you can do something because you have a lot of RAM (and Alex has 96 gigabytes of it) doesn't mean you should be wasteful. It very much could have been the way you were brought up - if your parents say never waste food or money and make the most of it - which I get the feeling your 'rents would have done. Then one can easily see why you have such a righetous and correct factual objective "opinion" (air quotes because it's a fact). You're going to be successful for that way of thinking man, not only in programming but in general. For the programming side of things you will end up writing code that you really can be proud of - where you know the inner workings or how optimizations can successfully be applied - and not just haphazardly applied as some people do who lack the understanding of how the nitty gritty of certain libraries and algorithmns work.
 
 TODO: Sort out image URLs
 {{<bruh>}}
-<img src="/img/thanks_again/alex_3.jpeg" width=240 height=320 style="float:left;gap">
+<img src="/img/thanks_again/alex_3.jpeg" width=240 height=320 style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
 Very few people are willing to let you come over at any time to their appartement to chill or relax - I have never had a friend more welcoming in that sense. I must commend you for that Mr Mouton - you were raised well. Your welcoming spirit is something I haven't come across in many of my friends in that sense - it is greatly appreciated ans meant more to me than it may have seemed. Not to mention all the banter that would follow as soon as Rhyn arrived late in the evening and then all of the funny stories started coming out - those were great and my word still make me chuckle to this day but are forever sealed from leaving my lips. Your love for cooking interesting vegetable-stews and sharing this with your friends is definately a highlight of coming over - I always leave feeling incredibly healthy.
@@ -303,18 +300,16 @@ Very few people are willing to let you come over at any time to their appartemen
 
 ## Simeon Boshoff
 
-TODO: Sort out image URLs
 {{<bruh>}}
-<img src="/img/thanks_again/simeon_1.jpeg" width=426.6666666666667 height=320 style="float:right;gap">
+<img src="/img/thanks_again/simeon_1.jpeg" width=426.6666666666667 height=320 style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 This man could honestly be the next president of South Africa if he really wanted to - but as he had made a better choice to study something in the sciences (something free of scandals) I will not be able to refer to him as President-elect Boschoff for the remainder of this peace.
 
 Simeon, you are an upstanding individual - an image of what a good gentlemanly person should aspire to be. You're hard working, diplomatic and incredibly kind - the amount of time you put into organizing various activities whether it be the Illusive Computer Science hoodies, to having to deal with the problems at Huis Marais, and countless other things that were separate from your degree of which was very demanding as well - you somehow came out of it with a postgraduate degree, a job and an amazing set of friends. You really pushed yourself, never once without a smile on your face and always willing to spend time with those close to you - I appreciated this always. Having your presence in the lab was always great. The countless times we spent together poking fun at certain (hint: _"A volcano is a rupture in the crust of a planetary-mass object, such as Earth, that allows hot lava, volcanic ash, and gases to escape from a magma chamber below the surface."_) GP drivers in our class in the name of fun were very memorable events.
 
-TODO: Sort out image URLs
 {{<bruh>}}
-<img src="/img/thanks_again/simeon_2.jpeg" width=239 height=320.66667 style="float:left;gap">
+<img src="/img/thanks_again/simeon_2.jpeg" width=239 height=320.66667 style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
 Between this and what follows there was a great amount of influence you had over me, especially when it came to your wealth of knowledge on modern technology. For starters, my addiction to my mechanical keyboard would have never begun if it was not for you to convince me to purchase one of these bad boys. I had so much fun learning all about these things with you and you really opened my eyes to a world I knew nothing about - I have had so much joy just merely _discussing_ these things with you and it has a special place in my memory you and your taste in _"timeless pieces"_ such as your Pagani Design watch - you're a tasteful and cultured fellow - I can give you that.
