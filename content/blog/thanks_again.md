@@ -377,7 +377,7 @@ You're a smart fella, and a good lad. Thanks boet.
 TODO: Sort out image URLs
 
 {{<bruh>}}
-<img src="/img/thanks_again/troy.jpg" width=426.6666666666667 height=320 style="float:left;gap;margin-right:10px">
+<img src="/img/thanks_again/troy.jpg" width=426.6666666666667 height=320 style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
 Now I could have easily copied and pasted the kind words I had written for you [last year](../thank_you_all/) but what would be the point in that - I have an endless amount that I could write about us two - because as each year progresses it only gets better. What is _it_? Its our friendship - one that is coming up on roughly 4 years now and one that I will never forget. In could very much have said within the early days of our friendship that it was like any other but as events had transpired down the line you were one of the very few friends who knew me well enough to help me through extremely pivotal moments in my life that, had you not been there, would have left me in a place of approach the _downwards spiral_. What I learnt from you was a good idea that had so easily left my headspace - the idea of moderacy - a time and a place but most importantly the size of a portion. Now, this may seem obvious to many but to me at a certain stage in life hearing these words was all I really needed. Needless to say, I hedge a lot if not most of the value I put on our friendship on those very few dark chapters in my life. I could go on to say a lot about who you are as a person - and oh boy I will - but I want you to know that was the truest form of friendship. No beach house, wine will buy me those moments again in life - but your solid heart of gold and principled take on life taught me how to be an actual man.
