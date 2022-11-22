@@ -321,8 +321,6 @@ Between this and what follows there was a great amount of influence you had over
 
 Whenever I wanted to strike up a conversation with you about something in current affairs I always felt your brought something to the table - something well thought through and many a time it would be things I was totally unaware of. You are a well-spoken individual and it really shows - there's a reason my parents think so highly of you - and so do **I**. There's a lot that we really did at a core level share and have in common when it came to some of our core beliefs and it was always comforting to know I could come to someone with my ideas, worries or inner thoughts that would be able to understand them, stay just the way you are man. You're an extremely likeable person with a strong character and set of values and highly respectable.
 
-TODO: Sort out image URLs
-
 {{<bruh>}}
 <center>
     <img src="/img/thanks_again/simeon_3.jpeg" width=355 height=252>
@@ -333,15 +331,13 @@ TODO: Sort out image URLs
 ## Boyd Kane
 
 {{<bruh>}}
-<img src="/img/thanks_again/boyd.JPG" width=50% height=50% style="float:left;gap">
+<img src="/img/thanks_again/boyd.JPG" width=50% height=50% style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
 ~~Boyd Kane~~ _**Thee** Boyd Kane_ (I am so sorry for ever having mispronounced your name - it should be a crime to not prefix it with **Thee**) you my friend are an amazing individual. You were one of my first friends at the beginning of the year, I infact remember meeting you for one of the very first times after I broke off things with that lady from Gauteng (~~a story for another day~~ you'll never hear it - it's too cringe) and the support you offered me is a memory that has stuck in my head as one of _"the bros"_ who was there for me in a one of my _"tough times"_ - things like this stay with me because I know now who was there for me in those times and it's an underappreciated act of goodwill I think - so I just want you to know how much I appreciated that. In any case, let's not spend much time thinking about anything Gauteng-related because I might just declare the Cape independent if I continue on this tangent.
 
-TODO: Sort out image URLs
-
 {{<bruh>}}
-<img src="/img/thanks_again/boyd_2.jpg" width=270 height=460 style="float:right;gap">
+<img src="/img/thanks_again/boyd_2.jpg" width=270 height=460 style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 The thing I found with you that I never found with anyone else, was your love for programming and the intricacies of it. You loved low-level programming, if anything you went lower than I did with your amazing honors project which incorporated electronic egineering, microcontrollers and interfacing with them. Your love for Rust - an inherently systems-based programming language. You were in the same league as I and it resulted in endless discussions between you and I about the things we were working on at any given time. Your ability to keep a keen ear on the topic at hand that I was discussing and your interest in the topic was something I never really experienced in any of my friends before - and not to blame them - not everyone loves compilers, but finding this quality within you was something I enjoyed so much about coming into the lab everyday and seeing you walk through that door. You were always keen to ask me how things were going with my compiler or in general, always listened and a lot of the time gave great advice and thought deeply alongside me on certain problems. That sort of in depth interest on the same subject matter as mine was something I hadn't found in a person before - and there's so much of it we still need to share toghether.
