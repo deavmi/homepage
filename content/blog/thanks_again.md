@@ -161,7 +161,7 @@ From there somehow I mentioned my newfound love I had with the D programming lan
 I really remember just how smart you were with mathematics. Sitting every day in Mathematics 114 where you had such a clear grasp on set theory and limits - whilst I didn't (probably also because I wasn't paying much attention). Later on, we study in the Physics library (of which I had no access to but Nicholas would give to me now and then) and I remember those pivotal 20 minutes before an exam where we would all ask each other questions and then equally confuse one another either by misunderstanding or one of us being wrong (can't be me ;)).
 
 {{<bruh>}}
-<center>\}
+<center>
     <img src="/img/thanks_again/stephen_2.png" width=477 height=240 style="gap">
     <p>We were always on a call with each other given any time of the day</p>
 </center>
