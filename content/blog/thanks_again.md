@@ -2,7 +2,7 @@
 title: Thank you all, again
 author: Tristan B. Kildaire
 date: 2022-10-23
-draft: true
+draft: false
 ---
 
 # This is the last time
