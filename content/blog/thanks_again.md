@@ -361,7 +361,7 @@ You're a good lad Troy, a hard worker, extremely principled and you have always 
 ## Daniel Barrish
 
 {{<bruh>}}
-<img src="/img/thanks_again/daniel.JPG" width=50% height=50% style="float:left;gap;margin-right:20px">
+<img src="/img/thanks_again/daniel.JPG" width=45% height=45% style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 > ~~"I was playing chess whilst y'all were playing checkers" ~Daniel~~
