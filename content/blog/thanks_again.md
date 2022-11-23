@@ -257,7 +257,6 @@ I must say, you do really have one of the nicest and most "pimped out" computer 
 
 And with that very strong (and correct opinion - I am not even going to debate this with anyone - especially those who believe webapps are "moral") I knew that this guy is a _man amongst men_. This guy shares a view with me that we should strive to implement things efficiently and that just because you can do something because you have a lot of RAM (and Alex has 96 gigabytes of it) doesn't mean you should be wasteful. It very much could have been the way you were brought up - if your parents say never waste food or money and make the most of it - which I get the feeling your 'rents would have done. Then one can easily see why you have such a righetous and correct factual objective "opinion" (air quotes because it's a fact). You're going to be successful for that way of thinking man, not only in programming but in general. For the programming side of things you will end up writing code that you really can be proud of - where you know the inner workings or how optimizations can successfully be applied - and not just haphazardly applied as some people do who lack the understanding of how the nitty gritty of certain libraries and algorithmns work.
 
-TODO: Sort out image URLs
 {{<bruh>}}
 <img src="/img/thanks_again/alex_3.jpeg" width=240 height=320 style="float:left;gap;margin-right:20px">
 {{</bruh>}}
