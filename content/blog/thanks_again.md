@@ -411,11 +411,9 @@ Anke, despite having noticed your red hair in first year where you stood out in 
 <img src="/img/thanks_again/berndahrt.jpeg" width=400 height=225 style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
-### Bernartd Steyn
+### Bernhardt Steyn
 
-**TODO:** Check that name is spelt correctly
-
-Despite all the banter that we shared toghether at every possible moment when we were within a few meters of each other, whether it be in the lab, whilst demi-ing (when we were meant to be answering those annoying questions) or at the climbing wall. I enjoyed the banter a lot but more what I enjoyed was that past all of it you were always a person interested in programming. Wanting to know how my compiler was going, how work was going and also sharing your experiences with programming projects of your own with me. Despite me maybe not making it very obvious to you, I really appreciated the company and talks we had together. It was always a welcome conversation whatever we chatted to each other about and was a reason for me to look forward to the CS244 demi-ing sessions each Friday - despite others not necessartily holding that patciular sentiment. Dankie Bernardt.
+Despite all the banter that we shared toghether at every possible moment when we were within a few meters of each other, whether it be in the lab, whilst demi-ing (when we were meant to be answering those annoying questions) or at the climbing wall. I enjoyed the banter a lot but more what I enjoyed was that past all of it you were always a person interested in programming. Wanting to know how my compiler was going, how work was going and also sharing your experiences with programming projects of your own with me. Despite me maybe not making it very obvious to you, I really appreciated the company and talks we had together. It was always a welcome conversation whatever we chatted to each other about and was a reason for me to look forward to the CS244 demi-ing sessions each Friday - despite others not necessartily holding that patciular sentiment. Dankie Bernhardt.
 
 ---
 
