@@ -77,6 +77,8 @@ The other thing was your artistic nature, the drawings you you had produced over
 
 You're who I have always looked up to Vaughan, you're my big brother after all - you make me proud. Whether it's physics/chemistry-Vaughan, artist-Vaughan or guitarist/bassist-Vaughan - you leave me amazed.
 
+---
+
 # The fellas
 
 There's a whole lot of you and honestly it's about time we just go heads-first into this and take a deep dive into the very eclectic bunch of people I had met/worked with this year.
@@ -155,6 +157,8 @@ Somehow when it came to computer programming, I somehow had luckily found someon
 Lastly, someone who looked at themselves and was committed to bettering themselves - no matter the cost. That's you Stephen and keep on pushing forward in that direction because your eventual destination is only a few blocks down the line.
 
 I can't wait to start work with you next year - it's going to be a blast man! _Just like good old times_
+
+---
 
 ## The gamers
 
@@ -264,6 +268,8 @@ Very few people are willing to let you come over at any time to their appartemen
 <br>
 {{</bruh>}}
 
+---
+
 ## Simeon Boshoff
 
 {{<bruh>}}
@@ -352,6 +358,8 @@ Now, sob story aside, let's talk about this `f e l l a`. So, I met this absolute
 As the years progressed we passed our second year and went into our third, at this time I was still carrying the weight of failing Applied Mathematics 144 (basically school physics - which I never did) on my shoulders kinda like sisyphus (the rock pushing fella), so we had our hands tide in the sense we were all rather busy _but_ that never stopped us from having fun. We had multiple evenings we'd spend at each other's flats or at Thomas's, drinking a good glass or two of red 🍷️ and eating some good steak that this chef, Troy himself, so well prepared. If it wasn't that, it was this absolute gentleman providing my chronical-pedestrian-self with transport within Stellenbosch and a year ago all the way to Buffel's Bay - a trip which without him would not be a memory at all. We have had such great times toghether and despite our disagreements on things (which honestly isn't all too much) we have a bond which I cannot say exists with any of my other friends. A type of comradarie, an implicit trust or understanding - a friendship that has been put through tests but at the end we stood side by side and both came out as genuine proper gentlemen.
 
 You're a good lad Troy, a hard worker, extremely principled and you have always had my back _even when I didn't know it_ - I'll never take it forgranted.
+
+---
 
 ## The climbers
 
