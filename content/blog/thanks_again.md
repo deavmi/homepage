@@ -392,6 +392,13 @@ You're my favourite Gautenger - stay awesome girl.
 
 ## The climbers
 
+{{<bruh>}}
+<center>
+    <img src="/img/thanks_again/rockies.jpeg" width=60% height=60% style="gap">
+    <p>The rock climbing crew</p>
+</center>
+{{</bruh>}}
+
 What do you get when you have three people that can be classified into these three classes:
 
 1. A Gautenger
