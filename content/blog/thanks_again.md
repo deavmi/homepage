@@ -370,6 +370,24 @@ Now as much as I wish the quote above was real, it sadly isn't. Daniel, I met yo
 
 You have a kind heart, always smiling and make any event a fun one! ♟️
 
+## Erin Van ~~Der~~ Den Heever
+
+{{<bruh>}}
+<img src="/img/thanks_again/erin.JPG" width=45% height=45% style="float:left;gap;margin-right:20px">
+{{</bruh>}}
+
+Despite not knowing what your actual lastname was for about half of the year I was able to remember that - along with some other dates in January `;)`. Erin, despite us being like the two poles of a neodimium magnet somehow we found a shred of commonality between each other which I think can be summed up to the following things:
+
+1. Respect
+2. Understanding
+3. Humor
+
+That's all you need for a friendship to exist and I cherish all of the ~~violent~~ non-violent communications we exchanged in _"heated?! debates"_ during Computing and Society. You're definately one of the squad - you're a cool fella (I don't know what the correct pronounces for fella is, forgive me). Your style of coding was, umh, interesting - pretty sure it was the first time I saw a list comprehension within a list comprehension. If anything, I think you should be hired immediately by the Eclipse Language Server team because you would eaisly be able to optimize their refactoring engine because that code legit looked like Assembly if Assembly was Python 3.
+
+Jokes aside, you are a hard working person - your honors project shows that. You never give up and most importantly you were always willing to lend a helping hand - something I will never forget. All of those modules over the last year were stressful and I am happy to have befriended someone who never gave up. Best of all you didn't just work hard but you partied harder - your taste in music definately says that. Maybe, it's time I buy a Maneskin LP.
+
+You're my favourite Gautenger - stay awesome girl.
+
 ---
 
 ## The climbers
