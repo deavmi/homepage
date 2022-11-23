@@ -412,7 +412,7 @@ Despite all the banter that we shared toghether at every possible moment when we
 
 {{<bruh>}}
 <center>
-    <img src="/img/thanks_again/masters.jpg" width=50% height=50%>
+    <img src="/img/thanks_again/masters.jpg" width=65% height=65%>
 </center>
 {{</bruh>}}
 
