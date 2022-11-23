@@ -8,8 +8,7 @@ draft: false
 # This is the last time
 
 Goodbyes are hard enough as they are but knowing that you are only saying goodbye to a select few is sometimes easier despite the
-fact everyone is unique and irreplaceable. It is for this reason, compared to the last time I posted something along these lines with
-[](), that I write this knowing something truly amazing is coming to an end.
+fact everyone is unique and irreplaceable. It is for this reason, compared to the last time I posted something [along these lines](../thank_you_all/), that I write this knowing something truly amazing is coming to an end.
 
 This year had started off with me only knowing those who would be studying with me, namely Troy and Thomas. I really had no idea what
 to expect and was nervous as one would be being placed in a postgraduate program where the responsibilities are greater and you
