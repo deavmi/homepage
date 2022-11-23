@@ -61,7 +61,7 @@ Ideas wine, vinyls, driving me to school, swimming me, jumping jack in the box w
 TODO: Sort out image (and URL)
 
 {{<bruh>}}
-<img src="/img/thanks_again/vaughan.jpeg" width=320 height=426 style="float:right;gap;margin-left:20px">
+<img src="/img/thanks_again/vaughan.jpeg" width=50% height=50% style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 My brother Vaughan, you are the my other half - somebody I always looked up to when growing up. You were the big boy in my world and you could always defend me from any harm or bullies that came my way, I always knew my brother would be there to protect me and there have been times where I was comforted by you are you ability to do so - I never felt afraid or at least you made me know I was safe.
@@ -70,27 +70,13 @@ Although nothing has changed in that regard, the bullies have disappeared but I 
 
 Writing this I realise that that was the core tenant of what bonds us toghether but I couldn't help but think of all the memories that come to my head whilst sitting here, in the lab writing this during my free time. I can recall us as toddlers at Lanner House and the early days of MXiT and the funny stuff you showed me there. We can go back even _earlier than that_ to the days of us both sitting keenly ionfront of the one computer you shared with myself, mom and you and how I would watch you for hours play games like Myst, Sonic the Hedgehog 3D, Psychonauts, that "Ninja game that I can't remember", Spore and the works. You had such a creative mind and I was enthralled by your einterest both artistically and in a logical sense. You spent a lot of time figuring out puzzles in that game Myst, I recall you had a little notebookm where you drew these beautiful diagrams that emulaed what we saw on screen and worked out how to unlock these bejewled locks, interact with machinery and try to get things to work. From a young time you had the ability to logically solve things if you just put your mind to it - this point I make as it is important for later. I remmeber the days of sitting infront of the compyter and having to wait near 20 minutes for a flash movie to load, and how we would watch things on Flashportal, Albino blacksheep and Newgrounds 10 times in a row just to make the most of that fact! Those were some of my best meorie with you Vaughan and I can't believe how fast it all just flew by but the great thing about memories is that I still remember being your little bro, sitting cross legged on a chair next to you whilst younoperate the wizardy machinery that I would know to become a computer. And I have those memories stil with me, they make me smile when I think of all the cool games we played and sometimes naughty animations we watched. **I hope you remember these memories with as much love as I do too ❤️!**
 
-As every decade goes by it seems you gain a new set of major skills in a field completely different to the ones you have known to come before and my word you impress me Vaughan - beyond anything I could ever accomplish. Firstly, it started with your art - which was - simply amazing. I can rmember all of the things you have darwn, painted and digitally illustrated over the years and they are just amazing. Needless to say, your ability to do 2D/3D animation and actually make something look realitsic, create detailed textures, weight painting (which is a hrder thing to do in that realm) and still come up top with your rsults has always simply left me astouned and impressed but more importantly **proud**.
+As every decade goes by it seems you gain a new set of major skills in a field completely different to the ones you have known to come before and my word you impress me Vaughan - beyond anything I could ever accomplish. Firstly, it started with your art - which was - simply amazing. I can remember all of the things you have drawn, painted and digitally illustrated over the years and they are just amazing. Needless to say, your ability to do 2D/3D animation and actually make something look realistic, create detailed textures, weight painting (which is a harder thing to do in that realm) and still come up top with your results has always simply left me astounded and impressed but more importantly **proud**.
 
-Then as time went on your interested in pysics, most likely pshed by its use within 3D animation physics and game engines, started to rgow alongside with chemistry and boy did your interest peak when you started looking into maths. You really did the impossible Vuaghan, or rather I should say the _possibe_ as anything is possible if you put your mind to it. You went to re-write your mathematics papers such that you could have mathematics on your final matric instead of mathematics literacy and you excelled in those two papers you wrote. You then enrolled at UNISA and took mathematics, physics and chmeistry. Your firsdt year you did amazingly well and you are on track form doing so again this year once again, coming top in your classd multiple times, helping fellow classmates out because **you** enjoy helpging people and they way you teach is simply amazing. Your knowledge on the subject matter has always intrigued me and you always kno whot to answwer any of my dumb questions regardfing physics 😉️ - seeing just how bad my grasp on it or chemistry for that matter and matghematics is.
+Then as time went on your interested in physics, most likely pushed by its use within 3D animation physics and game engines, started to rgow alongside with chemistry and boy did your interest peak when you started looking into maths. You really did the impossible Vuaghan, or rather I should say the _possibe_ as anything is possible if you put your mind to it. You went to re-write your mathematics papers such that you could have mathematics on your final matric instead of mathematics literacy and you excelled in those two papers you wrote. You then enrolled at UNISA and took mathematics, physics and chmeistry. Your firsdt year you did amazingly well and you are on track form doing so again this year once again, coming top in your classd multiple times, helping fellow classmates out because **you** enjoy helpging people and they way you teach is simply amazing. Your knowledge on the subject matter has always intrigued me and you always kno whot to answwer any of my dumb questions regardfing physics 😉️ - seeing just how bad my grasp on it or chemistry for that matter and matghematics is.
 
 The other thing was your artistic nature, the drawings you you had produced over the years were some of the coolest pieces of artwork I had seen during my whole time at school whilst you were taking art classes. There are countless cases of times you have astounded me with the works you have done, all the way starting from the art class lessons we used to have as kids each Friday after school, through junior and high school - your works not only got better but they got more detailed as time went along. ENtering into your animation diploma you did at _The Animation School_ your two-dimensional (and later three-deimensional) works would keep me enthralled with both your creativity but also technical skill and ability as a lot of that work required more than just creativity - you had both of these highly sought after traits.
 
-TODO: FInish this up
-
-{{<bruh>}}
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-{{</bruh>}}
+You're who I have always looked up to Vaughan, you're my big brother after all - you make me proud. Whether it's physics/chemistry-Vaughan, artist-Vaughan or guitarist/bassist-Vaughan - you leave me amazed.
 
 # The fellas
 
@@ -109,15 +95,11 @@ You guys were literally my first CS friends who _really_ and I mean _**really**_
 
 ### Gustav Meyer
 
-TODO: Sort out image URL
-
 {{<bruh>}}
 <img src="/img/thanks_again/gustav_1.jpg" width=342 height=228 style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 You'll always appear on this list man - you're the most reliable of all my friends, always there and always willing to work together on something. Any day of the week I would be working either at the lab or (most of the time) at my apartment and I would receive a call from you as a surprise that you were in town that evening and wanted to drop by. I would never resist such an invitation as we always had so much to catch up on during those times you came to hang over. This, however, is a recent past - our friendship goes back many many years and I can only honor that by going all the way back to the origin story of our friendship.
-
-TODO: Sort out image URL
 
 {{<bruh>}}
 <img src="/img/thanks_again/gustav_2.jpeg" width=266 height=355 style="float:left;gap;margin-right:20px">
@@ -125,8 +107,6 @@ TODO: Sort out image URL
 
 
 The first time we met must have been near the end of our second semester in first year. We all had to work on that obstacle chess project, which for the uninitiated was a chess program with trapdoors, bombs, walls and so forth. I recall you showing me your version on your laptop which had these cool blood animations which would appear when a chess piece was captured - it was at that moment that I realized this guy takes this work seriously - he's a real programmer. Now, this wasn't my first encounter with you, I recall you discussing regular expressions quite a lot and how you tried using them to implement your entire chess game. _"That's crazy man - that's crazy"_, was what I was thinking whilst you continued on explaining this WILD method of implementing the matching of board states or something along those lines. Now, I was a little intimidated - I cannot lie. Here I sit on my chair in front of this tall, groot-gebou Afrikaner (10+ points) talking about regular expressions enthusiastically (as one would if they did regex in their sleep) (another 10+ points) and lastly about how it was used to implement a crucial part of the game play (1000000+ points). From this moment I knew this guy had to be my friend - he was just so smart and interested in what he was studying - something not very present at a grand scale within a single university class in my opinion at least. He was a nerd - like me and I wanted that in my friends.
-
-TODO: Sort out image (and URL)
 
 {{<bruh>}}
 <img src="/img/thanks_again/gustav_fr.jpeg" width=426 height=320 style="float:right;gap;margin-left:20px">
