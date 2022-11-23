@@ -2,6 +2,7 @@
 title: Birchwood - A sane IRC framework for D
 author: Tristan B. V. Kildaire
 date: 2022-11-12
+draft: true
 ---
 
 ## Why IRC though?

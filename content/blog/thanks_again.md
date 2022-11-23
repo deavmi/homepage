@@ -2,6 +2,7 @@
 title: Thank you all, again
 author: Tristan B. Kildaire
 date: 2022-10-23
+draft: true
 ---
 
 # This is the last time
@@ -362,8 +363,6 @@ I really enjoyed the time we spent toghether hiking up Coetzenberg in the early 
 You're a smart fella, and a good lad. Thanks boet.
 
 ## Troy Verwayen
-
-TODO: Sort out image URLs
 
 {{<bruh>}}
 <img src="/img/thanks_again/troy.jpg" width=426.6666666666667 height=320 style="float:left;gap;margin-right:20px">
