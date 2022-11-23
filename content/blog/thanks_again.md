@@ -372,7 +372,7 @@ Now I could have easily copied and pasted the kind words I had written for you [
 
 You're a man of steal Troy - it took me time to understand it all but I am happy I had a mentor like you to come to terms with reality. For anyone else reading this, it may seem inoccuous but to summarize. This man stood by his words, instead of just saying one thing and doing another. He was a gentleman and best of all he could balance that with actually having a good sense of humor. It's as if he found the perfect ratio of them both - he then passed me this knowledge and I keep it in my head everyday.
 
-Now, sob story aside, let's talk about this `f e l l a`.
+Now, sob story aside, let's talk about this `f e l l a`. So, I met this absolute chad-maxxing individual/sir/mr during Operations Research 214 - remember that annoying graph theory class. Now, khalahari aside, I first was unsure how to approach this fella. Firstly he was sitting at the same table as me with his headphones on and using his iPad to take notes. Already, I then knew this man was a serious fella - he had no emotions on his face - in a sense he was Bateman-maxxing before I even knew that was a thing. Man probably had Dineplan open with a premium account to get a reservation at Dorsia's but I digress.
 
 TODO: Do this section
 
