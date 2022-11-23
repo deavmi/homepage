@@ -1,6 +1,6 @@
 ---
-title: Thank you all, again
-author: Tristan B. Kildaire
+title: The end of an era
+author: Tristan B. V. Kildaire
 date: 2022-10-23
 draft: false
 ---
