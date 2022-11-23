@@ -419,7 +419,7 @@ Despite all the banter that we shared toghether at every possible moment when we
 I need to say somrthing about these individuals - I cannot that _not_ say anything about these two people (Luan and Kevin photobombing Simeon and I). Now, I have a history with these two people as they started studying all the way back in the good old days of '18 and were there all the way out until they decided to graduate and leave me, the bozo, behind to try pass AM 144. In any case, these people were some solid Club 45'ers and remain so till this day - for those who don't know - you never will - it was an exclusive club and sorry you won't be invited to our own version of the _Bohemian Grove_.
 
 {{<bruh>}}
-<img src="/img/thanks_again/luan.JPG" width=40% height=40% style="float:left;gap;margin-right:20px">
+<img src="/img/thanks_again/luan.JPG" width=45% height=45% style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
 Now, these two people would stay couped up in that tiny little masters cabinet along with Dylan doing only God-knows what for hours upon hours each day - sometimes venturing into the lab to come say hi or grab a coffee - which would then turn into Luan talking to Lauren Hayward in Afrikaans for a solid 20 minutes whilst Hayward maintains she isn't Afrikaans despite being from the Eastern Cape (I don't know, it's some republic or something, I live in the _Free State of Chadas_ which consists of the entirety of the Cape Colony and solely the town of Giyani in Limpopo), therefore I have no idea what goes on in EC despite it having sand - so it's probably like Namibia/Northern Cape/Constantia House Wive's sense of humor (seflde ding).
