@@ -150,8 +150,6 @@ And:
 
 ### Stephen Cochrane (_skiqqy_)
 
-TODO: Sort out image URL
-
 {{<bruh>}}
 <img src="/img/thanks_again/skipppr.jpeg" width=322.5 height=480 style="float:right;gap;margin-left:20px">
 {{</bruh>}}
@@ -177,11 +175,9 @@ Somehow when it came to computer programming, I somehow had luckily found someon
 
 Lastly, someone who looked at themselves and was committed to bettering themselves - no matter the cost. That's you Stephen and keep on pushing forward in that direction because your eventual destination is only a few blocks down the line.
 
-TODO: Mention I'm going to be working with him next year
+I can't wait to start work with you next year - it's going to be a blast man! _Just like good old times_
 
 ## The gamers
-
-TODO: Sort out image URLs
 
 {{<bruh>}}
 <center>
@@ -206,8 +202,6 @@ If I may indulge you in the following quotes about our friend group (or _family_
 
 ### Lauren Abrahall
 
-TODO: Sort out image URLs
-
 {{<bruh>}}
 <img src="/img/thanks_again/lauren_1.jpeg" width=258 height=330 style="float:left;gap;margin-right:20px">
 {{</bruh>}}
@@ -215,8 +209,6 @@ TODO: Sort out image URLs
 Our friendship is like the original `a.out` [Binary Executable Format](https://en.wikipedia.org/wiki/A.out) for Linux in the 21st century era - _"We somehow shouldn't be compatible but we are"_. On a serious note though having a friend with a witty sense of humor and ability to take and make some rather "based" jokes is something I did not think I would have originally found within you. Having crossed paths with each other during some rather momentous moments in my life (what we refer to as dealing with people from Gauteng) it really showed that you had a good heart and were there to help me through tough times. Your care and affection are greatly appreciated and hold a special place in my heart.
 
 However, as they say _"tough times never last, only tough people last"_ because boy did we have a blast in that first semester of university - never had I had such an absolute blast of a time. If it wasn't the huis danses (and Alex carrying Liné on the red carpet), then it was our dance moves and pasta cooking coupled with explosive red wine staining your jeans and my room's cealing. Spending time together, listening to music on my turn table and having a really good time was much appreciated. To sum it up you're a kind hearted individual with a huge amount of courage (and a good aim on a 9mm) and very smart (thanks for the CV help).
-
-TODO: Sort out image URLs
 
 {{<bruh>}}
 <img src="/img/thanks_again/lauren_2.jpeg" width=180 height=320 style="float:right;gap;margin-left:20px">
@@ -229,8 +221,6 @@ throw new RuntimeException(System.in.readLine());
 ```
 
 Was a great way to bond with each other - a friendship forged in fire - in this case the fire that was Willem's incessant releasing of assignments. Just when you thought you'd completed all three programming assignments he would hit you with another. Thankfully you and I were both prepared, you with you immense knowledge and me pitching up to the lab with a corkscrew and a bottle of Clint's finest wine. _"Rainbow's End Cabernet Franc Lauren?"_ to which you'd answer _"Just a little bit"_, and by the end of the evening I would have finished the whole bottle. The fond memories I have doing those assignments with you in first semester wasn't because I saw you simply as a friend who would be able to assist me with my work, no, I saw it as time spent having fun together because we'd be able to have to much fun over the mundane things before, after and in-between. Didn't have dinner before we started working? Well, let's go over to my flat and cook some pasta, listen to some Il Mondo and have some wine before we head back to the lab to push out some work for the evening. When the work go a little bit too hard and we needed a break then we chatted for a long time, browsing the internet and sometimes discussing rather _interesting_ things - to say the least.
-
-TODO: Sort out image URLs
 
 {{<bruh>}}
 <img src="/img/thanks_again/lauren_3.jpg" width=310 height=232 style="float:left;gap;margin-right:20px">
@@ -255,8 +245,6 @@ I remember the first time meeting you Line, it was you I and Lauren all in the l
 {{</bruh>}}
 
 All of this is great but what is _really_ of importance is your enjoyment of knives - now I would call myself a firearms _enjoyer_, hell even a _coinnisuer_ but I would never be able to put myself on the same level as that of someone who is a knives enthusiast - and oh boy did you have a very tasteful selection of them. Needless to say, you're a real bok for sport and it's refreshing having a friend who is always keen to get a bruise on their knee once in a while, whether it be rock climbing or any of the things one can get up to in the great outdoors of Stellenbosch.
-
-**TODO:** Maybe add some more here
 
 Your laughter, appreciation for humor and smile brings a lot of joy to those who surround you in their lives - and I'm one of those people. It's small things like this, not necessarily grandiose things such as wealth and so forth, that I appreciate in people and I do admit that one can underappreciate them sometimes but we need to count our blessings that good people with caring intensions are out there and that they're the people we ought to surround ourselves with.
 
