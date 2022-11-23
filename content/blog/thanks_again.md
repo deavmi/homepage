@@ -397,3 +397,15 @@ Anke, despite having noticed your red hair in first year where you stood out in 
 **TODO:** Check that name is spelt correctly
 
 Despite all the banter that we shared toghether at every possible moment when we were within a few meters of each other, whether it be in the lab, whilst demi-ing (when we were meant to be answering those annoying questions) or at the climbing wall. I enjoyed the banter a lot but more what I enjoyed was that past all of it you were always a person interested in programming. Wanting to know how my compiler was going, how work was going and also sharing your experiences with programming projects of your own with me. Despite me maybe not making it very obvious to you, I really appreciated the company and talks we had together. It was always a welcome conversation whatever we chatted to each other about and was a reason for me to look forward to the CS244 demi-ing sessions each Friday - despite others not necessartily holding that patciular sentiment. Dankie Bernardt.
+
+---
+
+## The masters students
+
+{{<bruh>}}
+<center>
+    <img src="/img/thanks_again/masters.jpg" width=50% height=50%>
+</center>
+{{</bruh>}}
+
+I need to say somrthing about these individuals - I cannot that _not_ say anything about these two people (Luan and Kevin photobombing Simeon and I). Now, I have a history with these two people as they started studying all the way back in the good old days of '18 and were there all the way out until they decided to graduate and leave me, the bozo, behind to try pass AM 144. In any case, these people were some solid Club 45'ers and remain so till this day - for those who don't know - you never will - it was an exclusive club and sorry you won't be invited to our own version of the _Bohemian Grove_.
