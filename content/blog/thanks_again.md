@@ -1,7 +1,7 @@
 ---
 title: The end of an era
 author: Tristan B. V. Kildaire
-date: 2022-10-23
+date: 2021-10-23
 draft: false
 ---
 
