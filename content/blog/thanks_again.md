@@ -358,6 +358,18 @@ As the years progressed we passed our second year and went into our third, at th
 
 You're a good lad Troy, a hard worker, extremely principled and you have always had my back _even when I didn't know it_ - I'll never take it forgranted.
 
+## Daniel Barrish
+
+{{<bruh>}}
+<img src="/img/thanks_again/daniel.JPG" width=60% height=60% style="float:left;gap;margin-right:20px">
+{{</bruh>}}
+
+> ~~"I was playing chess whilst y'all were playing checkers" ~Daniel~~
+
+Now as much as I wish the quote above was real, it sadly isn't. Daniel, I met you in the second semester of this year and I am very glad I did. Although you had been stuidying with us all along I never really saw you in the first semester but as soon as networking came around and we needed to mark demos, invigilate exams and check exam answers we formed a good bond. It's been a short time toghether but it's a friendship I wish to continue. You have a great sense of humor (some would say you are a "based inidvidual/fella") and you're just an all around good guy. You're [very smart](https://searx.tuxcloud.net/search) - there is no question about that and I am happy to have befriended some one that, like me, has a passion. Keep at it man - you're going places and stay true to yourself.
+
+You have a kind heart, always smiling and make any event a fun one! ♟️
+
 ---
 
 ## The climbers
