@@ -5,7 +5,7 @@ date: 2022-11-28
 ---
 
 {{<bruh>}}
-<img src="/projects/eventy/logo.png" width=20% height=20% style="float:right;gap;margin-left:20px">
+<img src="/projects/eventy/logo.png" width=10% height=10% style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 This is a rather quick fix for Eventy that I have made with the `v0.4.3` release. It should improve performance and technically lower the load average. This is due to the removal of the event-loop which would periodically (configurable or using `yield`)
