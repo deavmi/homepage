@@ -47,6 +47,12 @@ The only way I can pay you back mom, is by making you proud - and that is a vent
 
 ## Dad
 
+Papa, my dad, you have been the strong leading force in the household - something I believe can only work with a likewise strong mother but not without both. You are the ying to the yang in that sense. I can go all the way back into the past to recount all of the very fond memories I have of you as a child - certainly there are many of them which are my favorites. The days when it was just the two of us by the house in Worcester and you'd suggest that rather than boil in the heat at home we could take a little day trip to Hermanus near the ocean for a break from it all - walk the promenade with all its art and then put the cherry on top with a good lunch at either a seafood restaurant or an Italian one (of which we both enjoy 🍕️). When the weather wasn't in our favor and the rain was pouring down then a drive down to Brandwacht's rivier every year would be something very memorable seeing the water flood the river (and once vene breaking it, rsulting a re-routing of traffic of all tthe farmers living on that side of the Breede Vallei) and the beautiful leaves falling down on the ground.
+
+These almost _ritualistic_ ventures of ours are things I hold very near to myself, and as for the Brandwacht drives we still haven't let that one go - which goes to show how important it is to you and I. The only difference now is that sometimes I'm the one driving and you're in the passenger seat.
+
+> _"Times have changed but somethings never change - I am happy to still have these rituals or ours not resort to only being memories but rather a process of **making memories**"_
+
 TODO: Sort out image (and URL)
 
 TODO: Add image
