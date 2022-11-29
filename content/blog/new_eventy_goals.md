@@ -53,7 +53,54 @@ promise.await()
 ---
 
 This would then block on bith **T1** and **T2** until the signal handler registered for events of type `1` (recall our `new Event(1)`)
-finishes.
+finishes. A timeout can be given, ~~in such a case we should probably return a boolean `false` if a timeout occured, `true` if not - meaning the event finished~~ and an enum is returned indicating either a timeout, unblocked from successful execution or unblcoked because there was an error in the signal handler (we will need to investigate indicating this last one well).
+
+### `then(Event e)`
+
+THe `then(Event)` method should provide the ability to chain another `Event`, in this case `e`, upon completion of the signal handler
+for the original event. This, however, might require we do things a little differently.
+
+We might need a method to create the promise, without executing it, such that we can perform such chaining.
+
+```d
+// Create the promise first of all
+Event myEvent = new Event(1);
+Promise promise1 = engine.promise(myEvent);
+
+// Create another event
+Event myEvent2 = new Event(2);
+
+// Upon completion og `myEvent` by whatever signal handler it uses
+// then execute the given `myEvent2` by its respective signal handler
+promise1.then(myEvent2);
+```
+
+This should firstly, create the first `Event`, then create a `Promise` (`promise1`). Then we create the second `Event`,
+and chain that to `promise1` (internally the `.then(Event)` call will also create a `Promise` for us.
+
+The `.then(Event)` returns another promise (call it _`promise2`_).
+
+---
+
+One should setup their awaits before the next step (very important or else the dispatcher may not find any waiting threads in the `Engine`'s queues):
+
+```d
+// Thread 1
+promise1.await();
+
+// Thread 2
+promise1.await();
+```
+
+---
+
+But now we need to `emit(Promise)` which will actually begin execution:
+
+```d
+engine.emit(promise1);
+```
+
+This will then start the whole system.
 
 # Implementation
 
@@ -69,4 +116,17 @@ is called we need to immediately create a `Promise` object that is associated wi
 When it comes to the calls to `await()` on multiple threads, such as our example with **T1** and **T2**, we will need to, via the `Promise` class somehow access the `Engine` class. This can be accomplished by a private non-static (staic could be done but that might only allow a single Eventy instance then - I would rather keep everything self-contained) field that gets passed into the
 `Promise` constructor. This also indicates we should make the constructor private, such that only Eventy's `push(Event e)` can initialize a new `Promise` object. **The reason** for this is because we need to actually queue up a tuple of `(Promise, tid)` in
 the Engine such that when the signal handler completes it can send a signal to the matching promises, i.e. the ones where for-every tuple in the queue we have `tuple[0].e == dispatcher.e` (i.e. matching event), then we extratc the `tid` or _thread-id_ and we can
-use something like `pthread_sigqueue()` to signal and wake-up the sleeping **t1** and **T2** in their `await()` calls.
+use something like `pthread_sigqueue()` to signal and wake-up the sleeping **T1** and **T2** in their `await()` calls.
+
+### `DispatcherThread` notes
+
+The `DispatcherThread` will also now need access to the Event engine but this should be relatively easy (in the same vain as with the `Promise` private instantiation) - we can simply pass the `this` (referring to the `Engine` object) in.
+
+This dispatcher will have to lock the queue and do the search as discussed earlier.
+
+### Implementation of `then()`
+
+Most important thing here is that the `promise1.then(myEvent2)` refers to `promise1` which was created by `engine.promise(Event e)`, meaning `promise1` has access to the `Engine` (`this`) object. Therefore, when we construct the second _internal_ `promise2`, which
+represents the chained Event `myEvent2`, it can also easily be associated.
+
+The need for association is that upon the Dispatcher completing `promise1`, it will make a call to `engine.emit(promise2)`. This whole system then should technically work for infinitely chained events.
