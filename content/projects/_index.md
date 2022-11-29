@@ -101,6 +101,10 @@ A toy routing protocol I am working on. Aims to do next-hop routing with crypto-
 
 # libtun
 
+{{<bruh>}}
+<img src="/projects/libtun/logo.png" width=15% height=15% style="float:right">
+{{</bruh>}}
+
 A TUN/TAP OOP-based adapter for use in D-based applications
 
 * [Code repository](/git/deavmi/libtun)
