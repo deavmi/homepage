@@ -1,6 +1,6 @@
 ---
 title: New goals for the future Eventy v0.5.x
-author: Tristan B. V. Kildaire
+author: Tristan B. Velloza Kildaire
 date: 2022-11-29
 draft: false
 ---
