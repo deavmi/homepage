@@ -123,6 +123,10 @@ Pretty-printer for debug messages with VT100 colouring. Used in many of my proje
 
 # eventy
 
+{{<bruh>}}
+<img src="/projects/eventy/logo.png" width=15% height=15% style="float:right">
+{{</bruh>}}
+
 Event-loop system for signal handling systems.
 
 * [Code repository](/git/deavmi/eventy)
