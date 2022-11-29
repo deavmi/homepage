@@ -70,7 +70,7 @@ container format to hold arbitrary data, perhaps binary data, JSON etc.
 # BonoboNET
 
 {{<bruh>}}
-<img src="/projects/bonobonet/b_hash_logo.png" width=20% height=20% style="float:right">
+<img src="/projects/bonobonet/b_hash_logo.png" width=15% height=15% style="float:right">
 {{</bruh>}}
 
 An IRC network for hackers, programmers etc. Running on 3 servers currently, 1 in Lebanon, 1 in the UK and 2 in South Africa using `unrealircd`, provides atheme services for features such as `NickServ`, `ChanServ` and `HostServ`.
