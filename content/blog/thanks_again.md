@@ -47,11 +47,21 @@ The only way I can pay you back mom, is by making you proud - and that is a vent
 
 ## Dad
 
+{{<bruh>}}
+<img src="/img/thanks_again/clint.jpeg" width=50% height=50% style="float:right;gap;margin-left:20px">
+{{</bruh>}}
+
 Papa, my dad, you have been the strong leading force in the household - something I believe can only work with a likewise strong mother but not without both. You are the _ying to the yang_ ☯️ in that sense. I can go all the way back into the past to recount all of the very fond memories I have of you as a child - certainly there are many of them which are my favorites. The days when it was just the two of us by the house in Worcester and you'd suggest that rather than boil in the heat at home we could take a little day trip to Hermanus near the ocean for a break from it all - walk the promenade with all its art and then put the cherry on top with a good lunch at either a seafood restaurant or an Italian one (of which we both enjoy 🍕️). When the weather wasn't in our favor and the rain was pouring down then a drive down to Brandwacht's rivier every year would be something very memorable seeing the water flood the river (and once even breaking it, resulting a re-routing of traffic of all the farmers living on that side of the Breede Vallei) and the beautiful leaves falling down on the ground.
 
 These almost _ritualistic_ ventures of ours are things I hold very near to myself, and as for the Brandwacht drives we still haven't let that one go - which goes to show how important it is to you and I. The only difference now is that sometimes I'm the one driving and you're in the passenger seat.
 
 > _"Times have changed but somethings never change - I am happy to still have these rituals or ours not resort to only being memories but rather a process of **making memories**"_
+
+Going back further we did the stereotypical father-and-son things which to some of this confused generation may seem meaningless or easily replaceable by another figure but which I know is simply impossible - it's something only a father can offer. Whether it be the "jumping jack in the box; won't go back in the box" and then you proceeding to thrust me forward into the swimming pool, or the drives through Slanghoek, to Ceres or even a quick cheeky little stop at Die Eike. These are just a few of what an outsider may see as insignificant but we I hold very near and dear to my heart.
+
+Being a father means doing a lot for the family, whether it be the sheer amount of years you spent working in your business, opening new factories and dealing with the amount of stress associated with your average South African employee. You put a lot of effort into not just me but this whole entire family dad. You had a lot of uphill battles, but you beat them in the end - not only am I appreciative of these things dad but I am proud of you as well.
+
+**I'm proud to call you my dad 💪️**
 
 TODO: Sort out image (and URL)
 
