@@ -63,14 +63,6 @@ Being a father means doing a lot for the family, whether it be the sheer amount 
 
 **I'm proud to call you my dad 💪️**
 
-TODO: Sort out image (and URL)
-
-TODO: Add image
-
-TODO: Do Dad
-
-Ideas wine, vinyls, driving me to school, swimming me, jumping jack in the box won't go back in the box
-
 ## Vaughan
 
 TODO: Sort out image (and URL)
