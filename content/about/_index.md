@@ -3,7 +3,7 @@ title: About
 ---
 
 {{<bruh>}}
-<img src="/img/about_profile_picture.jpg" width=188 height=251 style="float:right;gap">
+<img src="/img/about_profile_picture.jpg" width=188 height=251 style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 If you have read the homepage section then you know pretty much all there is to know about me, anything here is just extra information and methods of getting a-hold of me.
