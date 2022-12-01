@@ -6,7 +6,7 @@ title: Home
 <!--
 	<img src="/img/profile_pic.jpg" width="250" hieght="250" style="float:right;gap">
 -->
-<img src="/img/profile_pic_grad.jpg" width="172.8" hieght="259" style="float:right;gap;margin-left:20px;margin-bottom:20px">
+<img src="/img/profile_pic_grad.jpg" width="172.8" hieght="259" style="float:right;gap;margin-left:10px;margin-bottom:10px">
 {{</bruh>}}
 
 <br>
