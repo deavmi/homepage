@@ -34,7 +34,7 @@ The singly most important people in my life, always there for me and me for them
 TODO: Sort out image (and URL)
 
 {{<bruh>}}
-<img src="/img/thanks_again/gisele.jpeg" width=320 height=426 style="float:right;gap;margin-left:20px">
+<img src="/img/thanks_again/gisele.jpeg" width=50% height=50% style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 Mom, mommie, or _minnie 🐭️_ - whatever the various names I have given you over the past many years together from my childhood till now. One thing has remained persistent and that is your love - your _unconditional love_. From growing up, I remember everyday in preschool assembly when all the toddlers would get together and sit on their mom or dads lap at the beginning of shool with the morning assembly. After the fist 5 minutes the mother would then leave but I didn't want you to leave - I would get sad - I would cry a little and so you stayed for the whole full 30 minutes or so. I remember those events so vividly in my memory - such a strong memory of the bond and love we have for each other. Just thinking of that touches my heart so much - it's a memory I thought I had never could recall from so many years ago but I am happy I still can - because **love is forever ❤️**. Those beginning years at Lanner House really were such beautiful memories of mine, if it wasn't for your tireless work on things such as the Parents-Teacher association (PTA) at Lanner House, organizing lessons for me at occupational therapy (OT), getting me tested for ADHD, helping me through my high school career at Bridge House with extra maths lessons - the driving from Franschoek and back - just so much that was expressed in what many don't directly see as direct displays of affection but **ought to** be seen as such.
