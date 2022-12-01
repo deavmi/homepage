@@ -55,19 +55,19 @@ An assortment of achievements can be found below:
 ### Delf A1
 
 {{<bruh>}}
-<a href="/img/cv/delf_a1_0.jpg"><img src="/img/cv/delf_a1_0.jpg" width=45% height=45% style="float:right;gap;margin-left:20px"></a>
+<a href="/img/cv/delf_a1_0.jpg"><img src="/img/cv/delf_a1_0.jpg" width=45% height=45% style="gap;margin-left:20px"></a>
 {{</bruh>}}
 
 {{<bruh>}}
-<a href="/img/cv/delf_a1_1.jpg"><img src="/img/cv/delf_a1_1.jpg" width=45% height=45% style="float:left;gap;margin-right:20px"></a>
+<a href="/img/cv/delf_a1_1.jpg"><img src="/img/cv/delf_a1_1.jpg" width=45% height=45% style="gap;margin-right:20px"></a>
 {{</bruh>}}
 
 ### Delf A2
 
 {{<bruh>}}
-<a href="/img/cv/delf_a2_0.jpg"><img src="/img/cv/delf_a2_0.jpg" width=45% height=45% style="float:right;gap;margin-left:20px"></a>
+<a href="/img/cv/delf_a2_0.jpg"><img src="/img/cv/delf_a2_0.jpg" width=45% height=45% style="gap;margin-left:20px"></a>
 {{</bruh>}}
 
 {{<bruh>}}
-<a href="/img/cv/delf_a2_1.jpg"><img src="/img/cv/delf_a2_1.jpg" width=45% height=45% style="float:left;gap;margin-right:20px"></a>
+<a href="/img/cv/delf_a2_1.jpg"><img src="/img/cv/delf_a2_1.jpg" width=45% height=45% style="gap;margin-right:20px"></a>
 {{</bruh>}}
