@@ -11,7 +11,7 @@ title: Home
 
 <br>
 
-# Tristan B. V. Kildaire
+# Tristan B. Velloza Kildaire
 
 I'm Tristan B. Kildaire (or _deavmi_ on the Internet) and I'm a computer programmer. I love tinkering around with all the bits of software
 that my computer runs but typically more on the low-level sides of things. I'm really interested in how operating systems work as a whole
@@ -23,7 +23,7 @@ I like a good glass of red wine and cheese. I have an avid enjoyment for music f
 
 ## Explore some more
 
-You can head over to the projects page to see what I am working on (or have worked on) and then once you're done there you can head on over to my blog to read some computer musings.
+You can head over to the [projects page](/projects) to see what I am working on (or have worked on) and then once you're done there you can head on over to my blog to read some computer musings.
 
 You can reach this site via many more [networks](networks/) (such as I2P and CRXN).
 
