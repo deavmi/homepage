@@ -4,13 +4,13 @@ title: Work
 
 ## Hiring status
 
-I start work next year at iPay. I will be completing my honours in Computer Science by year end of 2022.
+I start work next year (2022) at iPay. I will be completing my honours in Computer Science by year end of 2022.
 
 ## Certifications
 
 ### BSc Mathematics (Computer Science)
 
-I completed my undergraduate Bacholers of Science in Mathematics with a major in Computer Science in 2021.
+I completed my undergraduate Bachelors of Science in Mathematics with a major in Computer Science in 2021.
 
 ![](/img/cv/degree.jpeg)
 
@@ -24,15 +24,15 @@ You can see my marks throughout the 4 year period (2018 to 2021) below:
 <a href="/img/cv/academic_record_1.jpeg"><img src="/img/cv/academic_record_1.jpeg" width=45% height=45% style="float:left;gap;margin-right:20px"></a>
 {{</bruh>}}
 
-### BHons Computer Science
+<!-- ### BHons Computer Science
 
 I completed my honors degree in Computer Science in 2022.
 
 ![](/img/cv/honors.jpeg)
 
-You can see my marks throughout te 1 year period (2022) below:
+You can see my marks throughout the 1 year period (2022) below:
 
-![](/img/cv/academic_record_3.jpeg)
+![](/img/cv/academic_record_3.jpeg) -->
 
 ## Achievements
 
