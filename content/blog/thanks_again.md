@@ -65,8 +65,6 @@ Being a father means doing a lot for the family, whether it be the sheer amount 
 
 ## Vaughan
 
-TODO: Sort out image (and URL)
-
 {{<bruh>}}
 <img src="/img/thanks_again/vaughan.jpeg" width=50% height=50% style="float:right;gap;margin-left:20px">
 {{</bruh>}}
