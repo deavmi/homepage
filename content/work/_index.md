@@ -17,15 +17,12 @@ I completed my undergraduate Bacholers of Science in Mathematics with a major in
 You can see my marks throughout the 4 year period (2018 to 2021) below:
 
 {{<bruh>}}
-<img src="/img/cv/academic_record_0.jpeg" width=45% height=45% style="float:right;gap;margin-left:20px">
+<a href="/img/cv/academic_record_0.jpeg"><img src="/img/cv/academic_record_0.jpeg" width=45% height=45% style="float:right;gap;margin-left:20px"></a>
 {{</bruh>}}
 
 {{<bruh>}}
-<img src="/img/cv/academic_record_1.jpeg" width=45% height=45% style="float:left;gap;margin-right:20px">
+<a href="/img/cv/academic_record_1.jpeg"><img src="/img/cv/academic_record_1.jpeg" width=45% height=45% style="float:left;gap;margin-right:20px"></a>
 {{</bruh>}}
-
-![](/img/cv/academic_record_0.jpeg)
-![](/img/cv/academic_record_1.jpeg)
 
 ### BHons Computer Science
 
