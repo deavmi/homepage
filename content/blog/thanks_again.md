@@ -64,7 +64,7 @@ Being a father means doing a lot for the family, whether it be the sheer amount 
 ## Vaughan
 
 {{<bruh>}}
-<img src="/img/thanks_again/vaughan.jpeg" width=50% height=50% style="float:right;gap;margin-left:20px">
+<img src="/img/thanks_again/vaughan.jpeg" width=30% height=30% style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 My brother Vaughan, you are the my other half - somebody I always looked up to when growing up. You were the big boy in my world and you could always defend me from any harm or bullies that came my way, I always knew my brother would be there to protect me and there have been times where I was comforted by you are you ability to do so - I never felt afraid or at least you made me know I was safe.
