@@ -64,7 +64,7 @@ Being a father means doing a lot for the family, whether it be the sheer amount 
 ## Vaughan
 
 {{<bruh>}}
-<img src="/img/thanks_again/vaughan.jpeg" width=30% height=30% style="float:right;gap;margin-left:20px">
+<img src="/img/thanks_again/vaughan.jpeg" width=50% height=50% style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 My brother Vaughan, you are the my other half - somebody I always looked up to when growing up. You were the big boy in my world and you could always defend me from any harm or bullies that came my way, I always knew my brother would be there to protect me and there have been times where I was comforted by you are you ability to do so - I never felt afraid or at least you made me know I was safe.
@@ -74,7 +74,7 @@ Although nothing has changed in that regard, the bullies have disappeared but I 
 Writing this I realize that that was the core tenant of what bonds us together but I couldn't help but think of all the memories that come to my head whilst sitting here, in the lab writing this during my free time. I can recall us as toddlers at Lanner House and the early days of MXiT and the funny stuff you showed me there. We can go back even _earlier than that_ to the days of us both sitting keenly in front of the one computer you shared with myself, mom and you and how I would watch you for hours play games like Myst, Sonic the Hedgehog 3D, Psychonauts, that _"Ninja game that I can't remember"_, Spore and the works. You had such a creative mind and I was enthralled by your interests both artistically and in a logical sense. You spent a lot of time figuring out puzzles in that game Myst, I recall you had a little notebook where you drew these beautiful diagrams that emulated what we saw on screen and worked out how to unlock these bejeweled locks, interact with machinery and try to get things to work. From a young time you had the ability to logically solve things if you just put your mind to it - this point I make as it is important for later.
 
 {{<bruh>}}
-<img src="/img/thanks_again/vaughan2.jpeg" width=50% height=50% style="float:left;gap;margin-right:20px">
+<img src="/img/thanks_again/vaughan2.jpeg" width=30% height=30% style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
 I remember the days of sitting in front of the computer and having to wait near 20 minutes for a flash movie to load, and how we would watch things on _Flash Portal_, _Albino Blacksheep_ and _Newgrounds_ 10 times in a row just to make the most of that fact! Those were some of my best memory with you Vaughan and I can't believe how fast it all just flew by but the great thing about memories is that I still remember being your little bro, sitting cross legged on a chair next to you whilst you operate the wizardry machinery that I would know to become a computer. And I have those memories still with me, they make me smile when I think of all the cool games we played and sometimes naughty animations we watched. **I hope you remember these memories with as much love as I do too ❤️!**
