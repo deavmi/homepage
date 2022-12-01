@@ -6,7 +6,7 @@ This site is made available through several networks to make accessing its conte
 
 # Current networks
 
-The below are the currently supported networks. If you have a request for another one to be added then please contact me via my details on the [about me](about/) page.
+The below are the currently supported networks. If you have a request for another one to be added then please contact me via my details on the [about me](../about/) page.
 
 ## I2P
 
