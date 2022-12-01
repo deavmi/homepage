@@ -13,7 +13,9 @@ I start work next year (2022) at iPay. I will be completing my honours in Comput
 I completed my undergraduate Bachelors of Science in Mathematics with a major in Computer Science in 2021.
 
 {{<bruh>}}
-<a href="/img/cv/degree.jpeg"><img src="/img/cv/degree.jpeg" width=45% height=45%></a>
+<center>
+    <a href="/img/cv/degree.jpeg"><img src="/img/cv/degree.jpeg" width=45% height=45%></a>
+</center>
 {{</bruh>}}
 
 You can see my marks throughout the 4 year period (2018 to 2021) below:
