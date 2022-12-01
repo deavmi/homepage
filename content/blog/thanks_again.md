@@ -1,6 +1,6 @@
 ---
 title: The end of an era
-author: Tristan B. V. Kildaire
+author: Tristan B. Velloza Kildaire
 date: 2021-10-23
 draft: false
 ---
