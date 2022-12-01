@@ -3,7 +3,7 @@ title: Projects
 ---
 
 {{<bruh>}}
-<img src="/img/code.png" style="float:right;gap">
+<img src="/img/code.png" style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 I have been writing a lot of things as of late. Most of the projects here are still active projects, some I shall return to very soon. If I truly have an abandoned project then it will be listed here but as for now everything here is an active project of mine.
