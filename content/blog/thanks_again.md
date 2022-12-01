@@ -31,8 +31,6 @@ The singly most important people in my life, always there for me and me for them
 
 ## Mother
 
-TODO: Sort out image (and URL)
-
 {{<bruh>}}
 <img src="/img/thanks_again/gisele.jpeg" width=50% height=50% style="float:right;gap;margin-left:20px">
 {{</bruh>}}
