@@ -21,12 +21,6 @@ There is Yggdrasil access for this site.
 
 * Yggdrasil address: [`203:75b7:45af:ecca:d641:cd42:38dc:4788`](http://[203:75b7:45af:ecca:d641:cd42:38dc:4788])
 
-## CJDNS
-
-There is CJDNS access for this site.
-
-* CJDNS address: [`fcf3:40c:96cc:ecb0:bb36:5721:3b05:3acd`](http://[fcf3:40c:96cc:ecb0:bb36:5721:3b05:3acd])
-
 ## CRXN
 
 There is CRXN access for this site.
