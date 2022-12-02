@@ -9,7 +9,7 @@ draft: false
 
 {{<bruh>}}
 <center>
-    <img src="/img/thanks_again/idaho.jpeg" width=65% height=65%>
+    <img src="/img/thanks_again/idaho.JPG" width=65% height=65%>
     <p>Strongest man from Idaho</p>
 </center>
 {{</bruh>}}
