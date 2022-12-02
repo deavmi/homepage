@@ -489,9 +489,9 @@ Stay awesome sir - your work and career is amazing. Look forward to seeing you a
 ## Loic
 
 {{<bruh>}}
-<img src="/img/thanks_again/loic.JPG" width=35% height=35% style="float:left;gap;margin-right:20px">
+<img src="/img/thanks_again/loic.JPG" width=25% height=25% style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
-My man Loic, the Frenshc ambassador (I am pretty sure somehow you and the French government are buddy buddy, that or you are unknowingly being conscripted into the French Foreign Legion). You are one of the coolest UNISA students that joined our honors class for a short time before your eventual return back to UNISA - but to me and a good few you never left our class. You will always remain a good friend, a confidant despite our distance.
+My man Loic, the Frenshc ambassador (I am pretty sure somehow you and the French government are buddy buddy, that or you are unknowingly being conscripted into the French Foreign Legion). You are one of the coolest UNISA students that joined our honors class for a short time before your eventual return back to UNISA - but to me and a good few you never left our class. You will always remain a good friend, a confidant despite our distance. You are a solid person, hard working and driven with a passion - you're also pretty hip sir.
 
 Keep on keeping on with life and of course, your endavours into Prolog programming `;)`.
