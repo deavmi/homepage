@@ -25,6 +25,12 @@ As time progressed I realized it wasn't all too bad, the work was at least in th
 
 > "Life without stress and pain makes happiness an empty emotion" ~Me
 
+```
+Note: This website only works when there isn;t load shedding in Worcester
+Note 2: Can the Amazon shills stop suggesting I use their cringe EC2 to host - I know how to use Linux I don't need a fancy web UI to manage a file system
+Note 3: Okay, enough ranting I'm gonna crack open a cold one
+```
+
 # Familia
 
 {{<bruh>}}
