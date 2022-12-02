@@ -477,7 +477,7 @@ You'll always be, like a few in this blog post, part of C45 - and I won't forget
 ## Bill Tucker
 
 {{<bruh>}}
-<img src="/img/thanks_again/loic.JPG" width=35% height=35% style="float:left;gap;margin-right:20px">
+<img src="/img/thanks_again/bill.JPG" width=35% height=35% style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 It all started with the new lecturer (now professor - congrajulations on that ~~sir~~ professor!) and his new class being offered to honors students: _"Advanced Topics I - Computing and Society"_. Immediately I knew this wasn't going to be one of your average honors classes, I thought it was going to be a little different - it was after all my first class on ethics besides that given by any good parents. What started as just simply a module, grew into the only module I really looked forward to having classes in. The topics were refreshing, it was nice to see the human side of technological design instead of just coding, the people we met and had interviewed along the way made me feel like I belonged to an actual computer science community - not just some Git repository stored somewhere in San Francisco.
