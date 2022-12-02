@@ -486,7 +486,7 @@ You sir became more than just a lecturer to me and a few of your students, you b
 
 Stay awesome sir - your work and career is amazing. Look forward to seeing you again soon!
 
-## Loic
+## Loïc van der Westhuizen
 
 {{<bruh>}}
 <img src="/img/thanks_again/loic.JPG" width=25% height=25% style="float:left;gap;margin-right:20px">
