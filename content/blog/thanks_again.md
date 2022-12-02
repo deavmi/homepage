@@ -471,3 +471,27 @@ Now, these two people would stay couped up in that tiny little masters cabinet a
 In any case, the prescence of seniors in the honors lab was always welcome as they would bring us a lot of knowledge we gladly accepted, we'd have lunch with them and go out as well - there was no artificial boundry placed between us because we were friends right from the beginning. I am happy to see where you guys are gokng with your research and potential future job prospects and wish you the best of luck guys.
 
 You'll always be, like a few in this blog post, part of C45 - and I won't forget that group of people - you're the original group of friends I have and persist till today. **We need a reunion.**
+
+--
+
+## Bill Tucker
+
+{{<bruh>}}
+<img src="/img/thanks_again/loic.JPG" width=45% height=45% style="float:left;gap;margin-right:20px">
+{{</bruh>}}
+
+It all started with the new lecturer (now professor - congrajulations on that ~~sir~~ professor!) and his new class being offered to honors students: _"Advanced Topics I - Computing and Society"_. Immediately I knew this wasn't going to be one of your average honors classes, I thought it was going to be a little different - it was after all my first class on ethics besides that given by any good parents. What started as just simply a module, grew into the only module I really looked forward to having classes in. The topics were refreshing, it was nice to see the human side of technological design instead of just coding, the people we met and had interviewed along the way made me feel like I belonged to an actual computer science community - not just some Git repository stored somewhere in San Francisco.
+
+You sir became more than just a lecturer to me and a few of your students, you became a life long friend and someone who cared deeply about their students. Amongst all the cold and darkend hearts of those around you, you shined like a beacon of hope, maybe even liberty 🗽️🇺🇸️ `;)`. Having been invited to your inauguration of your professorship was an absolute honor, likewise enjoying a manouche at our favourite Lebanese restaurant.
+
+Stay awesome sir - your work and career is amazing. Look forward to seeing you again soon!
+
+## Loic
+
+{{<bruh>}}
+<img src="/img/thanks_again/luan.JPG" width=45% height=45% style="float:left;gap;margin-right:20px">
+{{</bruh>}}
+
+My man Loic, the Frenshc ambassador (I am pretty sure somehow you and the French government are buddy buddy, that or you are unknowingly being conscripted into the French Foreign Legion). You are one of the coolest UNISA students that joined our honors class for a short time before your eventual return back to UNISA - but to me and a good few you never left our class. You will always remain a good friend, a confidant despite our distance.
+
+Keep on keeping on with life and of course, your endavours into Prolog programming `;)`.
