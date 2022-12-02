@@ -9,8 +9,8 @@ draft: false
 
 {{<bruh>}}
 <center>
-    <img src="/img/thanks_again/to_all.jpeg" width=65% height=65%>
-    <p>My family away from home</p>
+    <img src="/img/thanks_again/idaho.jpeg" width=65% height=65%>
+    <p>Strongest man from Idaho</p>
 </center>
 {{</bruh>}}
 
