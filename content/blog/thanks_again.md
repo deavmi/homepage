@@ -7,6 +7,13 @@ draft: false
 
 # This is the last time
 
+{{<bruh>}}
+<center>
+    <img src="/img/thanks_again/to_all.jpeg" width=65% height=65%>
+    <p>My family away from home</p>
+</center>
+{{</bruh>}}
+
 Goodbyes are hard enough as they are but knowing that you are only saying goodbye to a select few is sometimes easier despite the
 fact everyone is unique and irreplaceable. It is for this reason, compared to the last time I posted something [along these lines](../thank_you_all/), that I write this knowing something truly amazing is coming to an end.
 
@@ -495,6 +502,11 @@ Stay awesome sir - your work and career is amazing. Look forward to seeing you a
 My man Loic, the Frenshc ambassador (I am pretty sure somehow you and the French government are buddy buddy, that or you are unknowingly being conscripted into the French Foreign Legion). You are one of the coolest UNISA students that joined our honors class for a short time before your eventual return back to UNISA - but to me and a good few you never left our class. You will always remain a good friend, a confidant despite our distance. You are a solid person, hard working and driven with a passion - you're also pretty hip sir.
 
 Keep on keeping on with life and of course, your endavours into Prolog programming `;)`.
+
+{{<bruh>}}
+<br>
+<br>
+{{</bruh>}}
 
 ---
 
