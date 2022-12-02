@@ -477,7 +477,7 @@ You'll always be, like a few in this blog post, part of C45 - and I won't forget
 ## Bill Tucker
 
 {{<bruh>}}
-<img src="/img/thanks_again/loic.JPG" width=45% height=45% style="float:left;gap;margin-right:20px">
+<img src="/img/thanks_again/loic.JPG" width=35% height=35% style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
 It all started with the new lecturer (now professor - congrajulations on that ~~sir~~ professor!) and his new class being offered to honors students: _"Advanced Topics I - Computing and Society"_. Immediately I knew this wasn't going to be one of your average honors classes, I thought it was going to be a little different - it was after all my first class on ethics besides that given by any good parents. What started as just simply a module, grew into the only module I really looked forward to having classes in. The topics were refreshing, it was nice to see the human side of technological design instead of just coding, the people we met and had interviewed along the way made me feel like I belonged to an actual computer science community - not just some Git repository stored somewhere in San Francisco.
@@ -489,7 +489,7 @@ Stay awesome sir - your work and career is amazing. Look forward to seeing you a
 ## Loic
 
 {{<bruh>}}
-<img src="/img/thanks_again/luan.JPG" width=45% height=45% style="float:left;gap;margin-right:20px">
+<img src="/img/thanks_again/loic.JPG" width=35% height=35% style="float:left;gap;margin-right:20px">
 {{</bruh>}}
 
 My man Loic, the Frenshc ambassador (I am pretty sure somehow you and the French government are buddy buddy, that or you are unknowingly being conscripted into the French Foreign Legion). You are one of the coolest UNISA students that joined our honors class for a short time before your eventual return back to UNISA - but to me and a good few you never left our class. You will always remain a good friend, a confidant despite our distance.
