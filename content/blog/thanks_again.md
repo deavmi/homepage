@@ -472,7 +472,7 @@ In any case, the prescence of seniors in the honors lab was always welcome as th
 
 You'll always be, like a few in this blog post, part of C45 - and I won't forget that group of people - you're the original group of friends I have and persist till today. **We need a reunion.**
 
---
+---
 
 ## Bill Tucker
 
