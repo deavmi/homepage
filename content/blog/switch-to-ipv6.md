@@ -54,3 +54,14 @@ ping fe80::1%enp3s0
 ```
 
 If you were trying to reach a machine with the address of `fe80::1` on the Ethernet LAN connected to `enp3s0`. This is a minor inconvenience as a lot of the communication protocols such as Syncthing will automatically do this for you, it's obviously more work for the end-user if you need to manually specify a host like using SSH but it's minor really - I'm used to it already.
+
+### Example 2: Routing protocols
+
+A lot of the routing protocols which run over IPv4 would require you to assign both an address to the router (such that it can communicate with another router) and a corresponding route on the link. So if you are `10.1.1.1`, then you need at least a `10.1.1.2/32 dev eth0` in your routing table to communicate to machine `10.1.1.2` from `10.1.1.1` over the LAN both of them are connected to lon the first machine's `eth0`. The same applies for the second machine, however it would be `10.1.1.1/32 dev eth0`. Now, this is obvious why it is needed - there is no doubt about that but the amount of times I have to do this is more than for the regular home network because you can imagine how many address and route assignments I need to make when doing tunneled routing - this must be done for all of those interfaces - this becomes a nightmare after sometime.
+
+Well, with link-local the addresses and needed routes are already there - both routing protocols can see this and then make use of said addresses and routing information for the interfaces they want to use (and eventually communicate to routers on the other end with). Such information is then automatically picked up via, for example, IPv6 multicast packets sent out by routing protocols such as Babel.
+
+No more headaches like these!
+
+## Radv and SLAAC
+
