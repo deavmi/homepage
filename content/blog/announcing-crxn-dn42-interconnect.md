@@ -1,13 +1,14 @@
 ---
 title: Announcing the CRXNxDN42 inter-connect!
 author: Tristan B. Velloza Kildaire
-date: 2021-12-08
+date: 2022-12-08
 draft: true
 ---
 
 {{<bruh>}}
+<br>
 <center>
-    <img src="/img/crxn_dn42_interconnect/logo.png"></img>
+    <img src="/crxn_dn42_interconnect/logo.png" width=80%></img>
 </center>
 {{</bruh>}}
 
