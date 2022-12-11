@@ -13,7 +13,7 @@ Well, this blog post should give you an idea as to why IPv6 is better than IPv4 
 
 ### Example 1: On the LAN
 
-In the world of IPv4 you may have, if you do anything with routing at all, come across scenarios where you just want to have simple communication between device on the same Ethernet LAN but may have not setup anything further than a simple Ethernet connection between said two devices on an Ethernet switch. Now, as we know, Ethernet is automatic mainly due to the fact that every Ethernet card comes hard-coded with a MAC address meaning that two parties using an Ethernet card already have all they need in lorder to communicate using a `(souyrceMAC, destinationMAC)` format. However, we know that Ethernet does only provide a carrier for payloads and nothing more such as service de-multiplexing (which IP does with the payload type field) or guaranteed delivery which TCP does when loaded into the payload section of an IP packet. Therefore if one were to try and accomplish this you would need to assign IP addresses and routing information to both machines in a manner such as:
+In the world of IPv4 you may have, if you do anything with routing at all, come across scenarios where you just want to have simple communication between device on the same Ethernet LAN but may have not setup anything further than a simple Ethernet connection between said two devices on an Ethernet switch. Now, as we know, Ethernet is automatic mainly due to the fact that every Ethernet card comes hard-coded with a MAC address meaning that two parties using an Ethernet card already have all they need in order to communicate using a `(sourceMAC, destinationMAC)` format. However, we know that Ethernet does only provide a carrier for payloads and nothing more such as service de-multiplexing (which IP does with the payload type field) or guaranteed delivery which TCP does when loaded into the payload section of an IP packet. Therefore if one were to try and accomplish this you would need to assign IP addresses and routing information to both machines in a manner such as:
 
 ```bash
 # On machine 1
@@ -41,7 +41,7 @@ fe80::/64 dev tun0 proto kernel metric 256 pref medium
 fe80::/64 dev enp3s0 proto kernel metric 1024 pref medium
 ```
 
-THis is not actually a case of the kernel wanting to choose one rote over the other (in this case the `tun0` as it has a lower metric). Infact both of these routes are to be used for their respective ethernet segments (one on `tun0` and one on `enp3s0`). This is why we need an extra piece of routing information. So you would ping the address not like this:
+THis is not actually a case of the kernel wanting to choose one rote over the other (in this case the `tun0` as it has a lower metric). In fact both of these routes are to be used for their respective ethernet segments (one on `tun0` and one on `enp3s0`). This is why we need an extra piece of routing information. So you would ping the address not like this:
 
 ```
 ping fe80::1
@@ -65,3 +65,17 @@ No more headaches like these!
 
 ## Radv and SLAAC
 
+The configuration of endpoints or _host devices_ is a very easy feat in IPv6. There are technically two methods however only the latter is recommended:
+
+1. DHCPv6
+2. SLAAC
+
+The latter, SLAAC or _Stateless Address Auto-configuration_, provides a method to configure IPv6 hosts in a very powerful manner, some of the things it can provide are what one would expect from a system similar to what DHCP did for IPv4 which includes the expected features:
+
+1. A default route
+2. DNS settings
+3. Address delegation
+
+However, it goes on to provide more and additional things to point 3. With point 3, SLAAC actually will send out just the prefix to the host, say a `/64` and then the host can generate the remaining 64 bits of the address using something like EUI64 which effectively makes use of the interface's MAC address to generate a deterministic address. Other privacy modes can be used on the host end such that one cannot easily generate an address derived from the MAC address - if the user favours so. And that may be one of the biggest benefits - user control over those last 64 bits.
+
+The next point that I find really interesting about SLAAC is that it can actually advertise individual routes. If you have been using either Bird 1.6 or 2 then you would know this from their [radv protocol](https://bird.network.cz/?get_doc&v=20&f=bird.html#toc6.11) which let's you do exactly that.
