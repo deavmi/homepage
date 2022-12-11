@@ -12,7 +12,9 @@ Below is the copy of the written report of my work.
 
 {{<bruh>}}
 <center>
+<object type="application/pdf">
 	<iframe width="80%" height="80%" src="/blobs/research/report.pdf"></iframe>
+</object>
 </center>
 {{</bruh>}}
 
