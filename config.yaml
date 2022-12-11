@@ -27,9 +27,13 @@ menu:
       url: "work/"
       weight: 5
 
+    - name: Research
+      url: "research/"
+      weight: 6
+
     - name: About
       url: "about/"
-      weight: 6
+      weight: 7
 
 params:
   footer: "[![](/banners/crxn_insane.png)](https://redxen.eu) [![](/banners/crxn_gang.png)](/projects/crxn) [![](/banners/redxen_animated.gif)](https://redxen.eu)"
