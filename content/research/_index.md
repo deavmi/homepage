@@ -8,7 +8,7 @@ arguments and binary operators in the C programming language. The transformation
 
 ## Report
 
-Below is the copy of the written report of my work.
+Below is the copy of the written [report](/blobs/research/report.pdf) of my work.
 
 {{<bruh>}}
 <center>
@@ -18,7 +18,7 @@ Below is the copy of the written report of my work.
 
 ## Presentation
 
-On the day of presentation these slides were used to illustrate what my project was about, the implementation and the findings from the benchmarking procedure.
+On the day of presentation these [slides](/blobs/research/presentation.pdf) were used to illustrate what my project was about, the implementation and the findings from the benchmarking procedure.
 
 {{<bruh>}}
 <center>
