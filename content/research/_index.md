@@ -12,7 +12,7 @@ Below is the copy of the written report of my work.
 
 {{<bruh>}}
 <center>
-	<iframe width=80% height=80% src="/blobs/research/report.pdf"></iframe>
+	<iframe width="80%" height="80%" src="/blobs/research/report.pdf"></iframe>
 </center>
 {{</bruh>}}
 
