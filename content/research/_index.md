@@ -12,9 +12,7 @@ Below is the copy of the written report of my work.
 
 {{<bruh>}}
 <center>
-<object type="application/pdf">
 	<iframe width="80%" height="80%" src="/blobs/research/report.pdf"></iframe>
-</object>
 </center>
 {{</bruh>}}
 
@@ -24,6 +22,6 @@ On the day of presentation these slides were used to illustrate what my project 
 
 {{<bruh>}}
 <center>
-	<iframe src="/blobs/research/presentation.pdf"></iframe>
+	<iframe width="80%" height="80%" src="/blobs/research/presentation.pdf"></iframe>
 </center>
 {{</bruh>}}
