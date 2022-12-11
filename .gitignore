@@ -1,0 +1,8 @@
+# Directories to exclude
+public/
+static_old/
+resources/
+static/
+
+# Lock files
+.hugo_build.lock
