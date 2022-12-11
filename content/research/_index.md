@@ -11,7 +11,9 @@ arguments and binary operators in the C programming language. The transformation
 Below is the copy of the written report of my work.
 
 {{<bruh>}}
-<object data="/blobs/research/report.pdf" type="application/pdf" style="min-height:100vh;width:80%"></object>
+<center>
+	<object data="/blobs/research/report.pdf" type="application/pdf" style="min-height:100vh;width:80%"></object>
+</center>
 {{</bruh>}}
 
 ## Presentation
@@ -19,5 +21,7 @@ Below is the copy of the written report of my work.
 On the day of presentation these slides were used to illustrate what my project was about, the implementation and the findings from the benchmarking procedure.
 
 {{<bruh>}}
-<object data="/blobs/research/presentation.pdf" type="application/pdf" style="min-height:60vh;width:100%"></object>
+<center>
+	<object data="/blobs/research/presentation.pdf" type="application/pdf" style="min-height:60vh;width:100%"></object>
+</center>
 {{</bruh>}}
