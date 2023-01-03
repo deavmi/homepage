@@ -172,3 +172,11 @@ Simple and modular logging library
 * [Project homepage](/projects/dlog)
 
 ---
+
+# libpb
+
+PocketBase wrapper with serializer/deserializer support
+
+* [Code repository](/git/Haxio/libpb)
+* [Issue tracker](https://github.com/Hax-io/libpb)
+* [Project homepage](https://github.com/Hax-io/libpb)
