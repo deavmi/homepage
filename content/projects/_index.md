@@ -158,7 +158,8 @@ over a socket. Uses [tristanable](/projects/tristanable) and [eventy](/projects/
 
 A new programming language for systems programming with a focus on control of everything, minimalism and supporting OOP.
 
-[Project homepage](/projects/tlang)
+* [Project homepage](/projects/tlang)
+* ~[Source code]()~ Source code will be available by the end of 2023, with a release expected by then.
 
 ---
 
