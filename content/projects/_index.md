@@ -152,9 +152,13 @@ over a socket. Uses [tristanable](/projects/tristanable) and [eventy](/projects/
 
 # tristan
 
+{{<bruh>}}
+<img src="/projects/tlang/logo.png" width="185" height="119.5" style="float:right">
+{{</bruh>}}
+
 A new programming language for systems programming with a focus on control of everything, minimalism and supporting OOP.
 
-[Project homepage](/projects/t)
+[Project homepage](/projects/tlang)
 
 ---
 
@@ -163,7 +167,6 @@ A new programming language for systems programming with a focus on control of ev
 {{<bruh>}}
 <img src="/img/dlog.png" width="185" height="119.5" style="float:right">
 {{</bruh>}}
-
 
 Simple and modular logging library
 
