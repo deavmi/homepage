@@ -179,15 +179,15 @@ Simple and modular logging library
 
 # libpb
 
-<!-- {{<bruh>}}
-<img src="/img/dlog.png" width="185" height="119.5" style="float:right">
-{{</bruh>}} -->
+{{<bruh>}}
+<img src="/projects/libpb/logo.png" width="25%" height="25%" style="float:right">
+{{</bruh>}}
 
 PocketBase wrapper with serializer/deserializer support
 
 * [Code repository](/git/Haxio/libpb)
 * [Issue tracker](https://github.com/Hax-io/libpb)
-* [Project homepage](https://github.com/Hax-io/libpb)
+* [Project homepage](/projects/libpb)
 
 ---
 
