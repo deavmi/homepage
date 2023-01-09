@@ -200,3 +200,5 @@ PocketBase wrapper with serializer/deserializer support
 * [Code repository](/git/Haxio/jstruct)
 * [Issue tracker](https://github.com/Hax-io/jstruct)
 * [Project homepage](/projects/jstruct)
+
+---
