@@ -179,6 +179,10 @@ Simple and modular logging library
 
 # libpb
 
+<!-- {{<bruh>}}
+<img src="/img/dlog.png" width="185" height="119.5" style="float:right">
+{{</bruh>}} -->
+
 PocketBase wrapper with serializer/deserializer support
 
 * [Code repository](/git/Haxio/libpb)
@@ -186,3 +190,13 @@ PocketBase wrapper with serializer/deserializer support
 * [Project homepage](https://github.com/Hax-io/libpb)
 
 ---
+
+# jstruct
+
+{{<bruh>}}
+<img src="/projects/jstruct/logo.png" width="15%" height="15%" style="float:right">
+{{</bruh>}}
+
+* [Code repository](/git/Haxio/jstruct)
+* [Issue tracker](https://github.com/Hax-io/jstruct)
+* [Project homepage](/projects/jstruct)
