@@ -194,7 +194,7 @@ PocketBase wrapper with serializer/deserializer support
 # jstruct
 
 {{<bruh>}}
-<img src="/projects/jstruct/logo.png" width="15%" height="15%" style="float:right">
+<img src="/projects/jstruct/logo.png" width="25%" height="25%" style="float:right">
 {{</bruh>}}
 
 * [Code repository](/git/Haxio/jstruct)
