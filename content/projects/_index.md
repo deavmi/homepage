@@ -91,13 +91,13 @@ A community-run IPv6 network similiar to dn42 which runs in the `fd00::/8` space
 
 ---
 
-# Sweatyballs
+<!-- # Sweatyballs
 
 A toy routing protocol I am working on. Aims to do next-hop routing with crypto-routing included as well.
 
 [GitHub](http://github.com/deavmi/sweatyballs)
 
----
+--- -->
 
 # libtun
 
