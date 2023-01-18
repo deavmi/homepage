@@ -2,9 +2,10 @@
 title: Work
 ---
 
-## Hiring status
+## Work experience
 
-I start work next year (2022) at iPay. I will be completing my honours in Computer Science by year end of 2022.
+* iPay _(January 2020 to current)_
+    * Prepaid electricity vending systems
 
 ## Certifications
 
