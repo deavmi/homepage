@@ -4,7 +4,7 @@ title: Work
 
 ## Work experience
 
-* iPay _(January 2023 to current)_
+* [iPay](https://www.ipay.co.za/) _(January 2023 to current)_
     * Prepaid electricity vending systems
 
 ## Certifications
