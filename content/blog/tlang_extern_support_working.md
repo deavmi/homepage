@@ -1,5 +1,5 @@
 ---
-title: "TLang Update: Extern support works!"
+title: "TLang Update: Extern support works! 🎆️"
 author: Tristan B. Velloza Kildaire
 date: 2023-01-30
 ---
