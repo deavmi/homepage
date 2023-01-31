@@ -7,7 +7,7 @@ date: 2023-01-31
 {{<bruh>}}
 <br>
 <center>
-    <img src="/crxn_dn42_interconnect/logo.png" width=80%></img>
+    <img src="/projects/crxn/img/crxn_x_dn42/logo.png" width=80%></img>
 </center>
 {{</bruh>}}
 
