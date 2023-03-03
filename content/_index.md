@@ -40,7 +40,6 @@ If you like what I _do_ and don't mind shilling a _few_ then you can send me som
 <br>
 {{</bruh>}}
 
-* Oxen: `L7vnoBsy3tBKsdhLYedxGyXvmLDEK8fRtYCasLAtg7AzAUu7ehb4jWnGDeZvzKh3RgRZueeJVm8sC4WjoLVg8wWFDUk8Bbn` (preferred)
 * Monero: `86reDCjk99VJ8QCo73WwM1AtfweD2fp8RPPWzNK56cdS1fAfxWCwixic9QrXkHyoJSe3gMZkAkb8aW5oU4cLEFucMLX4wqP`
 
 
