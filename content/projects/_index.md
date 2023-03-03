@@ -127,7 +127,7 @@ Pretty-printer for debug messages with VT100 colouring. Used in many of my proje
 <img src="/projects/eventy/logo.png" width=10% height=10% style="float:right">
 {{</bruh>}}
 
-Event-loop system for signal handling systems.
+Event-loop system for signal handling systems. Currently being re-written.
 
 * [Code repository](/git/deavmi/eventy)
 * [Issue tracker](https://github.com/deavmi/eventy)
@@ -143,6 +143,8 @@ Event-loop system for signal handling systems.
 
 Framework for writing programs that require callbacks to run from certain types of messages sent
 over a socket. Uses [tristanable](/projects/tristanable) and [eventy](/projects/eventy) in the backend.
+
+Currently being re-written.
 
 * [Code repository](/git/deavmi/tasky)
 * [Issue tracker](https://github.com/deavmi/tasky)
@@ -196,6 +198,8 @@ PocketBase wrapper with serializer/deserializer support
 {{<bruh>}}
 <img src="/projects/jstruct/logo.png" width="25%" height="25%" style="float:right">
 {{</bruh>}}
+
+Library that easily lets you serialize a struct in D to JSON and vice-versa
 
 * [Code repository](/git/Haxio/jstruct)
 * [Issue tracker](https://github.com/Hax-io/jstruct)
