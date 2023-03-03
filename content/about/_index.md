@@ -17,5 +17,5 @@ You can find a copy of my CV [here]().
 I primarily check BNET and Matrix.
 
 * [BNET](/projects/bonobonet) (IRC): `deavmi`
-* Matrix ID: `@deavmi:matrix.org`
+* Matrix ID: `@deavmi:evns.net`
 * E-mail (primary): `deavmi@redxen.eu`
