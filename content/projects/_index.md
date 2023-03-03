@@ -102,10 +102,8 @@ A toy routing protocol I am working on. Aims to do next-hop routing with crypto-
 # libtun
 
 {{<bruh>}}
-<img src="/projects/libtun/logo.png" width=13% height=13% style="float:right">
+<img src="/projects/libtun/logo.png" width=15% height=15% style="float:right">
 {{</bruh>}}
-
-
 
 A TUN/TAP OOP-based adapter for use in D-based applications
 
@@ -118,8 +116,10 @@ A TUN/TAP OOP-based adapter for use in D-based applications
 # gogga
 
 {{<bruh>}}
-<img src="/img/gogga_logo_small.png" width=15% height=15% style="float:right">
+<img src="/img/gogga_logo_small.png" width=13% height=13% style="float:right">
 {{</bruh>}}
+
+
 
 Pretty-printer for debug messages with VT100 colouring. Used in many of my projects to make debug messages much more readbale and easier to process by fellow humans.
 
