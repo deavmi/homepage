@@ -127,7 +127,9 @@ Pretty-printer for debug messages with VT100 colouring. Used in many of my proje
 <img src="/projects/eventy/logo.png" width=10% height=10% style="float:right">
 {{</bruh>}}
 
-Event-loop system for signal handling systems. Currently being re-written.
+Event-loop system for signal handling systems.
+
+Currently being re-written.
 
 * [Code repository](/git/deavmi/eventy)
 * [Issue tracker](https://github.com/deavmi/eventy)
