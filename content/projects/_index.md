@@ -121,7 +121,7 @@ A TUN/TAP OOP-based adapter for use in D-based applications
 
 Pretty-printer for debug messages with VT100 colouring. Used in many of my projects to make debug messages much more readbale and easier to process by fellow humans.
 
-[GitHub](http://github.com/deavmi/gogga)
+[GitHub](https://github.com/deavmi/gogga)
 
 ---
 
