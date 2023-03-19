@@ -63,6 +63,8 @@ Well, after 5 seconds it is obvious the thread will wake up and we'll get the ou
 I am now ready!
 ```
 
+---
+
 ## Issues with joining spinclass
 
 Barr the obvious fact that I don't want to be caught in 4K wearing tights for a spinclass there is a problem with this implementation. But don't fret it isn't one to do with the implementation's _idea_ so to speak. It is a logical implementation and should work (and does), the problem is with _performance_ of the _rest_ of your machine's processes and heat generation and energy usage (the latter of which I only became aware of because certain CPUs can actually powersave in certain conditions).
@@ -87,7 +89,7 @@ The idea I am trying to drive home here is its meaningless work is making the ot
 
 _What if we could change that?_ so it didn;'t stay in the runqueue till it was ready to do work?
 
-In fact, you will see most programs tend to not cap your run queue on a normal desktop if you open up `htop` for example. The times it will would be strenuous tasks like compilations etc, those however, are doing _"real work"_ - they just have hardly any I/O (and they definately wouldn't sleep - _why would a compiler sleep_).
+In fact, you will see most programs tend to not cap your run queue on a normal desktop if you open up `htop` for example. The times it will would be strenuous tasks like compilations etc, those however, are doing _"real work"_ - they just have hardly any I/O (and they definately wouldn't sleep - _why would a compiler sleep_). Most processes are waiting for I/O to complete (and there are various uses of this as we will see) or sleeping for a fixed amount of time.
 
 #### Problem 2: Drawing higher current
 
@@ -96,3 +98,24 @@ I'm no engineer but I know the more components you have turned on the more a sin
 CPUs such as those that are `x86` support an instruction known as `HLT` which, if called, will disable certain components in the CPU till the next interrupt occurs (waking it from this state), this can save a lot of power in the long run. Now, the way the Linux deals with this is that if there isn't anything at this moment that can be scheduled then it runs a kernwel task that calls `HLT` in a loop. THis will momentrarily power save until an interrupt goes off - one of which is the task switching interrupt, the kernel can wake up for a burst (the CPU hardware turns out and resumes drawing more current) and the kernel can check _"Are there any tasks availabl;e to schedule?"_, if not it sleeps again. This means you do more sleeping than waking and you save power doing this. 
 
 So you can see why keeping the user process runqueue as empty as possible - when it makes sense to, has more than one benefit.
+
+---
+
+## Okay, well then how do you fix this?
+
+If we know that applications go to sleep (i.e. are removed from the run queue and placed into another queue) when they do I/O whilst a pending I/O request it put out (and late fulfilled, placing the process back in the run-queue), then how could we do that but without taxxing our harddrive with tiny little write requests?
+
+Well, glad you asked. I actually read about this whilst reading about [`eventfd`](https://man7.org/linux/man-pages/man2/eventfd.2.html) because prior to it there is a way to easily do this-  get ready mario fans because it's time for _pipes_.
+
+### What is a `pipe`?
+
+A _pipe_ is an in-memory kenerl-managed queue effectievly. Opening a pipe, using `pipe(int*)`, will create a new pipe and then (ensuring that the `int*` passed in pointed to 2 contiguosuly available integers), then it will place two numbers in this array. The first index will be a file descriptor to what is known as the _read end of the pipe_, then second will be a file desriptor to what is knopwn as the _write end of the pipe_.
+
+If you write a single byte to the pipe, then a single byte will be available for reading on the read end. It's a FIFO provided by the kernel and with a file interface! Well, we can use this then! We can make a thread read in a blcling manner with an I/O reqwust of a single byte on the _read end of the pipe_, it will then be placed into the I/O waiting queue and only be brought back into the run queue for scheduling when that I/O rquiest is fuilfiiled.
+
+> _"When will it be fulfilled?"_
+
+Well, this is how we will "wake up" that thread - we'll write a singular byte to the _write end of the pipe_. This will wake it up then.
+
+
+Can you now see that this process will not waste much time other than making the initial system call to `read()`! This is the basic premise of how libsnooze works.
