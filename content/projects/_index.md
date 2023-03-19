@@ -6,46 +6,56 @@ title: Projects
 <img src="/img/code.png" style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
-I have been writing a lot of things as of late. Most of the projects here are still active projects, some I shall return to very soon. If I truly have an abandoned project then it will be listed here but as for now everything here is an active project of mine.
+I have been writing code for a rather long time now and have quite a few projects under my control, most projects here are active and
+I am returning to development on them since having finished up with university. Most of the things here (if not all) are written in D
+which is my programming language of choice. Some other projects will be returned to in terms of development whilst other are fully
+deprecated.
+
+If you have any questions, find my details on the [Contact page](/about) - _enjoy!_
 
 ---
 
-# Butterfly
+# Active projects
 
-Butterfly is a full email system that uses JSON-based messaging embedded in [bformat](). It provides a single server that acts as both mail delivery and mailbox management system (analog to providing SMTP and POP/IMAP in one single service). It supports client-to-server connectivity along with server-to-server connectivity for inter-server mail delivery.
+All the projects listed below are considered active in development and/or are still supported by me.
 
-1. [butterflyd homepage](/projects/butterfly)
-    * This provides the mail server
-2. [skoenlapper](/projects/skoenlapper)
-    * This is the text-based email client for butterfly
-
----
-
-# DNET
+## libpb
 
 {{<bruh>}}
-<img src="/img/dnet.png" width="119" height="102.5" style="float:right">
+<img src="/projects/libpb/logo.png" width="25%" height="25%" style="float:right">
 {{</bruh>}}
 
-A new chat binary protocol aiming to replace IRC with modern day features.
+PocketBase wrapper with serializer/deserializer support
 
-* dnetd - A server for the DNET chat protocol
-* skippy - A text-based DNET chat client
-* Gustav - A GTK3+ graphical chat client for DNET
+* [Code repository](/git/Haxio/libpb)
+* [Issue tracker](https://github.com/Hax-io/libpb)
+* [Project homepage](/projects/libpb)
 
-[Project homepage](/projects/dnet)
+## jstruct
 
----
+{{<bruh>}}
+<img src="/projects/jstruct/logo.png" width="25%" height="25%" style="float:right">
+{{</bruh>}}
 
-# Bester
+Library that easily lets you serialize a struct in D to JSON and vice-versa
 
-a federated pluggable message-exchange protocol
+* [Code repository](/git/Haxio/jstruct)
+* [Issue tracker](https://github.com/Hax-io/jstruct)
+* [Project homepage](/projects/jstruct)
 
-[Project homepage](/projects/bester)
+## dlog
 
----
+{{<bruh>}}
+<img src="/img/dlog.png" width="185" height="119.5" style="float:right">
+{{</bruh>}}
 
-# tristanable
+Simple and modular logging library with support for chained custom text transformers and custom loggers
+
+* [Code repository](/git/deavmi/dlog)
+* [Issue tracker](https://github.com/deavmi/dlog)
+* [Project homepage](/projects/dlog)
+
+## tristanable
 
 Tag-based asynchronous messaging framework for D. This allows you to write software that awaits on messages
 that have a certain tag sent with them.
@@ -56,18 +66,14 @@ of the order things were sent in (or in the case of messages sent without a prio
 
 [Project homepage](/projects/tristanable)
 
----
-
-# bformat
+## bformat
 
 Simple message format that uses a 4-byte header for length. Used in many of my D network programs whereby I need a simple
 container format to hold arbitrary data, perhaps binary data, JSON etc.
 
 [Project homepage](/projects/bformat)
 
----
-
-# BonoboNET
+## BonoboNET
 
 {{<bruh>}}
 <img src="/projects/bonobonet/b_hash_logo.png" width=15% height=15% style="float:right">
@@ -77,9 +83,7 @@ An IRC network for hackers, programmers etc. Running on 3 servers currently, 1 i
 
 [Project homepage](/projects/bonobonet)
 
----
-
-# CRXN
+## CRXN
 
 {{<bruh>}}
 <img src="/projects/crxn/img/logo.png" width=15% height=15% style="float:right">
@@ -99,7 +103,7 @@ A toy routing protocol I am working on. Aims to do next-hop routing with crypto-
 
 --- -->
 
-# libtun
+## libtun
 
 {{<bruh>}}
 <img src="/projects/libtun/logo.png" width=15% height=15% style="float:right">
@@ -111,9 +115,7 @@ A TUN/TAP OOP-based adapter for use in D-based applications
 * [Issue tracker](https://github.com/deavmi/libtun)
 * [Project homepage](/projects/libtun)
 
----
-
-# gogga
+## gogga
 
 {{<bruh>}}
 <img src="/img/gogga_logo_small.png" width=13% height=13% style="float:right">
@@ -127,25 +129,66 @@ Pretty-printer for debug messages with VT100 colouring. Used in many of my proje
 
 [GitHub](https://github.com/deavmi/gogga)
 
----
-
-# eventy
+## eventy
 
 {{<bruh>}}
 <img src="/projects/eventy/logo.png" width=10% height=10% style="float:right">
 {{</bruh>}}
 
-Event-loop system for signal handling systems.
-
-Currently being re-written.
+Event handling system for writing handlers and triggering them later.
 
 * [Code repository](/git/deavmi/eventy)
 * [Issue tracker](https://github.com/deavmi/eventy)
 * [Project homepage](/projects/eventy)
 
+## birchwood
+
+
+TODO: adjust the size here and get the logo
+{{<bruh>}}
+<img src="/projects/birchwood/logo.png" width=10% height=10% style="float:right">
+{{</bruh>}}
+
+A sane IRC framework for the D language.
+
+Makes use of [Eventy](/projects/eventy) for event handling and [libsnooze](/projects/libsnooze)
+for the receive and send queue manager threads.
+
+* [Code repository](/git/deavmi/birchwood)
+* [Issue tracker](https://github.com/deavmi/birchwood)
+* [Project homepage](/projects/birchwood)
+
+## libsnooze
+
+TODO: adjust the size here and get the logo
+{{<bruh>}}
+<img src="/projects/birchwood/logo.png" width=10% height=10% style="float:right">
+{{</bruh>}}
+
+A wait/notify mechanism for D
+
+* [Code repository](/git/deavmi/libsnooze)
+* [Issue tracker](https://github.com/deavmi/libsnooze)
+* [Project homepage](/projects/libsnooze)
+
 ---
 
-# tasky
+# Upcoming projects
+
+These projects are either on hold or still being worked on and are yet to be released.
+
+## tristan
+
+{{<bruh>}}
+<img src="/projects/tlang/logo.png" width="15%" height="15%" style="float:right">
+{{</bruh>}}
+
+A new programming language for systems programming with a focus on control of everything, minimalism and supporting OOP.
+
+* [Project homepage](/projects/tlang)
+* ~~[Source code]()~~ Source code will be available by the end of 2023, with a release expected by then.
+
+## tasky
 
 {{<bruh>}}
 <img src="/img/tasky.png" width="210" height="46.33" style="float:right">
@@ -162,57 +205,37 @@ Currently being re-written.
 
 ---
 
-# tristan
+# Inactive projects
+
+All the projects listed below are no longer worked on or maintained.
+
+## Bester
+
+**TODO:** Add logo
+
+A federated pluggable message-exchange protocol
+
+[Project homepage](/projects/bester)
+
+## Butterfly
+
+Butterfly is a full email system that uses JSON-based messaging embedded in [bformat](). It provides a single server that acts as both mail delivery and mailbox management system (analog to providing SMTP and POP/IMAP in one single service). It supports client-to-server connectivity along with server-to-server connectivity for inter-server mail delivery.
+
+1. [butterflyd homepage](/projects/butterfly)
+    * This provides the mail server
+2. [skoenlapper](/projects/skoenlapper)
+    * This is the text-based email client for butterfly
+
+## DNET
 
 {{<bruh>}}
-<img src="/projects/tlang/logo.png" width="15%" height="15%" style="float:right">
+<img src="/img/dnet.png" width="119" height="102.5" style="float:right">
 {{</bruh>}}
 
-A new programming language for systems programming with a focus on control of everything, minimalism and supporting OOP.
+A new chat binary protocol aiming to replace IRC with modern day features.
 
-* [Project homepage](/projects/tlang)
-* ~~[Source code]()~~ Source code will be available by the end of 2023, with a release expected by then.
+* dnetd - A server for the DNET chat protocol
+* skippy - A text-based DNET chat client
+* Gustav - A GTK3+ graphical chat client for DNET
 
----
-
-# dlog
-
-{{<bruh>}}
-<img src="/img/dlog.png" width="185" height="119.5" style="float:right">
-{{</bruh>}}
-
-Simple and modular logging library
-
-* [Code repository](/git/deavmi/dlog)
-* [Issue tracker](https://github.com/deavmi/dlog)
-* [Project homepage](/projects/dlog)
-
----
-
-# libpb
-
-{{<bruh>}}
-<img src="/projects/libpb/logo.png" width="25%" height="25%" style="float:right">
-{{</bruh>}}
-
-PocketBase wrapper with serializer/deserializer support
-
-* [Code repository](/git/Haxio/libpb)
-* [Issue tracker](https://github.com/Hax-io/libpb)
-* [Project homepage](/projects/libpb)
-
----
-
-# jstruct
-
-{{<bruh>}}
-<img src="/projects/jstruct/logo.png" width="25%" height="25%" style="float:right">
-{{</bruh>}}
-
-Library that easily lets you serialize a struct in D to JSON and vice-versa
-
-* [Code repository](/git/Haxio/jstruct)
-* [Issue tracker](https://github.com/Hax-io/jstruct)
-* [Project homepage](/projects/jstruct)
-
----
+[Project homepage](/projects/dnet)
