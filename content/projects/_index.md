@@ -236,7 +236,7 @@ Butterfly is a full email system that uses JSON-based messaging embedded in [bfo
 ## Bester
 
 {{<bruh>}}
-<img src="/projects/bester/logo.png" width="119" height="102.5" style="float:right">
+<img src="/projects/bester/logo.png" width="119" height="119" style="float:right">
 {{</bruh>}}
 
 A federated pluggable message-exchange protocol
