@@ -78,7 +78,9 @@ This is heavily used in my chat applications because of the need of a state mach
 non-state-machine-like socket stream where a reply for one thing can come in before another regardless
 of the order things were sent in (or in the case of messages sent without a prior request (i.e. notifications)).
 
-[Project homepage](/projects/tristanable)
+* [Code repository](/git/deavmi/tristanable)
+* [Issue tracker](https://github.com/deavmi/tristanable)
+* [Project homepage](/projects/tristanable)
 
 ## bformat
 
@@ -141,7 +143,9 @@ A TUN/TAP OOP-based adapter for use in D-based applications
 
 Pretty-printer for debug messages with VT100 colouring. Used in many of my projects to make debug messages much more readbale and easier to process by fellow humans.
 
-[GitHub](https://github.com/deavmi/gogga)
+* [Code repository](/git/deavmi/gogga)
+* [Issue tracker](https://github.com/deavmi/gogga)
+* [Project homepage](https://code.dlang.org/packages/gogga)
 
 ## eventy
 
