@@ -15,7 +15,7 @@ I completed my Bachelors of Science Honors in Computer Science in 2022.
 
 {{<bruh>}}
 <center>
-    <a href="/img/cv/degree.jpeg"><img src="/img/cv/degree.jpeg" width=45% height=45%></a>
+    <a href="/img/cv/honors.jpeg"><img src="/img/cv/honors.jpeg" width=45% height=45%></a>
 </center>
 {{</bruh>}}
 
