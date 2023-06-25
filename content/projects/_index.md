@@ -71,12 +71,14 @@ Simple and modular logging library with support for chained custom text transfor
 <img src="/img/tristanable_logo.png" width="15%" height="15%" style="float:right">
 {{</bruh>}}
 
-Tag-based asynchronous messaging framework for D. This allows you to write software that awaits on messages
-that have a certain tag sent with them.
+Tag-based asynchronous messaging framework for D. This allows you to write software
+that awaits on messages that have a certain tag sent with them.
 
-This is heavily used in my chat applications because of the need of a state machine in an otherwise
-non-state-machine-like socket stream where a reply for one thing can come in before another regardless
-of the order things were sent in (or in the case of messages sent without a prior request (i.e. notifications)).
+This is heavily used in my chat applications because of the need
+of a state machine in an otherwise non-state-machine-like socket
+stream where a reply for one thing can come in before another regardless
+of the order things were sent in (or in the case of messages sent
+without a prior request (i.e. notifications)).
 
 * [Code repository](/git/deavmi/tristanable)
 * [Issue tracker](https://github.com/deavmi/tristanable)
