@@ -13,6 +13,8 @@ deprecated.
 
 If you have any questions, find my details on the [Contact page](/about) - _enjoy!_
 
+
+{{<bruh>}}
 <br>
 <br>
 <br>
@@ -20,6 +22,7 @@ If you have any questions, find my details on the [Contact page](/about) - _enjo
 <br>
 <br>
 <br>
+{{</bruh>}}
 
 ---
 
@@ -250,3 +253,8 @@ Butterfly is a full email system that uses JSON-based messaging embedded in [bfo
 A federated pluggable message-exchange protocol
 
 [Project homepage](/projects/bester)
+
+{{<bruh>}}
+<br>
+<br>
+{{</bruh>}}
