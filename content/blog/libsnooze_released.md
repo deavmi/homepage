@@ -119,3 +119,78 @@ Well, this is how we will "wake up" that thread - we'll write a singular byte to
 
 
 Can you now see that this process will not waste much time other than making the initial system call to `read()`! This is the basic premise of how libsnooze works.
+
+---
+
+# Using libsnooze
+
+## API
+
+To see the full documentation (which is always up-to-date) check it out on [DUB](https://libsnooze.dpldocs.info/).
+
+## Usage
+
+### Importing issues
+
+Currently importing just with `import libsnooze` is broken, we recommend you import as follows:
+
+```d
+import libsnooze.clib;
+import libsnooze;
+```
+
+Which should build!
+
+### Example
+
+Firstly we create an `Event` which is something that can be notified or awaited on. This is simply accomplished as follows:
+
+```d
+Event myEvent = new Event();
+```
+
+Now let's create a thread which consumes `myEvent` and waits on it. You will see that we wrap some exception catching around the call to `wait()`. We have to catch an `InterruptedException` as a call to `wait()` can unblock due to a signal being received on the waiting thread, normally you would model yoru program looping back to call `wait()` again. Also, if there is a problem with the underlying eventing system then a `FatalException` will be thrown and you should handle this by exiting your program or something.
+
+```d
+class TestThread : Thread
+{
+    private Event event;
+
+    this(Event event)
+    {
+        super(&worker);
+        this.event = event;
+    }
+
+    public void worker()
+    {
+        writeln("("~to!(string)(Thread.getThis().id())~") Thread is waiting...");
+
+        try
+        {
+            /* Wait */
+            event.wait();
+            writeln("("~to!(string)(Thread.getThis().id())~") Thread is waiting... [done]");
+        }
+        catch(InterruptedException e)
+        {
+            // NOTE: You can maybe retry your wait here
+            writeln("Had an interrupt");
+        }
+        catch(FatalException e)
+        {
+            // NOTE: This is a FATAL error in the underlying eventing system, do not continue
+        }
+    }
+}
+
+TestThread thread1 = new TestThread(event);
+thread1.start();
+```
+
+Now on the main thread we can do the following to wakeup waiting threads:
+
+```d
+/* Wake up all sleeping on this event */
+event.notifyAll();
+```
