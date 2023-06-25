@@ -69,7 +69,7 @@ Simple and modular logging library with support for chained custom text transfor
 ## tristanable
 
 {{<bruh>}}
-<img src="/img/tristanable_logo.png" width="119" height="102.5" style="float:right">
+<img src="/img/tristanable_logo.png" width="15%" height="15%" style="float:right">
 {{</bruh>}}
 
 Tag-based asynchronous messaging framework for D. This allows you to write software that awaits on messages
