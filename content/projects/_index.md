@@ -143,10 +143,8 @@ Event handling system for writing handlers and triggering them later.
 
 ## birchwood
 
-
-TODO: adjust the size here and get the logo
 {{<bruh>}}
-<img src="/projects/birchwood/logo.png" width=10% height=10% style="float:right">
+<img src="/img/birchwood.png" width=10% height=10% style="float:right">
 {{</bruh>}}
 
 A sane IRC framework for the D language.
@@ -156,20 +154,19 @@ for the receive and send queue manager threads.
 
 * [Code repository](/git/deavmi/birchwood)
 * [Issue tracker](https://github.com/deavmi/birchwood)
-* [Project homepage](/projects/birchwood)
+* [Project homepage](https://code.dlang.org/packages/birchwood)
 
 ## libsnooze
 
-TODO: adjust the size here and get the logo
 {{<bruh>}}
-<img src="/projects/birchwood/logo.png" width=10% height=10% style="float:right">
+<img src="/img/libsnooze.png" width=10% height=10% style="float:right">
 {{</bruh>}}
 
 A wait/notify mechanism for D
 
 * [Code repository](/git/deavmi/libsnooze)
 * [Issue tracker](https://github.com/deavmi/libsnooze)
-* [Project homepage](/projects/libsnooze)
+* [Project homepage](https://code.dlang.org/packages/libsnooze)
 
 ---
 
