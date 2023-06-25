@@ -11,9 +11,6 @@ I am returning to development on them since having finished up with university. 
 which is my programming language of choice. Some other projects will be returned to in terms of development whilst other are fully
 deprecated.
 
-If you have any questions, find my details on the [Contact page](/about) - _enjoy!_
-
-
 {{<bruh>}}
 <br>
 <br>
@@ -23,6 +20,8 @@ If you have any questions, find my details on the [Contact page](/about) - _enjo
 <br>
 <br>
 {{</bruh>}}
+
+If you have any questions, find my details on the [Contact page](/about) - _enjoy!_
 
 ---
 
