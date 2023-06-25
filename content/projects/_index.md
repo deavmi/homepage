@@ -13,6 +13,14 @@ deprecated.
 
 If you have any questions, find my details on the [Contact page](/about) - _enjoy!_
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ---
 
 # Active projects
