@@ -192,6 +192,10 @@ Executor framework with future-based task submission and pluggable thread execut
 
 ## gitea-irc-bot
 
+{{<bruh>}}
+<img src="/img/gitea-irc-bot.png.png" width=10% height=10% style="float:right">
+{{</bruh>}}
+
 A Gitea webhook-based IRC bot
 
 * [Code repository](/git/deavmi/gitea-irc-bot)
