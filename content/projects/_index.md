@@ -182,6 +182,22 @@ A wait/notify mechanism for D
 * [Issue tracker](https://github.com/deavmi/libsnooze)
 * [Project homepage](https://code.dlang.org/packages/libsnooze)
 
+## Guillotine
+
+Executor framework with future-based task submission and pluggable thread execution engines
+
+* [Code repository](/git/deavmi/guillotine)
+* [Issue tracker](https://github.com/deavmi/guillotine)
+* [Project homepage](https://code.dlang.org/packages/guillotine)
+
+## gitea-irc-bot
+
+A Gitea webhook-based IRC bot
+
+* [Code repository](/git/deavmi/gitea-irc-bot)
+* [Issue tracker](https://github.com/deavmi/gitea-irc-bot)
+* [Project homepage](https://code.dlang.org/packages/v)
+
 ---
 
 # Upcoming projects
