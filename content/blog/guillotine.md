@@ -1,5 +1,5 @@
 ---
-title: 💤️ Guillotine - 
+title: Guillotine - A modern executor framework with pluggable backends
 author: Tristan B. V. Kildaire
 date: 2023-03-19
 draft: true
