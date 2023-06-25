@@ -185,6 +185,14 @@ A new programming language for systems programming with a focus on control of ev
 * [Project homepage](/projects/tlang)
 * ~~[Source code]()~~ Source code will be available by the end of 2023, with a release expected by then.
 
+
+
+---
+
+# Inactive projects
+
+All the projects listed below are no longer worked on or maintained.
+
 ## tasky
 
 {{<bruh>}}
@@ -194,34 +202,9 @@ A new programming language for systems programming with a focus on control of ev
 Framework for writing programs that require callbacks to run from certain types of messages sent
 over a socket. Uses [tristanable](/projects/tristanable) and [eventy](/projects/eventy) in the backend.
 
-Currently being re-written.
-
 * [Code repository](/git/deavmi/tasky)
 * [Issue tracker](https://github.com/deavmi/tasky)
 * [Project homepage](/projects/tasky)
-
----
-
-# Inactive projects
-
-All the projects listed below are no longer worked on or maintained.
-
-## Bester
-
-**TODO:** Add logo
-
-A federated pluggable message-exchange protocol
-
-[Project homepage](/projects/bester)
-
-## Butterfly
-
-Butterfly is a full email system that uses JSON-based messaging embedded in [bformat](). It provides a single server that acts as both mail delivery and mailbox management system (analog to providing SMTP and POP/IMAP in one single service). It supports client-to-server connectivity along with server-to-server connectivity for inter-server mail delivery.
-
-1. [butterflyd homepage](/projects/butterfly)
-    * This provides the mail server
-2. [skoenlapper](/projects/skoenlapper)
-    * This is the text-based email client for butterfly
 
 ## DNET
 
@@ -236,3 +219,20 @@ A new chat binary protocol aiming to replace IRC with modern day features.
 * Gustav - A GTK3+ graphical chat client for DNET
 
 [Project homepage](/projects/dnet)
+
+## Butterfly
+
+Butterfly is a full email system that uses JSON-based messaging embedded in [bformat](). It provides a single server that acts as both mail delivery and mailbox management system (analog to providing SMTP and POP/IMAP in one single service). It supports client-to-server connectivity along with server-to-server connectivity for inter-server mail delivery.
+
+1. [butterflyd homepage](/projects/butterfly)
+    * This provides the mail server
+2. [skoenlapper](/projects/skoenlapper)
+    * This is the text-based email client for butterfly
+
+## Bester
+
+**TODO:** Add logo
+
+A federated pluggable message-exchange protocol
+
+[Project homepage](/projects/bester)
