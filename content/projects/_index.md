@@ -172,7 +172,7 @@ Event handling system for writing handlers and triggering them later.
 
 A sane IRC framework for the D language.
 
-Makes use of [Eventy](/projects/eventy) for event handling and [libsnooze](/projects/libsnooze)
+Makes use of [Eventy](/projects/eventy) for event handling and [libsnooze](https://code.dlang.org/packages/libsnooze)
 for the receive and send queue manager threads.
 
 * [Code repository](/git/deavmi/birchwood)
