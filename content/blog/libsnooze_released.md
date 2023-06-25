@@ -2,7 +2,7 @@
 title: 💤️ libsnooze - a wait/notify mechanism for D
 author: Tristan B. V. Kildaire
 date: 2023-03-19
-draft: false
+draft: true
 ---
 
 # What is libsnooze?

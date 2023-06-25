@@ -1,15 +1,14 @@
 ---
-title: Birchwood - A sane IRC framework for D
+title: 🪵️ Birchwood - A sane IRC framework for D
 author: Tristan B. V. Kildaire
 date: 2023-03-19
-draft: false
+draft: true
 ---
 
-## Why IRC though?
+# Why IRC though?
 
-TODO: change the URL below wot relative before publishing
 {{<bruh>}}
-<img src="deavmi.assigned.network/projects/birchwood/logo.png" width=10% height=10% style="float:right;gap;margin-left:20px">
+<img src="/projects/birchwood/logo.png" width=10% height=10% style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 This is a legitimate question. We live in the era of many programmers using both open-source and proprietary solutions such as Matrix and Discord respectively as a form of communications between developers and bots. Seemingly these services do offer many more features than one of the very first internet communications technologies - IRC - does.
@@ -18,7 +17,7 @@ I, however, do not really care too much for the features these platforms offer w
 
 I think my main reason for seeing IRC _still_ as a viable alternative to Matrix even with the technicalities of their respective protocols aside is really just because IRC is much more simpler and _Just works ™️_. It is therefore because of this reason that I cared enough to venture into an IRC-related project.
 
-## What is `birchwood`?
+# What is `birchwood`?
 
 Birchwood is an IRC framework for DLang, but what is a _framework_. To put it simply it allows one to make use of the IRC protocol via an IRC server but in a programmatic way.
 
