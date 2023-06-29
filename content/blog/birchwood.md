@@ -8,7 +8,7 @@ draft: false
 # Why IRC though?
 
 {{<bruh>}}
-<img src="/projects/birchwood/logo.png" width=10% height=10% style="float:right;gap;margin-left:20px">
+<img src="/img/birchwood.png" width=10% height=10% style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 This is a legitimate question. We live in the era of many programmers using both open-source and proprietary solutions such as Matrix and Discord respectively as a form of communications between developers and bots. Seemingly these services do offer many more features than one of the very first internet communications technologies - IRC - does.
