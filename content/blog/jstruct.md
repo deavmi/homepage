@@ -6,7 +6,7 @@ draft: false
 ---
 
 {{<bruh>}}
-<img src="/projects/jstruct/logo.png" width=10% height=10% style="float:right;gap;margin-left:20px">
+<img src="/projects/jstruct/logo.png" width=40% height=40% style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 # Introducing `jstruct`
