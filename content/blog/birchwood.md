@@ -1,12 +1,12 @@
 ---
 title: 🪵️ Birchwood - A sane IRC framework for D
 author: Tristan B. V. Kildaire
-date: 2023-03-19
+date: 2023-07-01
 draft: false
 ---
 
 {{<bruh>}}
-<img src="/img/birchwood.png" width=40% height=40% style="float:right;gap;margin-left:20px">
+<img src="/img/birchwood.png" width=25% height=25% style="float:right;gap;margin-left:20px">
 {{</bruh>}}
 
 # Why IRC though?
@@ -16,6 +16,8 @@ This is a legitimate question. We live in the era of many programmers using both
 I, however, do not really care too much for the features these platforms offer when it comes to the basics of communications. I immediately disregard services like Slack or Discord due to their proprietary nature. As for services such as Matrix, I do actually make quite extensive use of it now and then so I have nothing bad to say about the user experience with such a service and I think the additions such as end-to-end encryption are very cool however IRC and Matrix do have some differences at a technical level. Matrix is federated whilst IRC networks form a spanning tree rather than necessarily direct server-to-server links (or a _"full mesh"_).
 
 I think my main reason for seeing IRC _still_ as a viable alternative to Matrix even with the technicalities of their respective protocols aside is really just because IRC is much more simpler and _Just works ™️_. It is therefore because of this reason that I cared enough to venture into an IRC-related project.
+
+---
 
 # What is `birchwood`?
 
@@ -100,4 +102,16 @@ One can do the following:
 client.join("#general");
 ```
 
-One can take a look at the API [here](https://birchwood.dpldocs.info/index.html).
+One can take a look at the API [here](https://birchwood.dpldocs.info/birchwood.html).
+
+---
+
+## Start using it today!
+
+Got a project where you want an IRC bot as part of an integration? That's as easy as adding it to your dub-based project with:
+
+```bash
+dub add birchwood
+```
+
+Remember to stay up-to-date, things move and good improvements come - I also try to never break the API - only improve behavior.
