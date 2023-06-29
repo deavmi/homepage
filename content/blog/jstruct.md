@@ -1,5 +1,5 @@
 ---
-title: jstruct - Struct JSON serializer/deserializer for D!
+title: 🏗️ jstruct - Struct JSON serializer/deserializer for D!
 author: Tristan B. V. Kildaire
 date: 2023-06-29
 draft: false
