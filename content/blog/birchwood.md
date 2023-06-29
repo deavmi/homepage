@@ -109,6 +109,7 @@ One can take a look at the API [here](https://birchwood.dpldocs.info/birchwood.h
 ## Special thanks
 
 I'd like to make a shoutout to [supremestdoggo](https://github.com/supremestdoggo) for adding text formatting support - it's been great and helped me build the [gitea-irc-bot](https://code.dlang.org/packages/gitea-irc-bot) with it!
+
 ---
 
 ## Start using it today!
