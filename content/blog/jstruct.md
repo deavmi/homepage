@@ -5,6 +5,10 @@ date: 2023-06-29
 draft: false
 ---
 
+{{<bruh>}}
+<img src="/projects/jstruct/logo.png" width=10% height=10% style="float:right;gap;margin-left:20px">
+{{</bruh>}}
+
 # Introducing `jstruct`
 
 I decided to delve a little bit deeper into D's meta-programming templates and wanted to explore what one could do with it - this is by far nowhere as close as the cool things I did with [Project Guillotine](/blog/guillotine) but it did result in a library that does what I needed - **Struct to JSON serialisation** and **JSON to struct deserialization**.
