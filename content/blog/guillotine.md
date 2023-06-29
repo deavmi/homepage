@@ -1,8 +1,8 @@
 ---
-title: Guillotine - A modern executor framework with pluggable backends
+title: Guillotine - A modern executor framework with pluggable backends 
 author: Tristan B. V. Kildaire
-date: 2023-03-19
-draft: true
+date: 2023-06-29
+draft: false
 ---
 
 # Project Guillotine
@@ -11,17 +11,22 @@ draft: true
 
 After having started the process of studying for my upcoming Java OCP examination I came across the section on Java's `ExecutorService`. Having already implementing something similar by hand by making use of Java's condition variables and mutexes (a.k.a. thew `synchronized` with its `notify()` and `wait()` method) I came to saw that I had indeed implemented a sort of scheduler that could have tasks submitted into it and upon submission returning a handle to them in the form of a `Future`.
 
+For those who want to immediately read the API, [here it is](https://guillotine.dpldocs.info/v0.0.14-beta/guillotine.html).
+
 ## What is a future?
+
 A future is effectively a handle on a submitted task that continues being run in the background and the future, this *"handle"*, let's you check if it is completed (i.e. what state it is in). Perhaps if it is in a state such as `RUNNING` you can continue doing other work till you come round to check it again.
 
 However useful that is I was more enthralled with the idea of calling `await()` on the `Future` and sleeping my thread till the task completed.
 
 ## Executors? D?
+
 There may very well be some library that provides an API similar to that of `ExecutorService` in Java but I decided I would implement it myself to have a library that was nice to user to my needs. It's things like, how does an error get reported back - *"do you re-throw the error or return it in the result when returning from the call to `await()`"* . Another question, *"what does the return value look like?"*.
 
 One of the things that I wanted to get working right away was the ability for someone to provide a task returning any primitive values such as `int`, `double` and so on but also any object type (this was easy enough as you just use `Object` then - the super type). However, with java there is a conversion that can occur easily between primitives like `int` and the OOP-version such as `Integer`. In D, we don't really like generics modelled in the way that Java does. In fact we *can do generics with primitives*.
 
 ### Wrapping functions
+
 I therefore went ahead and started working on a template (a form of meta-programming that is like generics but more powerful and can operate on symbols too - not just types). I started with a template which would let me take in any symbol at compile time, evaluate it to check the following:
 
 1. Is it a function?
@@ -34,6 +39,7 @@ I therefore went ahead and started working on a template (a form of meta-program
 I was able to effectively write code that could generate more code at compile-time on-demand just by a singular parameter and various compile-time traits checking.
 
 ## Underlying mechanism
+
 The underlying mechanism being used for the waiting/notification mechanism is, funnily enough, not Hoarian at all. I am actually not using something akin to a `futex` but rather a lock (in D a `Mutex`) and `libsnooze` which currently uses a UNIX pipe to do an I/O wait on (a blocking 1-byte `read()`) and then waking is done by writing to the write end (via a call to `write()` with 1-byte). There's also handling for interruptions here - something I noticed D's runtime doing and took me months to figure out.
 
 > It's good to check `errno()` now and then after checking your return value. Sometimes `-1` is not always a bad thing, maybe you got a signal - `EINTR`
@@ -42,7 +48,10 @@ In any case it was D's runtime most likely signalling some signal like `SET-t...
 
 I do plan to move to a Hoarian system in the near future and will most likely make `libsnooze` effectively wrap around D's `core.sync.condition` code which provides it. `libsnooze`  isn't bad at all but there are some interesting by products by doing the `pipe`-trick, such as multiple notifies (say `n`-many) meaning each successive `wait()` would wake `n` times when instead many notifies shouldn't do that if the notified thread was awoken from the first call. This isn't bad, depends on how you use libsnooze but it can cause unneeded cycles. Anyways, I digress.
 
+---
+
 ## Providers
+
 Once you have an `Executor` (as we call it in Guillotine) you can use it to submit tasks as shown below:
 
 ```d
@@ -69,6 +78,7 @@ interface Provider
 ```
 
 ### A `Task`?
+
 Well then, if we submit `Task`'s to a `provider`, then the next question is *"what in the hell is a task?"*. That **too** is simple, this is now akin to what Java refers to as a `Runnable` and it is as basic as:
 
 ```d
@@ -79,9 +89,13 @@ interface Task
 ```
 
 ### Sequential provider
+
 So far there is only one provider which exists (more are to come) but the so-called `Sequential` provides us with a task submission system which dequeues submitted tasks from a queue and then executes them in serial or *"sequential order"*.
 
+---
+
 ## Putting it all together
+
 Now that we have a `Provider` which the `Executor` can submit tasks too we can look at the worked example below.
 
 First let's import everything we need:
@@ -166,7 +180,9 @@ What happened to the void function? Ah well, recall after submission I made a ca
 It is useful to know how to `stop()` a provider as it aids in gracefully shutting down your program and letting any running tasks finish (that it can guarantee). If a running `Task` hangs however, so will the call to `stop()` so always ensure your tasks are coded correctly to handle errors.
 
 ---
+
 ## What's next?
+
 There are a few things:
 
 1. Upgraded the internal mechanism to use condition variables
@@ -182,3 +198,11 @@ There are a few things:
 ## That's it!
 
 I hope you have some fun using it as an executor service API makes coding a lot of network-based applications very much more manageable (it's actually why I created Guillotine was to deal with an upcoming project of mine where I need the concept of a `Task` and its progress `Future`).
+
+Want to use it in your project - simply add it to your dub-based project using:
+
+```bash
+dub add guillotine
+```
+
+And then take a look at the [API documentation](https://guillotine.dpldocs.info/v0.0.14-beta/guillotine.html).
