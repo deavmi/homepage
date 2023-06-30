@@ -17,6 +17,12 @@ I, however, do not really care too much for the features these platforms offer w
 
 I think my main reason for seeing IRC _still_ as a viable alternative to Matrix even with the technicalities of their respective protocols aside is really just because IRC is much more simpler and _Just works ™️_. It is therefore because of this reason that I cared enough to venture into an IRC-related project.
 
+### Tldr?
+
+You can checkout the source code [on GitHub](https://github.com/deavmi/birchwood) or if you want to use it in your project checkout the [DUB page](https://code.dlang.org/packages/birchwood).
+
+Documentation is available [here](https://birchwood.dpldocs.info/birchwood.html).
+
 ---
 
 # What is `birchwood`?
