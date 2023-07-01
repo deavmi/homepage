@@ -9,7 +9,7 @@ draft: false
 
 > Check it out on [DUB](https://code.dlang.org/packages/guillotine) and [GitHub](https://github.com/deavmi/guillotine)
 
-After having started the process of studying for my upcoming Java OCP examination I came across the section on Java's `ExecutorService`. Having already implementing something similar by hand by making use of Java's condition variables and mutexes (a.k.a. thew `synchronized` with its `notify()` and `wait()` method) I came to saw that I had indeed implemented a sort of scheduler that could have tasks submitted into it and upon submission returning a handle to them in the form of a `Future`.
+After having started the process of studying for my upcoming Java OCP examination I came across the section on Java's `ExecutorService`. Having already implemented something similar by hand by making use of Java's condition variables and mutexes (a.k.a. the `synchronized` with its `notify()` and `wait()` method) I came toee that I had indeed implemented a sort of scheduler that could have tasks submitted into it and upon submission returning a handle to them in the form of a `Future`.
 
 For those who want to immediately read the API, [here it is](https://guillotine.dpldocs.info/v0.0.14-beta/guillotine.html).
 
@@ -17,13 +17,13 @@ For those who want to immediately read the API, [here it is](https://guillotine.
 
 A future is effectively a handle on a submitted task that continues being run in the background and the future, this *"handle"*, let's you check if it is completed (i.e. what state it is in). Perhaps if it is in a state such as `RUNNING` you can continue doing other work till you come round to check it again.
 
-However useful that is I was more enthralled with the idea of calling `await()` on the `Future` and sleeping my thread till the task completed.
+However useful that is, I was more enthralled with the idea of calling `await()` on the `Future` and sleeping my thread till the task completed.
 
 ## Executors? D?
 
-There may very well be some library that provides an API similar to that of `ExecutorService` in Java but I decided I would implement it myself to have a library that was nice to user to my needs. It's things like, how does an error get reported back - *"do you re-throw the error or return it in the result when returning from the call to `await()`"* . Another question, *"what does the return value look like?"*.
+There may very well be some library that provides an API similar to that of `ExecutorService` in Java but I decided I would implement it myself, to have a library that was nicre to use for my needs. It's things like, how does an error get reported back - *"do you re-throw the error or return it in the result when returning from the call to `await()`"* . Another question, *"what does the return value look like?"*.
 
-One of the things that I wanted to get working right away was the ability for someone to provide a task returning any primitive values such as `int`, `double` and so on but also any object type (this was easy enough as you just use `Object` then - the super type). However, with java there is a conversion that can occur easily between primitives like `int` and the OOP-version such as `Integer`. In D, we don't really like generics modelled in the way that Java does. In fact we *can do generics with primitives*.
+One of the things that I wanted to get working right away was the ability for someone to provide a task returning any primitive values such as `int`, `double` and so on, but also any object type (this was easy enough as you just use `Object` then - the super type). However, with java there is a conversion that can occur easily between primitives like `int` and the OOP-version such as `Integer`. In D, we don't really like generics modelled in the way that Java does. In fact we *can do generics with primitives*.
 
 ### Wrapping functions
 
@@ -46,7 +46,7 @@ The underlying mechanism being used for the waiting/notification mechanism is, f
 
 In any case it was D's runtime most likely signalling some signal like `SET-t..._LIMIT_` and a `...+1` version (I cannot recall but presumably for pausing so it could do a GC sweep).
 
-I do plan to move to a Hoarian system in the near future and will most likely make `libsnooze` effectively wrap around D's `core.sync.condition` code which provides it. `libsnooze`  isn't bad at all but there are some interesting by products by doing the `pipe`-trick, such as multiple notifies (say `n`-many) meaning each successive `wait()` would wake `n` times when instead many notifies shouldn't do that if the notified thread was awoken from the first call. This isn't bad, depends on how you use libsnooze but it can cause unneeded cycles. Anyways, I digress.
+I do plan to move to a Hoarian system in the near future and will most likely make `libsnooze` effectively wrap around D's `core.sync.condition` code which provides it. `libsnooze`  isn't bad at all but there are some interesting side-effects by doing the `pipe`-trick, such as multiple notifies (say `n`-many) meaning each successive `wait()` would wake `n` times when instead many notifies shouldn't do that if the notified thread was awoken from the first call. This isn't bad, depends on how you use libsnooze but it can cause unneeded cycles. Anyways, I digress.
 
 ---
 
@@ -63,7 +63,7 @@ Future fut1 = t.submitTask!(hi);
 ```
 But you are probably wondering about a few things?
 
-1. Where and how does it executor?
+1. Where and how does it execute?
 2. And what is that object being passed to the constructor of `Executor`?
 
 Number `2` answers number `1`. The thing being passed is known as a `Provider` and is actually a separate API completely. It defines a task submission system - very general without any knowledge of futures and all that good stuff, the API is very simple - it's shown below! This is what a `Provider` is:
@@ -96,7 +96,7 @@ So far there is only one provider which exists (more are to come) but the so-cal
 
 ## Putting it all together
 
-Now that we have a `Provider` which the `Executor` can submit tasks too we can look at the worked example below.
+Now that we have a `Provider` which the `Executor` can submit tasks to we can look at the worked example below.
 
 First let's import everything we need:
 ```d
