@@ -8,6 +8,7 @@ draft: false
 
 
 ## Hardware
+
 Before you can continue with the next steps I should mention a few things.
 
 ### Choosing a capture card
@@ -40,16 +41,20 @@ The specific version I have is the `TODO: find the revision here`
 
 You can use the Raspberry Pi `rpi-flasher` (I ran it using `sudo` because the access rights didn't work even with a running policy kit like `lxpolkit`).
 
-Once you have it open you will want to navigate to the "Other section"
+Once you have it open you will want to navigate to the "Other section":
+
 ![](/img/vinyl/other.png)
 
 Then we want to go to the "Ubuntu" section:
+
 ![](/img/vinyl/ubuntu_section.png)
 
 Lastly, click on this one - this is the image we will be using for our Raspberry Pi Zero:
+
 ![](/img/vinyl/rpi_image.png)
 
 **Now** you will want to click the little configuration button at the bottom and configure the few settings you can to your needs. I decided it would make sense to get SSH configured for password access now along with configuring the Pi's settings such that on boot it would join my home network and then lastly the user and password to create:
+
 ![](/img/vinyl/rpi_setup.png)
 
 > By the way, setting the hostname is nice as you will be able to (if your machine has Avahi - most distros do) discover your device's IP by doing `ping vinylpi.local`.
@@ -66,6 +71,7 @@ Well, the one device lock is still a thing but people got smart - why not let th
 PulseAudio is one such server, it locks the audio devices connected to the system and makes them available to other processes **via** pulse audio inter-process communication. So many programs are written to use PulseAudio these days and it makes life so much more easier.
 
 ### Settuing up PulseAudio
+
 So what we're now going to install is the PulseAudio server for Linux, we can do so easily with the command below:
 
 ```bash
@@ -75,7 +81,8 @@ sudo apt install pulseaudio pulseaudio-utils
 The `pulseaudio-utils` package gives us a tool known as `pactl` which let's us inspect the running pulse audio server (installed by  the `pulseaudio` package).
 
 ### Start the audio server
-We now need to start the ouklse audio server. This will discover all audio input and output devices and get a lock on them. It iwll multiplex these out to clients wanting them via IPC mehcnaics.
+
+We now need to start the pulse audio server. This will discover all audio input and output devices and get a lock on them. It iwll multiplex these out to clients wanting them via IPC mehcnaics.
 
 ```bash
 pulseaudio  -v
@@ -86,6 +93,7 @@ I pass the `-v` for a verbosity level of `1` just so I can see what it is busy d
 > Once we reboot it will start automatically but for now we do this
 
 ### Device check
+
 You should be able to see your device now, run the command:
 
 ```bash
@@ -111,9 +119,11 @@ Source #1
 ```
 
 ## Networking
+
 We're going to now quickly shift focus to the networking side of things. After all that *is* what this project is all about.
 
 ### Getting network information
+
 Firstly I would like to figure out what the IP address is - ever since installing I was doing a DNS-based login (I could `ping vinylpi.local`) but seeing that we're in now we may as well do this because we will need it later.
 
 We need to figure out our IP, let's get the good-ol' `ifconfig` back by installing the `net-tools` package as follows:
@@ -123,6 +133,7 @@ sudo apt install net-tools -y
 ```
 
 After this run the command `ifconfig` and you should get something like the following printed out:
+
 ```
 wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 192.168.1.137  netmask 255.255.255.0  broadcast 192.168.1.255
@@ -137,6 +148,7 @@ wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 From this we can tell our IP address is **192.168.1.137** on the WiFi interface `wlan0`.
 
 ### A little test stream
+
 Before we get to setting up the proper streaming server let's first test the whole setup. Now obviously we *have to* test ti via the network as we don't have any audio ports on the Raspberry Pi Zero. We can setup a VLC stream server which captures an audio feed from a Pulse Audio device such as ours - so let's do that.
 
 Begin by installing VideoLAN as follows:
@@ -161,37 +173,47 @@ The `access=http,dst=0.0.0.0:8888/audio.ogg` part means that VLC will start an H
 Now on your machine type in `vlc http://192.168.1.137/audio.ogg` and you should hear it!
 
 Or you can do it via the UI:
+
 ![](/img/vinyl/vlc_client.png)
 
 And then you can listen away:
+
 ![](/img/vinyl/vlc_client_listen.png)
 
 ## Professional-grade streaming server
+
 Icecast is a streaming server that allows multiple sources to stream or *push data* into it. These can then later be consumed by several clients. An audio stream is denotaed by a so-called *"mount point"* whereby one can stream audio **to** and have multiple clients connect and stream audio **from** it.
 
 Let's start by installing the icecast server software:
+
 ```bash
 sudo apt install icecast2 -y
 ```
 
 ### Initial configuration
+
 During the installation it will ask you to configure some basics. We go through these here.
 
 Firstly it wants to know the domain name to use, if you have all that stuff set up then by all means place that domain name below. I, however, will be going with just `localhost`. (This won't affect reachability - don't worry).
+
 ![](/img/vinyl/hostname.png)
 
 You will then be asked to provide a password for the *"source"*. This is the password used to protect your server against others from streaming **to** it.
+
 ![](/img/vinyl/source_password.png)
 
 We won't be setting up a relay (TODO: what is this)
+
 ![](/img/vinyl/relay.png)
 
 Once completed the installation will finish up.
 
 ### Configuring the network
+
 The configuration file is located at `/etc/icecast2/icecast.xml` and we shall be editing that.
 
 First we want to configure our Icecast server to be accessible on all IP addresses (v4 and v6) therefore look for the `<listen-socket>` option and set that block as follows:
+
 ```xml
 <listen-socket>
 	<port>8000</port>
@@ -199,15 +221,18 @@ First we want to configure our Icecast server to be accessible on all IP address
 	<!-- <shoutcast-mount>/stream</shoutcast-mount> -->
 </listen-socket>
 ```
+
 This will listen on all IPv4 and IPv6 addresses and be available on HTTP port **8000**.
 
 If you ever need to change the hostname (it's used to generate URLs for playlist files mainly) then you can with this tag:
+
 ```xml
 <!-- Hostname -->
 <hostname>localhost</hostname>
 ```
 
 ### Authentication
+
 The `<authentication>` block (found near the top of the file) let's configure two things we care about:
 
 1. The administrator console
@@ -273,6 +298,7 @@ Now what I have put together below is an amalgamation of my own code, [this](htt
 	* The password for being a source
 
 Here is the aforementioned script, `vinyl.sh`:
+
 ```bash
 #!/bin/sh
 
@@ -297,9 +323,11 @@ chmod +x vinyl.sh
 ```
 
 You should see something like this:
+
 ![](/img/vinyl/vlc_source.png)
 
 ---
+
 #### Starting VLC on boot
 
 TODO: This whole introduction to this section needs reworking: Need to explain why the current setup just won't work with a `vinyl.service`.
@@ -309,11 +337,13 @@ I, however, have decided to create a systemd unit for it so that it can start on
 Firstly we are going to enable a mode which starts all user services of a given user even prior to them logging inCreate a file named as follows `/etc/systemd/system/vinyl.service` and with the following contents:
 
 TODO: Expalin why
+
 ```bash
 loginctl enable-linger deavmi
 ```
 
 TODO: explain why 
+
 ```bash
 systemctl --user edit --force --full vlc.service
 ```
@@ -340,34 +370,37 @@ WantedBy=default.target
 
 (A quick shoutout to [rany2](TODO: link) for helping realise that the environment variable indicating to VLC which OulseAudio server to use - was missing)
 TODO: Need explanation
+
 ```bash
 systemctl --user unmask pulseaudio.{service,socket}
 systemctl --user enable --now pulseaudio.{service,socket}
 ```
 
-Now let's reload systemd (to make it aware of a new unit file), enable it and start the it:
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable --now vinyl
-```
+
 
 You have now reached the final step. Let's reboot our Pi with:
+
 ```bash
 sudo reboot
 ```
 And give it sometime as Ubuntu on the RPi Zero (and in general) takes some time to boot, once it does you should find your stream on the Icecast landing page showed earlier and should be able to listen to it
 
 ## Monitoring
+
 If you would like to monitor several aspects of the network then there are a few options.
 
 ### On-device monitoring
+
 We can use a program like `htop` to monitor the system state (and we can also see that the `vlc` process is what will take a good amount of CPU time):
+
 ![](/img/vinyl/htop.png)
 
 You could also install `bmon` to examine the network traffic caused by users connecting to listen in:
+
 ![](/img/vinyl/network.png)
 
 ### Remote monitoring
+
 We mentioned that there is an administrator portal that you can login using your administrator username and password. Clicking on the ***administration*** link will bring you there.
 
 One of the screens you will see will show you the active listeners for the current streams/mount points you are hosting:
@@ -382,7 +415,9 @@ Happy listening! 🪩🕺
 ---
 
 ## Extras
+
 ### Yggdrasil-access
+
 You may want to make your machine available on a network other than your private one. A fun little (well not little, [it's rather big](http://51.15.204.214/)) network is that of [Yggdrasil](https://yggdrasil-network.github.io/) which uses a private range of IPv6 addresses (only available on Yggdrasil).
 
 Ubuntu has Yggdrasil in its repositories, therefore it's as easy as:
@@ -421,6 +456,7 @@ ifconfig tun0
 ```
 
 Which should return something like this:
+
 ```
 tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 53049
         inet6 fe80::dada:716d:ce33:290d  prefixlen 64  scopeid 0x20<link>
