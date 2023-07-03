@@ -272,11 +272,13 @@ We can also customise some of the information about our Icecast server as follow
 ---
 
 Now that we have setup everything we need setup, let's restart our Ice cast server to apply the changes:
+
 ```bash
 sudo systemctl restart icecast2
 ```
 
 Now you should be able to reach the Icecast landing age by pointing your browser to `http://your-ip:8000`. A page should appear that looks something like this:
+
 ![](/img/vinyl/icecast_dashboard.png)
 
 >You won't see a stream there *just yet* - I was a bit hasty and configured that prior to writing this section
@@ -427,12 +429,14 @@ sudo apt install yggdrasil -y
 ```
 
 We need to create a configuration file as one is not created on installation, we can get a blank template by doing the following as root:
+
 ```bash
 yggdrasil -genconf > /etc/yggdrasil/yggdrasil.conf
 exit
 ```
 
 We then are required to add some peers. You can find some [here](https://github.com/yggdrasil-network/public-peers), once you have done so add them as follows:
+
 ```toml
 Peers: [
     # Online node
@@ -441,16 +445,19 @@ Peers: [
 ```
 
 We will now stop the Yggdrasil service (as later we shall restart it):
+
 ```bash
 sudo systemctl stop yggdrasil
 ```
 
 We will want to enable the `yggdrasil.service` such that it can start on boot (the optional `--now` flag means to also start the service whilst we're at it):
+
 ```bash
 sudo systemctl enable yggdrasil.service --now
 ```
 
 Now confirm that it is running by checking if we have a new virtual network device `tun0`:
+
 ```bash
 ifconfig tun0
 ```
