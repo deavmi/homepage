@@ -1,7 +1,7 @@
 homepage
 ========
 
-Deavmi's personal homepage viewable [here](http://deavmi.assigned.network).
+Deavmi's personal homepage viewable [here](https://deavmi.assigned.network).
 
 ## Build instructions
 
