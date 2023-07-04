@@ -209,7 +209,7 @@ A Gitea webhook-based IRC bot
 
 * [Code repository](/git/deavmi/gitea-irc-bot)
 * [Issue tracker](https://github.com/deavmi/gitea-irc-bot)
-* [Project homepage](https://code.dlang.org/packages/v)
+* [Project homepage](https://code.dlang.org/packages/gitea-irc-bot)
 
 ---
 
