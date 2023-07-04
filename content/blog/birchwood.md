@@ -1,8 +1,8 @@
 ---
 title: 🪵️ Birchwood - A sane IRC framework for D
 author: Tristan B. V. Kildaire
-date: 2023-06-30
-draft: true
+date: 2023-07-04
+draft: false
 ---
 
 {{<bruh>}}
