@@ -18,6 +18,7 @@ I cannot guarantee this will work on your device but I can say my audio capture 
 For me the importance is that it sounds good and this capture card does sound good and **it has pass-through**. I didn't want a capture card without pass-through as I still have a vintage Tedelex system I want to connect to - the stream is just an aside.
 
 I went with this card (shown below). You can get it on [Takealot](https://www.takealot.com/pdm-pdx015-usb-phono-pre-amplifier-for-turntables/PLID53021834) for roughly R1000.
+
 ![](vinyl/dac_1.jpeg)
 
 ### The doodads
