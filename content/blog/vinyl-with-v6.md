@@ -71,7 +71,7 @@ Well, the one device lock is still a thing but people got smart - why not let th
 
 PulseAudio is one such server, it locks the audio devices connected to the system and makes them available to other processes **via** pulse audio inter-process communication. So many programs are written to use PulseAudio these days and it makes life so much more easier.
 
-### Settuing up PulseAudio
+### Setting up PulseAudio
 
 So what we're now going to install is the PulseAudio server for Linux, we can do so easily with the command below:
 
@@ -329,13 +329,33 @@ You should see something like this:
 
 ![](/img/vinyl/vlc_source.png)
 
+### Customizing the mountpoint
+
+Normally you set a custom mountpoint and then have VLC stream to that mountpoint's URL, however I can just set the common mountpoint settings in my case as I will only ever have sone audio source streaming to my Icecast server.
+
+At the same level we have declared previous blocks (within the `<icecast>` body) declare the following block:
+
+```xml
+ <mount type="default">
+	<public>0</public>
+	<stream-name>VinylPi</stream-name>
+	<stream-description>Only the best tunes all the way from the Boland!</stream-description>
+	<genre>Assorted</genre>
+</mount>
+```
+
+The `"type"` attribute here is very important as it specifies that this mount is not a specific mountpoint but rather contains settings that should apply as the common settings or _default values_ for other mount points that are declared _or_ for ones that are automatically created (as is the case for ours). We can set the name of the stream and a description and other meta-data so that it appears as follows:
+
+
+![](/img/vinyl/mountpoint_settings.png)
+
 ---
 
 #### Starting VLC on boot
 
 TODO: This whole introduction to this section needs reworking: Need to explain why the current setup just won't work with a `vinyl.service`.
 
-I, however, have decided to create a systemd unit for it so that it can start on boot. Now, pulse audio comes configured in thsi God awful manner for starting it. It starts only on-demand and only as a user service.  So the steps below are from my friend [rany2](TODO: add link) who has provided me with help on getting this to work.
+I, however, have decided to create a systemd unit for it so that it can start on boot. Now, pulse audio comes configured in this God awful manner for starting it. It starts only on-demand and only as a user service.  So the steps below are from my friend [rany2](TODO: add link) who has provided me with help on getting this to work.
 
 Firstly we are going to enable a mode which starts all user services of a given user even prior to them logging inCreate a file named as follows `/etc/systemd/system/vinyl.service` and with the following contents:
 
