@@ -33,7 +33,7 @@ You can reach this site via many more [networks](networks/) (such as I2P and CRX
 <img src="/img/donate.png" width="200" hieght="200" style="float:right;wrap">
 {{</bruh>}}
 
-If you like what I _do_ and don't mind shilling a _few_ then you can send me some Internet money (note I don't accept PayPal or any centralised service) or a gold certificate. The aim of the donations are to show appreciation for my work. If, however, you are interested in donating to one of my projects (whereby the money goes towards it) then please find the respective donation link on their project pages.
+If you like what I _do_ and don't mind shilling a _few_ then you can send me some Internet money. The aim of the donations are to show appreciation for my work. If, however, you are interested in donating to one of my projects (whereby the money goes towards it) then please find the respective donation link on their project pages.
 
 {{<bruh>}}
 <br>
@@ -41,8 +41,8 @@ If you like what I _do_ and don't mind shilling a _few_ then you can send me som
 {{</bruh>}}
 
 * Monero: `86reDCjk99VJ8QCo73WwM1AtfweD2fp8RPPWzNK56cdS1fAfxWCwixic9QrXkHyoJSe3gMZkAkb8aW5oU4cLEFucMLX4wqP`
+* Liberapay: [tbvk](https://liberapay.com/tbvk/)
 
-
-_I am not a slave to the global financial system_
+_I **am** apparently a slave to the global financial system_
 
 ---
