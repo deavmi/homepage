@@ -10,29 +10,18 @@
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
 
-  {{ $kak := .Pages.GroupByDate "2006" }}
+  {{ $allBlogs := .Pages.GroupByDate "2006" }}
 
-  <!-- <p>{{$kak}}</p> -->
-
-  {{ range $kak }}
-    
+  {{ range $allBlogs }}
     <h2>{{.Key}}</h2>
 
     {{ range .Pages }}
         <li>
-            <!-- <b>{{.Date.Day}}:</b>  -->
             <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+            <b>{{.Date.Day}} {{.Date.Month }}</b>
         </li>
-        <!-- <p>{{.Date }}</p> -->
     {{end}}
   {{end}}
-
-  <!-- {{ range (where $pages "Section" "!=" "") }}
-    <li>
-        <span class="date">{{ .Date.Format "2006/01/02" }}</span>
-        <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
-    </li>
-  {{ end }} -->
 </ul>
 
 {{ partial "footer.html" . }}
