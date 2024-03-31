@@ -2,4 +2,4 @@
 title: Hot takes
 ---
 
-None, so far :).
+You really fell for this one didn't you.
