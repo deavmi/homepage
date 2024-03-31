@@ -10,7 +10,7 @@ If you have read the homepage section then you know pretty much all there is to 
 
 ## Curriculum Vitae
 
-You can find a copy of my CV [here]().
+You can find a copy of my CV [here](/cv/).
 
 ## Contact information
 
