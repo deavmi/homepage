@@ -3,9 +3,6 @@ title: Home
 ---
 
 {{<bruh>}}
-<!--
-	<img src="/img/profile_pic.jpg" width="250" hieght="250" style="float:right;gap">
--->
 <img src="/img/profile_pic_honors_grad.jpg" width="172.8" hieght="259" style="float:right;gap;margin-left:10px;margin-bottom:10px">
 {{</bruh>}}
 
@@ -30,7 +27,7 @@ You can head over to the [projects page](/projects) to see what I am working on 
 
 ## Connect with me
 
-I'm active on a few social media platforms and post regularly (or not) but I definately do
+I'm active on a few social media platforms and post regularly (or not) but I definitely do
 check these platforms now and then so if you want to discuss something then it isn't a bad
 way to get in touch and also stay upt-o-date with updates regarding to new blog posts or
 projects.
