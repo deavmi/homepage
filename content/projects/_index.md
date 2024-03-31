@@ -265,7 +265,7 @@ A new chat binary protocol aiming to replace IRC with modern day features.
 
 ## Butterfly
 
-Butterfly is a full email system that uses JSON-based messaging embedded in [bformat](). It provides a single server that acts as both mail delivery and mailbox management system (analog to providing SMTP and POP/IMAP in one single service). It supports client-to-server connectivity along with server-to-server connectivity for inter-server mail delivery.
+Butterfly is a full email system that uses JSON-based messaging embedded in [bformat](/projects/bformat). It provides a single server that acts as both mail delivery and mailbox management system (analog to providing SMTP and POP/IMAP in one single service). It supports client-to-server connectivity along with server-to-server connectivity for inter-server mail delivery.
 
 1. [butterflyd homepage](/projects/butterfly)
     * This provides the mail server
