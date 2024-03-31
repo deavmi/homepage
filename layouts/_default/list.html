@@ -7,9 +7,7 @@
 {{ .Content }}
 
 <ul>
-  {{ $pages := .Pages }}
-  {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-
+{{ if not .IsHome }}
   {{ $allBlogs := .Pages.GroupByDate "2006" }}
 
   {{ range $allBlogs }}
@@ -21,7 +19,10 @@
             <b>{{.Date.Day}} {{.Date.Month }}</b>
         </li>
     {{end}}
+
   {{end}}
+
+{{end}}
 </ul>
 
 {{ partial "footer.html" . }}
