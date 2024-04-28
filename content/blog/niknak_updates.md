@@ -1,0 +1,148 @@
+---
+title: "Niknaks updates"
+author: Tristan B. Velloza Kildaire
+date: 2024-04-01
+draft: true
+---
+
+
+// TODO: Fix date
+
+# Introduction
+
+Just thought I would describe what the `niknaks` project is. Firstly, it
+isn't an application-side library, something that relates to any one _"idea"_
+but rather just a collection of various utilities and re-usable datatypes.
+
+It orirignally started when I begun work on a project of mine where I
+was seeminly requiring common routines like:
+
+* Array element prescence checking
+* Endianness conversions
+    * And support for widths of 1 to 8 bytes
+
+After some time I started working on other projects of mine whereby I needed
+some functional constructs like _predicates_ and _optionals_, therefore I
+went ahead and implemented those as comon types accessible to my applications,
+all of this being templatised of course.
+
+As time went on I had added things like a delay mechanism, debugging tools,
+prompting mechanism (think of CLI usage), configuration utility comprising
+of configuration entries and a registry to manage them, a cache map imlementation. (TODO: Add tree type)
+
+
+Therefore I was able to collect all of these commonly used routines, types
+and mechanisms into a common library that I called `niknaks`, all licensed
+under the LGPL 3.0.
+
+# Updates
+
+It is now time to talk about the various additions I have made to this library
+over the last few months because I have had great fun implementing the various
+routines I need for other projects of mine **and** making them available to the
+greater D community.
+
+## CacheMap
+
+One of the additions I made earlier this year was that of a cache map. This is
+effectively a type which provides a map-like interface where you have a key of
+type `K` and it should return a value of type `V`. That should be obvious. Where
+the difference comes in is that the mapping is not permanent and only lasts for
+a given lifetime (there is a thread for checking for expiration). With this in mind
+everytime you lookup a value `K` then if the entry is not there (either exxpired or
+never created) then a _"filler"_  function (which returns a value of type `V`)
+will be called with the value of your key and fill the entry and then return it.
+
+Now, accesses made within the timeout period will not call that filler function
+again and you will ba accessing a cached value, that's the idea.
+
+### Example code
+
+Below is an example usage of the `CacheMap` which is actually part of the test
+suite:
+
+```d
+int i = 0;
+int getVal(string)
+{
+    i++;
+    return i;
+}
+
+// Create a CacheMap with 10 second expiration and 10 second sweeping interval
+CacheMap!(string, int) map = new CacheMap!(string, int)(&getVal, dur!("seconds")(10));
+
+// Get the value
+int tValue = map["Tristan"];
+assert(tValue == 1);
+
+// Get the value (should still be cached)
+tValue = map["Tristan"];
+assert(tValue == 1);
+
+// Wait for expiry (by sweeping thread)
+Thread.sleep(dur!("seconds")(11));
+
+// Should call replacement function
+tValue = map["Tristan"];
+assert(tValue == 2);
+
+// Wait for expiry (by sweeping thread)
+writeln("Sleeping now 11 secs");
+Thread.sleep(dur!("seconds")(11));
+
+// Destroy the map (such that it ends the sweeper)
+destroy(map);
+```
+
+## Prompter and prompts
+
+When working on the Tristan's Programming Language's package manager `tpkg` I
+realised the quick need for a mechanism that would let me build up custom
+questions and then have the answers be provided by the means of some `File`.
+
+I wanted to basically be able to prompt the user, on the command-line, for
+answers to several questions such as _"What is the name of the new module?"_
+or _"What description do you want to have set?"_ and then have it do the
+prompting for me and storing of the respective answers.
+
+Well, that's what this basically does.
+
+### Example code
+
+A nice example of the prompting is a snippet of code out of the `tpkg`
+code base itself. Here I prompt for a few things, notably I require the
+answers for the prompts to the _package name_ and  _package description_
+to be non-empty (that is the second `false` given to the `Prompt` constructor;
+the first `false` means to not request a multiple-value answer).
+
+```d
+Prompter prompter = new Prompter(stdin);
+prompter.addPrompt(Prompt("Project name: ", false, false));
+prompter.addPrompt(Prompt("Project description: ", false, false));
+
+
+Prompt[] answers = prompter.prompt();
+
+Project proj;
+string projName;
+if(answers[0].getValue(projName))
+{
+    proj.setName(projName);
+}
+else
+{
+    ERROR("Could not get a valid project name");
+    return;
+}
+string projDescription;
+if(answers[1].getValue(projDescription))
+{
+    proj.setDescription(projDescription);
+}
+else
+{
+    ERROR("Could not get a valid project description");
+    return;
+}
+```
