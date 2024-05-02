@@ -42,6 +42,19 @@ over the last few months because I have had great fun implementing the various
 routines I need for other projects of mine **and** making them available to the
 greater D community.
 
+below are just _some_ of the pull requests (some earlier ones were left out as
+I just grabbed the ones which were already open in my browser's tabs).
+
+| Changeset                                                | Link                                      |
+|----------------------------------------------------------|-------------------------------------------|
+| ⚡ Feature: Generic configuration mechanism              | https://github.com/deavmi/niknaks/pull/18 |
+| ⚡ Feature: More array operations                        | https://github.com/deavmi/niknaks/pull/20 |
+| ⚡ Feature: Improved prompting framework                 | https://github.com/deavmi/niknaks/pull/21 |
+| ⚡ Feature: Add opIndex support to CacheMap              | https://github.com/deavmi/niknaks/pull/19 |
+| ⚡ Feature: Prompting framework                          | https://github.com/deavmi/niknaks/pull/16 |
+| ⚡ Feature: Buffer views                                 | https://github.com/deavmi/niknaks/pull/22 |
+| ⚡ Feature: Generic tree and visitation framework        | https://github.com/deavmi/niknaks/pull/17 |
+
 ## CacheMap
 
 One of the additions I made earlier this year was that of a cache map. This is
