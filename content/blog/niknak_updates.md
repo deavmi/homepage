@@ -42,7 +42,7 @@ over the last few months because I have had great fun implementing the various
 routines I need for other projects of mine **and** making them available to the
 greater D community.
 
-below are just _some_ of the pull requests (some earlier ones were left out as
+Below are just _some_ of the pull requests (some earlier ones were left out as
 I just grabbed the ones which were already open in my browser's tabs).
 
 | Changeset                                                | Link                                      |
