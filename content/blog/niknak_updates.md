@@ -158,6 +158,81 @@ and dealing with arrays of data (items of the same data type)
 is the ability to programatically filter such collections of
 data by some form of reusable component - enter _the predicate_.
 
+The predicate is not any sort of new wrapper type I came up
+with, but rather it is a templatised (type-parameterized) alias
+which when used, expands into a `bool delegate(T)` - some delegate
+which takes in a single argument of type `T` and returns a `bool`,
+a _verdict_.
+
+The definition is as follows:
+
+```d
+/** 
+ * Predicate for testing an input type
+ * against a condition and returning either
+ * `true` or `false`
+ *
+ * Params:
+ *    T = the input type
+ */
+template Predicate(T)
+{
+	/**
+	 * Parameterized delegate pointer
+	 * taking in `T` and returning
+	 * either `true` or `false`
+	 */
+	alias Predicate = bool delegate(T);
+}
+```
+
+There is also a handy `predicateOf(alias)` template used for
+constructing predicates from some symbol (either a function
+or a delegate).
+
+### Example code
+
+#### Predicate example
+
+Suppose we have some function as shown below:
+
+```d
+private bool isEven(int number)
+{
+    return number%2==0;
+}
+```
+
+We can then construct a predicate out of it
+and test it against some input values:
+
+```d
+/**
+ * Uses a `Predicate` which tests
+ * an integer input for evenness
+ *
+ * We create the predicate by
+ * passing in the symbol of the
+ * function or delegate we wish
+ * to use for testing truthiness
+ * to a template function
+ * `predicateOf!(alias)`
+ */
+unittest
+{
+	Predicate!(int) pred = predicateOf!(isEven);
+
+	assert(pred(0) == true);
+	assert(pred(1) == false);
+
+	bool delegate(int) isEvenDel = toDelegate(&isEven);
+	pred = predicateOf!(isEvenDel);
+
+	assert(pred(0) == true);
+	assert(pred(1) == false);
+}
+```
+
 ## Delay mechanism
 
 One of the things I decided to put together was a programming
