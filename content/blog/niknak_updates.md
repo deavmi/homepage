@@ -164,6 +164,96 @@ else
 
 TODO: Add this
 
+The configuration engine is something I put together out of
+a need for it in several projects, one of which was my `tpkg`
+and the TLang compiler itself. Originally beginning as a simple
+abstraction over a union of types and a tag (to indicate the type
+and provide safety during runtime) I made use of it as part
+of the configuration engine for my compiler. I then realised
+I could spin out that logic into a generic configuration
+mechanism. (TODO: TLang to use it)
+
+### Entry types
+
+There are a few entry types that are supported, these can
+be found within the `ConfigType` enum:
+
+| Type name | D's equivalent type |
+|-----------|---------------------|
+| `TEXT`    | `string`            |
+| `NUMERIC` | `int`               |
+| `FLAG`    | `bool`              |
+| `ARRAY`   | `string[]`          |
+
+
+### The configuration entry
+
+The entry itself is easy enough to construct using
+one of the static factories at your disposal via
+the `ConfigEntry` struct type. I have constructed
+a few example use cases of this type below to show
+the proper usage thereof.
+
+Below we test out using the configuration entry and
+its various operator overloads:
+
+```d
+ConfigEntry entry = ConfigEntry.ofArray(["hello", "world"]);
+assert(entry[] == ["hello", "world"]);
+
+entry = ConfigEntry.ofNumeric(1);
+assert(entry.numeric() == 1);
+
+entry = ConfigEntry.ofText("hello");
+assert(cast(string)entry == "hello");
+
+entry = ConfigEntry.ofFlag(true);
+assert(entry);
+```
+
+Tests out the erroneous usage of a
+configuration entry. In this case it
+is because we are attempting to extract
+an `ARRAY` value out of an entry which is
+of type `TEXT`:
+
+```d
+ConfigEntry entry = ConfigEntry.ofText("hello");
+
+try
+{
+    entry[];
+    assert(false);
+}
+catch(ConfigException e)
+{
+        
+}
+```
+
+Tests out the erroneous usage of a
+configuration entry which, in this
+case, is becuase we are trying to
+extract _any_ value out of it (here
+I just attempted an `ARRAY` value
+for the purpose of demonstration)
+**without** having set any value
+in this entry:
+
+```d
+ConfigEntry entry;
+
+try
+{
+    entry[];
+    assert(false);
+}
+catch(ConfigException e)
+{
+    
+}
+```
+
 ## Predicates and Optionals
 
 One of the things that come sup quite a lot when programming
