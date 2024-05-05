@@ -254,6 +254,133 @@ catch(ConfigException e)
 }
 ```
 
+### The `Registry` and its entries
+
+The `ConfigEntry`(s) can be used just by themselves
+and whatever custom map type you would want to write
+to potentially acommodate them. However, if you are
+looking for a ready-made batteries-included solution
+then look no further than the `Registry` and its
+`RegistryEntry`(s), the latter of which wraps the
+`ConfigEntry`(s) of yours, easily. The registry
+provides the ability to associate names with
+entries and various rules on updating them and
+so forth, a true mapping facility to hold all
+the dense attributes for properties one would
+need to store (and potentially modify) during
+application runtime.
+
+Here is some initial usage of the `Registry`
+whereby we will:
+
+* Create a new `Registry` with the overwriting
+of existing registries via calls to `newEntry(...)`
+for the same entry will **FAIL** (hence the `false`
+passed in)
+* We add a new entry and then check it is there
+* We then try adding it again which then **FAILS**
+
+```d
+Registry reg = Registry(false);
+
+// Add an entry
+reg.newEntry("name", ConfigEntry.ofText("Tristan"));
+
+// Check it exists
+assert(reg.hasEntry("name"));
+
+// Adding it again should fail
+try
+{
+    reg.newEntry("name", ConfigEntry.ofText("Tristan2"));
+    assert(false);
+}
+catch(RegistryException e)
+{
+
+}
+```
+
+We also have some useful overloads such as the `opCast(T)`
+which means that if you cast to a type which maps to a
+supported `ConfigType` then you can effectively extract
+the value like that:
+
+```d
+// Check that the entry still has the right value
+assert(cast(string)reg["name"] == "Tristan");
+```
+
+---
+
+Now talking about adding new entries. You can use the
+`newEntry(...)` method _or_ you can make use of the
+indexing operator as follows:
+
+```d
+// Add a new entry and test its prescence
+reg["age"] = 24;
+assert(cast(int)reg["age"] == 24);
+
+// Update it
+reg["age"] = 25;
+assert(cast(int)reg["age"] == 25);
+```
+
+When using the above operator overload (the index
+operator) then it will create an entry if it
+doesn't exist and overwrite it if it does (**irrespective**
+of whether or not the overwriting policy).
+
+This is in comparison to `setEntry(...)` which
+always allows the over-writing of entries (unlike
+the `newEntry(...)` counterpart) **however**
+unlike its indexing-operator counterpart it **cannot**
+create (and then set) entries if they did not
+already exist. This is shown below:
+
+```d
+// Should not be able to set entry it not yet existent
+try
+{
+    reg.setEntry("male", ConfigEntry.ofFlag(true));
+    assert(false);
+}
+catch(RegistryException e)
+{
+
+}
+```
+
+---
+
+We also provide access to the memory space that 
+the `ConfigEntry`, at a given key, occupies via:
+
+```d
+// Obtain a handle on the configuration
+// entry, then update it and read it back
+// to confirm
+ConfigEntry* ageEntry = "age" in reg;
+*ageEntry = ConfigEntry.ofNumeric(69_420);
+assert(cast(int)reg["age"] == 69_420);
+```
+
+Wanted to get all the entries in the registry?
+Well, then you can as follows:
+
+```d
+// All entries
+RegistryEntry[] all = reg[];
+assert(all.length == 2);
+writeln(all);
+```
+
+The `RegistryEntry` type has a `getName()`
+which returns a `string` of the entry's
+name. Then it also has a `getValue()`
+which returns its associated `ConfigEntry`.
+
 ## Predicates and Optionals
 
 One of the things that come sup quite a lot when programming
