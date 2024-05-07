@@ -162,8 +162,6 @@ else
 
 ## Configuration engine
 
-TODO: Add this
-
 The configuration engine is something I put together out of
 a need for it in several projects, one of which was my `tpkg`
 and the TLang compiler itself. Originally beginning as a simple
