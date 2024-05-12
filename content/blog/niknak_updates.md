@@ -54,6 +54,7 @@ I just grabbed the ones which were already open in my browser's tabs).
 | ⚡ Feature: Prompting framework                          | https://github.com/deavmi/niknaks/pull/16 |
 | ⚡ Feature: Buffer views                                 | https://github.com/deavmi/niknaks/pull/22 |
 | ⚡ Feature: Generic tree and visitation framework        | https://github.com/deavmi/niknaks/pull/17 |
+| ⚡ Feature: Insert at                                    | https://github.com/deavmi/niknaks/pull/23 |
 
 ## CacheMap
 
@@ -513,6 +514,21 @@ is returned.
 ## Array tooling 
 
 TODO: Add this
+
+When progranming you tend to work with arrays a lot and depending on what you
+are doing you also may have to run a lot of algoritmns over said arrays, to
+either check them for elements, manipulate them and so forth. Therefore as
+time went on and I saw myself continuously re-implemting specific array routines
+I decided I should just put them all in one place; thus `niknaks.arrays` was born.
+
+Some of these methods of interest are:
+
+| Method signature                        | Description                                                            |
+|-----------------------------------------|------------------------------------------------------------------------|
+| `bool isPresent(T)(T[] array, T value)` | Given an array of element type `T` check if `value` is present therein |
+| `bool findNextFree(T)(T[] used, ref T found)` | Finds the next free **integral** element that is not present in the array, setting the `found` variable to said value if found (and returning `true`), `false` returned in case one not found. `T` must na an _integral_ type |
+| `filter(T)(T[] filterIn, Predicate!(T) predicate, ref T[] filterOut)` | Runs a predicate over `filterIn`, and stores the matched elements into an array, passed by reference, called `filterOut` |
+
 
 ## Bits
 
