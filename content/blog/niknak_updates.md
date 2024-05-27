@@ -528,15 +528,96 @@ Some of these methods of interest are:
 | `bool isPresent(T)(T[] array, T value)` | Given an array of element type `T` check if `value` is present therein |
 | `bool findNextFree(T)(T[] used, ref T found)` | Finds the next free **integral** element that is not present in the array, setting the `found` variable to said value if found (and returning `true`), `false` returned in case one not found. `T` must na an _integral_ type |
 | `filter(T)(T[] filterIn, Predicate!(T) predicate, ref T[] filterOut)` | Runs a predicate over `filterIn`, and stores the matched elements into an array, passed by reference, called `filterOut` |
+| `T[] shiftInto(T)(T[] array, size_t position, bool rightwards = false, bool shrink = false, T filler = T.init)` | Shifts a subset of the elements of the given array to a given position either from the left or right. _Optionally_ allowing the shrinking of the array after the process, otherwise the last element shifted's previous value will be set to the value specified. |
+| `removeResize(T)(T[] array, size_t position)` | Removes the element at the provided position in the given array |
+| `insertAt(T)(T[] array, size_t position, T value)` | Inserts the given value into the array at the provided index |
+| `T[] unique(T)(T[] array)` | Returns a version of the input array with only unique elements. |
 
+Let's look at one of these examples where I do right-wards shifting using a variant of the `shiftInto(...)` function:
+
+```d
+int[] numbas = [1, 5, 2];
+numbas = numbas.shiftIntoRightwards(1);
+
+// should now be [0, 1, 2]
+writeln(numbas);
+assert(numbas == [0, 1, 2]);
+
+numbas = [1, 5, 2];
+numbas = numbas.shiftIntoRightwards(0);
+
+// should now be [1, 5, 2]
+writeln(numbas);
+assert(numbas == [1, 5, 2]);
+```
+
+The other functions are relatively self-explanatory and the documentation on Dub should show
+you how they can be used with example code snippets.
 
 ## Bits
 
-TODO: Add this
+There are some byte flipping utilities I required for a library of mine (which, seeing how
+busy I am, is still in the works - so it isn't something I am talking about yet).
+
+| Method signature                        | Description                                                            |
+|-----------------------------------------|------------------------------------------------------------------------|
+| `T flip(T)(T bytesIn)`                  | Flips the given integral value (note, that `T` has to be an integral type) |
+| `T order(T)(T bytesIn, Order order)`    | Swaps the bytes to the given ordering but does a no-op if the ordering requested is the same as that of the system's |
+| `ubyte[] toBytes(T)(T integral)`        | Converts the given integral value to its byte encoding |
+| `bytesToIntegral(T)(ubyte[] bytes)`     | Takes an array of bytes and dereferences then to an integral of your choosing |
+
+Some examples of these, below I show the flipping of bytes:
+
+```d
+version(BigEndian)
+{
+    ushort i = 1;
+    ushort flipped = flip(i);
+    assert(flipped == 256);
+}
+else version(LittleEndian)
+{
+    ushort i = 1;
+    ushort flipped = flip(i);
+    assert(flipped == 256);
+}
+```
+
+Then I show a byte-order _platform-sensitive_ flipper which will only flip if the requested ordering
+is not equal to that of the platform's byte order:
+
+```d
+version(LittleEndian)
+{
+    ushort i = 1;
+    writeln("Pre-order: ", i);
+    ushort ordered = order(i, Order.BE);
+    writeln("Post-order: ", ordered);
+    assert(ordered == 256);
+}
+else version(BigEndian)
+{
+    ushort i = 1;
+    writeln("Pre-order: ", i);
+    ushort ordered = order(i, Order.BE);
+    writeln("Post-order: ", ordered);
+    assert(ordered == i);
+}
+```
 
 ## Debugging
 
-TODO: Add this
+Being able to easily generate debug messages for various structures
+and doing so in a relatively generic way is quite helpful. All these
+trinkets - sort of little functions that I use here and there, are
+available from within the `niknaks.debugging` module.
+
+| Method signature                        | Description                                                            |
+|-----------------------------------------|------------------------------------------------------------------------|
+
+
+TODO: Add examples
+TODO: Finish vardump work
 
 ## Delay mechanism
 
