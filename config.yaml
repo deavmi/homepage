@@ -12,7 +12,7 @@ menu:
       weight: 1
         
     - name: Projects
-      url: "projects"
+      url: "projects/"
       weight: 2
 
     - name: Blog
