@@ -9,7 +9,7 @@ title: Home
 <br>
 
 # Tristan B. Velloza Kildaire
-## _A masochistic engineer_ `mashallah`
+## _A masochistic engineer_
 
 I'm Tristan B. Velloza Kildaire (or _deavmi_ on the Internet) and I'm a computer programmer. I love tinkering around with all the bits of software
 that my computer runs but typically more on the low-level sides of things. I'm really interested in how operating systems work as a whole
