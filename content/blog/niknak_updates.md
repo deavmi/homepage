@@ -55,6 +55,7 @@ I just grabbed the ones which were already open in my browser's tabs).
 | ⚡ Feature: Buffer views                                 | https://github.com/deavmi/niknaks/pull/22 |
 | ⚡ Feature: Generic tree and visitation framework        | https://github.com/deavmi/niknaks/pull/17 |
 | ⚡ Feature: Insert at                                    | https://github.com/deavmi/niknaks/pull/23 |
+| ⚡ Feature: Result type                                  | https://github.com/deavmi/niknaks/pull/25 |
 
 ## CacheMap
 
@@ -706,5 +707,190 @@ unittest
     {
         assert(false);
     }
+}
+```
+
+
+## Buffer views
+
+One of the things I wanted to implement was what I called "buffer views".
+These are effectively my own implementation of a _jump buffer_. This is
+basically one big buffer which provides array-like access to its array-like
+data _however_ the weay it is built is by composing various arrays into
+it and smartly knowing which sub-array to index into when a request comes
+in from the outside.
+
+TODO: Finish this up
+TODO: Add usage
+
+### Example code
+
+Creating a new `View` is as easy as follows. We can
+also call `opDollar()` to get the length of the view
+currently, notice indexing would fail as there is nothing
+currently in the view:
+
+```d
+View!(int) view;
+assert(view.opDollar() == 0);
+
+try
+{
+    view[1];
+    assert(false);
+}
+catch(ArrayIndexError e)
+{
+    assert(e.index == 1);
+    assert(e.length == 0);
+}
+```
+
+You can use the append operator `~=` in order
+to add new data into the view. An important thing
+to note about this is that no deep-copying of
+the array `[1,3,45]` occurs:
+
+```d
+view ~= [1,3,45];
+assert(view.opDollar() == 3);
+assert(view.length == 3);
+
+    view ~= 2;
+    assert(view.opDollar() == 4);
+    assert(view.length == 4);
+
+    assert(view[0] == 1);
+    assert(view[1] == 3);
+    assert(view[2] == 45);
+    assert(view[3] == 2);
+    assert(view[0..2] == [1,3]);
+    assert(view[0..4] == [1,3,45,2]);
+
+    // Update elements
+    view[0] = 71;
+    view[3] = 50;
+
+    // Set size to same size
+    view.length = view.length;
+
+    // Check that update is present
+    // and size unchanged
+    int[] all = view[];
+    assert(all == [71,3,45,50]);
+
+    // Truncate by 1 element
+    view.length = view.length-1;
+    all = view[];
+    assert(all == [71,3,45]);
+
+    // This should fail
+    try
+    {
+        view[3] = 3;
+        assert(false);
+    }
+    catch(RangeError e)
+    {
+    }
+
+    // This should fail
+    try
+    {
+        int j = view[3];
+        assert(false);
+    }
+    catch(RangeError e)
+    {
+    }
+
+    // Up-sizing past real size should not be allowed
+    try
+    {
+        view.length =  view.length+1;
+        assert(false);
+    }
+    catch(RangeError e)
+    {
+    }
+
+    // Size to zero
+    view.length = 0;
+    assert(view.length == 0);
+    assert(view[] == []);
+}
+```
+
+## Result type
+
+I also decided on adding some more functional types to this release,
+some of which I would realise later I _really_ needed in many of my
+programs.
+
+I therefore decided to add a **result** type, which is easier to
+show through examples. Basically something that stores either
+the result of a successful operation of the error thereof.
+
+### Example code
+
+We can create a `Result` with an _okay_ state (meaning
+that it was a success) as follows:
+
+```d
+auto a = ok("A successful result");
+assert(a.ok == "A successful result");
+```
+
+By default if you don't specify the type for the error
+then it will be made to match that of the _okay_'s type:
+
+```d
+// Should be Result!(string, string)
+static assert(__traits(isSame, typeof(a.okay_val), string));
+static assert(__traits(isSame, typeof(a.error_val), string));
+```
+
+Otherwise you would have top specify it explicitly
+if you wanted to change that to, perhaps, match the
+type isgnature your program expects of its `Result`(s)
+elsewhere:
+
+```d
+auto b = ok!(string, Exception)("A successful result");
+assert(b.ok == "A successful result");
+
+// Should be Result!(string, Exception)
+static assert(__traits(isSame, typeof(b.okay_val), string));
+static assert(__traits(isSame, typeof(b.error_val), Exception));
+```
+
+There are several ways to check a `Result` for if it is
+_okay_ or _erroneous_:
+
+```d
+// opCast to bool
+assert(cast(bool)a);
+
+// Validity checking
+assert(a.is_okay());
+assert(!a.is_error());
+```
+
+The `opCast(T: bool)()` overload is quite useful
+as it let's you sue your result type like this:
+
+```d
+if(a)
+{
+    // do something
+}
+```
+
+Instead of the more verbose:
+
+```d
+if(a.is_okay())
+{
+    // do something
 }
 ```
