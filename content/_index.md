@@ -40,7 +40,7 @@ projects.
 If you like what I _do_ and don't mind **shilling** a _few_ then you can send me some Internet monies in the form of crypto-currency or
 you can opt for using a service from the legacy financial system.
 
-* Monero: `85AJJNtxWR26sXuAF4tmvZiPN9M5fKiFnbEGJYRAKfPoCyyFZCFDoDLerpJgJRaCTeZaRXdssHdRk9nR4Jwu3d2MC5czhQB`
+* Monero: `43jx2gRMRxBauz2gwKTb9VJyUqKNg7wVPVVhQd32cgUA6WGhs2haJXAHfrdTzTKdYfeGEbDT8FtkF45sKMAEyasWRSyG5Sj`
 * Bitcoin: `bc1qkvduq9rwray2ymrvkrven3m8vsp9ah55f4hnc4`
 * Liberapay: [tbvk](https://liberapay.com/tbvk/)
 
