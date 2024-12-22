@@ -143,7 +143,7 @@ documentation:
 
 ### Docgen
 
-![](looking_towards_2025/tpkg_docgen.png)
+![](tpkg_docgen.png)
 
 The above shows the output of doing documentation generation
 for an example single-module program `simple_comments.t` (which
@@ -151,7 +151,7 @@ is actually part of the T test suite).
 
 ### Fetching a package
 
-![](looking_towards_2025/tpkg_packman1.png)
+![](tpkg_packman1.png)
 
 We can see in the above how a search is performed with the 
 regular expression `tsh*` and how a matching candidate is
@@ -171,7 +171,7 @@ this to update the progress bar as `numberOfBytes/expectedTotal`.
 
 ### Building the package
 
-![](looking_towards_2025/tpkg_packman2.png)
+![](tpkg_packman2.png)
 
 Once the package has been stored, a `StoreRef` is returned,
 this is then used to actually setup an instance of the `Compiler`
@@ -182,7 +182,7 @@ to the created executable.
 
 ## Reticulum, LoRa, radios and serial adaptors
 
-![](looking_towards_2025/lora_1.jpeg)
+![](lora_1.jpeg)
 
 I have had a bit of a foray into the [Reticulum Network Stack](https://reticulum.network/)
 and I have decided I want to extend the testnet physically into
@@ -192,7 +192,7 @@ installation I want to do - some of it will be more expensive
 and require longer term savings (for outdoor enclosures of
 the type I may be looking at).
 
-![](looking_towards_2025/lora_2.jpeg)
+![](lora_2.jpeg)
 
 That's the one part, but as for the software side I helped
 add IPv6 support ([here](https://github.com/markqvist/Reticulum/pull/601) and
