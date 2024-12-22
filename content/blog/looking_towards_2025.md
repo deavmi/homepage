@@ -2,7 +2,6 @@
 title: Looking towards 2025
 author: Tristan B. V. Kildaire
 date: 2024-12-22
-type: post
 ---
 
 I'm not much of a _"new years resolutions"_ type of guy in fact I think those sort of things

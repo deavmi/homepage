@@ -2,7 +2,7 @@
 title: 🐞️ Gogga - colorful terminal logging for D
 author: Tristan B. V. Kildaire
 date: 2023-03-19
-draft: true
+draft: false
 ---
 
 # What is gogga?
