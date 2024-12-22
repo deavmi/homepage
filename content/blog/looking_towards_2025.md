@@ -23,13 +23,13 @@ times (months even) before I actually started working on my compiler. Guess what
 it tries to rear its head but I am getting better at controlling it.
 
 How did I stary controlling it? I don't have some cookie cutter _buy me a book_ answer to this
-actually. What I realised was that I was _scared of the endevour_ at hand. So, for the example
+actually. What I realised was that I was _scared of the endeavour_ at hand. So, for the example
 of my compiler project: "I was scared that I wouldn't be able to take on such a huge task of
 writing a compiler from scratch entirely". So in my case it was being scared of an academic
 hurdle of sorts. However, I had experience in writing a basic one already from my second year
 of computer science - so what gives? I clearly could have laid the basic foundation for the
 compiler and worried about the next challenges as they rolled in. No, I was worried about
-even writing thr first few lines of the code structure I _already knew_ - **the basics!**
+even writing the first few lines of the code structure I _already knew_ - **the basics!**
 
 The reason? Well, I was scared that I wouldn't be good enough. I was worried that I wouldn't
 be able to claim any of it for myself because I would probably require having to reach out
@@ -210,7 +210,7 @@ There is just **so much** I have in store relating to this.
 
 I do have some blog posts pre-written for the upcoming year
 that I will be releasing shortly. It's a mixed back as to
-what they're about but nontheless some of them will give
+what they're about but nonetheless some of them will give
 you a greater understanding of each of the things I have
 mentioned and what exactly I was so busy with.
 
