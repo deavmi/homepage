@@ -216,13 +216,13 @@ mentioned and what exactly I was so busy with.
 
 ---
 
-<!-- {{<bruh>}} -->
-<!-- <center> -->
-	<!-- <h2> -->
-		<!-- Have a blessed Christmas, be with your loved ones whilst -->
-		<!-- you still can. -->
-	<!-- </h2> -->
-<!--  -->
-	<!-- <h4>See you in 2025</h4> -->
-<!-- </center> -->
-<!-- {{</bruh>}} -->
+{{<bruh>}}
+<center>
+	<h2>
+		Have a blessed Christmas, be with your loved ones whilst
+		you still can.
+	</h2>
+
+	<h4>See you in 2025</h4>
+</center>
+{{</bruh>}}
