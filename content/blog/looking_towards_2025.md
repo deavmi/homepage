@@ -7,7 +7,7 @@ draft: true
 
 I'm not much of a _"new years resolutions"_ type of guy in fact I think those sort of things
 are incredibly stupid and lead to you getting **no where in life**; so _it's best you stop that_
-if you are currently engagaged in such a bizarre tradition that oofloads what you _could do **now**_
+if you are currently engaged in such a bizarre tradition that oofloads what you _could do **now**_
 onto a future date. If you can start now, there's no excuse.
 
 Before I get into what is to come in the next year and indeed what I have been working
@@ -24,8 +24,8 @@ times (months even) before I actually started working on my compiler. Guess what
 it tries to rear its head but I am getting better at controlling it.
 
 How did I stary controlling it? I don't have some cookie cutter _buy me a book_ answer to this
-actually. What I realised was that I was _scared of the endavour_ at hand. So, for the example
-of my compiler project: "I was scared that I wouldn't abe able to take on such a huge task of
+actually. What I realised was that I was _scared of the endevour_ at hand. So, for the example
+of my compiler project: "I was scared that I wouldn't be able to take on such a huge task of
 writing a compiler from scratch entirely". So in my case it was being scared of an academic
 hurdle of sorts. However, I had experience in writing a basic one already from my second year
 of computer science - so what gives? I clearly could have laid the basic foundation for the
@@ -37,7 +37,7 @@ be able to claim any of it for myself because I would probably require having to
 online consistently and if that became a pattern then how would I be able to claim the majority
 of the code written as my own? Luckily, however, I didn't need any help. Let me stop here for
 a moment - I am in _no way_ saying that reaching out for help should stop you from completing
-your dreams. You could argue that my first year of CS was preconditioning for me having the
+your dreams. You could argue that my second year of CS was preconditioning for me having the
 knowledge to be able to write my compiler almost a year or so later - I think so!
 
 Anyways... let's continue. So I began writing the lexer for my compiler and that started
@@ -54,9 +54,9 @@ project - I wanted to go through the motions myself.
 
 As things kept on this line of progression I had to re-write the dependency generator
 about three times until I realised it was doing what I wanted it to do. This was a great
-success for me. I remember looking at the de-cycled graph output (so visitation-marking
+success for me. I remember looking at the de-cycled graph output (a visitation-marking
 sort of graph traversal) for the first time when it started working and I was immensely
-happy. I knew how important it was to get this particular algorithmn/mechanism implementred
+happy. I knew how important it was to get this particular algorithmn/mechanism implemented
 correctly because I knew it would solve all future problems generally - it was integral
 to the compiler. Even though I had nowhere near the features in my language implemented
 as I do now - I could still tell that:
@@ -93,7 +93,7 @@ it deployed. Dockerizzing (yes, I have immense rizz).
 
 On the networking side of things I wanted to also get my DNS resolver back
 up _along_ with it running as a nameserver so that I could have records
-resolved via it whenever people eanted to reach certain domains hosted
+resolved via it whenever people wanted to reach certain domains hosted
 in the `*.deavmi.assigned.network` region.
 
 I also wanted to deploy OSPF (open shortest path first) to my routers
@@ -110,6 +110,9 @@ I have been working on the compiler for my **T programming language**
 quite a lot. I have been working on the following:
 
 1. Enumeration type support
+	* And yes, my enums beat that of C's as my enumeration type names
+	do not need to be globally unique but rather follow the `EnumType.MemberName`
+	format.
 2. Struct support
 3. Comment support
 	* Specifically within the parser as that is where I last stopped
@@ -128,7 +131,7 @@ quite a lot. I have been working on the following:
 	* What it amounts to is the treating of the `.` operator (the `SymbolType.DOT`)
 	as an actual operator. This is still being worked on but for the
 	most part it is probably done and the other things that rely on
-	it like enumeraiton types and struct types just have to have
+	it like enumeration types and struct types just have to have
 	their additions added to it.
 
 There are probably many other things here and there that I can't
@@ -165,7 +168,7 @@ field of the resource (the `.ZIP` archive) you want
 to fetch. Then you do a chunked fetch of that whereby
 after each chunk you call a method (your callback)
 that consumes the just-received bytes. You then use
-this to update the progres bar as `numberOfBytes/expectedTotal`.
+this to update the progress bar as `numberOfBytes/expectedTotal`.
 
 ### Building the package
 
