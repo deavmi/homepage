@@ -1,5 +1,5 @@
 ---
-title: Looking towards 2025 h
+title: Looking towards 2025
 author: Tristan B. V. Kildaire
 date: 2024-12-22
 ---
