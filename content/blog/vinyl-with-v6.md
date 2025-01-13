@@ -2,7 +2,7 @@
 title: Vinyl Pi
 author: Tristan B. V. Kildaire
 date: 2023-06-29
-draft: false
+draft: true
 ---
 
 ## Hardware
