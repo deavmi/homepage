@@ -1,7 +1,7 @@
 ---
 title: "Building my first RNode: Part 1"
 author: Tristan B. V. Kildaire
-date: 2025-01-15
+date: 2025-01-13
 draft: false
 ---
 
