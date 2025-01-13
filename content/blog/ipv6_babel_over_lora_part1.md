@@ -166,3 +166,41 @@ On host $A$ I am adding the extra flags _before_ the interface list:
 ```
 
 This runs a debugging port in _read only_ mode (use a `-G` for write access as well) on `3001`. This will aid us in running a diagnostics tool called `babelweb2` which will let us analyse the state of our Babel network from the point of view of node $A$.
+
+## First test
+
+On host $B$ let's add an address of `fddd::2` to _any_ interface, let's say `lo`:
+
+```bash
+sudo ip addr add fddd::2 dev lo
+```
+
+Now on host $A$ if we look at _BabelWeb_ we should see it:
+
+![](ipv6_lora_part1/babel_web_1.png)
+
+We can also see the route we learnt of `fddd::2/128` via our `tnc0` interface:
+
+![](ipv6_lora_part1/routes_2.png)
+
+Show also that the _via_ (next-hop) is a link-local IPv6 address. This is used to make an ICMPv6 neighbour request to ask for the MAC address at that host to then put the IPv6 packet destined to it inside of an Ethernet frame destined to said MAC address.
+
+On host $A$ lets now assign an address of `fddd::3` to any interface, let's say `lo`:
+
+```bash
+sudo ip addr add fddd::3 dev lo
+```
+
+Likewise on host $B$ we would see a route to `fddd::3/128` via our `tnc0` interface:
+
+![](ipv6_lora_part1/routes_3.png)
+
+We can even open up Wireshark on host $B$ and attach it to network interface `tnc0` and see we are receiving Babel announcements over IPv6 link-local about routes. Here we can see host $A$ advertising us its route to `fddd::3/128`:
+
+![](ipv6_lora_part1/wireshark.png)
+
+Now if we are on host $B$ we should be able to ping `fddd::3` as it will have a route installed to it:
+
+![](ipv6_lora_part1/ping.png)
+
+That is rather reasonable latency too!
