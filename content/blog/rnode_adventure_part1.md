@@ -99,3 +99,37 @@ We can see that they were all delivered, this meant we received and acknowledgem
 I think the _last message_ was sent in the park actually (see the next test)
 
 ## Test 2 - _"obstructing concrete"_
+
+The next test was sort of a mistake actually. I decided to walk back home through the same path I had come originally; this meant walking via the park.
+
+![](rnode_adventure_1/walk_back_1.jpeg)
+
+It was also a **very hot** day
+
+![](rnode_adventure_1/walk_back_2.jpeg)
+
+I was rather surprised here as there are multiple walls of concrete obstructing the stationary antenna and my mobile one. Yet, believe it or not, I was able to get some messages through here:
+
+![](rnode_adventure_1/msg_2.jpeg)
+
+As you can see these messages were **all** delivered.
+
+I found these results rather exciting as it meant it can work with some obstructions; good to know because it means slighter obstructions - perhaps of tree - should definitely still allow for the signal to reach both ways.
+
+![](rnode_adventure_1/walk_back_3.jpeg)
+
+I do wonder if the waves were bouncing off the walls in some way - who knows? 🤔️
+
+# Conclusion
+
+I was rather happy with the outcome of the first test as it showed everything I had setup was in working order (the new antennas).
+
+Secondly, the surprise of how well it worked with obstructions of the concrete walls was just mind boggling in the good sense of the word.
+
+## Next plans
+
+I have decided that the next place I want to test from is at a tree on top of a hill in the same line-of-sight as where I stood but just at a **much greater distance**.
+
+![](rnode_adventure_1/next.jpeg)
+
+In the mean time, I will plan on taking a trip to an estate that is on a hill and should have line-of-sight to my stationary antenna but at a further distance and accessible with a normal vehicle (instead of an off-road one which would be required for the tree on the hill site).
