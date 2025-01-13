@@ -61,3 +61,20 @@ The second device will be running the CLI-based LXMF client called [_nomadnet_](
 I have setup both devices such that the only interface they have available is the RNode-based interface. This will ensure that I only have traffic delivered to my phone via the LoRa radio and not any other interface such as via the Internet.
 
 >Note: The laptop had other interfaces active but none of which my phone would have been reachable via; hence it would always have to find a path over the LoRa-based RNode interface
+
+### Antennas
+
+#### Stationary antenna
+
+The antenna with the magnetic mount would be connected to the one RNode that my laptop was connected to (over USB-C).
+
+The antenna _itself_ was mounted ontop of the patio's shade-roof as it had a metallic base that was magnetic:
+
+![](rnode_adventure_1/stat_antenna1.jpeg)
+
+The above antenna connects to the RNode (for my laptop) via the long $3m$ cable that terminates with an SMA connectors on the board:
+
+![](rnode_adventure_1/stat_antenna2.jpeg)
+
+#### Mobile antenna
+
