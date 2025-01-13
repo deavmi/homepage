@@ -40,7 +40,7 @@ I have documented two ways in which one can install the firmware onto your devic
 
 #### Prerequisites
 
-Firstly you will need to install the `nrs` package using `pip`. This package will make the `rnodeconf` executable available for you, which will allow us to both **install the firmware** _and_ **configure our RNode** (as multiple modes exist).
+Firstly you will need to install the `rns` package using `pip`. This package will make the `rnodeconf` executable available for you, which will allow us to both **install the firmware** _and_ **configure our RNode** (as multiple modes exist).
 
 Installation can be performed with:
 
