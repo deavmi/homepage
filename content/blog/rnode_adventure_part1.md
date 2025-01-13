@@ -71,7 +71,7 @@ The antenna _itself_ was mounted ontop of the patio's shade-roof as it had a met
 
 ![](stat_antenna1.jpeg)
 
-The above antenna connects to the RNode (for my laptop) via the long $3m$ cable that terminates with an SMA connectors on the board:
+The above antenna connects to the RNode (for my laptop) via the long **3m** cable that terminates with an SMA connectors on the board:
 
 ![](stat_antenna2.jpeg)
 
