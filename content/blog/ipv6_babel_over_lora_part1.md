@@ -31,3 +31,6 @@ Say now you have a a few routes in your IPv6 routing table like:
 
 Now how would you distribute these routes to  _other_ nodes? Well, that's exactly what Babel allows us to do. It runs as a daemon on all of your nodes you wish to have _receive_ routing information and also _distribute out_ (their) routing information.
 
+## How?
+
+We will be setting up an IPv6-routed network between two nodes, node $A$ and node $B$. We will then be able to have routes shared between these nodes via Babel, this should allow us to ping one another once the routing information has been successfully shared.
