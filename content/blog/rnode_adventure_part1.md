@@ -36,3 +36,24 @@ They are useful for portable devices that you can whip out and begin using. The 
 It has 3 angles it can be adjusted to on its hinge at $0$, $45$ and $90$ degrees.
 
 These are available for purchase [here](https://www.robotics.org.za/communication-wireless-Industrial/antenna-866mhz/YN-868MHZ-5DBI).
+
+## Tests
+
+What I wanted to actually get done today was to test out _just how much better_ the new antennas would perform. Now I must state firstly that it wasn't a very scientific test really because I had nothing to compare the antennas too besides my previous stubby antennas (as mentioned earlier) but I never put them through the same test in any case so I feel it is rather unscientific.
+
+Either way, we're going to see how they work in either case.
+
+The approach used will be to send a few messages from my phone to my laptop. In order to test the bi-directionality I need not send something form the laptop to the phone. The reason the latter need not be _explicitly_ tested is because whenever a message is sent a message receipt is sent back (upon arrival at the endpoint) - therefore if I see that I will know that bi-directionality worked.
+
+* Technically when establishing a _link_ it would test bi-directionality as well.
+* Therefore back-and-forth communication is tested a few times already just by me sending a message from my phone to my laptop.
+
+### Devices
+
+I will be running tests from my phone running [_Sideband_](https://github.com/markqvist/Sideband) which is an Android-based LXMF client which can communicate over Reticulum:
+
+![](rnode_adventure_1/sideband.jpeg)
+
+The second device will be running the CLI-based LXMF client called [_nomadnet_](https://github.com/markqvist/NomadNet):
+
+![](rnode_adventure_1/nomadnet.png)
