@@ -80,15 +80,16 @@ Let's now begin the installer with the command `rnodeconf /dev/ttyACM1 -a`. Next
 2. Next you will be asked to select the band that the radio is to be configured in. In my case that would be the 868Mhz band, so I must select the `[2] 868/915/923 MHz (with SX1276 chip)`
     a. Also note that there are normally two options **per** band, I went with this option as I am using the `SX1276` chipset as mentioned earlier
 3. Now you will be presented with the following screen, check that everything is in order before hitting any key:
-    a. ```
-    Confirm detals:
 
-    Serial port     : /dev/ttyACM1
-    Device type     : RNode 820 - 960 MHz
-    Platform        : ESP32
-    Device MCU      : Espressif Systems ESP32
-    Firmware file   : rnode_firmware_t3s3_sx127x.zip
-    ```
+```
+Confirm detals:
+
+Serial port     : /dev/ttyACM1
+Device type     : RNode 820 - 960 MHz
+Platform        : ESP32
+Device MCU      : Espressif Systems ESP32
+Firmware file   : rnode_firmware_t3s3_sx127x.zip
+```
 
 **Note:** The tool only seems to support downloading with `AF_INET` (meaning that IPv6 support doesn't work)
 
