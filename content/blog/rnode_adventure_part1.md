@@ -2,7 +2,7 @@
 title: "RNode adventure: Part 1"
 author: Tristan B. V. Kildaire
 date: 2025-01-13
-draft: true
+draft: false
 ---
 
 # The plan
