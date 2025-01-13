@@ -15,7 +15,7 @@ What I wanted to get done today was to test out two of my new antennas and at a 
 
 ### Antenna with magnetic base
 
-![](rnode_adventure_1/antenna_magnetic.jpeg)
+![](rnode_adventure_part1/antenna_magnetic.jpeg)
 
 These antennas come with a $3m$ lead which means that you can place the radio and antenna at quite the distance apart. This is helpful for cases where you want the antenna to reach some place far away but at the same time you wouldn't be able to run the data cable to the radio (the RNode) at that same length.
 
@@ -25,11 +25,11 @@ These are available for purchase [here](https://www.robotics.org.za/communicatio
 
 ### Longer pole antenna
 
-![](rnode_adventure_1/pole_tenna_1.jpeg)
+![](rnode_adventure_part1/pole_tenna_1.jpeg)
 
 These larger antennas fit the same use case of the original stubby antennas that are provided with the LoRa T3-S3 board of mine:
 
-![](rnode_adventure_1/pole_tenna_2.jpeg)
+![](rnode_adventure_part1/pole_tenna_2.jpeg)
 
 They are useful for portable devices that you can whip out and begin using. The antenna is probably as big as one is willing to slog around and have permanently fixed. It's also easy enough to store as it is rather rigid.
 
@@ -52,11 +52,11 @@ The approach used will be to send a few messages from my phone to my laptop. In 
 
 I will be running tests from my phone running [_Sideband_](https://github.com/markqvist/Sideband) which is an Android-based LXMF client which can communicate over Reticulum:
 
-![](rnode_adventure_1/sideband.jpeg)
+![](rnode_adventure_part1/sideband.jpeg)
 
 The second device will be running the CLI-based LXMF client called [_nomadnet_](https://github.com/markqvist/NomadNet):
 
-![](rnode_adventure_1/nomadnet.png)
+![](rnode_adventure_part1/nomadnet.png)
 
 I have setup both devices such that the only interface they have available is the RNode-based interface. This will ensure that I only have traffic delivered to my phone via the LoRa radio and not any other interface such as via the Internet.
 
@@ -70,17 +70,17 @@ The antenna with the magnetic mount would be connected to the one RNode that my 
 
 The antenna _itself_ was mounted ontop of the patio's shade-roof as it had a metallic base that was magnetic:
 
-![](rnode_adventure_1/stat_antenna1.jpeg)
+![](rnode_adventure_part1/stat_antenna1.jpeg)
 
 The above antenna connects to the RNode (for my laptop) via the long $3m$ cable that terminates with an SMA connectors on the board:
 
-![](rnode_adventure_1/stat_antenna2.jpeg)
+![](rnode_adventure_part1/stat_antenna2.jpeg)
 
 #### Mobile antenna
 
 As for my mobile device running Sideband, that would be connected to my phone via Bluetooth Low Energy (BLE) but powered via my phone's USB-C port:
 
-![](rnode_adventure_1/mobi_antenna_1.jpeg)
+![](rnode_adventure_part1/mobi_antenna_1.jpeg)
 
 # Test
 
@@ -88,11 +88,11 @@ As for my mobile device running Sideband, that would be connected to my phone vi
 
 The first test was to walk to a road parallel to the house and right across from the antenna mounted on the roof. This was chosen as it would provide line-of-sight for the antennas and be a good first test.
 
-![](rnode_adventure_1/los_1.jpeg)
+![](rnode_adventure_part1/los_1.jpeg)
 
 I began the test by opening up Sideband and then sending some messages:
 
-![](rnode_adventure_1/msg_1.jpeg)
+![](rnode_adventure_part1/msg_1.jpeg)
 
 We can see that they were all delivered, this meant we received and acknowledgement from the laptop node!
 
@@ -102,21 +102,21 @@ I think the _last message_ was sent in the park actually (see the next test)
 
 The next test was sort of a mistake actually. I decided to walk back home through the same path I had come originally; this meant walking via the park.
 
-![](rnode_adventure_1/walk_back_1.jpeg)
+![](rnode_adventure_part1/walk_back_1.jpeg)
 
 It was also a **very hot** day
 
-![](rnode_adventure_1/walk_back_2.jpeg)
+![](rnode_adventure_part1/walk_back_2.jpeg)
 
 I was rather surprised here as there are multiple walls of concrete obstructing the stationary antenna and my mobile one. Yet, believe it or not, I was able to get some messages through here:
 
-![](rnode_adventure_1/msg_2.jpeg)
+![](rnode_adventure_part1/msg_2.jpeg)
 
 As you can see these messages were **all** delivered.
 
 I found these results rather exciting as it meant it can work with some obstructions; good to know because it means slighter obstructions - perhaps of tree - should definitely still allow for the signal to reach both ways.
 
-![](rnode_adventure_1/walk_back_3.jpeg)
+![](rnode_adventure_part1/walk_back_3.jpeg)
 
 I do wonder if the waves were bouncing off the walls in some way - who knows? 🤔️
 
@@ -130,6 +130,6 @@ Secondly, the surprise of how well it worked with obstructions of the concrete w
 
 I have decided that the next place I want to test from is at a tree on top of a hill in the same line-of-sight as where I stood but just at a **much greater distance**.
 
-![](rnode_adventure_1/next.jpeg)
+![](rnode_adventure_part1/next.jpeg)
 
 In the mean time, I will plan on taking a trip to an estate that is on a hill and should have line-of-sight to my stationary antenna but at a further distance and accessible with a normal vehicle (instead of an off-road one which would be required for the tree on the hill site).
