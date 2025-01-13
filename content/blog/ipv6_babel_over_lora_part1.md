@@ -94,3 +94,61 @@ Therefore we can see the following IPv6 information:
 1. host $A$ has an IPv6 link-local address of `fe80::6481:dfff:fec1:ec6c`
 2. host $B$ has an IPv6 link-local address of `fe80::88c:65ff:feac:5a7`
 
+This means that we have the necessary configuration setup to continue on setting up Babeld. This is because of two things:
+
+1. We need IPv6 working on the interface as that is what we plan to _use_ over the network
+2. Secondly, Babel requires IPv6 link-local addresses (and IPv6 in general) in order to send out link-local multicast traffic for the purpose of beaconing and finding other routers on the same network segment. Along with this it also will install routes with the next-hops being that of the corresponding IPv6 link-local address of the neighbouring router.
+
+## Setting up babeld
+
+`babeld` is the routing daemon that implements the [_Babel routing protocol_](http://www.irif.fr/~jch/software/babel/), it's available on almost all Linux distributions these days (including OpenWRT) and is relatively easy to setup.
+
+Recalling that babel is here to help us redistribute routes. Well, we have some questions then:
+
+1. Which routes (from our kernel table) in particular should we redistribute?
+2. Should we generate `/128` (or `/32` for IPv4) routes based off of addersses assigned to interfaces?
+
+All of the above (and more) can be controlled via the Babel configuration file.
+
+Firstly, Babel will _by default_ scrape off **all** interface addresses and export them as `/32` routes (for IPv4) and `/128` routes (for IPv6). There isn't a problem really with the latter as that is what we want. However, I know for sure that on my host $B$ it has quite a few IPv4 addresses ob various Docker container `veth`(s); therefore on host $B$ let me add this line:
+
+```
+redistribute local ip 0.0.0.0/0 ge 0 deny
+```
+
+The `local` keyword refers to the _local address_ redistribution technique described a moment ago.
+
+We then say, any route (the candidates in this case would only be `/32` and `/128`s because of the `local`) which when the mask of `0.0.0.0` (hence the `/0`) is applied to it _equals_ `0.0.0.0` (the network address) will be allowed **if further** it is a route of prefix length 0 or greater. This affectively means all IPv4 `/32` routes will not be redistributed and only those derived from interface addresses.
+
+>Note: There are other more general way to do this for kernel routes and device/local-address routes using the `out` filter but this is easiest for now.
+
+Note, we are about to add more filters. The way it works is top to bottom. If a route is matched then we stop there, apply the action (`allow` or `deny`) and we do not run the filters that appear after/below it.
+
+Now on both hosts I will be assigning addresses to them which we will use for the tests, these addresses will be in the `fd00::/8` range. Meaning that the first 8 bits of any route must equal `fd`. Since I have _other_ IPv6 addresses on host $A$ and $B$ which I don't want to be part of the test we should filter those too:
+
+```
+redistribute local ip fd00::/8 ge 64 allow
+```
+
+But remember, all that does is match `fd00::/8` routes, any _other_ Ipv6 route would not match that clause and by default would have the action of `allow` applied to it. Therefore we must add a rule that will definitely catch remaining IPv6 routes and apply an action of `deny`:
+
+```
+redistribute local ip ::/0 ge 0 deny
+```
+
+Save the above into a file called `filter.txt` so we can access it later.
+
+Now that we have that setup we can run the `babeld` command:
+
+```bash
+sudo babeld -H 5 -d 5 -c filter.txt tnc0
+```
+
+The parameters are as follows:
+
+1. `-H <int>`
+    a. The hello interval. This is how frequently the daemon should send out announcements.
+    b. It must be **the same** across all nodes.
+2. `-d <int>`
+    a. Sets the verbosity of the debugging output
+    b. I set it relatively high so that I can see what is going on at every step of the way
