@@ -2,7 +2,7 @@
 title: "Building my first RNode: Part 1"
 author: Tristan B. V. Kildaire
 date: 2025-01-15
-draft: true
+draft: false
 ---
 
 ## What is it?
