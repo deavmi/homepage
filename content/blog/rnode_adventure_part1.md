@@ -78,3 +78,24 @@ The above antenna connects to the RNode (for my laptop) via the long $3m$ cable 
 
 #### Mobile antenna
 
+As for my mobile device running Sideband, that would be connected to my phone via Bluetooth Low Energy (BLE) but powered via my phone's USB-C port:
+
+![](rnode_adventure_1/mobi_antenna_1.jpeg)
+
+# Test
+
+## Test 1 - _"Line of sight"_
+
+The first test was to walk to a road parallel to the house and right across from the antenna mounted on the roof. This was chosen as it would provide line-of-sight for the antennas and be a good first test.
+
+![](rnode_adventure_1/los_1.jpeg)
+
+I began the test by opening up Sideband and then sending some messages:
+
+![](rnode_adventure_1/msg_1.jpeg)
+
+We can see that they were all delivered, this meant we received and acknowledgement from the laptop node!
+
+I think the _last message_ was sent in the park actually (see the next test)
+
+## Test 2 - _"obstructing concrete"_
