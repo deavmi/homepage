@@ -152,3 +152,17 @@ The parameters are as follows:
 2. `-d <int>`
     a. Sets the verbosity of the debugging output
     b. I set it relatively high so that I can see what is going on at every step of the way
+3. `-C <config file path>`
+    a. This contains the path to the file containing our Babel configuration.
+    b. Hence the `-C filter.txt`
+4. `[interface list...]`
+    a. The list of interfaces to run the Babel routing protocol on.
+    b. Here I have just selected `tnc0` as I only want to run it over one interface.
+
+On host $A$ I am adding the extra flags _before_ the interface list:
+
+```bash
+-g 3001
+```
+
+This runs a debugging port in _read only_ mode (use a `-G` for write access as well) on `3001`. This will aid us in running a diagnostics tool called `babelweb2` which will let us analyse the state of our Babel network from the point of view of node $A$.
