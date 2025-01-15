@@ -1,7 +1,7 @@
 ---
 title: IPv6 Vinyl Pi but with Docker
 author: Tristan B. V. Kildaire
-date: 2023-06-29
+date: 2025-01-15
 draft: false
 ---
 
