@@ -291,3 +291,476 @@ Okay, this is great but *what does that do*? Well, look no further (I read the f
 ![image.png](image_1719412459268_0.png)
 
 This will start a session for the given user *at boot* - which is exactly hat we want, remember? As this will kick off the starting of all systemd local-user services, *such as* the `pulseaudio.service` service.
+
+## Containers
+
+Let's now get into the thick of it regarding containers, we will start with the `streamer` container first, then work our way to the `web` container and then end up lastly with the `vlc` container.
+
+Let's first get a basic directory structure going with the following:
+
+```bash
+cd ~
+mkdir src/
+cd src # We're going to be using docker compose from within here
+
+mkdir streamer/
+mkdir web/
+mkdir vlc/
+mkdir hecker/
+
+touch compose.yml
+```
+
+Now let's create a basic Docker Compose file by creating a file named `compose.yml` with the following contents:
+
+```yaml
+version: "3"
+
+networks:
+  mainNet:
+    driver: bridge
+    name: mainNet
+    enable_ipv6: true
+    ipam:
+      config:
+        - subnet: fde4:492a:fc7f::/48
+
+services:
+  vlc:
+    # TODO: Fill in
+  streamer:
+    # TODO: Fill in
+  web:
+    # TODO: Fill in
+```
+
+### Setting up `streamer`
+
+We first need to setup the Icecast server, let's start off with the configuration file which should be created in `streamer/icecast.xml`:
+
+```xml
+<icecast>
+    <location>Worcester</location>
+    <admin>deavmi@redxen.eu</admin>
+
+    <limits>
+        <clients>100</clients>
+        <sources>2</sources>
+        <queue-size>524288</queue-size>
+        <client-timeout>30</client-timeout>
+        <header-timeout>15</header-timeout>
+        <source-timeout>10</source-timeout>
+        <!-- If enabled, this will provide a burst of data when a client
+             first connects, thereby significantly reducing the startup
+             time for listeners that do substantial buffering. However,
+             it also significantly increases latency between the source
+             client and listening client.  For low-latency setups, you
+             might want to disable this. -->
+        <burst-on-connect>1</burst-on-connect>
+        <!-- same as burst-on-connect, but this allows for being more
+             specific on how much to burst. Most people won't need to
+             change from the default 64k. Applies to all mountpoints  -->
+        <burst-size>65535</burst-size>
+    </limits>
+
+    <authentication>
+        <!--
+                This password must also be set as the `ICECAST_PASSWORD`
+                environment variable for the `vlc` container
+        -->
+        <source-password>l33picStreamer</source-password>
+
+        <!--
+                Admin logs in with the username given below
+
+                Ensure you set the below password to something
+                strong because the admin panel gives control
+                over your Icecast server
+        -->
+        <admin-user>username</admin-user>
+        <admin-password>password</admin-password>
+    </authentication>
+
+    <hostname>vinyl.deavmi.assigned.network</hostname>
+
+    <listen-socket>
+        <port>8000</port>
+        <bind-address>::</bind-address>
+    </listen-socket>
+
+    <!-- Global header settings
+         Headers defined here will be returned for every HTTP request to Icecast.
+
+         The ACAO header makes Icecast public content/API by default
+         This will make streams easier embeddable (some HTML5 functionality needs it).
+         Also it allows direct access to e.g. /status-json.xsl from other sites.
+         If you don't want this, comment out the following line or read up on CORS.
+    -->
+    <http-headers>
+        <header name="Access-Control-Allow-Origin" value="*" />
+    </http-headers>
+
+    <fileserve>1</fileserve>
+
+    <paths>
+        <!-- basedir is only used if chroot is enabled -->
+        <basedir>/usr/share/icecast2</basedir>
+
+        <!-- Note that if <chroot> is turned on below, these paths must both
+             be relative to the new root, not the original root -->
+        <logdir>/var/log/icecast2</logdir>
+        <webroot>/usr/share/icecast2/web</webroot>
+        <adminroot>/usr/share/icecast2/admin</adminroot>
+        <!-- <pidfile>/usr/share/icecast2/icecast.pid</pidfile> -->
+
+        <!-- Aliases: treat requests for 'source' path as being for 'dest' path
+             May be made specific to a port or bound address using the "port"
+             and "bind-address" attributes.
+          -->
+        <!--
+        <alias source="/foo" destination="/bar"/>
+        -->
+        <!-- Aliases: can also be used for simple redirections as well,
+             this example will redirect all requests for http://server:port/ to
+             the status page
+        -->
+        <alias source="/" destination="/status.xsl"/>
+    </paths>
+
+    <logging>
+        <accesslog>access.log</accesslog>
+        <errorlog>error.log</errorlog>
+        <!-- <playlistlog>playlist.log</playlistlog> -->
+        <loglevel>3</loglevel> <!-- 4 Debug, 3 Info, 2 Warn, 1 Error -->
+        <logsize>10000</logsize> <!-- Max size of a logfile -->
+        <!-- If logarchive is enabled (1), then when logsize is reached
+             the logfile will be moved to [error|access|playlist].log.DATESTAMP,
+             otherwise it will be moved to [error|access|playlist].log.old.
+             Default is non-archive mode (i.e. overwrite)
+        -->
+        <!-- <logarchive>1</logarchive> -->
+    </logging>
+
+    <security>
+        <chroot>0</chroot>
+        <!--
+        <changeowner>
+            <user>nobody</user>
+            <group>nogroup</group>
+        </changeowner>
+        -->
+    </security>
+</icecast>
+```
+
+The main important take aways from the config above:
+
+1. The `<location>` and `<admin>` fields are just visual fields, they are not authentication related
+2. The `<source-password>` is the password you will tell the `vlc` container to use so that is can authenticate (login) to our Icecast server and start streaming
+	a. > Note, **set these!** or else someone can come in and start streaming to your server too 🤡️
+3. The `<admin-*>` fields are username and password respectively used to protect the Icecast admin panel from unauthorized access.
+	a. > Note, **set these!** or else someone can come in and kick listeners off and control your Icecast server
+4. The `<hostname>` can be set to anything but note that the M3U (and the other format I cannot recall) buttons will generate playlists for this stream using it. It is not necessary to have it set for the normal stream (via the web element) to work however.
+5. The `<listen-socket>` controls the address and port the Icecast process will bind to within our container. We set this to all IPv6 addresses, **not** `::1` as localhost in inaccessible from the host `docker-proxy` to something effectively remotely running over a network (a `veth`). The port is self-explanatory.
+6. The rest we leave as is, except the `<logging>` one which controls the logging. Here we set them to `access.log` and `error.log` which will be, as you will see in the service file, bindfs-mounted to the host's `/dev/null`.
+
+> Note, I obtained this file from https://github.com/xiph/Icecast-Server/blob/master/conf/icecast.xml.in and modified it to trim a lot of the fat off.
+
+Now let's look a the Dockerfile which will build our custom image, this should look as follows and be stored at `streamer/Dockerfile`:
+
+```Dockerfile
+# Base image
+FROM debian:bookworm AS base
+
+# Don't allow interactive prompts when using apt
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Upgrade system
+RUN apt update
+RUN apt upgrade -y
+
+# Install icecast2
+RUN apt install icecast2 -y
+
+# For healthcheck
+RUN apt install curl -y
+
+# Setup user to run Icecast
+RUN groupadd iceuser --gid 1003
+RUN useradd iceuser -m --uid 1000 --gid 1003
+WORKDIR /home/iceuser
+
+# Delete old config and install
+# one from build directory
+RUN rm /etc/icecast2/icecast.xml
+COPY icecast.xml /etc/icecast2/icecast.xml
+
+# Make all files here accessible
+# to our `iceuser` user
+RUN chown iceuser:iceuser -v -R /etc/icecast2
+
+# Switch to the Icecast user
+USER iceuser
+
+# Run icecast server with our custom config
+CMD ["icecast2", "-c", "/etc/icecast2/icecast.xml"]
+
+# Ensure that the Icecast web interface is
+# up
+HEALTHCHECK CMD curl http://[::1]:8000
+```
+
+Now for the service definition which will be a part of the `compose.yml` file:
+
+```yaml
+  streamer:
+    build:
+      context: streamer/
+    container_name: streamer
+    restart: unless-stopped
+    networks:
+      - mainNet
+    volumes:
+      # Instead of editing the Icecast file
+      # just let it write to its defaults
+      # but make it go nowhere
+      - /dev/null:/var/log/icecast2/access.log
+      - /dev/null:/var/log/icecast2/error.log
+```
+
+It is straight forward here:
+
+1. Now recall we must place it on `mainNet` as our `vlc` and `nginx` containers will both need to reach the Icecast server process son port `8000` (recall the config we just configured?)
+2. The bind-mounts are for the logs as explained earlier
+
+### Setting up `vlc`
+
+Now we will setup the container which runs a VLC process and connects to our host's PulseAudio server via a UNIX domain socket was pass into it:
+
+```yaml
+  vlc:
+    build:
+      context: vlc/
+    container_name: vlc
+    depends_on:
+      # VLC would shit-itself after sometime if it cannot
+      # connect to the Icecast endpoint
+      - streamer
+    restart: unless-stopped
+    networks:
+      - mainNet
+    environment:
+      # Name of the PulseAudio device
+      - PULSE_SOURCE_DEVICE=alsa_input.usb-C-Media_Electronics_Inc._USB_Audio_Device-00.analog-stereo
+
+      # PulseAudio server path (container-side)
+      - PULSE_SERVER_PATH=/run/user/1000/pulse/native
+
+      # Icecast Details (will match those of the following
+      # container)
+      - ICECAST_HOSTNAME=streamer:8000
+      - ICECAST_MOUNT_POINT=stream.ogg
+      - ICECAST_PASSWORD=l33picStreamer
+      
+      # Enable verbose logging for VLC
+      - VLC_VERBOSE=3
+    volumes:
+      # Should be the host's Pulse Audio UNIX socket (mapped)-> UNIX sock on container side
+      - /run:/run
+
+      # Makes timezone and time information available
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+```
+
+A few things to take note of here:
+
+1. The `depends_on` is set so that we only start the VLC process (in our container) when the `streamer` container is up, hence meaning we have a valid Icecast endpoint to stream to.
+2. The environment variables:
+	a. The `ICECAST_HOSTNAME` must be left as is.
+	b. The Icecast mount point, `ICECAST_MOUNT_POINT`, *could change* (I am not sure if you should change it but I would leave it as is).
+	c. The `PULSE_SERVER_PATH` must be the path that will be used on the container-side, i.e. where the container will see the PulseAudio UNIX domain socket
+	d. The `PULSE_SOURCE_DEVICE` must be set to the name you find when running `pactl list sources` and find your device. It must be the `node.name` field.
+3. The volume mounts:
+	a. I mount some time information although I don't think it is much important at all.
+	b. The important mount point is `/run`. I would have done `/run/user/1000/pulse` **but** that only comes into existence at some time after Docker (which starts I believe way before any user services) when the user session (remember the `enable-linger` thing) starts. Therefore `pulse/` won't work as the `pulseaudio.service` local-user systemd unit (service) must first start, and more so, the `/run/user/1000` only comes into *existence* when the user with uid $1000$ has a session started. I am unsure about `user/` being dependant on at least one user session being active hence `/run` was the safest bet.
+4. Network, lastly it is on the same network `mainNet`.
+
+Now let's look at what is in the `vlc/` directory:
+
+The script which starts up VLC is shown below and stored at `run.sh`:
+
+```bash
+#!/bin/bash
+
+echo "-----------------------------------------------------"
+echo "Chosen PulseAudio device name: $PULSE_SOURCE_DEVICE"
+echo "PulseAudio server path: $PULSE_SERVER_PATH"
+echo "Icecast hostname: $ICECAST_HOSTNAME"
+echo "Icecast mountpoint: $ICECAST_MOUNT_POINT"
+echo "Icecast password: $ICECAST_PASSWORD"
+echo "-----------------------------------------------------"
+
+# Set to the path of PulseAudio's UNIX domain socket
+echo "Using PulseAudio server at UNIX domain socket: $PULSE_SERVER_PATH"
+
+# Set environment variable VLC uses to determine
+# the PulseAudio server's address
+export PULSE_SERVER=unix:/$PULSE_SERVER_PATH
+
+# Start VLC capturing our PulseAudio device and push that data to Icecast
+cvlc "pulse://$PULSE_SOURCE_DEVICE" ":sout=#transcode{vcodec=
+none,acodec=vorb,ab=192,channels=2,samplerate=44100,scodec=none}:std{access=shout,mux=ogg,dst=//source:$ICECAST_PASSWORD@$ICECAST_HOSTNAME/$ICECAST_MOUNT_POINT}" ":no-sout-all" ":sout-keep"
+```
+
+This just sets the `PULSE_SERVER` environment variable prior to starting `cvlc` so that it knows where to locate the PulseAudio UNIX domain socket (so it can communicate with the PulseAudio server).
+
+The `Dockerfile` is fairly simple as shown below:
+
+```Dockerfile
+# Base image
+FROM debian:bookworm AS base
+
+# Don't allow interactive prompts when using apt
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Upgrade system
+RUN apt update
+RUN apt upgrade -y
+
+# Install vlc
+RUN apt install vlc -y
+
+# Setup user to run VLC
+RUN groupadd vlcuser --gid 1003
+RUN useradd vlcuser -m --uid 1000 --gid 1003
+WORKDIR /home/vlcuser
+
+# Copy run script here
+COPY run.sh .
+RUN chmod +x run.sh
+RUN chown vlcuser:vlcuser run.sh
+
+# Switch to the VLC user
+USER vlcuser
+
+# Run
+CMD ["./run.sh"]
+```
+
+### Setting up `web`
+
+In the `web/` directory we shall do the following. Let's first create `nginx.conf`:
+
+```json
+server
+{
+        # For normal serving
+        listen  [::]:80;
+
+        # For SSL serving
+        # listen  [::]:443 ssl;
+
+        server_name  localhost;
+
+        # SSL certificate configuration
+        # ssl_certificate /etc/letsencrypt/live/vinyl.services.deavmi.assigned.network/fullchain.pem;
+        # ssl_certificate_key /etc/letsencrypt/live/vinyl.services.deavmi.assigned.network/privkey.pem;
+
+        # All accesses should be thrown away
+        access_log /dev/stdout  main;
+
+        # Only log errors
+        error_log /dev/stdout warn; # TODO: Set back to error
+
+        #error_page  404              /404.html;
+
+        # redirect server error pages to the static page /50x.html
+        #
+        error_page   500 502 503 504  /50x.html;
+
+        location = /50x.html
+        {
+                root   /usr/share/nginx/html;
+        }
+
+        # Proxy pass alles
+        location ^~ /
+        {
+                proxy_pass http://streamer:8000/;
+                proxy_http_version 1.1;
+                proxy_set_header Connection "upgrade";
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header X-Forwarded-For $remote_addr;
+                proxy_set_header X-Forwarded-Proto $scheme;
+
+                # by default nginx times out connections in one minute
+                proxy_read_timeout 1d;
+        }
+}
+```
+
+Some notable things:
+
+1. We have a `proxy_pass` which passes all traffic on `/` to the `streamer` container at port `8000`
+2. We listen on **all** IPv6 addresses so we are reachable for access via the docker-proxy on the host-side
+
+The `Dockerfile` is rather straightforward:
+
+```Dockerfile
+# Extend the base nginx image
+FROM nginx:latest
+
+# Delete default configuration and
+# include ours
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d/nginx.conf
+
+# Healthcheck
+HEALTHCHECK CMD curl http://[::1]:80
+```
+
+> Note, we use the `nginx:latest` base image/tag and then remove the old `default.conf` configuration and place ours into it. We also add a healthcheck to ensure it is reachable.
+
+Lastly, the `compose.yml` additions:
+
+```yaml
+  web:
+    build:
+      context: web/
+    container_name: web
+    depends_on:
+      # This is done because the `streamer` hostname must
+      # be available to NGINX or else it exits on startup
+      # because it is unresolvable
+      - streamer
+    restart: unless-stopped
+    networks:
+      - mainNet
+    ports:
+      - "80:80"
+```
+
+Pretty self explanatory.
+
+1. However one thing is to note, we have a `depends_on` set to `streamer` because NGINX will fail (although it *will restart* so this isn't really needed) to start if it cannot resolve the hostnames in the `proxy_pass` definition. Since `streamer` is the container's (of the same name) hostname we want it to be up (and resolvable) prior to NGINX starting.
+
+# End result
+
+## Photos
+
+Some photos.
+
+![2024-09-25-21-33-04.jpeg](2024-09-25-21-33-04.jpeg)
+
+![2024-09-25-21-33-30.jpeg](2024-09-25-21-33-30.jpeg)
+
+![2024-09-25-21-33-45.jpeg](2024-09-25-21-33-45.jpeg)
+
+![2024-09-25-21-33-56.jpeg](2024-09-25-21-33-56.jpeg)
+
+![2024-09-25-21-34-04.jpeg](2024-09-25-21-34-04.jpeg)
+
+![2024-09-25-21-34-10.jpeg](2024-09-25-21-34-10.jpeg)
+
+The most important one was to use a powered USB hub. The capture card itself _can_ run off of the power that the Raspberry Pi supplies but from my testing it is rather unstable and will stop working after sometime. You will be visited with many "USB reset" messages in `sudo dmesg -w`. So definitely make use of a powered hub.
