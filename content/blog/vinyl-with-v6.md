@@ -583,7 +583,7 @@ A few things to take note of here:
 	d. The `PULSE_SOURCE_DEVICE` must be set to the name you find when running `pactl list sources` and find your device. It must be the `node.name` field.
 3. The volume mounts:
 	a. I mount some time information although I don't think it is much important at all.
-	b. The important mount point is `/run`. I would have done `/run/user/1000/pulse` **but** that only comes into existence at some time after Docker (which starts I believe way before any user services) when the user session (remember the `enable-linger` thing) starts. Therefore `pulse/` won't work as the `pulseaudio.service` local-user systemd unit (service) must first start, and more so, the `/run/user/1000` only comes into *existence* when the user with uid $1000$ has a session started. I am unsure about `user/` being dependant on at least one user session being active hence `/run` was the safest bet.
+	b. The important mount point is `/run`. I would have done `/run/user/1000/pulse` **but** that only comes into existence at some time after Docker (which starts I believe way before any user services) when the user session (remember the `enable-linger` thing) starts. Therefore `pulse/` won't work as the `pulseaudio.service` local-user systemd unit (service) must first start, and more so, the `/run/user/1000` only comes into *existence* when the user with uid `1000` has a session started. I am unsure about `user/` being dependant on at least one user session being active hence `/run` was the safest bet.
 4. Network, lastly it is on the same network `mainNet`.
 
 Now let's look at what is in the `vlc/` directory:
