@@ -21,7 +21,7 @@ So how could one *actually* combine these two *high acquired* tastes together? W
 
 You're going to need a few things before getting started, all of which are non-starters if you don't have any of them.
 
-- ## Raspberry Pi
+## Raspberry Pi
 
 Any Raspberry Pi which:
 
