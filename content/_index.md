@@ -42,6 +42,7 @@ you can opt for using a service from the legacy financial system.
 
 * Monero: `43jx2gRMRxBauz2gwKTb9VJyUqKNg7wVPVVhQd32cgUA6WGhs2haJXAHfrdTzTKdYfeGEbDT8FtkF45sKMAEyasWRSyG5Sj`
 * Bitcoin: `bc1qkvduq9rwray2ymrvkrven3m8vsp9ah55f4hnc4`
+* Bitcoin (lightning): `deavmi@minibits.cash`
 * Liberapay: [tbvk](https://liberapay.com/tbvk/)
 
 {{<bruh>}}
