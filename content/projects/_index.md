@@ -104,16 +104,6 @@ An IRC network for hackers, programmers etc. Running on 3 servers currently, 1 i
 
 [Project homepage](/projects/bonobonet)
 
-## CRXN
-
-{{<bruh>}}
-<img src="/projects/crxn/img/logo.png" width=15% height=15% style="float:right">
-{{</bruh>}}
-
-A community-run IPv6 network similiar to dn42 which runs in the `fd00::/8` space. We use bird for routing and an assortment of routing protocols such as babel and ospfv3. We have IRC servers on the network, game servers, a DNS root nameserver, many web services and more things! The network spans South Africa, United Kingdom, Germany, Lebanon and Russia.
-
-[Project homepage](/projects/crxn)
-
 ---
 
 <!-- # Sweatyballs
@@ -235,6 +225,16 @@ A new programming language for systems programming with a focus on control of ev
 # Inactive projects
 
 All the projects listed below are no longer worked on or maintained.
+
+## CRXN
+
+{{<bruh>}}
+<img src="/projects/crxn/img/logo.png" width=15% height=15% style="float:right">
+{{</bruh>}}
+
+A community-run IPv6 network similiar to dn42 which runs in the `fd00::/8` space. We use bird for routing and an assortment of routing protocols such as babel and ospfv3. We have IRC servers on the network, game servers, a DNS root nameserver, many web services and more things! The network spans South Africa, United Kingdom, Germany, Lebanon and Russia.
+
+[Project homepage](/projects/crxn)
 
 ## tasky
 
