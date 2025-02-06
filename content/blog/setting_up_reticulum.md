@@ -197,3 +197,64 @@ This will be how people peer with our node. This makes sense for people wanting 
 
 ### Image build
 
+In order to build the base image that *both* our `reticulum` and `lxmd` containers will use we must pass in some build arguments to it first:
+
+```yaml
+build:
+	context: reticulum/
+	args:
+		- USER_UID=1000
+		- USER_GID=1003
+
+    # This platform cannot use
+    # the crypto library, hence
+    # we must use the `rnspure`
+    # package
+    - PURE_INSTALL=true
+
+    # If IPv6 should be preferred
+    # whenever getaddrinfo() is
+    # used
+    - GAI_PREFER_IPV6=true
+```
+
+#### The `PURE_INSTALL`
+
+If you are on a 64-bit ARM device then you can remove the `PURE_INSTALL` entry _or_ just set it to `false`. This is required because on 32-bit ARM devices Python will try to build one of the dependencies (the `cryptograpy` library) from scratch and this always seems to fail. Therefore this enables the built-in cryptography.
+
+Security note from the Reticulum developer:
+
+>Reticulum also includes a complete implementation of all necessary primitives in pure Python. If OpenSSL & PyCA are not available on the system when Reticulum is started, Reticulum will instead use the internal pure-python primitives. A trivial consequence of this is performance, with the OpenSSL backend being much faster. The most important consequence however, is the potential loss of security by using primitives that has not seen the same amount of scrutiny, testing and review as those from OpenSSL.
+
+>If you want to use the internal pure-python primitives, it is highly advisable that you have a good understanding of the risks that this pose, and make an informed decision on whether those risks are acceptable to you.
+
+>Reticulum is relatively young software, and should be considered as such. While it has been built with cryptography best-practices very foremost in mind, it has not been externally security audited, and there could very well be privacy or security breaking bugs. If you want to help out, or help sponsor an audit, please do get in touch.
+
+#### The `GAI_PREFER_IPV6`
+
+Your Docker container will **always** have IPv4 connectivity - one cannot disable that. In my case however I have configured IPv6 connectivity but that means that the container will have both IPv4 and IPv6 connectivity (dualstack).
+
+* Now on systems with **global** (that's the keyword) IPv6 addresses `getaddrinfo()` will place addresses resolved via DNS that are part of the `AF_INET6` (Ipv6 addresses) family _first_ before any `AF_INET` (IPv4 addresses) ones.
+* However, if you have an IPv4 address assigned to your interface but also an IPv6 one **but** the IPv6 one is from the ULA space (as most containers are) then you will actually have `AF_INET` records returned first.
+    * See this brilliant blog: https://thomas-leister.de/en/lxd-prefer-ipv6-outgoing/
+* Now this is annoying as I have perfectly working IPv6 (via masquerading NAT when it reaches the host side of my Docker host) and I would like it to make use of that which in my case would mean doing so _even if_ I am using ULA addresses on my container.
+
+The way to avoid this behavior is to edit `/etc/gai.conf` and basically set the priority of records. The way this works is by associating certain address masks with a given priority. When the resolver gets a bunch of records for a given domain name it will then apply each mask to them, the longest prefix match will be chosen and then the associated priority value will accompany that specific record. These priorities are then used to order the results returned by `getaddrinfo()`.
+
+The easiest fix is to do the following, create a `label ::/0 0`. This will match ANY IPv6 address and give it the highest priority. This should stop the following:
+
+![image.png](../assets/image_1738337867615_0.png){:height 346, :width 629}
+
+I wanted to test Python's `getaddrinfo()` and now IPv6 is preferred and _only then_ IPv4:
+
+![image.png](../assets/image_1738338019623_0.png){:height 123, :width 629}
+
+Also when running now I am able to connect to the hosts:
+
+![image.png](../assets/image_1738338774254_0.png)
+
+##### An aside
+
+You may have noticed something - _"where are the preferences for IPv4?"_. Well, what this program does (and many other do) is pack any IPv4 addresses (from A records) into the lowest 32-bits of an IPv6 address. Therefore a common IPv4 address will be $96$ zeroes followed by $32$ bits containing the IPv4 address. This then explains the prefixes for `/96` that you will see, specifically those with $96$ $0$ bits. There is also the one with $64$ $0$ bits followed by $0xfff$ (the next $32$ bits) and _then_ $32$ $0$ bits - I believe these may be for Teredo tunnelled IP address or something - a kind-of IPv4 use case.
+
+## Dockerfile
