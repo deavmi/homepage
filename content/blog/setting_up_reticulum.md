@@ -258,3 +258,150 @@ Also when running now I am able to connect to the hosts:
 You may have noticed something - _"where are the preferences for IPv4?"_. Well, what this program does (and many other do) is pack any IPv4 addresses (from A records) into the lowest 32-bits of an IPv6 address. Therefore a common IPv4 address will be $96$ zeroes followed by $32$ bits containing the IPv4 address. This then explains the prefixes for `/96` that you will see, specifically those with $96$ $0$ bits. There is also the one with $64$ $0$ bits followed by $0xfff$ (the next $32$ bits) and _then_ $32$ $0$ bits - I believe these may be for Teredo tunnelled IP address or something - a kind-of IPv4 use case.
 
 ## Dockerfile
+
+### For `reticulum_base`
+
+The `reticulum_base` image's `Dockerfile` is as follows:
+
+```Dockerfile
+# Base image
+FROM debian:bookworm AS build
+MAINTAINER "Tristan Brice Velloza Kildaire" "deavmi@redxen.eu"
+
+# Don't allow interactive prompts when using apt
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Upgrade the system's dependencies
+RUN apt update
+RUN apt upgrade -y
+
+# Activate arguments provided as build parameters
+ARG USER_UID
+ARG USER_GID
+
+# Install Python3 and requirements
+RUN apt install python3 python3-pip -y
+
+# Create the reticulum user
+# and group
+RUN groupadd reticulum -g $USER_GID
+RUN useradd -m reticulum -u $USER_UID -g $USER_GID
+
+# Add us to the group which the
+# serial device files are grouped
+# under (permission-wise)
+RUN usermod reticulum -aG dialout
+
+# Install ncat (useful tool)
+RUN apt install ncat -y
+RUN apt install picocom -y
+RUN apt install curl wget -y
+RUN apt install net-tools dnsutils iputils-ping -y
+
+# Activate build argument `GAI_PREFER_IPV6`
+ARG GAI_PREFER_IPV6
+
+# Run GAI configuration
+COPY gai.sh /tmp
+RUN chmod +x /tmp/gai.sh
+RUN /tmp/gai.sh
+RUN rm /tmp/gai.sh
+
+# Activate build argument `PURE_INSTALL`
+ARG PURE_INSTALL
+
+# Copy across installation
+# script
+COPY install.sh /tmp
+RUN chmod +x /tmp/install.sh
+RUN chown reticulum:reticulum /tmp/install.sh
+
+# Switch to reticulum user
+USER reticulum
+WORKDIR /home/reticulum
+
+# Add the directory where pip will
+# install binaries to to our PATH
+ENV PATH=$PATH:/home/reticulum/.local/bin
+
+# Install reticulum and delete
+# the install script
+RUN /tmp/./install.sh
+RUN rm /tmp/install.sh
+
+# Run the daemon
+CMD sleep 5 && rnsd --config /data
+```
+
+* The reason for the `sleep 5` is because there seems to be some bug in the `AutoInterface` (you'll see later what this is) handling that causes a crash due to what I _assume_ to be the fact that the container's internal networking has not yet been setup.
+    * It's a hard thing to debug because as soon as the container exists (due to the `CMD` program exiting) all I get is a non-zero exit code (sometimes even $0$ exit code) but no logging whatsoever as to indicate why.
+
+The other needed files, `install.sh`, contains the following:
+
+```bash
+#!/bin/sh
+
+if [ ! "$PURE_INSTALL" = "true" ]
+then
+        PURE_INSTALL="false"
+fi
+
+echo "Using pure RNS: $PURE_INSTALL"
+
+if [ "$PURE_INSTALL" = "true" ]
+then
+        pip3 install rnspure --break-system-packages
+        pip3 install pyserial --break-system-packages
+else
+        pip3 install rns --break-system-packages
+fi
+```
+
+And `gai.sh`:
+
+```bash
+#!/bin/sh
+
+if [ ! "$GAI_PREFER_IPV6" = "true" ]
+then
+        GAI_PREFER_IPV6="false"
+fi
+
+echo "IPv6 is preferred when using getaddrinof()?: $GAI_PREFER_IPV6"
+
+if [ "$GAI_PREFER_IPV6" = "true" ]
+then
+        echo "label ::/0 0" >> /etc/gai.conf
+fi
+```
+
+### For `lxmd`
+
+The `lxmd` image's `Dockerfile` is as follows:
+
+```Dockerfile
+FROM reticulum_base
+
+# Install lxmf
+RUN pip3 install lxmf --break-system-packages --no-dependencies
+
+# Run the lxmd daemon
+sleep 5 && lxmd --config /data -p
+```
+
+* As you can see we re-use the layer created earlier named `reticulum_base`, therefore we need not specify the same dependency installation commands or user creation. We only need to add the additional commands to install what we need and then declare what is to be run on container start-up.
+* The `-p` argument tells the daemon to announce a propagation node destination so that clients can sync messages to/from it and so that other propagation nodes can do the same as well.
+* The `-vvvv` can be omitted once you are done your initial testing; it just increases the logging verbosity.
+* The `CMD` is interesting contains a call to `sleep` for the same reasons as mentioned earlier.
+
+# Logging
+
+There are some things we can do to ensure we can see what the Reticulum daemon is busy doing, even if temporarily.
+
+```toml
+[logging]
+	loglevel = 7
+```
+
+Using a `loglevel` of 7 is the highest verbosity level available, the lowest is that of 0 which logs only critical information. Recommended level is 4 once you're done debugging things with 7.
+
