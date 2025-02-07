@@ -874,5 +874,3 @@ The destination _hash_ is the unique part but the name is normally something alo
 
 1. Firstly it is so that this _destination_ can be identified by LXMF clients _as_ a propagation node; so that clients can show the user _"Hey, you could use this one"_ or it can be selected automatically by the client
 2. Secondly, _other_ propagation nodes will hear this announced destination and use the _name_ to determine that _"Yep, this is a destination to a propagation node service"_ - they can then go ahead and sync their message store with whatever messages the _other propagation node_ may have that _this propagation node_ doesn't.
-
-
