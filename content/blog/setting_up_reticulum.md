@@ -579,3 +579,52 @@ Below are some commonly used peers which are hosted by some people out there:
 ```
 
 You can find more [here](https://reticulum.network/connect).
+
+## Adding RNode interfaces
+
+I have written on the topic of #[[Building my first RNode - Part 1]] already, so that is a good place to start if you want to purchase some hardware and get it up and running as an RNode. RNode's provide many features, one of which is acting as a LoRa-based interface for the Reticulum daemon.
+
+### Setting up the device
+
+![2024-12-06-21-10-51.jpeg](../assets/2024-12-06-21-10-51.jpeg)
+
+Firstly open up a terminal and then run `dmesg -w` (you may need to run it as `root` in order for it to work). Then go ahead and plug in your device, once it is in you should see some text:
+
+![image.png](../assets/image_1733510926696_0.png){:height 521, :width 659}
+
+>**Note**: The circled text shows the name of our device, here it would be available at `/dev/ttyACM1`.
+
+Once booted it should eventually change to this screen:
+
+![2024-12-06-21-27-43.jpeg](../assets/2024-12-06-21-27-43.jpeg){:height 887, :width 659}
+
+### Configuring RNS
+
+We now need to make our Reticulum daemon aware of the RNode that's now available at the `/dev/rnode1` device node.
+
+We can do this by adding a new interface entry:
+
+```toml
+[[RNode test]]
+  type = RNodeInterface
+  enabled = yes
+  port = /dev/rnode1
+
+  frequency = 868000000
+  bandwidth = 62500
+  spreadingfactor = 8 # Doesn't need to match on other side
+  codingrate = 6 # Doesn't need to match on other side
+```
+
+1. The `type` must be set to `RNodeInterface` which let's Reticulum know it is an RNode and not just a dumb serial device
+2. Specify the `port` to be that of `/dev/rnode1` (or whatever your device node's path is)
+3. The radio options we set here must be the same on all of the other LoRa-based RNode's you wish to be able to communicate with:
+    a. `frequency`
+        i. Expressed in hertz, it makes sense why this is required to be the same
+    b. `bandwidth`
+        i. Ask some HAM radio man
+4. These other options are not required to be the same:
+    a. `spreadingfactor`
+        i. Ask some HAM radio man
+    b. `codingrate`
+        i. Sounds oddly like a symbol rate, but once again - ask a HAM radio man
