@@ -674,3 +674,15 @@ There is a configuration option called `shared_instance_port`. The way that Reti
 Both scenarios require reading the `~/.reticulum/config` file to determine the shared instance port to check for (or bind to). This means only one router is ever spawned but the spawner and everyone else can make use of it. `shared_instance_port` is only ever bound to $localhost$.
 
 >**Note**: To enable this ensure that `share_instance` is set to `Yes`.
+
+### Instance control
+
+The `instance_control_port` is bound to on $localhost$ and is used by applications that want to attach to the running Reticulum router instance in order to debug it.
+
+This _"debugging"_ can include things like enumerating the interfaces and their traffic statistics:
+
+![image.png](../assets/image_1733057720832_0.png){:height 263, :width 450}
+
+If your Reticulum router instance has _transport mode_ enabled then you can also see the transport identity:
+
+![image.png](../assets/image_1738595079140_0.png)
