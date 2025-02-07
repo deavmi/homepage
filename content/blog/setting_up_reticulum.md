@@ -521,3 +521,61 @@ Configuration is as simple as the following:
 ```
 
 >**Note:** It can work on non-link-local multicast as well, however, this is just the default - for it to be `link`-local (see [this](https://reticulum.network/manual/interfaces.html#auto-interface))
+
+## Adding IP interfaces
+
+Not everything I do will be peering _directly_ over physical interfaces such as that via serial or via the RNode interface. I will also want to join the larger Reticulum test network. This can be accomplished via adding some IP-based interfaces.
+
+### Inbound
+
+Inbound interfaces refer to those that will bind to an $(address, port)$ pair and listen for incoming connections.
+
+Let's declare a TCP-based listener on port `4242`:
+
+```toml
+[[TCP Inbound server]]
+    type = TCPServerInterface
+    enabled = yes
+    listen_ip = ::
+    listen_port = 4242
+```
+
+Let's _also_ declare a UDP-based listener on port `4242`:
+
+```toml
+[[UDP Inbound server]]
+    type = UDPInterface
+    enabled = yes
+    listen_ip = ::
+    listen_port = 4242
+```
+
+>**Note**: For some reason this failed to bind for me
+
+### Outbound
+
+Outbound interfaces refer to those that will actively open up a connection to a remote host.
+
+Below are some commonly used peers which are hosted by some people out there:
+
+```toml
+[[TCP Outbound 1]]
+	type = TCPClientInterface
+	enabled = yes
+    target_host = reticulum.betweentheborders.com
+    target_port = 4242
+
+[[TCP Outbound 2]]
+    type = TCPClientInterface
+    enabled = yes
+    target_host = amsterdam.connect.reticulum.network
+    target_port = 4965
+
+[[TCP Outbound 3]]
+    type = TCPClientInterface
+    enabled = yes
+    target_host = aspark.uber.space
+    target_port = 4965
+```
+
+You can find more [here](https://reticulum.network/connect).
