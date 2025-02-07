@@ -2,7 +2,7 @@
 title: Setting up Reticulum - the almost full guide to radical networking
 author: Tristan B. Velloza Kildaire
 date: 2025-02-07
-draft: true
+draft: false
 ---
 
 # System setup
