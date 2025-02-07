@@ -508,3 +508,16 @@ Then start typing on one, and it should appear on the other and vice-versa:
 ![image.png](../assets/image_1732189883387_0.png){:height 354, :width 659}
 ![image.png](../assets/image_1732189897833_0.png)
 
+## Adding `AutoInterface`
+
+The `AutoInterface` is an interface that can be run over any interface that supports link-local IPv6 multicast. The use case of this is that it allows for easy peering with any _other_ Reticulum router that's on the same link; meaning that you won't have to explicitly state that you want to connect to a given LAN peer.
+
+Configuration is as simple as the following:
+
+```toml
+[[LAN Multicast interface]]
+	type = AutoInterface
+    enabled = yes
+```
+
+>**Note:** It can work on non-link-local multicast as well, however, this is just the default - for it to be `link`-local (see [this](https://reticulum.network/manual/interfaces.html#auto-interface))
