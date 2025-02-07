@@ -405,3 +405,106 @@ There are some things we can do to ensure we can see what the Reticulum daemon i
 
 Using a `loglevel` of 7 is the highest verbosity level available, the lowest is that of 0 which logs only critical information. Recommended level is 4 once you're done debugging things with 7.
 
+# Identities
+
+An instance of Reticulum combines the routing engine, a set of interfaces and then an *identity*. This is your unique handle on the network. It is derived via asymmetric encryption and hence is derived from your public key part of your $(key_{pub}, key_{priv})$.
+
+## Destination
+
+Destinations are endpoints that can have data sent to them. This is effectively how people run services such as LXMF-based ones, by establishing an endpoint on the network you can send data to. To make a destination known to the network, and so that routing information can be learnt throughout the network, an announcement of the destination id must be made.
+
+Destinations are derived from your identity. This would make sense. I say *derived* because I mean they have to be unique to your presumably unique *identity*. It's all fine and well you can sign a message with your key saying _"Hey I own dest $X$"_ but if someone can also veritably announce that (signature and all) then it would confuse routing. Hence destinations have to be unique, and if your identity is pretty unique then deriving destinations therefrom can be too.
+
+## Example
+
+On $node_1$ I have generated an identity and then derived _two_ destinations from it. I then go ahead and announce these over all my interfaces:
+
+![image.png](../assets/image_1733400115307_0.png)
+
+On $node_2$ it receives the _two_ destination announcements and we can see it shows from which _identity_ those destinations were derived from. We can also see which interface the announcement packet was received from:
+
+![image.png](../assets/image_1733400213127_0.png)
+
+# Interfaces
+
+The interfaces section is defined with the following declaration:
+
+```toml
+[interfaces]
+	# Interface definitions go here
+```
+
+## Adding serial interfaces
+
+One of the things I have wanted to play around with since learning about Reticulum is that of its vast interface support it touts.
+
+Firstly plug in a serial adaptor like one of these two (I purchased these online):
+
+![2024-11-13-08-26-07.jpeg](../assets/2024-11-13-08-26-07.jpeg)
+![2024-11-13-08-26-14.jpeg](../assets/2024-11-13-08-26-14.jpeg){:height 621, :width 689}
+
+If you type in `sudo dmesg -w` before plugging them in (you can unplug it and pug it in again if not) then you will be able to grab the mountpoint that the device driver is exposed at:
+
+![image.png](../assets/image_1731425130893_0.png)
+
+>**Note**: In this case the device is available at `/dev/ttyUSB0` on my host. Remember this as it will be important.
+
+In order to connect between the two you need what is effectively the equivalent of a crossover cable so that the TX lines connect to the RX lines of the other side and vice-versa. We call this a _"null modem"_ cable and it looks as follows:
+
+![2024-11-21-08-47-47.jpeg](../assets/2024-11-21-08-47-47.jpeg)
+
+We then connect either sides as follows:
+
+![2024-11-21-08-48-23.jpeg](../assets/2024-11-21-08-48-23.jpeg)
+![2024-11-21-08-48-34.jpeg](../assets/2024-11-21-08-48-34.jpeg)
+
+And then it appears as follows:
+
+![2024-11-21-08-53-29.jpeg](../assets/2024-11-21-08-53-29.jpeg)
+
+### Interface configuration
+
+```toml
+[[Your interface name]]
+	type = SerialInterface
+    enabled = yes
+	port = /dev/serial0
+    
+    speed = 115200
+  	databits = 8
+  	parity = none
+  	stopbits = 1
+```
+
+Some noteworthy parameters are:
+
+1. `port`
+    a. I set it to `/dev/serial0` as that is the name of the serial device that will be present on the container-side.
+2. Serial specific
+    a. Serial connectors let you configure how fast they are to send data buffered to their chip, and also how to demarcate certain parts of data streams upon other things including checksumming of data.
+    b. I went with the default that was on the [documentation for serial interfaces](https://reticulum.network/manual/interfaces.html#serial-interface).
+
+### Testing the Docker device forwarding
+
+The reason to test that the communication works is twofold:
+
+1. I wanted to test that the device forwarding done from the host's serial device at `/dev/ttyUSB0` to the container's side at `/dev/serial0` worked in terms of permissions I had set up (ala `dialout` group mod)
+2. Test the null modem actually works.
+
+This is very easy, firstly execute `/bin/bash` in our container so we can get a shell with (on both machines):
+
+```bash
+sudo docker exec -ti reticulum /bin/bash
+```
+
+After this run this (on both machines):
+
+```bash
+picocom /dev/serial0
+```
+
+Then start typing on one, and it should appear on the other and vice-versa:
+
+![image.png](../assets/image_1732189883387_0.png){:height 354, :width 659}
+![image.png](../assets/image_1732189897833_0.png)
+
