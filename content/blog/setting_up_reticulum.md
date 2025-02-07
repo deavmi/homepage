@@ -2,7 +2,7 @@
 title: Setting up Reticulum
 author: Tristan B. Velloza Kildaire
 date: 2025-02-07
-draft: false
+draft: true
 ---
 
 # System setup
@@ -405,8 +405,3 @@ There are some things we can do to ensure we can see what the Reticulum daemon i
 
 Using a `loglevel` of 7 is the highest verbosity level available, the lowest is that of 0 which logs only critical information. Recommended level is 4 once you're done debugging things with 7.
 
-# Identities
-
-An instance of Reticulum combines the routing engine, a set of interfaces and then an *identity*. This is your unique handle on the network.
-
-$1+1$
