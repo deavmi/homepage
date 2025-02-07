@@ -658,3 +658,19 @@ Now that we have setup the interfaces we wish to make available to the network s
 This section is configured in the `[reticulum]` section.
 
 The first option to consider that is that of _packet forwarding_. This refers to accepting packets that are not destined to the receiving node _itself_ but of some other node that _this node_ may know how to forward. Whether or not we make such a forwarding decision is something one can control with the `enable_transport` option. Setting it to `True` will enable forwarding; to `False` will disable it.
+
+# Network stack access
+
+This section is configured in the `[reticulum]` section. Other than routing Reticulum traffic on behalf of others, you may want to actually also _use your node_ for accessing the various services that others run on the network.
+
+### Shared instance
+
+There is a configuration option called `shared_instance_port`. The way that Reticulum-supported applications work is the following:
+
+1. **If** the `shared_instance_port` is bound (by some _other_ Reticulum instance) to then the application will connect to $(localhost, sip)$ where $sip$ is the `shared_instance_port`.
+    a. Furthermore it will then communicate Reticulum packets to/from this connections
+2. **If** `shared_instance_port` is _not_ bound then the program will start a new Reticulum _full instance_ (a router) and bind to that port. Therefore allowing another program like described above to use it as well.
+
+Both scenarios require reading the `~/.reticulum/config` file to determine the shared instance port to check for (or bind to). This means only one router is ever spawned but the spawner and everyone else can make use of it. `shared_instance_port` is only ever bound to $localhost$.
+
+>**Note**: To enable this ensure that `share_instance` is set to `Yes`.
