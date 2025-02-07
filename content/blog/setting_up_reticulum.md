@@ -750,3 +750,28 @@ Lastly on node $C$ we can see the reception of the re-broadcasted announcement (
 
 ![image.png](../assets/image_1732901029729_0.png){:height 369, :width 689}
 ![2024-11-29-19-56-08.jpeg](../assets/2024-11-29-19-56-08.jpeg)
+
+# Using the network
+
+This section describes the way we can make use of the network both as clients but also as service providers - providing additional services to the network.
+
+## LXMF
+
+[LXMF](https://github.com/markqvist/LXMF) or _lightweight eXtensible message format_ is a protocol that runs **ontop of** the Reticulum protocol. See it as what HTTP is to IP - IP provides routing of arbitrary packets and HTTP-messages can be one of those many packets that are routed. In this case LXMF is "our HTTP".
+
+Normally this LXMF functionality will be incoporated in something like that of an application that uses it. For example the NomadNet program makes use of LXMF for sending and receiving messages
+
+#### What is a propagation node?
+
+A propagation node is something somebody can run on behalf of other users making use of LXMF functionality. In the case whereby a user is offline there is no way to send him an LXMF message as the underlying Reticulum transport to such a node would fail as the endpoint is not online.
+
+LXMF _clients_ let one configure a propagation node to send/receive from in two cases:
+
+1. The LXMF endpoint you want to send to is offline. In such a case you will then send the LXMF message to a propagation node who will store the message.
+2. When the _intended recipient_ comes online he will sync all messages for him from the propagation node and be able to grab yours
+
+Propagation nodes can also sync with one another. As per the documentation:
+
+>When Propagation Nodes exist on a Reticulum network, they will by default peer with each other and synchronise messages, automatically creating an encrypted, distributed message store. Users and other endpoints can retrieve messages destined for them from any available Propagation Nodes on the network.
+
+This is effectively a delay-tolerance feature that LXMF offers.
