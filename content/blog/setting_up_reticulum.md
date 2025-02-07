@@ -686,3 +686,67 @@ This _"debugging"_ can include things like enumerating the interfaces and their 
 If your Reticulum router instance has _transport mode_ enabled then you can also see the transport identity:
 
 ![image.png](../assets/image_1738595079140_0.png)
+
+# Transport node
+
+We have discussed the point of _transport nodes_ in a Reticulum network.
+
+I have now received an additional set of components:
+
+1. Two serial adaptors
+    a. ![2024-11-27-21-10-32.jpeg](../assets/2024-11-27-21-10-32.jpeg)
+2. A single null modem cable
+    a. ![2024-11-27-21-10-37.jpeg](../assets/2024-11-27-21-10-37.jpeg)
+
+### Network setup
+
+I have connected my nodes in the following way, $A$ <-> $B$ <-> $C$. This means that $B$ can see announcements from both $A$ and $C$. However, because I have not yet enabled the transport flag on node $B$; $C$ will not receive announcements from anyone behind $B$ (such as $A$). The same applies to $A$, it will not see announcements from any node behind $B$ (such as $C$).
+
+![2024-11-29-19-55-57.jpeg](../assets/2024-11-29-19-55-57.jpeg){:height 1045, :width 778}
+
+On node $B$:
+
+![image.png](../assets/image_1732898042843_0.png){:height 359, :width 670}
+
+On node $A$:
+
+![image.png](../assets/image_1732898048639_0.png){:height 354, :width 659}
+
+On node $C$:
+
+![image.png](../assets/image_1732898054638_0.png){:height 354, :width 659}
+
+On node $B$:
+
+![image.png](../assets/image_1732898066438_0.png){:height 354, :width 659}
+
+On node $C$:
+
+![image.png](../assets/image_1732898073327_0.png){:height 354, :width 659}
+
+On node $A$:
+
+![image.png](../assets/image_1732898077857_0.png){:height 354, :width 659}
+
+On node $B$:
+
+![image.png](../assets/image_1732898101391_0.png)
+
+### Enabling forwarding on node `B`
+
+This is as easy as changing the `enable_transport` option to `True` in the `[reticulum]` configuration section and restarting the `rnsd` process afterwards.
+
+On node $A$ I generated an announcement for the highlighted destination:
+
+![image.png](../assets/image_1732900818979_0.png){:height 369, :width 689}
+![2024-11-29-19-56-11.jpeg](../assets/2024-11-29-19-56-11.jpeg){:height 525, :width 689}
+
+Then on node $B$, my _transport node_, I can see the reception of it here. We can see that it is 1 hop away from us as it is $A$ <-> $B$. We can also see that, because the node $B$ is a _transport node_ is is rebroadcasting the announcement out all of its interfaces (this means it should therefore reach node $C$):
+
+![image.png](../assets/image_1732900844518_0.png){:height 369, :width 689}
+![2024-11-29-19-56-04.jpeg](../assets/2024-11-29-19-56-04.jpeg)
+
+Lastly on node $C$ we can see the reception of the re-broadcasted announcement (via $B$) received. It shows that the destination is in fact 2 hops away from us which makes sense since 1 hop is from $C$ -> $B$ and another hop is from $B$ -> $A$:
+
+![image.png](../assets/image_1732901029729_0.png){:height 369, :width 689}
+![2024-11-29-19-56-08.jpeg](../assets/2024-11-29-19-56-08.jpeg)
