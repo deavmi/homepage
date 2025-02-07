@@ -11,7 +11,7 @@ This section is information pertaining to the setup that I used.
 
 ## Your _Linux_ host
 
-![2024-11-02-14-51-17.jpeg](../assets/2024-11-02-14-51-17.jpeg)
+![2024-11-02-14-51-17.jpeg](2024-11-02-14-51-17.jpeg)
 
 I used a mix of Raspberry Pis - old and new. The above is a photo of one of them.
 
@@ -243,15 +243,15 @@ The way to avoid this behavior is to edit `/etc/gai.conf` and basically set the 
 
 The easiest fix is to do the following, create a `label ::/0 0`. This will match ANY IPv6 address and give it the highest priority. This should stop the following:
 
-![image.png](../assets/image_1738337867615_0.png){:height 346, :width 629}
+![image.png](image_1738337867615_0.png){:height 346, :width 629}
 
 I wanted to test Python's `getaddrinfo()` and now IPv6 is preferred and _only then_ IPv4:
 
-![image.png](../assets/image_1738338019623_0.png){:height 123, :width 629}
+![image.png](image_1738338019623_0.png){:height 123, :width 629}
 
 Also when running now I am able to connect to the hosts:
 
-![image.png](../assets/image_1738338774254_0.png)
+![image.png](image_1738338774254_0.png)
 
 ##### An aside
 
@@ -419,11 +419,11 @@ Destinations are derived from your identity. This would make sense. I say *deriv
 
 On $node_1$ I have generated an identity and then derived _two_ destinations from it. I then go ahead and announce these over all my interfaces:
 
-![image.png](../assets/image_1733400115307_0.png)
+![image.png](image_1733400115307_0.png)
 
 On $node_2$ it receives the _two_ destination announcements and we can see it shows from which _identity_ those destinations were derived from. We can also see which interface the announcement packet was received from:
 
-![image.png](../assets/image_1733400213127_0.png)
+![image.png](image_1733400213127_0.png)
 
 # Interfaces
 
@@ -440,27 +440,27 @@ One of the things I have wanted to play around with since learning about Reticul
 
 Firstly plug in a serial adaptor like one of these two (I purchased these online):
 
-![2024-11-13-08-26-07.jpeg](../assets/2024-11-13-08-26-07.jpeg)
-![2024-11-13-08-26-14.jpeg](../assets/2024-11-13-08-26-14.jpeg){:height 621, :width 689}
+![2024-11-13-08-26-07.jpeg](2024-11-13-08-26-07.jpeg)
+![2024-11-13-08-26-14.jpeg](2024-11-13-08-26-14.jpeg){:height 621, :width 689}
 
 If you type in `sudo dmesg -w` before plugging them in (you can unplug it and pug it in again if not) then you will be able to grab the mountpoint that the device driver is exposed at:
 
-![image.png](../assets/image_1731425130893_0.png)
+![image.png](image_1731425130893_0.png)
 
 >**Note**: In this case the device is available at `/dev/ttyUSB0` on my host. Remember this as it will be important.
 
 In order to connect between the two you need what is effectively the equivalent of a crossover cable so that the TX lines connect to the RX lines of the other side and vice-versa. We call this a _"null modem"_ cable and it looks as follows:
 
-![2024-11-21-08-47-47.jpeg](../assets/2024-11-21-08-47-47.jpeg)
+![2024-11-21-08-47-47.jpeg](2024-11-21-08-47-47.jpeg)
 
 We then connect either sides as follows:
 
-![2024-11-21-08-48-23.jpeg](../assets/2024-11-21-08-48-23.jpeg)
-![2024-11-21-08-48-34.jpeg](../assets/2024-11-21-08-48-34.jpeg)
+![2024-11-21-08-48-23.jpeg](2024-11-21-08-48-23.jpeg)
+![2024-11-21-08-48-34.jpeg](2024-11-21-08-48-34.jpeg)
 
 And then it appears as follows:
 
-![2024-11-21-08-53-29.jpeg](../assets/2024-11-21-08-53-29.jpeg)
+![2024-11-21-08-53-29.jpeg](2024-11-21-08-53-29.jpeg)
 
 ### Interface configuration
 
@@ -505,8 +505,8 @@ picocom /dev/serial0
 
 Then start typing on one, and it should appear on the other and vice-versa:
 
-![image.png](../assets/image_1732189883387_0.png){:height 354, :width 659}
-![image.png](../assets/image_1732189897833_0.png)
+![image.png](image_1732189883387_0.png){:height 354, :width 659}
+![image.png](image_1732189897833_0.png)
 
 ## Adding `AutoInterface`
 
@@ -586,17 +586,17 @@ I have written on the topic of #[[Building my first RNode - Part 1]] already, so
 
 ### Setting up the device
 
-![2024-12-06-21-10-51.jpeg](../assets/2024-12-06-21-10-51.jpeg)
+![2024-12-06-21-10-51.jpeg](2024-12-06-21-10-51.jpeg)
 
 Firstly open up a terminal and then run `dmesg -w` (you may need to run it as `root` in order for it to work). Then go ahead and plug in your device, once it is in you should see some text:
 
-![image.png](../assets/image_1733510926696_0.png){:height 521, :width 659}
+![image.png](image_1733510926696_0.png){:height 521, :width 659}
 
 >**Note**: The circled text shows the name of our device, here it would be available at `/dev/ttyACM1`.
 
 Once booted it should eventually change to this screen:
 
-![2024-12-06-21-27-43.jpeg](../assets/2024-12-06-21-27-43.jpeg){:height 887, :width 659}
+![2024-12-06-21-27-43.jpeg](2024-12-06-21-27-43.jpeg){:height 887, :width 659}
 
 ### Configuring RNS
 
@@ -633,21 +633,21 @@ We can do this by adding a new interface entry:
 
 When starting up the RNS daemon with `rnsd -vvv` we shall see something like this:
 
-![image.png](../assets/image_1737285967663_0.png){:height 166, :width 659}
+![image.png](image_1737285967663_0.png){:height 166, :width 659}
 
 I sent an announcement on my phone using Sideband (and of which had an RNode attached over Bluetooth). Here we can see the announcement from Sideband's LXMF destination received over on the other machine running `rnsd -vvvv`:
 
-![image.png](../assets/image_1737286078239_0.png){:height 32, :width 659}
+![image.png](image_1737286078239_0.png){:height 32, :width 659}
 
 ### Seeing it work
 
 What it looks like when it is running:
 
-![2024-12-08-11-15-43.jpeg](../assets/2024-12-08-11-15-43.jpeg)
+![2024-12-08-11-15-43.jpeg](2024-12-08-11-15-43.jpeg)
 
 The green light shows when there is transmission or reception of data over LoRa
 
-![2024-12-08-11-18-08.jpeg](../assets/2024-12-08-11-18-08.jpeg){:height 1233, :width 689}
+![2024-12-08-11-18-08.jpeg](2024-12-08-11-18-08.jpeg){:height 1233, :width 689}
 
 # Routing
 
@@ -681,11 +681,11 @@ The `instance_control_port` is bound to on $localhost$ and is used by applicatio
 
 This _"debugging"_ can include things like enumerating the interfaces and their traffic statistics:
 
-![image.png](../assets/image_1733057720832_0.png){:height 263, :width 450}
+![image.png](image_1733057720832_0.png){:height 263, :width 450}
 
 If your Reticulum router instance has _transport mode_ enabled then you can also see the transport identity:
 
-![image.png](../assets/image_1738595079140_0.png)
+![image.png](image_1738595079140_0.png)
 
 # Transport node
 
@@ -694,43 +694,43 @@ We have discussed the point of _transport nodes_ in a Reticulum network.
 I have now received an additional set of components:
 
 1. Two serial adaptors
-    a. ![2024-11-27-21-10-32.jpeg](../assets/2024-11-27-21-10-32.jpeg)
+    a. ![2024-11-27-21-10-32.jpeg](2024-11-27-21-10-32.jpeg)
 2. A single null modem cable
-    a. ![2024-11-27-21-10-37.jpeg](../assets/2024-11-27-21-10-37.jpeg)
+    a. ![2024-11-27-21-10-37.jpeg](2024-11-27-21-10-37.jpeg)
 
 ### Network setup
 
 I have connected my nodes in the following way, $A$ <-> $B$ <-> $C$. This means that $B$ can see announcements from both $A$ and $C$. However, because I have not yet enabled the transport flag on node $B$; $C$ will not receive announcements from anyone behind $B$ (such as $A$). The same applies to $A$, it will not see announcements from any node behind $B$ (such as $C$).
 
-![2024-11-29-19-55-57.jpeg](../assets/2024-11-29-19-55-57.jpeg){:height 1045, :width 778}
+![2024-11-29-19-55-57.jpeg](2024-11-29-19-55-57.jpeg){:height 1045, :width 778}
 
 On node $B$:
 
-![image.png](../assets/image_1732898042843_0.png){:height 359, :width 670}
+![image.png](image_1732898042843_0.png){:height 359, :width 670}
 
 On node $A$:
 
-![image.png](../assets/image_1732898048639_0.png){:height 354, :width 659}
+![image.png](image_1732898048639_0.png){:height 354, :width 659}
 
 On node $C$:
 
-![image.png](../assets/image_1732898054638_0.png){:height 354, :width 659}
+![image.png](image_1732898054638_0.png){:height 354, :width 659}
 
 On node $B$:
 
-![image.png](../assets/image_1732898066438_0.png){:height 354, :width 659}
+![image.png](image_1732898066438_0.png){:height 354, :width 659}
 
 On node $C$:
 
-![image.png](../assets/image_1732898073327_0.png){:height 354, :width 659}
+![image.png](image_1732898073327_0.png){:height 354, :width 659}
 
 On node $A$:
 
-![image.png](../assets/image_1732898077857_0.png){:height 354, :width 659}
+![image.png](image_1732898077857_0.png){:height 354, :width 659}
 
 On node $B$:
 
-![image.png](../assets/image_1732898101391_0.png)
+![image.png](image_1732898101391_0.png)
 
 ### Enabling forwarding on node `B`
 
@@ -738,18 +738,18 @@ This is as easy as changing the `enable_transport` option to `True` in the `[ret
 
 On node $A$ I generated an announcement for the highlighted destination:
 
-![image.png](../assets/image_1732900818979_0.png){:height 369, :width 689}
-![2024-11-29-19-56-11.jpeg](../assets/2024-11-29-19-56-11.jpeg){:height 525, :width 689}
+![image.png](image_1732900818979_0.png){:height 369, :width 689}
+![2024-11-29-19-56-11.jpeg](2024-11-29-19-56-11.jpeg){:height 525, :width 689}
 
 Then on node $B$, my _transport node_, I can see the reception of it here. We can see that it is 1 hop away from us as it is $A$ <-> $B$. We can also see that, because the node $B$ is a _transport node_ is is rebroadcasting the announcement out all of its interfaces (this means it should therefore reach node $C$):
 
-![image.png](../assets/image_1732900844518_0.png){:height 369, :width 689}
-![2024-11-29-19-56-04.jpeg](../assets/2024-11-29-19-56-04.jpeg)
+![image.png](image_1732900844518_0.png){:height 369, :width 689}
+![2024-11-29-19-56-04.jpeg](2024-11-29-19-56-04.jpeg)
 
 Lastly on node $C$ we can see the reception of the re-broadcasted announcement (via $B$) received. It shows that the destination is in fact 2 hops away from us which makes sense since 1 hop is from $C$ -> $B$ and another hop is from $B$ -> $A$:
 
-![image.png](../assets/image_1732901029729_0.png){:height 369, :width 689}
-![2024-11-29-19-56-08.jpeg](../assets/2024-11-29-19-56-08.jpeg)
+![image.png](image_1732901029729_0.png){:height 369, :width 689}
+![2024-11-29-19-56-08.jpeg](2024-11-29-19-56-08.jpeg)
 
 # Using the network
 
@@ -868,7 +868,7 @@ Below I have started up the `lxmd` container and we can see that the daemon has 
 
 It does this by creating a _destination_, like any other, which is circled in yellow below:
 
-![image.png](../assets/image_1737210163327_0.png){:height 162, :width 659}
+![image.png](image_1737210163327_0.png){:height 162, :width 659}
 
 The destination _hash_ is the unique part but the name is normally something along the lines of `lxmf.propagation.<hash>`. The reason for this twofold:
 
