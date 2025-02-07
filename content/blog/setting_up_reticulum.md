@@ -628,3 +628,33 @@ We can do this by adding a new interface entry:
         i. Ask some HAM radio man
     b. `codingrate`
         i. Sounds oddly like a symbol rate, but once again - ask a HAM radio man
+
+### Seeing daemon
+
+When starting up the RNS daemon with `rnsd -vvv` we shall see something like this:
+
+![image.png](../assets/image_1737285967663_0.png){:height 166, :width 659}
+
+I sent an announcement on my phone using Sideband (and of which had an RNode attached over Bluetooth). Here we can see the announcement from Sideband's LXMF destination received over on the other machine running `rnsd -vvvv`:
+
+![image.png](../assets/image_1737286078239_0.png){:height 32, :width 659}
+
+### Seeing it work
+
+What it looks like when it is running:
+
+![2024-12-08-11-15-43.jpeg](../assets/2024-12-08-11-15-43.jpeg)
+
+The green light shows when there is transmission or reception of data over LoRa
+
+![2024-12-08-11-18-08.jpeg](../assets/2024-12-08-11-18-08.jpeg){:height 1233, :width 689}
+
+# Routing
+
+Now that we have setup the interfaces we wish to make available to the network stack, we can tweak some routing settings.
+
+## Forwarding
+
+This section is configured in the `[reticulum]` section.
+
+The first option to consider that is that of _packet forwarding_. This refers to accepting packets that are not destined to the receiving node _itself_ but of some other node that _this node_ may know how to forward. Whether or not we make such a forwarding decision is something one can control with the `enable_transport` option. Setting it to `True` will enable forwarding; to `False` will disable it.
