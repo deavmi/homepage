@@ -775,3 +775,104 @@ Propagation nodes can also sync with one another. As per the documentation:
 >When Propagation Nodes exist on a Reticulum network, they will by default peer with each other and synchronise messages, automatically creating an encrypted, distributed message store. Users and other endpoints can retrieve messages destined for them from any available Propagation Nodes on the network.
 
 This is effectively a delay-tolerance feature that LXMF offers.
+
+#### Other uses
+
+Some people offer bulletin-board services over LXMF, via something like NomadNet which lets you browse text-based pages that are served over LXMF.
+
+#### Running it
+
+Running the daemon is rather simple, in the `rns` package one will obtain an executable named `lxmd` which is the LXMF daemon.
+
+As discussed earlier, every application that wants to use your main reticulum node will start its _own instance_ and then peer locally to your _**main** instance_. Therefore in our `lxmd` container we will have a built-in RNS running. We will need to get this built-in RNS peered with the node in the `reticulum`
+
+## Using LXMD
+
+Let's talk about how to setup `lxmd`.
+
+### Configuration
+
+The configuration file is shown below and must be saved in the `/home/deavmi/volumes/lxmd/config` file:
+
+```toml
+[logging]
+    loglevel = 7
+
+[propagation]
+    enable_node = no
+
+    # Announce propagation node destination
+    # every 4 hours
+    announce_at_start = yes
+    announce_interval = 240
+
+    # Peer automatically with other
+    # propagation nodes
+    autopeer = yes
+
+    # Peer with other propagation nodes
+    # that are at maximum 10 many hops away
+    autopeer_maxdepth = 10
+    
+    # Maximum size of a message
+    # that we will accept to
+    # be propagated to us
+    # I set mine to 1MB
+    propagation_transfer_max_accepted_size = 1000
+
+    # Storage limit for
+    # messages saved to store.
+    # I set mine to 10 Gigabytes
+    message_storage_limit = 10000
+```
+
+Let's discuss the parts of this configuration:
+
+1. `loglevel`
+    a. This sets the logging level. Here I set it to $7$ but that is just for initial testing; I would recommend you lower it to $4$.
+
+The next few options are all related to the propagation node:
+
+1. `enable_node`
+    a. You _could_ set this to `yes` as we actually do want to run a propagation node (that is after all the whole point of this section) **however** the `Dockerfile`'s command that is run on container startup passes in the `-p` fag to `lxmd` which enables this for us.
+    b. It wouldn't hurt setting this to `yes` just for the sake of clarity _or_ if you want to **not** pass the `-p` flag but rather specify all setting herein.
+2. `announce_at_start`
+    a. We set this to `yes` so that our propagation node broadcasts an announcement for its destination. This is the destination which will advertise the message syncing service.
+3. `announce_interval`
+    a. After the initial announcement made at startup we will then send out such an announcement at the given interval (in minutes).
+    b. Here I have made mine every $4$ hours ($240$ minutes).
+4. `autopeer`
+    a. You want this to be set to `yes`. If not then Alice and Bob will **both** have to use your propagation node to sync messages.A
+    b. Autopeering means your node will connect to _other propagation nodes_ and sync messages with them as well. Therefore you generally want this turned on.
+5. `autopeer_maxdepth`
+    a. When our propagation node receives announcements of other propagation nodes we can configure if we shall connect to it only if it is $x$ hops away from us **at most**.
+    b. Here I set it such that I will only connect to other propagation nodes that are at most $10$ hops away.
+6. `propagation_transfer_max_accepted_size`
+    a. This is the maximum size (in kilobytes) that a message being propagated to you is allowed to be. Anything over this size is rejected.
+    b. I have set mine to $1$ megabyte.
+7. `message_storage_limit`
+    a. Messages that are propagated to you need to be stored on disk. Therefore we specify the disk quota maximum for said storage.
+    b. I have set mine to $10$ gigabytes as I have a lot of storage available.
+
+### How does `lxmd` talk to our main `rnsd` instance?
+
+The `lxmd` container will be running its own `rnsd` instance. By default `rnsd` - even without a configuration file - will spawn an `AutoInterface` and attempt to use it across all interfaces that it can.
+
+Since we have placed the `lxmd` and `reticulum` containers onto _the same_ link (recall our Docker network called `retNet`) they will be able to automatically peer with one another. Recall our `reticulum` container's `rnsd` instance was configured explicitly with an `AutoInterface`.
+
+This way any _destination_ announced by `lxmd` (our propagation node process) will be received by our `reticulum` container's `rnsd` instance and will be transported further throughout the network from there/
+
+### Starting `lxmd` up
+
+Below I have started up the `lxmd` container and we can see that the daemon has setup its propagation node.
+
+It does this by creating a _destination_, like any other, which is circled in yellow below:
+
+![image.png](../assets/image_1737210163327_0.png){:height 162, :width 659}
+
+The destination _hash_ is the unique part but the name is normally something along the lines of `lxmf.propagation.<hash>`. The reason for this twofold:
+
+1. Firstly it is so that this _destination_ can be identified by LXMF clients _as_ a propagation node; so that clients can show the user _"Hey, you could use this one"_ or it can be selected automatically by the client
+2. Secondly, _other_ propagation nodes will hear this announced destination and use the _name_ to determine that _"Yep, this is a destination to a propagation node service"_ - they can then go ahead and sync their message store with whatever messages the _other propagation node_ may have that _this propagation node_ doesn't.
+
+
