@@ -2,7 +2,7 @@
 title: "IPv6 Babel over LoRa: Part 2"
 author: Tristan B. V. Kildaire
 date: 2025-02-08
-draft: true
+draft: false
 ---
 
 # Why?
