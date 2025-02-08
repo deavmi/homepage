@@ -7,7 +7,7 @@ draft: false
 
 # Why?
 
-Because in the [last post](/ipv6_over_babel_part1/) we did it and now I want to continue working on it.
+Because in the [last post](../ipv6_over_babel_part1/) we did it and now I want to continue working on it.
 
 # What?
 
