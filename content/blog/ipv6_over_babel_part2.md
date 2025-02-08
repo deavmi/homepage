@@ -30,11 +30,11 @@ What we want to setup this time is the following:
 
 For this we will be making use of the [LillyGo T3S3](https://www.robotics.org.za/development-boards/esp32-lilygo-boards/H596) for each of our three nodes:
 
-![2025-01-12-16-41-17.jpeg](../assets/2025-01-12-16-41-17.jpeg)
+![2025-01-12-16-41-17.jpeg](2025-01-12-16-41-17.jpeg)
 
 In terms of antennas I will be making use of [these](https://www.robotics.org.za/communication-wireless-Industrial/antenna-866mhz/YN-868MHZ-5DBI) antennas. They seem to perform rather well and are easy to mount on any surface that is magnetic - which will probably make testing easy for accomplishing the topology shown prior.
 
-![2025-01-12-16-41-40.jpeg](../assets/2025-01-12-16-41-40.jpeg)
+![2025-01-12-16-41-40.jpeg](2025-01-12-16-41-40.jpeg)
 
 # Setup
 
@@ -139,7 +139,7 @@ The antennas used were:
 
 In this test I, $node_b$ (my laptop), was sitting next to $node_c$ and as we can see from the tests, it appeared that I had direct reachability to both $node_b$ and $node_a$:
 
-![image.png](../assets/image_1736510131867_0.png){:height 379, :width 659}
+![image.png](image_1736510131867_0.png){:height 379, :width 659}
 
 ### Test 2
 
@@ -153,11 +153,11 @@ Here I got up with my laptop ($node_b$) and then moved to the middle of the hous
 
 We can see a few things start to happen here. The neighbour relationship between my laptop ($node_b$) and $node_c$ stopped, the hellos being sent by either router were not being received. It is via this mechanism that reachability will drop every 5 seconds (when an advertisement is not received within the `hello_interval` then the reachability starts to drop at each time window):
 
-![image.png](../assets/image_1736510330941_0.png){:height 362, :width 659}
+![image.png](image_1736510330941_0.png){:height 362, :width 659}
 
 We can also see from above (and below) that the new routes for $node_b$ got installed. Meaning that in order for $node_b$ to reach $node_c$ it must first go through $node_a$. In fact we can see this here in the ttl values (purple ones):
 
-![image.png](../assets/image_1736510463846_0.png)
+![image.png](image_1736510463846_0.png)
 
 ---
 
