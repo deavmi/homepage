@@ -101,3 +101,65 @@ Let us also start `babelweb` on $node_b$ with the following:
 
 We can confirm it is running by visiting `http://localhost:8080/` in your web browser.
 
+# Testing
+
+Let's begin testing.
+
+## Assigning some addresses and _making some routes_
+
+Let's assign the following addresses to the `tnc0` interface on each of our respective nodes:
+
+1. $node_a$
+    a. `fd20::1`
+2. $node_b$
+    a. `fd20::2`
+3. $node_c$
+    a. `fd20::3`
+    b. Note: We don't need to do this for forwarding to work, the forwarding address used is the link-local one and that is used for link-layer (MAC) address resolution when constructing the Ethernet frame for forwarding
+
+We can do this easily on each node as such:
+
+```bash
+sudo ip addr add <ip> dev lo
+```
+
+Yes, I am adding it to `lo` - it doesn't matter. The address just needs to be assigned to _some_ interface in order for it to be assigned to the host (and of course picked up by babel for advertising). **Also**, it is a full `/128` that will be generated. We are not doing any sub-netting at each router where hosts behind it are non-babel nodes - therefore this is perfectly fine for our use case. Our assumption is that each host _is_ also a router.
+
+## Tests
+
+Here we do some tests.
+
+### Test 1
+
+The antennas used were:
+
+* $node_b$ long-pole
+* $node_c$ long-pole
+* $node_a$ magnetic-base
+
+In this test I, $node_b$ (my laptop), was sitting next to $node_c$ and as we can see from the tests, it appeared that I had direct reachability to both $node_b$ and $node_a$:
+
+![image.png](../assets/image_1736510131867_0.png){:height 379, :width 659}
+
+### Test 2
+
+The antennas used were:
+
+* $node_b$ long-pole
+* $node_c$ long-pole
+* $node_a$ magnetic-base
+
+Here I got up with my laptop ($node_b$) and then moved to the middle of the house, effectively between both antennas.
+
+We can see a few things start to happen here. The neighbour relationship between my laptop ($node_b$) and $node_c$ stopped, the hellos being sent by either router were not being received. It is via this mechanism that reachability will drop every 5 seconds (when an advertisement is not received within the `hello_interval` then the reachability starts to drop at each time window):
+
+![image.png](../assets/image_1736510330941_0.png){:height 362, :width 659}
+
+We can also see from above (and below) that the new routes for $node_b$ got installed. Meaning that in order for $node_b$ to reach $node_c$ it must first go through $node_a$. In fact we can see this here in the ttl values (purple ones):
+
+![image.png](../assets/image_1736510463846_0.png)
+
+---
+
+It seems the tests were a success! 🎊️
+
