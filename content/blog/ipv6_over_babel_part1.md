@@ -193,7 +193,7 @@ sudo ip addr add fddd::3 dev lo
 
 Likewise on host $B$ we would see a route to `fddd::3/128` via our `tnc0` interface:
 
-![image.png](image_1735478117664_0.png){:height 464, :width 689}
+![image.png](image_1735478117664_0.png)
 
 We can even open up Wireshark on host $B$ and attach it to network interface `tnc0` and see we are receiving Babel announcements over IPv6 link-local about routes. Here we can see host $A$ advertising us its route to `fddd::3/128`:
 
