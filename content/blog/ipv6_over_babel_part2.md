@@ -139,7 +139,7 @@ The antennas used were:
 
 In this test I, $node_b$ (my laptop), was sitting next to $node_c$ and as we can see from the tests, it appeared that I had direct reachability to both $node_b$ and $node_a$:
 
-![image.png](image_1736510131867_0.png){:height 379, :width 659}
+![image.png](image_1736510131867_0.png)
 
 ### Test 2
 
@@ -153,7 +153,7 @@ Here I got up with my laptop ($node_b$) and then moved to the middle of the hous
 
 We can see a few things start to happen here. The neighbour relationship between my laptop ($node_b$) and $node_c$ stopped, the hellos being sent by either router were not being received. It is via this mechanism that reachability will drop every 5 seconds (when an advertisement is not received within the `hello_interval` then the reachability starts to drop at each time window):
 
-![image.png](image_1736510330941_0.png){:height 362, :width 659}
+![image.png](image_1736510330941_0.png)
 
 We can also see from above (and below) that the new routes for $node_b$ got installed. Meaning that in order for $node_b$ to reach $node_c$ it must first go through $node_a$. In fact we can see this here in the ttl values (purple ones):
 
