@@ -1,5 +1,5 @@
 ---
-title: IPv6 Babel over LoRa: Part 1
+title: "IPv6 Babel over LoRa: Part 1"
 author: Tristan B. V. Kildaire
 date: 2025-02-08
 draft: false
