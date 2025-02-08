@@ -163,3 +163,73 @@ We can also see from above (and below) that the new routes for $node_b$ got inst
 
 It seems the tests were a success! 🎊️
 
+# Automation
+
+## Startup executables
+
+We can neaten up things a little to make our setup more automatic. By this I mean automating the startup of `tncattach` and `babeld`. This can be accomplished with a systemd unit (on SystemdD systems of course).
+
+Create a file named `/etc/systemd/system/tncattach.service`:
+
+```
+[Unit]
+Description=tncattach
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/tncattach /dev/ttyACM0 115200 --ethernet --ll
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Create a file named `/etc/systemd/system/babeld.service`:
+
+```
+[Unit]
+Description=babeld routing daemon
+After=tncattach.service
+
+[Service]
+ExecStart=/usr/local/bin/babeld -H 5 -c /home/deavmi/filter.txt tnc0
+
+[Install]
+WantedBy=multi-user.target
+```
+
+>Make sure to adjust any paths above including **binary executable paths** and **configuration file paths**.
+
+Now run the following commands to start both services now and install them into their target - of which will be the target that runs on boot-up:
+
+```bash
+sudo systemctl enable --now tncattach
+sudo systemctl enable --now babeld
+```
+
+## Automating addressing
+
+Let's also have the IP addressing automatically configured.
+
+On $node_a$ create a file in `/etc/netplan/lo.yaml` with the following:
+
+```yaml
+network:
+  version: 2
+  ethernets:
+    lo:
+      addresses:
+        - fd20::1/128
+```
+
+On $node_c$ create a file in `/etc/netplan/lo.yaml` with the following:
+
+```yaml
+network:
+  version: 2
+  ethernets:
+    lo:
+      addresses:
+        - fd20::3/128
+```
+
+As for $node_b$ (which is my laptop) I will not be automating it.
