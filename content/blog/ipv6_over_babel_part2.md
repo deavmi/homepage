@@ -38,3 +38,66 @@ In terms of antennas I will be making use of [these](https://www.robotics.org.za
 
 # Setup
 
+## TNC
+
+Firstly, plugin each RNode and then run the following command. After each successive command unplug the current RNode and plug in the next RNode:
+
+```bash
+rnodeconf /dev/ttyACM1 -T --freq 868000000 --bw 250000 --txp 20 --sf 8 --cr 6
+```
+
+After this each RNode will be placed in TNC mode.
+
+Next, let us start up our TNCs. Run this on each node:
+
+```bash
+sudo ./tncattach /dev/ttyACM1 115200 --ethernet --ll -vvvv
+```
+
+## Version of babel
+
+For these tests we were using the `1.13.x` series. Anything where the the $x$ in `1.x.y`  is different is incompatible.
+
+You can build `babeld` with the following:
+
+```bash
+sudo apt install build-essential -y
+
+git clone https://github.com/jech/babeld
+cd babeld
+git submodule init
+git submodule update
+make
+sudo make install
+```
+
+## Babel
+
+Firstly, let's revise what the Babel filter should be per each node. This should be saved to a file named `filter.txt`:
+
+```
+redistribute local ip 0.0.0.0/0 ge 0 deny
+redistribute local ip fd00::/8 ge 64 allow
+redistribute local ip ::/0 ge 0 deny
+```
+
+Now let us start Babel on $node_a$ and $node_c$ like this:
+
+```bash
+sudo babeld -d 5 -H 5 -c filter.txt tnc0
+```
+
+We start Babel on $node_b$ like this so that we can expose the control port which `babelweb` will use in order to get routing information from:
+
+```bash
+sudo babeld -d 5 -H 5 -c filter.txt -g 3001 tnc0
+```
+
+Let us also start `babelweb` on $node_b$ with the following:
+
+```bash
+./babelweb2 -static bweb/static/ -node [::1]:3001
+```
+
+We can confirm it is running by visiting `http://localhost:8080/` in your web browser.
+
