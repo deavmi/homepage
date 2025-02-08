@@ -2,7 +2,7 @@
 title: "IPv6 Babel over LoRa: Part 2"
 author: Tristan B. V. Kildaire
 date: 2025-02-08
-draft: false
+draft: true
 ---
 
 # Why?
@@ -35,4 +35,6 @@ For this we will be making use of the [LillyGo T3S3](https://www.robotics.org.za
 In terms of antennas I will be making use of [these](https://www.robotics.org.za/communication-wireless-Industrial/antenna-866mhz/YN-868MHZ-5DBI) antennas. They seem to perform rather well and are easy to mount on any surface that is magnetic - which will probably make testing easy for accomplishing the topology shown prior.
 
 ![2025-01-12-16-41-40.jpeg](../assets/2025-01-12-16-41-40.jpeg)
+
+# Setup
 
