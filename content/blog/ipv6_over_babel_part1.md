@@ -1,7 +1,7 @@
 ---
 title: IPv6 Babel over LoRa: Part 1
 author: Tristan B. V. Kildaire
-date: 2023-06-29
+date: 2025-02-08
 draft: false
 ---
 
