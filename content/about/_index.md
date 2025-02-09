@@ -14,8 +14,9 @@ You can find a copy of my CV [here](/cv.pdf).
 
 ## Contact information
 
-I primarily check BNET and Matrix.
+I primarily check BNET, Matrix, Email, XMPP.
 
 * [BNET](/projects/bonobonet) (IRC): `deavmi`
 * Matrix ID: `@deavmi:evns.net`
 * E-mail (primary): `deavmi@redxen.eu`
+* XMPP: `deavmi@deavmi.snikket.chat`
