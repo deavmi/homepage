@@ -17,18 +17,18 @@ but rather just a collection of various utilities and re-usable datatypes.
 It orirignally started when I begun work on a project of mine where I
 was seeminly requiring common routines like:
 
-* Array element prescence checking
+* Array element presence checking
 * Endianness conversions
     * And support for widths of 1 to 8 bytes
 
 After some time I started working on other projects of mine whereby I needed
 some functional constructs like _predicates_ and _optionals_, therefore I
-went ahead and implemented those as comon types accessible to my applications,
+went ahead and implemented those as common types accessible to my applications,
 all of this being templatised of course.
 
 As time went on I had added things like a delay mechanism, debugging tools,
 prompting mechanism (think of CLI usage), configuration utility comprising
-of configuration entries and a registry to manage them, a cache map imlementation. (TODO: Add tree type)
+of configuration entries and a registry to manage them, a cache map implementation. (TODO: Add tree type)
 
 
 Therefore I was able to collect all of these commonly used routines, types
@@ -519,7 +519,7 @@ TODO: Add this
 When progranming you tend to work with arrays a lot and depending on what you
 are doing you also may have to run a lot of algoritmns over said arrays, to
 either check them for elements, manipulate them and so forth. Therefore as
-time went on and I saw myself continuously re-implemting specific array routines
+time went on and I saw myself continuously re-implementing specific array routines
 I decided I should just put them all in one place; thus `niknaks.arrays` was born.
 
 Some of these methods of interest are:
