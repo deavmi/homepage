@@ -23,7 +23,7 @@ menu:
       url: "hottakes/"
       weight: 4
 
-    - name: Services
+    - name: Offers
       url: "services/"
       weight: 5
       
