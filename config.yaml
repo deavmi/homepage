@@ -22,15 +22,19 @@ menu:
     - name: Hot takes
       url: "hottakes/"
       weight: 4
+
+    - name: Services
+      url: "services/"
+      weight: 5
       
     - name: Work
       url: "work/"
-      weight: 5
+      weight: 6
 
     - name: Research
       url: "research/"
-      weight: 6
+      weight: 7
 
     - name: About
       url: "about/"
-      weight: 7
+      weight: 8
