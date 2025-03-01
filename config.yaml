@@ -19,22 +19,18 @@ menu:
       url: "blog/"
       weight: 3
 
-    - name: Hot takes
-      url: "hottakes/"
-      weight: 4
-
     - name: Offers
       url: "services/"
-      weight: 5
+      weight: 4
       
     - name: Work
       url: "work/"
-      weight: 6
+      weight: 5
 
     - name: Research
       url: "research/"
-      weight: 7
+      weight: 6
 
     - name: About
       url: "about/"
-      weight: 8
+      weight: 7
