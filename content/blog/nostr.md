@@ -11,7 +11,7 @@ draft: false
 
 ## What is Nostr?
 
-If you're unsure what **Nostr** is then I'd suggest you [read this](). Suffice it to say its
+If you're unsure what **Nostr** is then I'd suggest you [read this](https://nostr.com/). Suffice it to say its
 a social networking protocol that:
 
 1. Is easy to setup
@@ -38,5 +38,5 @@ URIs:
 	to your client (if it hasn't already done so automatically) in order to
 	have another relay whereby you can receive my posts from
 
->**Note:** As a rule, do not post illegal content to any of the above relays
+>**Note:** As a rule, **do not post illegal content** to any of the above relays
 	
