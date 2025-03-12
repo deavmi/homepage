@@ -6,7 +6,7 @@ draft: false
 ---
 
 {{<bruh>}}
-<img src="ossie.jpeg" style="float:right">
+<img src="ossie.jpeg" style="float:right" width="179" height="266">
 {{</bruh>}}
 
 ## What is Nostr?
