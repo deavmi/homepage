@@ -2,7 +2,6 @@
 title: "IPv6 Nostr relays for the masses!"
 author: Tristan B. Kildaire
 date: 2025-03-12
-draft: true
 ---
 
 {{<bruh>}}
