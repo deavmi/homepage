@@ -5,6 +5,10 @@ date: 2025-03-12
 draft: true
 ---
 
+{{<bruh>}}
+<img src="ossie.jpeg" style="float:right">
+{{</bruh>}}
+
 ## What is Nostr?
 
 If you're unsure what **Nostr** is then I'd suggest you [read this](). Suffice it to say its
