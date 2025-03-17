@@ -29,6 +29,14 @@ If you have any questions, find my details on the [Contact page](/about) - _enjo
 
 All the projects listed below are considered active in development and/or are still supported by me.
 
+## bcm2836-d
+
+High-level D bindings around the WiringPi library
+
+* [Code repository](/git/deavmi/bcm2836-d)
+* [Issue tracker](https://github.com/deavmi/bcm2836-d)
+* [Project homepage](https://github.com/deavmi/bcm2836-d)
+
 ## jstruct
 
 {{<bruh>}}
