@@ -33,9 +33,9 @@ All the projects listed below are considered active in development and/or are st
 
 High-level D bindings around the WiringPi library
 
-* [Code repository](/git/deavmi/bcm2836-d)
-* [Issue tracker](https://github.com/deavmi/bcm2836-d)
-* [Project homepage](https://github.com/deavmi/bcm2836-d)
+* [Code repository](/git/deavmi/bcm2835-d)
+* [Issue tracker](https://github.com/deavmi/bcm2835-d)
+* [Project homepage](https://github.com/deavmi/bcm2835-d)
 
 ## jstruct
 
