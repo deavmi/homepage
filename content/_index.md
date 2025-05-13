@@ -55,7 +55,6 @@ You can reach this site using other methods:
 
 * On I2P at `deavmi.i2p`
 * On Yggdrasil at `203:75b7:45af:ecca:d641:cd42:38dc:4788`
-* On IPFS at `k2k4r8mo00wff79hhfnog9tpjksudhyfpz27yso7phbvhoeh5byk0xml`
 
 
 {{<bruh>}}
