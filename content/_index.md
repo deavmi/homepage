@@ -29,7 +29,7 @@ You can head over to the [projects page](/projects) to see what I am working on 
 
 I'm active on a few social media platforms and post regularly (or not) but I definitely do
 check these platforms now and then so if you want to discuss something then it isn't a bad
-way to get in touch and also stay upt-o-date with updates regarding to new blog posts or
+way to get in touch and also stay up-to-date with updates regarding to new blog posts or
 projects.
 
 * Nostr: [`npub16c2fsg7fp3yxte9ugd9yhcdpa68h924asv5d6pvm5nc37a3nkzmqd2xaj2`](https://njump.me/deavmi@deavmi.assigned.network) or _deavmi@deavmi.assigned.network_
