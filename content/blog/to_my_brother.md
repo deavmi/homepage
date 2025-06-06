@@ -178,6 +178,7 @@ My brother exceeded very well at that and got what he needed:
 <br>
 <center>
     <a href="marks_school_redone.jpeg"><img src="marks_school_redone.jpeg"></img></a>
+    <p>Marks after re-doing matric modules that are required for entry into the sciences in university</p>
 </center>
 <br>
 {{</bruh>}}
@@ -196,6 +197,7 @@ While the rest of the family thought "let's see how far it goes" - it turned out
 <br>
 <center>
     <a href="marks_first_year.png"><img src="marks_first_year.png"></img></a>
+    <p>First year marks at UNISA</p>
 </center>
 <br>
 {{</bruh>}}
@@ -206,6 +208,7 @@ But maybe that was just the typical first year fluke. It's common for many peopl
 <br>
 <center>
     <a href="marks_second_year.png"><img src="marks_second_year.png"></img></a>
+    <p>Second year marks at UNISA</p>
 </center>
 <br>
 {{</bruh>}}
@@ -216,6 +219,7 @@ Oh, and remember that chemistry stuff, well he's quite good at it. He's been to 
 
 {{<bruh>}}
 <a href="unisa_lab.jpeg"><img src="unisa_lab.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+<p>UNISA's science laboratories</p>
 {{</bruh>}}
 
 {{<bruh>}}
