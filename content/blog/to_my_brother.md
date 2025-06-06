@@ -66,7 +66,6 @@ But his choice to take art class at school was no mistake - from a young age he 
 <br>
 {{</bruh>}}
 
-
 {{<bruh>}}
 <br>
 <span>
@@ -143,15 +142,20 @@ His strength was in _"weight painting"_ - a process that Wikipedia can better ex
 
 My brother truly did (and **still** does) love art, he has created some amazing things over the past few years:
 
-TODO Add digital drawings here
-
 {{<bruh>}}
-<a href="phone_1.jpeg"><img src="phone_2.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+<br>
+<span>
+<center>
+    <a href="phone_1.jpeg"><img src="anime_girl_1.jpeg" width=25% height=25% style="margin-right:20px"></img></a>
+
+    <a href="phone_2.jpeg"><img src="japanese_lady.jpeg" width=25% height=25%></img></a>
+
+    <p>These phone drawings were for the <i>Xperia</i> 3D reel</p>
+</center>
+</span>
+<br>
 {{</bruh>}}
 
-{{<bruh>}}
-<a href="phone_2.jpeg"><img src="phone_2.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
-{{</bruh>}}
 
 TODO Attach related video
 
