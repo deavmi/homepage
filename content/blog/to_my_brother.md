@@ -251,6 +251,10 @@ TODO Fix accent
 
 TODO Check spelling
 
+{{<bruh>}}
+<a href="dad.jpeg"><img src="dad.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
 And to my father as well. Whatever money was required for Vaughan's second set of studies (mathematics and so forth), you ensured he had. Whenever Vaughan was in Florida, you were there by his side taking him out to dinner - just to give him a little break from all of his tiring studies.
 
 You were his comfort in a place far away from home. He knew that you were only a few blocks away and always available with a quick phone call.
