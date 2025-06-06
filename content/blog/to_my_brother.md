@@ -320,8 +320,6 @@ And to my father as well. Whatever money was required for Vaughan's second set o
 
 You were his comfort in a place far away from home. He knew that you were only a few blocks away and always available with a quick phone call.
 
-TODO Add photo of Vaughan and dad here
-
 I thank you for all of this dad, for flying up with my brother and to keeping him company when he was all by himself cooped up in his dorm room studying.
 
 ## Nossa mãe
