@@ -76,5 +76,47 @@ But his choice to take art class at school was no mistake - from a young age he 
 {{</bruh>}}
 
 {{<bruh>}}
-<a href="nature_background.jpeg"><img src="nature_background.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+<a href="background_nature.jpeg"><img src="background_nature.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
+{{<bruh>}}
+<a href="japanese_lady.jpeg"><img src="japanese_lady.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
+Many hours of studying, hard work and remedial lessons organised by my mother. Many years later my brother would finish high-school and would begin to study 2D and 3D animation:
+
+TODO Insert Bridge House photo
+
+My brother, no stranger to art, did very well with his studies in animation. He produced some great shorts or "show reels" as they call them.
+
+TODO Add show reels here
+TODO Add images
+TODO Add videos
+
+His strength was in _"weight painting"_ - a process that Wikipedia can better explain:
+
+>It is most often used for modifying [weight maps](https://en.wikipedia.org/wiki/Weight_map) for [skeletal animation](https://en.wikipedia.org/wiki/Skeletal_animation), to tweak the influence of individual [bones](https://en.wikipedia.org/wiki/Skeletal_animation#bone) when deforming surfaces around joints.[[1]](https://en.wikipedia.org/wiki/Vertex_painting#cite_note-1)
+
+TODO Add video of blocking
+
+My brother truly did (and **still** does) love art, he has created some amazing things over the past few years:
+
+TODO Add digital drawings here
+
+{{<bruh>}}
+<a href="phone_1.jpeg"><img src="phone_2.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
+{{<bruh>}}
+<a href="phone_2.jpeg"><img src="phone_2.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
+TODO Attach related video
+
+{{<bruh>}}
+<a href="halo_woman.jpeg"><img src="halo_woman.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
+{{<bruh>}}
+<a href="buggy.jpeg"><img src="buggy.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
 {{</bruh>}}
