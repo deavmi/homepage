@@ -176,13 +176,9 @@ My brother exceeded very well at that and got what he needed:
 <br>
 {{</bruh>}}
 
-
-
 Next step - applying to university. My brother applied to study at UNISA, one of the best online universities there is - but as we would soon see - it would be more than just online. He'd very soon be in the laboratories.
 
 My brother had decided he would make the most of his time at university. So he decided to double major in physics _and_ chemistry.
-
-
 
 While the rest of the family thought "let's see how far it goes" - it turned out that we would be surprised again when his first marks came back. We knew he could pass high school mathematics, because he had shown he could. We had no idea that he would have performed this well in first year:
 
@@ -192,7 +188,6 @@ While the rest of the family thought "let's see how far it goes" - it turned out
     <a href="marks_first_year.png"><img src="marks_first_year.png"></img></a>
     <p>First year marks at UNISA</p>
 </center>
-<br>
 {{</bruh>}}
 
 But maybe that was just the typical first year fluke. It's common for many people that were high achievers in school to completely _"get humbled"_ when second year tells around.
@@ -203,7 +198,6 @@ But maybe that was just the typical first year fluke. It's common for many peopl
     <a href="marks_second_year.png"><img src="marks_second_year.png"></img></a>
     <p>Second year marks at UNISA</p>
 </center>
-<br>
 {{</bruh>}}
 
 And then the third year rolled by - much to the same result. We got the picture - my brother is actually very good at mathematics, physics, chemistry - and critical thinking. He's actually _excellent_.
