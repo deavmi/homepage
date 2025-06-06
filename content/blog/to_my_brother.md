@@ -63,7 +63,7 @@ But his choice to take art class at school was no mistake - from a young age he 
 
     <a href="comic_strip_1.jpeg"><img src="comic_strip_1.jpeg" width=25% height=25% style="margin-right:20px"></img></a>
 
-    <a href="comic_strip_2.jpeg"><img src="comic_strip_2.jpeg" width=25% height=25% style="margin-left:20px"></img></a>
+    <a href="comic_strip_2.jpeg"><img src="comic_strip_2.jpeg" width=25% height=25%></img></a>
 </center>
 </span>
 <br>
