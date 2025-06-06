@@ -99,6 +99,11 @@ His strength was in _"weight painting"_ - a process that Wikipedia can better ex
 
 TODO Add video of blocking
 
+{{<bruh>}}
+<video src="blocking.mpg" width=25% height=25%></video>
+{{</bruh>}}
+
+
 My brother truly did (and **still** does) love art, he has created some amazing things over the past few years:
 
 TODO Add digital drawings here
