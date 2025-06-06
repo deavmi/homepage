@@ -26,11 +26,13 @@ These are just **some** of the things my mother had to do for us, and of course,
 
 ## Will _never_ be able to read, will _never_ be able to write
 
-Back to that sentence, "**he would never read or write**". Perhaps, it would not be so bad. As things turned out my brother was able to take mathematics literacy (Maths Lit) - the "easier" mathematics so to speak. His passion was never mathematics, but rather art.
-
 {{<bruh>}}
 <a href="heart.jpeg"><img src="heart.jpeg" width=25% height=25% style="float:right"></img></a>
 {{</bruh>}}
+
+Back to that sentence, "**he would never read or write**". Perhaps, it would not be so bad. As things turned out my brother was able to take mathematics literacy (Maths Lit) - the "easier" mathematics so to speak. His passion was never mathematics, but rather art.
+
+
 
 My brother's artistic skill has been something we knew of from a young age. If we opened one of his textbooks, like the one for Life Orientation, there were always fictional characters drawn within the margins. I don't blame him, that subject was a waste of time.
 
