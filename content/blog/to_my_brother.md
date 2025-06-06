@@ -178,7 +178,12 @@ My brother truly did (and **still** does) love art, he has created some amazing 
 
 And he graduated very well at the end of that:
 
-TODO Add graduation photo here
+{{<bruh>}}
+<center>
+    <a href="graduation_art.jpeg"><img src="graduation_art.jpeg" width=50% height=50%></img></a>
+    <p>Degree in 2D/3D animation</p>
+</center>
+{{</bruh>}}
 
 {{<bruh>}}
 <br>
