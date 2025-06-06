@@ -160,17 +160,21 @@ My brother had decided he would make the most of his time at university. So he d
 While the rest of the family thought "let's see how far it goes" - it turned out that we would be surprised again when his first marks came back. We knew he could pass high school mathematics, because he had shown he could. We had no idea that he would have performed this well in first year:
 
 {{<bruh>}}
+<br>
 <center>
     <a href="marks_first_year.png"><img src="marks_first_year.png"></img></a>
 </center>
+<br>
 {{</bruh>}}
 
 But maybe that was just the typical first year fluke. It's common for many people that were high achievers in school to completely _"get humbled"_ when second year tells around.
 
 {{<bruh>}}
+<br>
 <center>
     <a href="marks_second_year.png"><img src="marks_second_year.png"></img></a>
 </center>
+<br>
 {{</bruh>}}
 
 And then the third year rolled by - much to the same result. We got the picture - my brother is actually very good at mathematics, physics, chemistry - and critical thinking. He's actually _excellent_.
