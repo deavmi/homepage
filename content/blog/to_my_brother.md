@@ -93,8 +93,8 @@ Many hours of studying, hard work and remedial lessons organised by my mother. M
 <br>
 <center>
 <span>
-    <a href="bridge_house_1.jpeg"><img src="bridge_house_1.jpeg" width=30% height=30% style="margin-right:20px"></img></a>
-    <a href="bridge_house_2.jpeg"><img src="bridge_house_2.jpeg" width=30% height=30%></img></a>
+    <a href="bridge_house_1.jpeg"><img src="bridge_house_1.jpeg" width=35% height=35% style="margin-right:20px"></img></a>
+    <a href="bridge_house_2.jpeg"><img src="bridge_house_2.jpeg" width=35% height=35%></img></a>
 </span>
     <p>Photos from our time at Bridge House school</p>
 </center>
