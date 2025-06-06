@@ -2,7 +2,7 @@
 title: "To my brother"
 description: "It's my brother's second graduation today, these are a few kind words to him and the rest of my family."
 author: Tristan B. V. Kildaire
-date: 2025-06-07
+date: 2025-06-06
 ---
 
 ## Doing the impossible
@@ -46,7 +46,7 @@ My brother's artistic skill has been something we knew of from a young age. If w
 {{</bruh>}}
 
 
-But his choice to take art class at school was no mistake, from a young age he told my mother "I want to be with the cartoons" referring to him literally wanting to live amongst them or at least in that world. The best way for that to happen would be to start taking art classes now in the hopes of gaining entry into the field and building a career upon art.
+But his choice to take art class at school was no mistake, from a young age he told my mother "I want to be with the cartoons" referring to him literally wanting to live amongst them or at least in that world. The best way for that to happen would be to start taking art classes now in the hopes of gaining entry into the field and building a career upon 3D animation.
 
 {{<bruh>}}
 <br>
