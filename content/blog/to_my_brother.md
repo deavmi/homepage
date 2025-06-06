@@ -306,7 +306,11 @@ TODO Add graduation photo here
 {{<bruh>}}
 <br>
 <br>
+{{</bruh>}}
+
+{{<bruh>}}
 <center>
+    <a href="dad.jpeg"><img src="dad.jpeg" width=50% height=50% style="float:left;gap;margin-right:20px"></img></a>
     <h2>I couldn't be prouder of you Vaughan.</h2>
     
     <h3>You have out done everyone's expectations - you have shown me and everyone else close to you the fruits that true dedication can bare.</h3>
