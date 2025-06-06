@@ -330,9 +330,7 @@ You spent so much time and energy to help my big brother, you did it all as your
 
 I thank you for that mom, for never giving up on my best friend, big brother.
 
-## O fim, ou assaz o comeco
-
-TODO Fix accent
+## O fim, ou assaz o começo
 
 If there is anything to take away from this it is these few key points:
 
