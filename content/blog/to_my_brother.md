@@ -176,6 +176,11 @@ My brother exceeded very well at that and got what he needed:
 <br>
 {{</bruh>}}
 
+{{<bruh>}}
+<a href="unisa_lab.jpeg"><img src="unisa_lab.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+<!-- <p>UNISA's science laboratories</p> -->
+{{</bruh>}}
+
 Next step - applying to university. My brother applied to study at UNISA, one of the best online universities there is - but as we would soon see - it would be more than just online. He'd very soon be in the laboratories.
 
 My brother had decided he would make the most of his time at university. So he decided to double major in physics _and_ chemistry.
@@ -204,10 +209,7 @@ And then the third year rolled by - much to the same result. We got the picture 
 
 Oh, and remember that chemistry stuff, well he's quite good at it. He's been to the UNISA campus in Florida several times already and had great successes with his practicals he had to perform there:
 
-{{<bruh>}}
-<a href="unisa_lab.jpeg"><img src="unisa_lab.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
-<p>UNISA's science laboratories</p>
-{{</bruh>}}
+
 
 {{<bruh>}}
 <a href="cover.jpeg"><img src="cover.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
