@@ -292,7 +292,7 @@ Vaughan has now tutored many students and it has been something he really enjoys
 <br>
 {{</bruh>}}
 
-## Well done
+## Well done 👨‍🎓️
 
 So we arrive at where we are today. Today my brother graduated:
 
