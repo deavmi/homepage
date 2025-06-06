@@ -42,3 +42,7 @@ But his choice to take art class at school was no mistake - from a young age he 
 
 <!-- ![]() -->
 
+
+{{<bruh>}}
+<a href="bike.jpeg"><img src="bike.jpeg" width=25% height=25% style="float:right;gap;margin-left:20px"></a>
+{{</bruh>}}
