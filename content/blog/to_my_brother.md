@@ -346,6 +346,7 @@ If there is anything to take away from this it is these few key points:
 <br>
 <br>
 <center>
+    <a href="me_and_vaughan.jpeg"><img src="me_and_vaughan.jpeg" width=50% height=50%></img></a>
     <h2>Love you big bro ❤️</h2>
 </center>
 {{</bruh>}}
