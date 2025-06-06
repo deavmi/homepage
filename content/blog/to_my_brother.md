@@ -85,7 +85,7 @@ But his choice to take art class at school was no mistake - from a young age he 
 
 {{<bruh>}}
 <center>
-    <a href="character_sketch.jpeg"><img src="character_sketch.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+    <a href="character_sketch.jpeg"><img src="character_sketch.jpeg" width=50% height=50%></img></a>
     <p>Character sketch for the 2D animation reel <i>"Xiao"</i></p>
 </center>
 {{</bruh>}}
