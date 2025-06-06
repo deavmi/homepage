@@ -88,7 +88,7 @@ Many hours of studying, hard work and remedial lessons organised by my mother. M
 {{<bruh>}}
 <br>
 <center>
-    <a href="bridge_house_1.jpg"><img src="bridge_house_1.jpg"></img></a>
+    <a href="bridge_house_1.jpeg"><img src="bridge_house_1.jpeg"></img></a>
     <p>Marks after re-doing matric modules that are required for entry into the sciences in university</p>
 </center>
 {{</bruh>}}
