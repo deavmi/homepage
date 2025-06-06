@@ -276,7 +276,7 @@ Oh, and remember that chemistry stuff, well he's quite good at it. He's been to 
 
 Along with this, he worked performantly under the pressure of time constraints when writing up the [numerous reports](https://vaughankildaire.github.io/artifacts/file.pdf) after each lab session.
 
-## To you, **brother**
+## Para ti, irmão
 
 {{<bruh>}}
 <a href="tutor1.jpeg"><img src="tutor1.jpeg" width=25% height=25% style="float:right;gap;margin-left:20px"></img></a>
@@ -318,13 +318,9 @@ TODO Add graduation photo here
 </center>
 {{</bruh>}}
 
-## A familia
+## Para a família
 
-TODO Fix accent
-
-## Ao nosso pai
-
-TODO Check spelling
+## Nosso pai
 
 {{<bruh>}}
 <a href="dad.jpeg"><img src="dad.jpeg" width=50% height=50% style="float:left;gap;margin-right:20px"></img></a>
@@ -338,9 +334,7 @@ TODO Add photo of Vaughan and dad here
 
 I thank you for all of this dad, for flying up with my brother and to keeping him company when he was all by himself cooped up in his dorm room studying.
 
-## A nossa mae
-
-TODO Fix accent
+## Nossa mãe
 
 To my mother. You will always there for my brother, helping him and defending him. You sought that he would get the help he needed, the extra lessons, the consultations with the teaching experts - and when one of those experts said it was _impossible_ - *you proved them wrong*.
 
