@@ -156,19 +156,25 @@ My brother truly did (and **still** does) love art, he has created some amazing 
 <br>
 {{</bruh>}}
 
-
-TODO Attach related video
-
 {{<bruh>}}
-<a href="halo_woman.jpeg"><img src="halo_woman.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+<center>
+    <a href="halo_woman.jpeg"><img src="halo_woman.jpeg" width=50% height=50%></img></a>
+    <p>Woman with a Halo</p>
+</center>
 {{</bruh>}}
 
 {{<bruh>}}
-<a href="buggy.jpeg"><img src="buggy.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+<center>
+    <a href="buggy.jpeg"><img src="buggy.jpeg" width=50% height=50%></img></a>
+    <p>A "buggy" car</p>
+</center>
 {{</bruh>}}
 
 {{<bruh>}}
-<a href="anime_lady.jpeg"><img src="anime_lady.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+<center>
+    <a href="anime_lady.jpeg"><img src="anime_lady.jpeg" width=50% height=50%></img></a>
+    <p>Anime lady</p>
+</center>
 {{</bruh>}}
 
 And he graduated very well at the end of that:
