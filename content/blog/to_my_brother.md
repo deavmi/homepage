@@ -203,7 +203,7 @@ The animation industry, however, was not easy to find work in. This is not unhea
 <a href="umbrella_lab_2.jpeg"><img src="umbrella_lab_2.jpeg" width=15% height=15% style="float:left;gap;margin-right:20px"></img></a>
 {{</bruh>}}
 
-My brother never wasted any time though, he spent that year honing in on his skills. He got into game development with Unreal engine, which then led him to learning C++ (something I have fond memories of as it was fun sitting besides him at his computer and watching). This journey led to realise, quite quickly, that mathematics is something one really needs - specifically physics - in the game development world.
+My brother never wasted any time though, he spent that year honing in on his skills. He got into game development with Unreal engine, which then led him to learning C++ (something I have fond memories of as it was fun sitting besides him at his computer and watching). This journey led him to realise that mathematics and physics are fundamental modules needed in the game development world.
 
 So it became my brother's next goal:
 
