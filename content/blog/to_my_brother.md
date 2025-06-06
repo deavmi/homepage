@@ -95,7 +95,7 @@ My brother, no stranger to art, did very well with his studies in animation. He 
         <source src="xiao.mp4" type="video/mp4"></source>
     </video>
     <p>2D animation <i>"Xiao"</i></p>
-<center>
+</center>
 {{</bruh>}}
 
 {{<bruh>}}
@@ -104,7 +104,7 @@ My brother, no stranger to art, did very well with his studies in animation. He 
         <source src="mickey_and_donald.mp4" type="video/mp4"></source>
     </video>
     <p>Mickey Mouse and Donald Duck 2D reel <b>with voice acting</b></p>
-<center>
+</center>
 {{</bruh>}}
 
 {{<bruh>}}
@@ -113,7 +113,7 @@ My brother, no stranger to art, did very well with his studies in animation. He 
         <source src="xperia.mp4" type="video/mp4"></source>
     </video>
     <p>Sony Xperia 3D advert reel</p>
-<center>
+</center>
 {{</bruh>}}
 
 His strength was in _"weight painting"_ - a process that Wikipedia can better explain:
@@ -127,7 +127,7 @@ His strength was in _"weight painting"_ - a process that Wikipedia can better ex
         <source src="blocking.mp4" type="video/mp4"></source>
     </video>
     <p><i>Blocking</i> in 3D</p>
-<center>
+</center>
 {{</bruh>}}
 
 My brother truly did (and **still** does) love art, he has created some amazing things over the past few years:
