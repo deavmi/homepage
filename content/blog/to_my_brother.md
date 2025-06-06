@@ -32,11 +32,7 @@ These are just **some** of the things my mother had to do for us, and of course,
 
 Back to that sentence, "**he would never read or write**". Perhaps, it would not be so bad. As things turned out my brother was able to take mathematics literacy (Maths Lit) - the "easier" mathematics so to speak. His passion was never mathematics, but rather art.
 
-
-
 My brother's artistic skill has been something we knew of from a young age. If we opened one of his textbooks, like the one for Life Orientation, there were always fictional characters drawn within the margins. I don't blame him, that subject was a waste of time.
-
-TODO Insert margin drawing?
 
 {{<bruh>}}
 <div>
@@ -283,7 +279,16 @@ Throughout this time my brother balanced studying with family life and also tuto
 
 I think this latter point is important. My brother went from being the kid who _"would never read or write"_ to tutoring others - never mind being able to overcome only reading or writing.
 
+{{<bruh>}}
+<a href="tutor1.jpeg"><img src="tutor1.jpeg" width=25% height=25% style="float:right;gap;margin-left:20px"></img></a>
+{{</bruh>}}
+
 Vaughan has now tutored many students and it has been something he really enjoys. Many say that the reason he teaches so well is because he had gone through struggles much harder when he was learning, now this means he can teach in a way he may have wished to be taught when he was much younger. He grasps the concepts at such a fundamental level because of this and hopes to be able to impart such knowledge on his students.
+
+
+
+
+
 
 TODO Add tutoring here
 
