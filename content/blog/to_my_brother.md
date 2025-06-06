@@ -275,12 +275,16 @@ TODO Add example report here
 
 ## To you, **brother**
 
+{{<bruh>}}
+<a href="tutor1.jpeg"><img src="tutor1.jpeg" width=25% height=25% style="float:right;gap;margin-left:20px"></img></a>
+{{</bruh>}}
+
 Throughout this time my brother balanced studying with family life and also tutoring on the side.
 
 I think this latter point is important. My brother went from being the kid who _"would never read or write"_ to tutoring others - never mind being able to overcome only reading or writing.
 
 {{<bruh>}}
-<a href="tutor1.jpeg"><img src="tutor1.jpeg" width=25% height=25% style="float:right;gap;margin-left:20px"></img></a>
+<a href="tutor2.jpeg"><img src="tutor2.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
 {{</bruh>}}
 
 Vaughan has now tutored many students and it has been something he really enjoys. Many say that the reason he teaches so well is because he had gone through struggles much harder when he was learning, now this means he can teach in a way he may have wished to be taught when he was much younger. He grasps the concepts at such a fundamental level because of this and hopes to be able to impart such knowledge on his students.
