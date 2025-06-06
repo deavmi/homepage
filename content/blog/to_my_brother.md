@@ -173,7 +173,6 @@ My brother exceeded very well at that and got what he needed:
     <a href="marks_school_redone.jpeg"><img src="marks_school_redone.jpeg"></img></a>
     <p>Marks after re-doing matric modules that are required for entry into the sciences in university</p>
 </center>
-<br>
 {{</bruh>}}
 
 {{<bruh>}}
