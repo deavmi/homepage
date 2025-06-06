@@ -131,13 +131,17 @@ TODO Add graduation photo here
 
 ## Next chapter: It's time to _cook_ 🧪️🧑‍🔬️
 
+{{<bruh>}}
+<a href="umbrella_lab_1.jpeg"><img src="umbrella_lab_1.jpeg" width=25% height=25% style="float:right;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
 The animation industry, however, was not easy to find work in. This is not unheard of but rather a reality that sets in. You're either lucky to get picked up for a project (which may or may not pay well) or you'll be doing freelancing.
 
 My brother never wasted any time though, he spent that year honing in on his skills. He got into game development with Unreal engine, which then lead him to learning C++ (something I have fond memories of as it was fun sitting besides him at his computer and watching). This journey lead to realise, quite quickly, that mathematics is something one really needs - specifically physics - in the game development world.
 
 So it became my brother's next goal:
 
->I would learn physics and mathematics at university _even_ if that meant starting from $0$
+>I would learn physics and mathematics at university _even_ if that meant starting from **0**
 
 Starting from zero indeed. Maths Lit wasn't going to cut it, you couldn't enter into a physics course without normal mathematics. No problem for Vaughan, he'd simply redo his matric with all the required subjects: physics, mathematics and chemistry
 
@@ -151,9 +155,7 @@ My brother exceeded very well at that and got what he needed:
 <br>
 {{</bruh>}}
 
-{{<bruh>}}
-<a href="umbrella_lab_1.jpeg"><img src="umbrella_lab_1.jpeg" width=25% height=25% style="float:right;gap;margin-right:20px"></img></a>
-{{</bruh>}}
+
 
 Next step - applying to university. My brother applied to study at UNISA, one of the best online universities there is - but as we would soon see - it would be more than just online. He'd very soon be in the laboratories.
 
