@@ -55,3 +55,26 @@ But his choice to take art class at school was no mistake - from a young age he 
 <!-- ![]() -->
 
 
+{{<bruh>}}
+<a href="saruu.jpeg"><img src="saruu.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
+{{<bruh>}}
+<a href="comic_strip_1.jpeg"><img src="comic_strip_1.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
+{{<bruh>}}
+<a href="comic_strip_2.jpeg"><img src="comic_strip_2.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
+{{<bruh>}}
+<a href="character_sketch.jpeg"><img src="character_sketch.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
+{{<bruh>}}
+<a href="anime_girl_1.jpeg"><img src="anime_girl_1.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
+{{<bruh>}}
+<a href="nature_background.jpeg"><img src="nature_background.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+{{</bruh>}}
