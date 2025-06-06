@@ -297,9 +297,6 @@ Vaughan has now tutored many students and it has been something he really enjoys
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
 {{</bruh>}}
 
 ## Well done
