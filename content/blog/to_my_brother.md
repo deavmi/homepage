@@ -217,7 +217,7 @@ My brother exceeded very well at that and got what he needed:
 {{<bruh>}}
 <br>
 <center>
-    <a href="marks_school_redone.jpeg"><img src="marks_school_redone.jpeg"></img></a>
+    <a href="marks_school_redone.jpeg"><img src="marks_school_redone.jpeg" width=50% height=50%></img></a>
     <p>Marks after re-doing matric modules that are required for entry into the sciences in university</p>
 </center>
 {{</bruh>}}
