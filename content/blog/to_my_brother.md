@@ -180,7 +180,7 @@ My brother exceeded very well at that and got what he needed:
 {{</bruh>}}
 
 {{<bruh>}}
-<a href="unisa_lab.jpeg"><img src="unisa_lab.jpeg" width=45% height=45% style="float:left;gap;margin-right:20px;margin-bottom:20px"></img></a>
+<a href="unisa_lab.jpeg"><img src="unisa_lab.jpeg" width=45% height=45% style="float:left;gap;margin-right:20px;margin-bottom:10px"></img></a>
 {{</bruh>}}
 
 Next step - applying to university. My brother applied to study at UNISA, one of the best online universities there is - but as we would soon see - it would be more than just online. He'd very soon be in the laboratories.
