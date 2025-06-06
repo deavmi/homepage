@@ -89,9 +89,32 @@ TODO Insert Bridge House photo
 
 My brother, no stranger to art, did very well with his studies in animation. He produced some great shorts or "show reels" as they call them.
 
-TODO Add show reels here
-TODO Add images
-TODO Add videos
+{{<bruh>}}
+<center>
+    <video width=50% height=50% controls>
+        <source src="xiao.mp4" type="video/mp4"></source>
+    </video>
+    <p>2D animation <i>"Xiao"</i></p>
+<center>
+{{</bruh>}}
+
+{{<bruh>}}
+<center>
+    <video width=50% height=50% controls>
+        <source src="mickey_and_donald.mp4" type="video/mp4"></source>
+    </video>
+    <p>Mickey Mouse and Donald Duck 2D reel <b>with voice acting</b></p>
+<center>
+{{</bruh>}}
+
+{{<bruh>}}
+<center>
+    <video width=50% height=50% controls>
+        <source src="xperia.mp4" type="video/mp4"></source>
+    </video>
+    <p>Sony Xperia 3D advert reel</p>
+<center>
+{{</bruh>}}
 
 His strength was in _"weight painting"_ - a process that Wikipedia can better explain:
 
@@ -106,7 +129,6 @@ His strength was in _"weight painting"_ - a process that Wikipedia can better ex
     <p><i>Blocking</i> in 3D</p>
 <center>
 {{</bruh>}}
-
 
 My brother truly did (and **still** does) love art, he has created some amazing things over the past few years:
 
