@@ -38,6 +38,16 @@ My brother's artistic skill has been something we knew of from a young age. If w
 
 TODO Insert margin drawing?
 
+{{<bruh>}}
+<div>
+<div>
+<div>
+<div>
+{{</bruh>}}
+
+{{<bruh>}}
+<a href="bike.jpeg"><img src="bike.jpeg" width=25% height=25% style="float:right;gap;margin-left:20px"></img></a>
+{{</bruh>}}
 
 
 But his choice to take art class at school was no mistake - from a young age he told my mother "I want to be with the cartoons" referring to him literally wanting to live amongst them or at least in that world. The best way for that to happen would be to start taking art classes now in the hopes one could make an entrance into that field with the hopes of making a career out of it.
@@ -45,6 +55,3 @@ But his choice to take art class at school was no mistake - from a young age he 
 <!-- ![]() -->
 
 
-{{<bruh>}}
-<a href="bike.jpeg"><img src="bike.jpeg" width=25% height=25% style="float:right;gap;margin-left:20px"></img></a>
-{{</bruh>}}
