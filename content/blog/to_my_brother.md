@@ -143,7 +143,13 @@ Starting from zero indeed. Maths Lit wasn't going to cut it, you couldn't enter 
 
 My brother exceeded very well at that and got what he needed:
 
-TODO Insert mrks here
+{{<bruh>}}
+<br>
+<center>
+    <a href="marks_school_redone.jpeg"><img src="marks_school_redone.jpeg"></img></a>
+</center>
+<br>
+{{</bruh>}}
 
 Next step - applying to university. My brother applied to study at UNISA, one of the best online universities there is - but as we would soon see - it would be more than just online. He'd very soon be in the laboratories.
 
