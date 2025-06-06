@@ -176,7 +176,7 @@ My brother exceeded very well at that and got what he needed:
 {{</bruh>}}
 
 {{<bruh>}}
-<a href="unisa_lab.jpeg"><img src="unisa_lab.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+<a href="unisa_lab.jpeg"><img src="unisa_lab.jpeg" width=50% height=50% style="float:left;gap;margin-right:20px"></img></a>
 <!-- <p>UNISA's science laboratories</p> -->
 {{</bruh>}}
 
