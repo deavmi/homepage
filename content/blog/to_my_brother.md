@@ -22,3 +22,4 @@ Early on my mother was reading everything she could on ADHD, asperges and the li
 * The extra time concessions
 * The remedial classes booked
 
+These are just **some** of the things my mother had to do for us, and of course, for my brother. She, did it all out of love.
