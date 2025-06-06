@@ -176,15 +176,14 @@ My brother exceeded very well at that and got what he needed:
 {{</bruh>}}
 
 {{<bruh>}}
-<a href="unisa_lab.jpeg"><img src="unisa_lab.jpeg" width=50% height=50% style="float:left;gap;margin-right:20px"></img></a>
-<!-- <p>UNISA's science laboratories</p> -->
+<a href="unisa_lab.jpeg"><img src="unisa_lab.jpeg" width=45% height=45% style="float:left;gap;margin-right:20px"></img></a>
 {{</bruh>}}
 
 Next step - applying to university. My brother applied to study at UNISA, one of the best online universities there is - but as we would soon see - it would be more than just online. He'd very soon be in the laboratories.
 
 My brother had decided he would make the most of his time at university. So he decided to double major in physics _and_ chemistry.
 
-While the rest of the family thought "let's see how far it goes" - it turned out that we would be surprised again when his first marks came back. We knew he could pass high school mathematics, because he had shown he could. We had no idea that he would have performed this well in first year:
+While the rest of the family thought "let's see how far it goes" - it turned out that we would be surprised again when his first marks came back. We knew he could pass high school mathematics, because he had shown he could. **We had no idea that he would have performed this well in first year.**
 
 {{<bruh>}}
 <br>
