@@ -148,6 +148,10 @@ The animation industry, however, was not easy to find work in. This is not unhea
 
 My brother never wasted any time though, he spent that year honing in on his skills. He got into game development with Unreal engine, which then lead him to learning C++ (something I have fond memories of as it was fun sitting besides him at his computer and watching). This journey lead to realise, quite quickly, that mathematics is something one really needs - specifically physics - in the game development world.
 
+{{<bruh>}}
+<a href="umbrella_lab_2.jpeg"><img src="umbrella_lab_2.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
 So it became my brother's next goal:
 
 >I would learn physics and mathematics at university _even_ if that meant starting from **0**
@@ -170,9 +174,7 @@ Next step - applying to university. My brother applied to study at UNISA, one of
 
 My brother had decided he would make the most of his time at university. So he decided to double major in physics _and_ chemistry.
 
-{{<bruh>}}
-<a href="umbrella_lab_2.jpeg"><img src="umbrella_lab_2.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
-{{</bruh>}}
+
 
 While the rest of the family thought "let's see how far it goes" - it turned out that we would be surprised again when his first marks came back. We knew he could pass high school mathematics, because he had shown he could. We had no idea that he would have performed this well in first year:
 
