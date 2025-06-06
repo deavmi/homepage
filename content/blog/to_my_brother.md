@@ -141,7 +141,7 @@ TODO Add graduation photo here
 ## Next chapter: It's time to _cook_ 🧪️🧑‍🔬️
 
 {{<bruh>}}
-<a href="umbrella_lab_1.jpeg"><img src="umbrella_lab_1.jpeg" width=25% height=25% style="float:right;gap;margin-right:20px"></img></a>
+<a href="umbrella_lab_1.jpeg"><img src="umbrella_lab_1.jpeg" width=25% height=25% style="float:right;gap;margin-left:20px"></img></a>
 {{</bruh>}}
 
 The animation industry, however, was not easy to find work in. This is not unheard of but rather a reality that sets in. You're either lucky to get picked up for a project (which may or may not pay well) or you'll be doing freelancing.
