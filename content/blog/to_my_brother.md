@@ -46,7 +46,7 @@ TODO Insert margin drawing?
 {{</bruh>}}
 
 {{<bruh>}}
-<a href="bike.jpeg"><img src="bike.jpeg" width=25% height=25% style="float:right;gap;margin-left:20px"></img></a>
+<a href="bike.jpeg"><img src="bike.jpeg" width=25% height=25% style="float:left;gap;margin-left:20px"></img></a>
 {{</bruh>}}
 
 
