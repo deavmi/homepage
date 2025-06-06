@@ -100,7 +100,9 @@ His strength was in _"weight painting"_ - a process that Wikipedia can better ex
 TODO Add video of blocking
 
 {{<bruh>}}
-<video src="blocking.mpg" width=25% height=25%></video>
+<video width=25% height=25% controls>
+    <source src="blocking.mpg" type="viedo/mp4"></source>
+</video>
 {{</bruh>}}
 
 
