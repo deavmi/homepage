@@ -2,7 +2,7 @@
 title: "To my brother"
 author: Tristan B. V. Kildaire
 date: 2025-05-12
-draft: true
+draft: false
 ---
 
 ## Doing the impossible
@@ -23,3 +23,15 @@ Early on my mother was reading everything she could on ADHD, asperges and the li
 * The remedial classes booked
 
 These are just **some** of the things my mother had to do for us, and of course, for my brother. She, did it all out of love.
+
+## Will _never_ be able to read, will _never_ be able to write
+
+Back to that sentence, "**he would never read or write**". Perhaps, it would not be so bad. As things turned out my brother was able to take mathematics literacy (Maths Lit) - the "easier" mathematics so to speak. His passion was never mathematics, but rather art.
+
+My brother's artistic skill has been something we knew of from a young age. If we opened one of his textbooks, like the one for Life Orientation, there were always fictional characters drawn within the margins. I don't blame him, that subject was a waste of time.
+
+TODO Insert margin drawing?
+
+But his choice to take art class at school was no mistake - from a young age he told my mother "I want to be with the cartoons" referring to him literally wanting to live amongst them or at least in that world. The best way for that to happen would be to start taking art classes now in the hopes one could make an entrance into that field with the hopes of making a career out of it.
+
+![](heart.jpeg)
