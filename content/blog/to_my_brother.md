@@ -151,13 +151,13 @@ My brother exceeded very well at that and got what he needed:
 <br>
 {{</bruh>}}
 
+{{<bruh>}}
+<a href="umbrella_lab_1.jpeg"><img src="umbrella_lab_1.jpeg" width=25% height=25% style="float:right;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
 Next step - applying to university. My brother applied to study at UNISA, one of the best online universities there is - but as we would soon see - it would be more than just online. He'd very soon be in the laboratories.
 
 My brother had decided he would make the most of his time at university. So he decided to double major in physics _and_ chemistry.
-
-{{<bruh>}}
-<a href="umbrella_lab_1.jpeg"><img src="umbrella_lab_1.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
-{{</bruh>}}
 
 {{<bruh>}}
 <a href="umbrella_lab_2.jpeg"><img src="umbrella_lab_2.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
