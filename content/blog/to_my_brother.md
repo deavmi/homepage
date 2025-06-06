@@ -2,7 +2,7 @@
 title: "To my brother"
 description: "It's my brother's second graduation today, these are a few kind words to him and the rest of my family."
 author: Tristan B. V. Kildaire
-date: 2025-06-06
+date: 2025-06-05
 ---
 
 ## Doing the impossible
