@@ -136,6 +136,12 @@ TODO Add graduation photo here
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 {{</bruh>}}
 
 ## Next chapter: It's time to _cook_ 🧪️🧑‍🔬️
