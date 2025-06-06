@@ -189,15 +189,6 @@ And he graduated very well at the end of that:
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 {{</bruh>}}
 
 ## Next chapter: It's time to _cook_ 🧪️🧑‍🔬️
