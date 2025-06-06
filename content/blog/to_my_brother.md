@@ -52,9 +52,6 @@ TODO Insert margin drawing?
 
 But his choice to take art class at school was no mistake - from a young age he told my mother "I want to be with the cartoons" referring to him literally wanting to live amongst them or at least in that world. The best way for that to happen would be to start taking art classes now in the hopes one could make an entrance into that field with the hopes of making a career out of it.
 
-<!-- ![]() -->
-
-
 {{<bruh>}}
 <br>
 <span>
@@ -70,17 +67,18 @@ But his choice to take art class at school was no mistake - from a young age he 
 {{</bruh>}}
 
 
-
 {{<bruh>}}
-<a href="anime_girl_1.jpeg"><img src="anime_girl_1.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
-{{</bruh>}}
+<br>
+<span>
+<center>
+    <a href="anime_girl_1.jpeg"><img src="anime_girl_1.jpeg" width=25% height=25% style="margin-right:20px"></img></a>
 
-{{<bruh>}}
-<a href="background_nature.jpeg"><img src="background_nature.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
-{{</bruh>}}
+    <a href="background_nature.jpeg"><img src="background_nature.jpeg" width=25% height=25% style="margin-right:20px"></img></a>
 
-{{<bruh>}}
-<a href="japanese_lady.jpeg"><img src="japanese_lady.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+    <a href="japanese_lady.jpeg"><img src="japanese_lady.jpeg" width=25% height=25%></img></a>
+</center>
+</span>
+<br>
 {{</bruh>}}
 
 {{<bruh>}}
