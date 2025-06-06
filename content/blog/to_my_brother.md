@@ -101,7 +101,7 @@ TODO Add video of blocking
 
 {{<bruh>}}
 <video width=25% height=25% controls>
-    <source src="blocking.mpg" type="viedo/mp4"></source>
+    <source src="blocking.mp4" type="viedo/mp4"></source>
 </video>
 {{</bruh>}}
 
