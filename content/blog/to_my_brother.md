@@ -172,3 +172,83 @@ Oh, and remember that chemistry stuff, well he's quite good at it. He's been to 
 {{<bruh>}}
 <a href="unisa_lab.jpeg"><img src="unisa_lab.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
 {{</bruh>}}
+
+{{<bruh>}}
+<a href="cover.jpeg"><img src="cover.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
+Along with this, he worked performantly under the pressure of time constraints when writing up the numerous reports after each lab session.
+
+TODO Add example report here
+
+## To you, **brother**
+
+Throughout this time my brother balanced studying with family life and also tutoring on the side.
+
+I think this latter point is important. My brother went from being the kid who _"would never read or write"_ to tutoring others - never mind being able to overcome only reading or writing.
+
+Vaughan has now tutored many students and it has been something he really enjoys. Many say that the reason he teaches so well is because he had gone through struggles much harder when he was learning, now this means he can teach in a way he may have wished to be taught when he was much younger. He grasps the concepts at such a fundamental level because of this and hopes to be able to impart such knowledge on his students.
+
+TODO Add tutoring here
+
+## Well done
+
+So we arrive at where we are today. Today my brother graduated:
+
+TODO Add graduation photo here
+
+{{<bruh>}}
+<br>
+<br>
+<center>
+    <h2>I couldn't be prouder of you Vaughan.</h2>
+    
+    <h3>You have out done everyone's expectations - you have shown me and everyone else close to you the fruits that true dedication can bare.</h3>
+</center>
+{{</bruh>}}
+
+## A familia
+
+TODO Fix accent
+
+## Ao nosso pai
+
+TODO Check spelling
+
+And to my father as well. Whatever money was required for Vaughan's second set of studies (mathematics and so forth), you ensured he had. Whenever Vaughan was in Florida, you were there by his side taking him out to dinner - just to give him a little break from all of his tiring studies.
+
+You were his comfort in a place far away from home. He knew that you were only a few blocks away and always available with a quick phone call.
+
+TODO Add photo of Vaughan and dad here
+
+I thank you for all of this dad, for flying up with my brother and to keeping him company when he was all by himself cooped up in his dorm room studying.
+
+## A nossa mae
+
+TODO Fix accent
+
+To my mother. You will always there for my brother, helping him and defending him. You sought that he would get the help he needed, the extra lessons, the consultations with the teaching experts - and when one of those experts said it was _impossible_ - *you proved them wrong*.
+
+You spent so much time and energy to help my big brother, you did it all as your heart bled for him - a heart of gold 💛. You would never take no for an answer, your son was put ahead of any of your own ambitions - we was your sole focus.
+
+I thank you for that mom, for never giving up on my best friend, big brother.
+
+## O fim, ou assaz o comeco
+
+TODO Fix accent
+
+If there is anything to take away from this it is these few key points:
+
+1. A mother's love defeats any naysayer
+2. A father's commitment to ensuring the best education possible, by working endless hours, is unconquerable.
+3. Your little brother's admiration, is unstoppable
+4. And you *Vaughan*, are _**unstoppable**_.
+
+
+{{<bruh>}}
+<br>
+<br>
+<center>
+    <h2>Love you big bro ❤️</h2>
+</center>
+{{</bruh>}}
