@@ -146,9 +146,9 @@ My brother truly did (and **still** does) love art, he has created some amazing 
 <br>
 <span>
 <center>
-    <a href="phone_1.jpeg"><img src="anime_girl_1.jpeg" width=25% height=25% style="margin-right:20px"></img></a>
+    <a href="phone_1.jpeg"><img src="phone_1.jpeg" width=25% height=25% style="margin-right:20px"></img></a>
 
-    <a href="phone_2.jpeg"><img src="japanese_lady.jpeg" width=25% height=25%></img></a>
+    <a href="phone_2.jpeg"><img src="phone_2.jpeg" width=25% height=25%></img></a>
 
     <p>These phone drawings were for the <i>Xperia</i> 3D reel</p>
 </center>
