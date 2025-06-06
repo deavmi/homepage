@@ -268,7 +268,7 @@ And then the third year rolled by - much to the same result. We got the picture 
 
 {{<bruh>}}
 <center>
-    <a href="cover.png"><img src="cover.png"></img></a>
+    <a href="cover.jpeg"><img src="cover.jpeg"></img></a>
 </center>
 {{</bruh>}}
 
