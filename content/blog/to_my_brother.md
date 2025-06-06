@@ -152,11 +152,13 @@ TODO Add graduation photo here
 
 The animation industry, however, was not easy to find work in. This is not unheard of but rather a reality that sets in. You're either lucky to get picked up for a project (which may or may not pay well) or you'll be doing freelancing.
 
+{{<bruh>}}
+<a href="umbrella_lab_2.jpeg"><img src="umbrella_lab_2.jpeg" width=15% height=15% style="float:left;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
 My brother never wasted any time though, he spent that year honing in on his skills. He got into game development with Unreal engine, which then lead him to learning C++ (something I have fond memories of as it was fun sitting besides him at his computer and watching). This journey lead to realise, quite quickly, that mathematics is something one really needs - specifically physics - in the game development world.
 
-{{<bruh>}}
-<a href="umbrella_lab_2.jpeg"><img src="umbrella_lab_2.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
-{{</bruh>}}
+
 
 {{<bruh>}}
 <br>
