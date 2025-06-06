@@ -69,9 +69,7 @@ But his choice to take art class at school was no mistake - from a young age he 
 <br>
 {{</bruh>}}
 
-{{<bruh>}}
-<a href="character_sketch.jpeg"><img src="character_sketch.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
-{{</bruh>}}
+
 
 {{<bruh>}}
 <a href="anime_girl_1.jpeg"><img src="anime_girl_1.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
@@ -83,6 +81,13 @@ But his choice to take art class at school was no mistake - from a young age he 
 
 {{<bruh>}}
 <a href="japanese_lady.jpeg"><img src="japanese_lady.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+{{</bruh>}}
+
+{{<bruh>}}
+<center>
+    <a href="character_sketch.jpeg"><img src="character_sketch.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+    <p>Character sketch for the 2D animation reel <i>"Xiao"</i></p>
+</center>
 {{</bruh>}}
 
 Many hours of studying, hard work and remedial lessons organised by my mother. Many years later my brother would finish high-school and would begin to study 2D and 3D animation:
