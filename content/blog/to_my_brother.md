@@ -85,7 +85,13 @@ But his choice to take art class at school was no mistake - from a young age he 
 
 Many hours of studying, hard work and remedial lessons organised by my mother. Many years later my brother would finish high-school and would begin to study 2D and 3D animation:
 
-TODO Insert Bridge House photo
+{{<bruh>}}
+<br>
+<center>
+    <a href="bridge_house_1.jpg"><img src="bridge_house_1.jpg"></img></a>
+    <p>Marks after re-doing matric modules that are required for entry into the sciences in university</p>
+</center>
+{{</bruh>}}
 
 My brother, no stranger to art, did very well with his studies in animation. He produced some great shorts or "show reels" as they call them.
 
