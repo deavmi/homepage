@@ -266,17 +266,15 @@ But maybe that was just the typical first year fluke. It's common for many peopl
 
 And then the third year rolled by - much to the same result. We got the picture - my brother is actually very good at mathematics, physics, chemistry - and critical thinking. He's actually _excellent_.
 
-Oh, and remember that chemistry stuff, well he's quite good at it. He's been to the UNISA campus in Florida several times already and had great successes with his practicals he had to perform there:
-
-
-
 {{<bruh>}}
-<a href="cover.jpeg"><img src="cover.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
+<center>
+    <a href="cover.png"><img src="cover.png"></img></a>
+</center>
 {{</bruh>}}
 
-Along with this, he worked performantly under the pressure of time constraints when writing up the numerous reports after each lab session.
+Oh, and remember that chemistry stuff, well he's quite good at it. He's been to the UNISA campus in Florida several times already and had great successes with his practicals he had to perform there:
 
-TODO Add example report here
+Along with this, he worked performantly under the pressure of time constraints when writing up the [numerous reports](https://vaughankildaire.github.io/artifacts/file.pdf) after each lab session.
 
 ## To you, **brother**
 
