@@ -1,8 +1,7 @@
 ---
 title: "To my brother"
 author: Tristan B. V. Kildaire
-date: 2025-05-12
-draft: false
+date: 2025-06-06
 ---
 
 ## Doing the impossible
@@ -295,8 +294,6 @@ Vaughan has now tutored many students and it has been something he really enjoys
 ## Well done 👨‍🎓️
 
 So we arrive at where we are today. Today my brother graduated:
-
-TODO Add graduation photo here
 
 {{<bruh>}}
 <br>
