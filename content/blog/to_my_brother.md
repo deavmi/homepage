@@ -286,6 +286,7 @@ Vaughan has now tutored many students and it has been something he really enjoys
 {{<bruh>}}
 <br>
 <br>
+<br>
 {{</bruh>}}
 
 ## Well done
@@ -323,6 +324,10 @@ You were his comfort in a place far away from home. He knew that you were only a
 I thank you for all of this dad, for flying up with my brother and to keeping him company when he was all by himself cooped up in his dorm room studying.
 
 ## Nossa mãe
+
+{{<bruh>}}
+<a href="mom.jpeg"><img src="mom.jpeg" width=50% height=50% style="float:right;gap;margin-left:20px"></img></a>
+{{</bruh>}}
 
 To my mother. You will always there for my brother, helping him and defending him. You sought that he would get the help he needed, the extra lessons, the consultations with the teaching experts - and when one of those experts said it was _impossible_ - *you proved them wrong*.
 
