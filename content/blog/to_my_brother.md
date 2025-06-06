@@ -56,6 +56,7 @@ But his choice to take art class at school was no mistake - from a young age he 
 
 
 {{<bruh>}}
+<br>
 <span>
 <center>
     <a href="saruu.jpeg"><img src="saruu.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
@@ -65,6 +66,7 @@ But his choice to take art class at school was no mistake - from a young age he 
     <a href="comic_strip_2.jpeg"><img src="comic_strip_2.jpeg" width=25% height=25% style="float:left;gap;margin-right:20px"></img></a>
 </center>
 </span>
+<br>
 {{</bruh>}}
 
 {{<bruh>}}
