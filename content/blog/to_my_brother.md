@@ -97,12 +97,14 @@ His strength was in _"weight painting"_ - a process that Wikipedia can better ex
 
 >It is most often used for modifying [weight maps](https://en.wikipedia.org/wiki/Weight_map) for [skeletal animation](https://en.wikipedia.org/wiki/Skeletal_animation), to tweak the influence of individual [bones](https://en.wikipedia.org/wiki/Skeletal_animation#bone) when deforming surfaces around joints.[[1]](https://en.wikipedia.org/wiki/Vertex_painting#cite_note-1)
 
-TODO Add video of blocking
 
 {{<bruh>}}
-<video width=50% height=50% controls>
-    <source src="blocking.mp4" type="video/mp4"></source>
-</video>
+<center>
+    <video width=50% height=50% controls>
+        <source src="blocking.mp4" type="video/mp4"></source>
+    </video>
+    <p><i>Blocking</i> in 3D</p>
+<center>
 {{</bruh>}}
 
 
