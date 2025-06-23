@@ -3,7 +3,7 @@ title: "Qix: Simple waitable-queue management"
 description: "An introduction to my new waitable-queue management library called Qix"
 author: Tristan B. V. Kildaire
 date: 2025-06-23
-draft: true
+draft: false
 ---
 
 ## Introduction
