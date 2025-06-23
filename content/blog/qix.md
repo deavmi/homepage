@@ -32,7 +32,7 @@ Let's first define the `Message` type which will describe what it is
 that we will be enqueuing onto our queue:
 
 ```d
-m type
+// item type
 struct Message
 {
 	private string _t;
