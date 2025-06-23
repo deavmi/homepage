@@ -15,7 +15,7 @@ matching system.
 As such a system is normally rather generic it could potentially be used in other projects
 of mine in the future, where a similar use case is required. _Or_ you could even use it! It
 is for this reason that I decided to redesign what was already ongoing as a redesign within
-my **older** [tristanable](../projects/tristanable/) project.
+my **older** [tristanable](../../projects/tristanable/) project.
 
 This entailed stripping out any of the network aspects of tristanable, namely:
 
