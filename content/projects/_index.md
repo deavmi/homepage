@@ -97,7 +97,7 @@ container format to hold arbitrary data, perhaps binary data, JSON etc.
 
 * [Code repository](/git/bester/bformat)
 * [Issue tracker](https://github.com/deavmi/bformat)
-* [Project homepage](https://code.dlang.org/my_packages/bformat)
+* [Project homepage](https://code.dlang.org/packages/bformat)
 * [Project homepage (old)](/projects/bformat)
 
 ## BonoboNET
