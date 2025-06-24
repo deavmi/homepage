@@ -81,7 +81,7 @@ management of queues created via it.
 Simple message format that uses a 4-byte header for length. Used in many of my D network programs whereby I need a simple
 container format to hold arbitrary data, perhaps binary data, JSON etc.
 
-* [Code repository](/git/deavmi/bformat)
+* [Code repository](/git/bester/bformat)
 * [Issue tracker](https://github.com/deavmi/bformat)
 * [Project homepage](https://code.dlang.org/my_packages/bformat)
 * [Project homepage (old)](/projects/bformat)
