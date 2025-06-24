@@ -61,24 +61,20 @@ Simple and modular logging library with support for chained custom text transfor
 * [Issue tracker](https://github.com/deavmi/dlog)
 * [Project homepage](/projects/dlog)
 
-## tristanable
+## qix
 
 {{<bruh>}}
-<img src="/img/tristanable_logo.png" width="15%" height="15%" style="float:right">
+<img src="/img/qix.png" width="15%" height="15%" style="float:right">
 {{</bruh>}}
 
-Tag-based asynchronous messaging framework for D. This allows you to write software
-that awaits on messages that have a certain tag sent with them.
+A request-response matching mechanism that provides the user with
+generic-typed queues which can be enqueued and dequeued _with timed-wait_
+support. A queue manager is also included for optional central
+management of queues created via it.
 
-This is heavily used in my chat applications because of the need
-of a state machine in an otherwise non-state-machine-like socket
-stream where a reply for one thing can come in before another regardless
-of the order things were sent in (or in the case of messages sent
-without a prior request (i.e. notifications)).
-
-* [Code repository](/git/deavmi/tristanable)
-* [Issue tracker](https://github.com/deavmi/tristanable)
-* [Project homepage](/projects/tristanable)
+* [Code repository](/git/deavmi/qix)
+* [Issue tracker](https://github.com/deavmi/qix)
+* [Project homepage](https://code.dlang.org/packages/qix)
 
 ## bformat
 
@@ -221,6 +217,25 @@ A new programming language for systems programming with a focus on control of ev
 # Inactive projects
 
 All the projects listed below are no longer worked on or maintained.
+
+## tristanable
+
+{{<bruh>}}
+<img src="/img/tristanable_logo.png" width="15%" height="15%" style="float:right">
+{{</bruh>}}
+
+Tag-based asynchronous messaging framework for D. This allows you to write software
+that awaits on messages that have a certain tag sent with them.
+
+This is heavily used in my chat applications because of the need
+of a state machine in an otherwise non-state-machine-like socket
+stream where a reply for one thing can come in before another regardless
+of the order things were sent in (or in the case of messages sent
+without a prior request (i.e. notifications)).
+
+* [Code repository](/git/deavmi/tristanable)
+* [Issue tracker](https://github.com/deavmi/tristanable)
+* [Project homepage](/projects/tristanable)
 
 ## libpb
 
