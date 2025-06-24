@@ -76,20 +76,6 @@ management of queues created via it.
 * [Issue tracker](https://github.com/deavmi/qix)
 * [Project homepage](https://code.dlang.org/packages/qix)
 
-## niknaks
-
-{{<bruh>}}
-<img src="/img/niknaks.png" width=10% height=10% style="float:right">
-{{</bruh>}}
-
-Helpful niknaks or "things" that you may grasp for now and then. Take
-a look at [this post](../blog/niknak_updates) for a deep dive into just
-_some_ of the things that have been implemented for use in this library.
-
-* [Code repository](/git/deavmi/niknaks)
-* [Issue tracker](https://github.com/deavmi/niknaks)
-* [Project homepage](https://code.dlang.org/packages/niknaks)
-
 ## bformat
 
 Simple message format that uses a 4-byte header for length. Used in many of my D network programs whereby I need a simple
