@@ -45,7 +45,7 @@ Firstly you will need to install the `rns` package using `pip`. This package wil
 Installation can be performed with:
 
 ```bash
-pip3 install rns -y
+pip3 install rns
 ```
 
 #### Serial device access
