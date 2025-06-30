@@ -61,6 +61,24 @@ Simple and modular logging library with support for chained custom text transfor
 * [Issue tracker](https://github.com/deavmi/dlog)
 * [Project homepage](/projects/dlog)
 
+## hummus
+
+<!-- {{<bruh>}}
+<img src="/img/qix.png" width="15%" height="15%" style="float:right">
+{{</bruh>}} -->
+
+A configuration engine which is fully templatised meaning that
+it can generate, at compile-time, the correct code to discover
+all the fields in multip-level (nested) `struct`(s) and then
+fill their values via a chosen `Provider`.
+
+Very useful for getting a **good** configuration engine that
+fits YOUR code.
+
+* [Code repository](/git/deavmi/hummus)
+* [Issue tracker](https://github.com/deavmi/hummus)
+* [Project homepage](https://code.dlang.org/packages/hummus)
+
 ## qix
 
 {{<bruh>}}
