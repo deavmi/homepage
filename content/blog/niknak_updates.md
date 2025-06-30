@@ -76,7 +76,7 @@ look at each:
 
 TODO: Add this
 
-When progranming you tend to work with arrays a lot and depending on what you
+When programming you tend to work with arrays a lot and depending on what you
 are doing you also may have to run a lot of algoritmns over said arrays, to
 either check them for elements, manipulate them and so forth. Therefore as
 time went on and I saw myself continuously re-implementing specific array routines
