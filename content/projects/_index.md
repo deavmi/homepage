@@ -100,9 +100,7 @@ management of queues created via it.
 <img src="/img/niknaks.png" width=10% height=10% style="float:right">
 {{</bruh>}}
 
-Helpful niknaks or "things" that you may grasp for now and then. Take
-a look at [this post](../blog/niknak_updates) for a deep dive into just
-_some_ of the things that have been implemented for use in this library.
+Helpful niknaks or "things" that you may grasp for now and then.
 
 * [Code repository](/git/deavmi/niknaks)
 * [Issue tracker](https://github.com/deavmi/niknaks)
