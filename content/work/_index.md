@@ -6,6 +6,8 @@ title: Work
 
 * [iPay](https://www.ipay.co.za/) (January 2023 to _present_)
     * Prepaid electricity vending systems
+    * I am the lead engineer who architecting the Hydra HES (head-end system)
+    * I wrote a DLT645 driver from scratch for Hydra
 
 ## Certifications
 
@@ -16,6 +18,14 @@ I completed my Bachelors of Science Honors in Computer Science in 2022.
 {{<bruh>}}
 <center>
     <a href="/img/cv/honors.jpeg"><img src="/img/cv/honors.jpeg" width=45% height=45%></a>
+</center>
+{{</bruh>}}
+
+You can see my marks throughout the 1 year period (2022) below:
+
+{{<bruh>}}
+<center>
+    <a href="/img/cv/honors_academic_record.png"><img src="/img/cv/honors_academic_record.png" width=45% height=45%></a>
 </center>
 {{</bruh>}}
 
