@@ -1,8 +1,8 @@
 ---
 title: "Addition to Niknaks: A delay mechanism for programatic retries"
 author: Tristan B. Velloza Kildaire
-date: 2025-07-10
-draft: false
+date: 2025-07-14
+draft: true
 ---
 
 ## Delay mechanism
