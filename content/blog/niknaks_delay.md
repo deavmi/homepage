@@ -1,7 +1,7 @@
 ---
 title: "Addition to Niknaks: A delay mechanism for programatic retries"
 author: Tristan B. Velloza Kildaire
-date: 2025-03-01
+date: 2025-07-10
 draft: false
 ---
 
@@ -94,3 +94,7 @@ unittest
     }
 }
 ```
+
+---
+
+You can read the documentation [here](https://niknaks.dpldocs.info/niknaks.mechanisms.Delay.html).
