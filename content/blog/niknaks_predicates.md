@@ -1,7 +1,7 @@
 ---
 title: "Addition to Niknaks: Optional types and predicates"
 author: Tristan B. Velloza Kildaire
-date: 2025-03-01
+date: 2025-08-06
 draft: true
 ---
 
