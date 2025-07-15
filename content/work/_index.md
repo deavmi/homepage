@@ -6,7 +6,7 @@ title: Work
 
 * [iPay](https://www.ipay.co.za/) (January 2023 to _present_)
     * Prepaid electricity vending systems
-    * I am the lead engineer who architecting the Hydra HES (head-end system)
+    * I am the lead architect of the Hydra HES (head-end system)
     * I wrote a DLT645 driver from scratch for Hydra
 
 ## Certifications
