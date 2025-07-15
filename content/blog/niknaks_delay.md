@@ -1,5 +1,5 @@
 ---
-title: "Addition to Niknaks: A delay mechanism for programatic retries"
+title: "Addition to Niknaks: A delay mechanism for programmatic retries"
 author: Tristan B. Velloza Kildaire
 date: 2025-07-15
 draft: false
