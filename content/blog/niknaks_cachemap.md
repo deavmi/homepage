@@ -57,3 +57,7 @@ Thread.sleep(dur!("seconds")(11));
 // Destroy the map (such that it ends the sweeper)
 destroy(map);
 ```
+
+---
+
+You can read the documentation [here](https://niknaks.dpldocs.info/niknaks.containers.CacheMap.html).
