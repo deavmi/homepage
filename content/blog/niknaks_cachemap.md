@@ -1,7 +1,7 @@
 ---
 title: "Addition to Niknaks: A generic CacheMap implementation"
 author: Tristan B. Velloza Kildaire
-date: 2025-07-25
+date: 2025-07-21
 draft: false
 ---
 
