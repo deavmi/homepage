@@ -8,9 +8,11 @@ title: Work
     * Prepaid electricity vending systems
     * I am the lead architect of the Hydra HES (head-end system)
         * I designed the system from scratch
-        * Implemented the task scheduler with queue policiy support,
-        the Hardware Abstraction Layer (HAL) and more
-    * I wrote a DLT645 driver from scratch for Hydra
+        * Implemented the task scheduler with queue policy support,
+        the Hardware Abstraction Layer (HAL) for drivers and more
+    * I wrote the DLT645 driver from scratch for Hydra
+        * This included the bus management code to manage access to
+        the single DTU that multiple meters would connect to
 
 ## Certifications
 
