@@ -16,7 +16,7 @@ title: Work
         * This included the bus management code to manage access to
         the single DTU that multiple meters would connect to -->
 
-Since joining iPay I have been the lead architect and engineer on their Hydra project. This brand new head-end system (HES) has been built in order to allow for a wide variety of devices (mostly smart meters) to be interacted with in a uniform way.
+Since joining [iPay](https://www.ipay.co.za/) I have been the lead architect and engineer on their Hydra project. This brand new head-end system (HES) has been built in order to allow for a wide variety of devices (mostly smart meters) to be interacted with in a uniform way.
 
 I am tasked with the design of the hardware abstraction layer (HAL) for the drivers that I am some others on my team have built. Along with this I work on the task scheduler which is used to schedule and run tasks on the remote devices. This scheduler is comprised of an extensible queue policy framework (QPF) which allows filters (stateful and stateless) to manage which jobs and when get to be executed.
 
