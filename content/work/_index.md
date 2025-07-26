@@ -4,7 +4,9 @@ title: Work
 
 ## Work experience
 
-* [iPay](https://www.ipay.co.za/) (January 2023 to _present_)
+### iPay (January 2023 to _present_)
+
+<!-- * [iPay](https://www.ipay.co.za/) (January 2023 to _present_)
     * Prepaid electricity vending systems
     * I am the lead architect of the Hydra HES (head-end system)
         * I designed the system from scratch
@@ -12,7 +14,13 @@ title: Work
         the Hardware Abstraction Layer (HAL) for drivers and more
     * I wrote the DLT645 driver from scratch for Hydra
         * This included the bus management code to manage access to
-        the single DTU that multiple meters would connect to
+        the single DTU that multiple meters would connect to -->
+
+Since joining iPay I have been the lead architect and engineer on their Hydra project. This brand new head-end system (HES) has been built in order to allow for a wide variety of devices (mostly smart meters) to be interacted with in a uniform way.
+
+I am tasked with the design of the hardware abstraction layer (HAL) for the drivers that I am some others on my team have built. Along with this I work on the task scheduler which is used to schedule and run tasks on the remote devices. This scheduler is comprised of an extensible queue policy framework (QPF) which allows filters (stateful and stateless) to manage which jobs and when get to be executed.
+
+I am the main maintainer of the DLMS-related code and also the DLT645 driver.
 
 ## Certifications
 
