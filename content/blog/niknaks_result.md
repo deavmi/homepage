@@ -1,7 +1,7 @@
 ---
 title: "Addition to Niknaks: A handy Result type"
 author: Tristan B. Velloza Kildaire
-date: 2025-07-21
+date: 2025-08-1
 draft: true
 ---
 
@@ -77,3 +77,7 @@ if(a.is_okay())
     // do something
 }
 ```
+
+---
+
+You can read the documentation [here](https://niknaks.dpldocs.info/niknaks.functional.Result.html).
