@@ -5,6 +5,9 @@ date: 2025-08-08
 draft: true
 ---
 
+TODO: Remove below header
+TODO: FInish "TODOs"
+
 Setting up your Mikrotik with serial
 ====================================
 
