@@ -22,6 +22,10 @@ I am tasked with the design of the hardware abstraction layer (HAL) for the driv
 
 I am the main maintainer of the DLMS-related code and also the DLT645 driver, the latter which I wrote entirely from scratch.
 
+I have quite a lot of experience in concurrency from I/O, to condition variables, locks,
+streaming I/O, buffer encoding/decoding and more. I have implemented a lot of custom
+internal libraries from scratch that make heavy use of these concepts. 
+
 ## Certifications
 
 ### BSc Hons (Computer Science)
