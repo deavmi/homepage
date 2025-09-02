@@ -20,7 +20,7 @@ Since joining [iPay](https://www.ipay.co.za/) I have been the lead architect and
 
 I am tasked with the design of the hardware abstraction layer (HAL) for the drivers that I am some others on my team have built. Along with this I work on the task scheduler which is used to schedule and run tasks on the remote devices. This scheduler is comprised of an extensible queue policy framework (QPF) which allows filters (stateful and stateless) to manage which jobs and when get to be executed.
 
-I am the main maintainer of the DLMS-related code and also the DLT645 driver.
+I am the main maintainer of the DLMS-related code and also the DLT645 driver, the latter which I wrote entirely from scratch.
 
 ## Certifications
 
