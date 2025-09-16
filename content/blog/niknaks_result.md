@@ -1,7 +1,7 @@
 ---
 title: "Addition to Niknaks: A handy Result type"
 author: Tristan B. Velloza Kildaire
-date: 2025-08-1
+date: 2025-08-01
 draft: true
 ---
 
