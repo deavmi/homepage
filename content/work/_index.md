@@ -4,7 +4,7 @@ title: Work
 
 ## Work experience
 
-### iPay (January 2023 to _present_)
+### ![iPay (January 2023 to _present_)](ipay)
 
 Since joining [iPay](https://www.ipay.co.za/) I have been the lead architect and engineer on their Hydra project. This brand new head-end system (HES) has been built in order to allow for a wide variety of devices (mostly smart meters) to be interacted with in a uniform way.
 
