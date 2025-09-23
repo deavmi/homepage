@@ -42,6 +42,8 @@ accustomed to the DLMS standard and that specific meter.
 
 ## The journey
 
+### Learning DLMS
+
 The journey began as me just using some very sparse pre-existing
 code that an employee had written a while back. I wasn't all
 that clued-up on how it all worked but I had a vague idea where
@@ -59,6 +61,8 @@ via the library we were using. I got to understand more about
 how DLMS worked and also the set of object types or _classes_
 that were supported. 
 
+### Designing the hardware abstraction layer
+
 After figuring this out I decided _"Okay, I need to wrap all
 of this into some a tidy driver-like class so I can use it
 more easily"_.
@@ -73,6 +77,8 @@ really wanted this project to be was _generic_. I wanted
 there to be standardized capabilities and a very small
 base driver. Therefore I designed a Hardware Abstraction
 Layer (HAL), which became the _"Hydra HAL"_.
+
+### An extensible task scheduling system
 
 At the same time I had to begin work on the mechanism
 that would be used to interface between Hydra and BizSwitch.
