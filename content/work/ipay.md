@@ -70,6 +70,42 @@ there to be standardized capabilities and a very small
 base driver. Therefore I designed a Hardware Abstraction
 Layer (HAL), which became the _"Hydra HAL"_.
 
-At the same time 
+At the same time I had to begin work on the mechanism
+that would be used to interface between Hydra and BizSwitch.
+This would be the component responsible for receiving
+XML messages, decoding them and translating them into
+tasks to be run.
+
+_Tasks_ you say? Well yes, this lead me to the next
+big endevour. A task scheduler would be needed which
+would need to be able to run these jobs and support
+callbacks which would be used to send XML reply 
+messages. Lo-and-behold I ended up building an
+extensible scheduler that had an identity provider
+mechanism to lookup devices and their drivers
+to figure out what to setup and how; and **only**
+done when needed (when the task could begin
+execution and become a _job_).
+
+Along with this, the concept of _Queue Policy Framework (QPF)_
+came along. Certain tasks under certain conditions
+would need to be held back. I didn't want to
+hardcode all of these device-specific edge cases,
+therefore I developed a framework that would
+allow the insertion of policies that worked
+in a fashion similar to Linux's netfilter,
+where a "packet" (in my case _task_) could
+be be held back (for the next candidate
+selection round) or accepted for running
+_right now_. These could of course be
+chained and they could modify the _task_
+as well, attaching custom callbacks
+to them.
+
+There are many intricacies to such a
+system and hard problems needed to be
+solved in order to make chained
+callbacks work, even when a policy
+rejected a job mid-queue.
 
 ## Where we ended up
