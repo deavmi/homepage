@@ -35,13 +35,13 @@ menu:
       url: "about/"
       weight: 7
 
-markup:
-  goldmark:
-    extensions:
-      passthrough:
-        enable: true
-        delimiters:
-          block: [['\[', '\]'], ['$$', '$$']]
-          inline: [['\(', '\)']]
-params:
-  math: true
+# markup:
+  # goldmark:
+    # extensions:
+      # passthrough:
+        # enable: true
+        # delimiters:
+          # block: [['\[', '\]'], ['$$', '$$']]
+          # inline: [['\(', '\)']]
+# params:
+  # math: true
