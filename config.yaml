@@ -42,6 +42,6 @@ markup:
         enable: true
         delimiters:
           block: [['\[', '\]'], ['$$', '$$']]
-          inline: [['\(', '\)']]
+          inline: [['\(', '\)'], ['$$', '$$']]
 params:
   math: true
