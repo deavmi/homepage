@@ -126,7 +126,7 @@ _right now_.
 
 These could of course be chained to one
 another. The scheduler would only check
-policy $p_{i+1}$ is policy $p_i$ returned
+policy $$p_{i+1}$$ is policy $$p_i$$ returned
 a positive verdict.
 
 Certain queue policies are stateful, therefore
