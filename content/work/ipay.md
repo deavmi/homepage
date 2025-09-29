@@ -97,6 +97,21 @@ to figure out what to setup and how; and **only**
 done when needed (when the task could begin
 execution and become a _job_).
 
+Tasks had a few _concepts_ to them, there was
+a provider for so-called _"identities"_ which
+is what would actually spawn the driver _on-demand_
+when needed. This on-demand mechanism also
+meant we would only get access to the driver
+when it was connected-to and authenticated.
+
+A second idea was that upon completion a callback,
+of the user's choice, could be called. This
+came in handy, as one could imagine, for
+_various_ things other than just user-created
+callbacks; also internall (see section below).
+
+#### Queue Policy Framework (QPF)
+
 Along with this, the concept of _Queue Policy Framework (QPF)_
 came along. Certain tasks under certain conditions
 would need to be held back. I didn't want to
@@ -107,15 +122,28 @@ in a fashion similar to Linux's netfilter,
 where a "packet" (in my case _task_) could
 be be held back (for the next candidate
 selection round) or accepted for running
-_right now_. These could of course be
-chained and they could modify the _task_
-as well, attaching custom callbacks
-to them.
+_right now_.
 
-There are many intricacies to such a
-system and hard problems needed to be
-solved in order to make chained
-callbacks work, even when a policy
-rejected a job mid-queue.
+These could of course be chained to one
+another. The scheduler would only check
+policy $p_{i+1}$ is policy $p_i$ returned
+a positive verdict.
+
+Certain queue policies are stateful, therefore
+the modification of their state could
+be accomplished via custom callbacks
+they would chain on to the job (by
+modifying it).
+
+There are **many** intricacies to such
+a filtering system that had to be taken
+into account. As I was developing this
+system by myself I came across them and
+ensured that the fixes that would be
+needed were not kludges but things that
+would be both easy on the _internals_
+(as I would maintain it) and keeping
+the _external_ API simple as usable
+for those developing future queue policies.
 
 ## Where we ended up
