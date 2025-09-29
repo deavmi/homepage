@@ -34,3 +34,14 @@ menu:
     - name: About
       url: "about/"
       weight: 7
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        enable = true
+        delimiters:
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+params:
+  math: true
