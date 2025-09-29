@@ -39,9 +39,9 @@ markup:
   goldmark:
     extensions:
       passthrough:
-        enable = true
+        enable: true
         delimiters:
-          block = [['\[', '\]'], ['$$', '$$']]
-          inline = [['\(', '\)']]
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)']]
 params:
   math: true
