@@ -5,6 +5,35 @@ title: My journey at iPay
 There are multiple things I am working on or have already worked
 on during my time at iPay.
 
+## Skills summary
+
+* Own-rolled `Future<T>` implementations
+	* Careful use of `volatile`, `synchronized` concepts
+* A lot of concurrency
+	* Usage of `ReaderWriterLock` where it made sense
+	* Condition variables (`notify()`, `notifyAll()` and `wait(int)`)
+* Request management
+	* Own-rolled request-response matcher with futures as the external API
+
+* Common Socket IO
+	* Working with `read(int, byte[], int)` with sockets
+	* Custom `InputStream` and `OutputStream` implementations
+* Decoders/encoders
+	* Number encoding/decoding utilities, endianness, sign-extension etc.
+	* BCD8421 decoding, bit-pattern decoding/encoding
+
+* Task scheduling
+	* Job filtering/pipelines
+	* Dispatch and callback management
+	* Usage of `Executors`, `ThreadFactory`, etc.
+
+* Service management
+	* Own-rolled component discovery service
+	* Component **A** registers with a certain "match set"
+	* Component **B** can then wait on a `Future<Component<A>>` until
+		such a component matching the provided match set (search query)
+		appears
+
 ## Background
 
 A little bit of background on what iPay does. This company has
