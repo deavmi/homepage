@@ -7,6 +7,11 @@ on during my time at iPay.
 
 ## Skills summary
 
+A lot of what I worked on was my own hand-rolled implementation,
+this meant I learnt a lot and fixed whatever bugs appeared but
+I put quite high trust in the execution of these components that
+they _will always work_. I think deeply about them.
+
 * Own-rolled `Future<T>` implementations
 	* Careful use of `volatile`, `synchronized` concepts
 * A lot of concurrency
