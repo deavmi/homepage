@@ -55,6 +55,7 @@ You can reach this site using other methods:
 
 * On I2P at `deavmi.i2p`
 * On Yggdrasil at `203:75b7:45af:ecca:d641:cd42:38dc:4788`
+* Via IPFS: `/ipns/deavmi.assigned.network` (using _dnslink_)
 
 
 {{<bruh>}}
