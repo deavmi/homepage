@@ -44,7 +44,7 @@ using a good ol' `reflect` to get the runtime type information
 and get the type of it from that; so I can replicate Java's
 `instanceof`-based matching for `try+catch`. But it's up to you!
 
-Okay, if a direct "this error does not match via Is(error)` then
+Okay, if a direct "this error does not match via `Is(error)` then
 it checks; do you have support for either an `interface {Unwrap() error}`
 or `interface{Unwrap() []error}` and in the former case it
 recurses and in the latter it iteratively recurses (bubbling back
