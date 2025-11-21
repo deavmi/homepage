@@ -47,8 +47,20 @@ and get the type of it from that; so I can replicate Java's
 Okay, if a direct "this error does not match via `Is(error)` then
 it checks; do you have support for either an `interface {Unwrap() error}`
 or `interface{Unwrap() []error}` and in the former case it
-recurses and in the latter it iteratively recurses (bubbling back
-up and exiting the for-loop if found).
+loops (hence the `for {}`) but with the error now set to that of
+what `Unwrap() error` returned. In the latter case it calls
+`is` on each `error` in the `[]error` slice returned by `Unwrap() []error`
+and only once one returns `true` does it return `true` as well.
+
+If none of that works, then `false` is returned.
 
 
 If all else fails, then no match.
+
+---
+
+**Update 21st of November 2025:** I looked at the code again and realised I had made
+a mistake. The recursion occurs in the case whereby the type
+implements the `Unwrap() []error` method; _not_ in the case
+where it implements the `Unwrap() error` method - and it can
+only implement one as they share a name.
