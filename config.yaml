@@ -31,9 +31,13 @@ menu:
       url: "research/"
       weight: 6
 
+    - name: Whiteboard
+      url: "whiteboard/"
+      weight: 7
+
     - name: About
       url: "about/"
-      weight: 7
+      weight: 8
 
 markup:
   goldmark:

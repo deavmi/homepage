@@ -21,7 +21,15 @@
     {{end}}
 
   {{end}}
+{{end}}
 
+{{if compare.Eq .Title "Whiteboard" }}
+	{{ range .Pages }}
+  	<li>
+      <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+	    <i>epoch {{Unix .Date}}</b>
+    </li>
+	{{end}}
 {{end}}
 </ul>
 
