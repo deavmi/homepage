@@ -39,6 +39,7 @@ I did that for my Gogga logging library to build a DEBUG, INFO, etc function
 
 By compile-time iterating over the LogLevel enum members and mixin(string)-ing a new defintion per each
 
-<hr>
+---
+
 Disclaimer: The first time I **ever** looked at Nim was back when I was in highschool.
 Suffice it to say I understand the language a lot better now.
