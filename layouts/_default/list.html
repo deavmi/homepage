@@ -27,7 +27,7 @@
 	{{ range .Pages }}
   	<li>
       <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
-	    <p>@</p> <i>epoch {{.Date.Unix}}</b>
+	    <p>@</p> <i>epoch {{.Date.Unix}}</i>
     </li>
 	{{end}}
 {{end}}
