@@ -41,6 +41,15 @@ they _will always work_. I think deeply about them.
 	* Event listeners could also be installed and triggered on
 		their match sets being satisfied (on _advertisement_ and _revocation_)
 
+* Plugin management 
+	* Own-rolled plugin management system with life cycle management
+	* Plugin metadata delivered by some _provider_ to a central
+		controller:
+			1. Handled start up and shutdown (on delivery and retraction)
+	* Implemented an XML-based provider that would _deliver_ and
+		_retract_ plugin metadata to the controller based on file-system
+		changes
+
 ## Background
 
 A little bit of background on what iPay does. This company has
