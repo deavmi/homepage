@@ -38,6 +38,8 @@ they _will always work_. I think deeply about them.
 	* Component **B** can then wait on a `Future<Component<A>>` until
 		such a component matching the provided match set (search query)
 		appears
+	* Event listeners could also be installed and triggered on
+		their match sets being satisfied (on _advertisement_ and _revocation_)
 
 ## Background
 
