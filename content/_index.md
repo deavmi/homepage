@@ -56,9 +56,3 @@ You can reach this site using other methods:
 * On [Yggdrasil](https://yggdrasil-network.github.io/) at `203:75b7:45af:ecca:d641:cd42:38dc:4788` ([ygg.deavmi.assigned.network](http://ygg.deavmi.assigned.network))
 * On [Mycelium](https://github.com/threefoldtech/mycelium) at `486:3ca0:b50a:7023:7532:5601:1f09:b969` ([myc.deavmi.assigned.network](http://myc.deavmi.assigned.network))
 * Via IPFS: `/ipns/deavmi.assigned.network` (using _dnslink_)
-
-
-{{<bruh>}}
-<!-- TODO: Make clicable -->
-<a rel="me" href="https://ieji.de/@deavmi"></a>
-{{</bruh>}}
