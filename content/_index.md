@@ -53,8 +53,8 @@ you can opt for using a service from the legacy financial system.
 You can reach this site using other methods:
 
 * On I2P at `deavmi.i2p`
-* On [Yggdrasil](https://yggdrasil-network.github.io/) at `203:75b7:45af:ecca:d641:cd42:38dc:4788` (ygg.deavmi.assigned.network)
-* On [Mycelium](https://github.com/threefoldtech/mycelium) at `486:3ca0:b50a:7023:7532:5601:1f09:b969` (myc.deavmi.assigned.network)
+* On [Yggdrasil](https://yggdrasil-network.github.io/) at `203:75b7:45af:ecca:d641:cd42:38dc:4788` ([ygg.deavmi.assigned.network](http://ygg.deavmi.assigned.network))
+* On [Mycelium](https://github.com/threefoldtech/mycelium) at `486:3ca0:b50a:7023:7532:5601:1f09:b969` ([myc.deavmi.assigned.network](http://myc.deavmi.assigned.network))
 * Via IPFS: `/ipns/deavmi.assigned.network` (using _dnslink_)
 
 
