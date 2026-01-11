@@ -33,7 +33,6 @@ way to get in touch and also stay up-to-date with updates regarding to new blog 
 projects.
 
 * Nostr: [`npub16c2fsg7fp3yxte9ugd9yhcdpa68h924asv5d6pvm5nc37a3nkzmqd2xaj2`](https://njump.me/deavmi@deavmi.assigned.network) or _deavmi@deavmi.assigned.network_
-* Fediverse: [`deavmi@ieji.de`](https://ieji.de/@deavmi)
 
 ## Donations
 
