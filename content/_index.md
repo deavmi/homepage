@@ -40,7 +40,7 @@ If you like what I _do_ and don't mind **shilling** a _few_ then you can send me
 you can opt for using a service from the legacy financial system.
 
 * Monero: `43jx2gRMRxBauz2gwKTb9VJyUqKNg7wVPVVhQd32cgUA6WGhs2haJXAHfrdTzTKdYfeGEbDT8FtkF45sKMAEyasWRSyG5Sj`
-* Firo: `sm1awgchnj4fwevkuxafs9k7m67skv72re0vr2nuz24cxqxc2hse5h4zyrqyk9xuw8f8233xce7dexk598a8zs7rv8rvqjhwtc0fmst95gsp2u5gpqk4w03puaer9ur20lclpycjpcfghv2k`
+* Firo: `sm19g8nuv4nwznu5x3c6x7zvwr7faqvwej9u2sxl75w9nzzh0dc5pvgx57ewj840xujeru4fnutlngkde49ysnyn7j7t6q8yymcw5jr57ustvqh0wusk6kdlkmx5paveq8mwmxz75gpe4jta`
 * Zcash: `t1Lq3y4fu7R4UV3L5cCPZjVPcXu28h9fWUt`
 * Litecoin: `ltc1qwvsnaas33rujvthruk0h6t5jm6w3lfmwmy6a77`
 * Ethereum classic: `0xeEc58517a9da695E89343709FA27a481cF23ABE5`
