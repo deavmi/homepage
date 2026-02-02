@@ -48,6 +48,9 @@ you can opt for using a service from the legacy financial system.
 * Bitcoin (lightning): `deavmi@minibits.cash`
 * Liberapay: [tbvk](https://liberapay.com/tbvk/)
 
+OpenAlias is supported for some of these. Just use `deavmi.assigned.network` as your
+destination.
+
 {{<bruh>}}
 <br>
 {{</bruh>}}
