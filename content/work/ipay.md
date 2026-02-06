@@ -41,14 +41,17 @@ they _will always work_. I think deeply about them.
 	* Event listeners could also be installed and triggered on
 		their match sets being satisfied (on _advertisement_ and _revocation_)
 
-* Plugin management 
-	* Own-rolled plugin management system with life cycle management
-	* Plugin metadata delivered by some _provider_ to a central
-		controller:
-			1. Handled start up and shutdown (on delivery and retraction)
-	* Implemented an XML-based provider that would _deliver_ and
-		_retract_ plugin metadata to the controller based on file-system
-		changes
+* Plugin manager
+	* Rolled my own plugin manager with built-in dependency management
+	* Components which supported the `LifeCycle` interface would be `start()`'d and `stop()`
+		during load and unload
+	* Plugins can be provided by a _plugin provider_ which one can choose
+		how they want to implement. The current one attached parses XML files
+		and then provides the _plugin metadata_ to the plugin manager
+	* Modifying the plugin configuration causes a reload
+	* If `{A, B}` _requires_ `{C}` and `{C}` _requires_ `{D}` then taring
+		down `D` will tare down recursively, starting with `A/B`, then `C`
+		and then `D`. Ensuring safe shutdown of internally-installed objects.
 
 ## Background
 
