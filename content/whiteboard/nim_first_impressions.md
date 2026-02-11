@@ -1,7 +1,7 @@
 ---
 title: First impressions of Nim
 author: Tristan B. Kildaire
-date: 2022-12-28
+date: 2025-12-28
 ---
 
 Damn Nim's type system is quite nice
