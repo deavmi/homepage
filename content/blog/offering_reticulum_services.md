@@ -27,7 +27,7 @@ several networks:
 [[rothbard_RNS_transport_ZA_ygg]]
     type = TCPClientInterface
     enabled = true
-    target_host = 200:73eb:2e4:14be:aac7:90b3:784b:71a3
+    target_host = ygg.rothbard.lab.networks.deavmi.assigned.network
     target_port = 4242
 
 [[rothbard_RNS_transport_ZA_i2p]]
