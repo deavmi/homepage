@@ -36,5 +36,16 @@
 	</ul>
 {{end}}
 
+{{if compare.Eq .Title "Projects" }}
+	<h4>More projects</h4>
+	<ul>
+	{{ range .Pages }}
+  	<li>
+      <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+    </li>
+	{{end}}
+	</ul>
+{{end}}
+
 
 {{ partial "footer.html" . }}
