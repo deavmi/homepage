@@ -6,8 +6,9 @@
 
 {{ .Content }}
 
-<ul>
+
 {{ if compare.Eq .Title "Blog" }}
+	<ul>
   {{ $allBlogs := .Pages.GroupByDate "2006" }}
 
   {{ range $allBlogs }}
@@ -21,16 +22,19 @@
     {{end}}
 
   {{end}}
+  </ul>
 {{end}}
 
 {{if compare.Eq .Title "Whiteboard" }}
+	<ul>
 	{{ range .Pages }}
   	<li>
       <p><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
 	    @ <i>epoch {{.Date.Unix}}</i></p>
     </li>
 	{{end}}
+	</ul>
 {{end}}
-</ul>
+
 
 {{ partial "footer.html" . }}
