@@ -8,6 +8,11 @@ A fully-fledged assertions library that provides you with all sorts
 of assertion functions whilst still allowing you to tie in with the
 existing `testing.T` infrastructure.
 
+1. [Go git page](https://pkg.go.dev/new.git.deavmi.assigned.network/deavmi/go-assertions.git)
+2. [Source code (original)](https://new.git.deavmi.assigned.network/deavmi/go-assertions)
+3. [Source code (mirror)](https://git.redxen.eu/deavmi/go-assertions)
+4. [Source code (mirror)](https://codeberg.org/deavmi/go-assertions)
+
 ## glog
 
 A re-implementation of [dlog](../dlog) in Go
