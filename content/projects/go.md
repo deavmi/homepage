@@ -46,7 +46,9 @@ A _free-as-in-freedom_ INI parser.
 
 ## openalias-fmt
 
-TODO
+A Go implementation of the [OpenAlias](https://openalias.org/#implement) specification
+which allows for the parsing (decoding of) encoded data but also allows one to programatically
+create records in memory and then serialize them out to a `io.Writer` of their choice.
 
 1. [Go git page](https://pkg.go.dev/new.git.deavmi.assigned.network/deavmi/openalias-fmt.git)
 2. [Source code (original)](https://new.git.deavmi.assigned.network/deavmi/openalias-fmt)
@@ -55,7 +57,10 @@ TODO
 
 ## openalias-resolver
 
-TODO: Add description
+This library implements an [OpenAlias](https://openalias.org/#implement) resolver which
+can lookup records via DNS TXT records and then pases them using the [openalias-fmt](https://new.git.deavmi.assigned.network/deavmi/openalias-fmt)
+library.
+
 TODO: Finish project!
 
 1. [Go git page](https://pkg.go.dev/new.git.deavmi.assigned.network/deavmi/openalias-resolver.git)
