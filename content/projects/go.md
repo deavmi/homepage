@@ -10,7 +10,7 @@ existing `testing.T` infrastructure.
 
 ## glog
 
-TODO
+A re-implementation of [dlog](../glog) in Go
 
 1. [Go git page](https://pkg.go.dev/new.git.deavmi.assigned.network/deavmi/glog.git)
 2. [Source code (original)](https://new.git.deavmi.assigned.network/deavmi/glog)
@@ -19,7 +19,7 @@ TODO
 
 ## go-niknaks
 
-TODO
+An all-round swiss-army knife library.
 
 1. [Go git page](https://pkg.go.dev/new.git.deavmi.assigned.network/deavmi/go-niknaks.git)
 2. [Source code (original)](https://new.git.deavmi.assigned.network/deavmi/go-niknaks)
@@ -28,7 +28,7 @@ TODO
 
 ## go-tuples
 
-TODO
+Pairs, Tuples and more library for Go
 
 1. [Go git page](https://pkg.go.dev/new.git.deavmi.assigned.network/deavmi/go-tuples.git)
 2. [Source code (original)](https://new.git.deavmi.assigned.network/deavmi/go-tuples)
@@ -65,9 +65,18 @@ TODO: Finish project!
 
 ## worcesterinit
 
-TODO
+Go-based initialization system for all systems big and small
 
 1. [Go git page](https://pkg.go.dev/new.git.deavmi.assigned.network/deavmi/worcesterinit.git)
 2. [Source code (original)](https://new.git.deavmi.assigned.network/deavmi/worcesterinit)
 3. [Source code (mirror)](https://git.redxen.eu/deavmi/worcesterinit)
 4. [Source code (mirror)](https://codeberg.org/deavmi/worcesterinit)
+
+## freefaces
+
+Common interfaces library for Go projects to ease interoperability
+
+1. [Go git page](https://pkg.go.dev/new.git.deavmi.assigned.network/deavmi/freefaces.git)
+2. [Source code (original)](https://new.git.deavmi.assigned.network/deavmi/freefaces)
+3. [Source code (mirror)](https://git.redxen.eu/deavmi/freefaces)
+4. [Source code (mirror)](https://codeberg.org/deavmi/freefaces)
