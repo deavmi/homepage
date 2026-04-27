@@ -10,7 +10,7 @@ existing `testing.T` infrastructure.
 
 ## glog
 
-A re-implementation of [dlog](../glog) in Go
+A re-implementation of [dlog](../dlog) in Go
 
 1. [Go git page](https://pkg.go.dev/new.git.deavmi.assigned.network/deavmi/glog.git)
 2. [Source code (original)](https://new.git.deavmi.assigned.network/deavmi/glog)
